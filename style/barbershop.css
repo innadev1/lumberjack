@@ -51,7 +51,7 @@
 #country{
 }
 #table{
-	width: 60%;
+	width: 55%;
 }
 .countries{
 	text-align: center;
@@ -81,21 +81,24 @@
     opacity: 0.7;
 	margin: 0;
 }
-.button{
+.button1, .button2, .button3{
 	position: absolute;
-    right: 12.5vw;
-    margin-top: -9vw;
+	right: 14.5vw;
 }
-.button button{
+.button1{
+	margin-top: -9vw;
+}
+.button2, .button3{
+	margin-top: -5vw;
+}
+.button1 button, .button2 button, .button3 button{
 	background-color: rgb(189, 148, 86);
     color: rgba(255,255,255,1);
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     letter-spacing: 0.2vw;
     font-stretch: condensed;
     border: none;
-    height: 3vw;
-    width: 10vw;
-    padding: 0.5vw 1vw;
+    padding: 0.7vw 1vw;
     cursor: pointer;
 }
 .flex {
@@ -112,13 +115,27 @@
 .buttons button{
 	background-color: white;
     color: black;
-    font-size: 1.3vw;
     letter-spacing: 0.2vw;
     font-stretch: condensed;
-    border:1px solid rgb(189, 148, 86);
-    height: 3vw;
-    width: auto;
-    padding: 0.5vw 1vw;
+    border: 1px solid rgb(189, 148, 86);
     cursor: pointer;
-	margin: 3vw;
+    margin: 2vw;
+    font-size: 1.2vw;
+    padding: 0.7vw 1vw;
+}
+.country_name{
+	position: absolute;
+    width: 100%;
+    margin-top: 13vw;
+}
+.country_name h1{
+	font-size: 4vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    letter-spacing: 0.8vw;
+    text-shadow: 3px 1px 5px black;
 }

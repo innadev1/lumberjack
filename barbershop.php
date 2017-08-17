@@ -1,4 +1,4 @@
-<html>
+ <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -29,6 +29,7 @@
 		</div>
 		
 		<div id="country">
+			<div class="country_name"><h1>Latvia</h1></div>
 			<div class="countries"><img src="img/countries/latvia.jpg"></div>
 
 			<table id="table" align="center">
@@ -97,7 +98,7 @@
 			
 			</tr>
 			</table>
-				<div class="button"><button>OPEN MAP</button></div>
+				<div class="button1"><button>OPEN MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
@@ -108,6 +109,7 @@
 		</div>
 		
 		<div id="country">
+		<div class="country_name"><h1>Estonia</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg"></div>
 
 			<table id="table" align="center" style="width: 45%">
@@ -152,7 +154,7 @@
 			
 			</tr>
 			</table>
-				<div class="button"><button>OPEN MAP</button></div>
+				<div class="button2"><button>OPEN MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
@@ -163,6 +165,7 @@
 		</div>
 		
 		<div id="country">
+		<div class="country_name"><h1>Russia</h1></div>
 			<div class="countries"><img src="img/countries/russia.jpg"></div>
 
 			<table id="table" align="center" style="width: 45%">
@@ -207,7 +210,7 @@
 			
 			</tr>
 			</table>
-				<div class="button"><button>OPEN MAP</button></div>
+				<div class="button3"><button>OPEN MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>

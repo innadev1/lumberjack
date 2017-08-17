@@ -1,0 +1,142 @@
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#banner{
+    height: 35vw;
+	background-image:  url("../img/background_5.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.caption{
+	z-index:2;
+	text-align: center;
+	top: 43%;
+    position: relative;
+}
+.caption h1{
+	color: white;
+    font-size: 4.4vw;
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 0.8vw;
+    text-align: center;
+    padding-bottom: 2vw;
+	text-shadow: 3px 1px 5px black;
+}
+.caption h1 img{
+	padding: 1vw;
+	width: 1%;
+}
+#main_info{
+	height: auto;
+	padding: 5vw;
+	padding-bottom: 0vw;
+}
+.blocks{
+	margin-bottom: 5vw;
+	align-items: center;
+	height: 28vw;
+	-webkit-align-items: center;
+}
+.rectangle{
+	background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 56px 14px rgba(159, 159, 159, 0.34);
+    width: 40vw;
+    height: 22vw;
+    z-index: 1;
+    position: absolute;
+    left: 16vw;
+    margin-top: 3vw;
+}
+.image{
+	position: absolute;
+    left: 42vw;
+}
+.image img{
+	width: 83%;
+}
+.rectangle_2{
+	background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 56px 14px rgba(159, 159, 159, 0.34);
+    width: 40vw;
+    height: 22vw;
+    z-index: 1;
+    position: absolute;
+    left: 44vw;
+    margin-top: 3vw;
+}
+.image_2{
+	position: absolute;
+    right: 31vw;
+    left: 11vw;
+}
+.image_2 img{
+	width: 83%;
+}
+.text{
+	padding: 3vw;
+}
+.rectangle h1{
+	font-size: 2.3vw;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(189, 148, 86);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.479;
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0.3vw;
+}
+.rectangle p{
+	font-size: 0.9vw;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(5, 5, 5);
+	line-height: 1.646;
+	text-align: justify;
+	margin: 0;
+}
+.rectangle_2 h1{
+	font-size: 2.3vw;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(189, 148, 86);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1.479;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0.3vw;
+}
+.rectangle_2 p{
+	font-size: 0.9vw;
+	font-family: "OpenSans", sans-serif;
+	color: rgb(5, 5, 5);
+	line-height: 1.646;
+	text-align: justify;
+	margin: 0;
+}
+.button{
+	text-align: center;
+	padding-bottom: 5vw;
+}
+.button button{
+	background-color: #bd9456;
+    color: rgba(255,255,255,1);
+    font-size: 1.8vw;
+    letter-spacing: 0.3vw;
+    font-stretch: condensed;
+    border: none;
+    height: auto;
+    width: 12%;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    opacity: 0.9;
+	cursor: pointer;
+}

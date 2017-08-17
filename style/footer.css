@@ -1,0 +1,26 @@
+#footer{
+	background-color: #1f0c06;
+	height: 12vw;
+	text-align:center;
+	position: relative;
+}
+.footer{
+	position: relative;
+	top: 1.5vw;
+}
+#footer p{
+	color: #c59a5a;
+	font-size: 0.7vw;
+}
+.links{
+	padding-top: 0.7vw;
+}
+.links li{
+	display: inline;
+	list-style: none;
+	margin: 0.5vw;
+}
+.links img{
+	width: 2%;
+	margin: 0;
+}

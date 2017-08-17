@@ -13,10 +13,15 @@
 	position: relative;
 }
 .caption{
-	z-index:2;
-	text-align: center;
-	top: 43%;
+	z-index: 2;
+    text-align: center;
+    top: 39%;
     position: relative;
+    border: 1px solid rgba(230, 230, 230, 0.3);
+    margin-left: 29vw;
+    margin-right: 29vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 .caption h1{
 	color: white;
@@ -28,12 +33,11 @@
     line-height: 0.8;
     letter-spacing: 0.8vw;
     text-align: center;
-    padding-bottom: 2vw;
 	text-shadow: 3px 1px 5px black;
 }
 .caption h1 img{
-	padding: 1vw;
-	width: 1%;
+	padding: 1.2vw;
+	width: 2%;
 }
 #main_info{
 	height: auto;
@@ -59,6 +63,7 @@
 .image{
 	position: absolute;
     left: 42vw;
+	right: 0;
 }
 .image img{
 	width: 83%;
@@ -90,10 +95,10 @@
 	color: rgb(189, 148, 86);
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 1.479;
+	line-height: 2.5vw;
 	text-align: left;
 	margin-top: 0;
-	margin-bottom: 0.3vw;
+	margin-bottom: 1vw;
 }
 .rectangle p{
 	font-size: 0.9vw;
@@ -105,14 +110,14 @@
 }
 .rectangle_2 h1{
 	font-size: 2.3vw;
-	font-family: "OpenSans", sans-serif;
-	color: rgb(189, 148, 86);
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 1.479;
-	text-align: right;
-	margin-top: 0;
-	margin-bottom: 0.3vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(189, 148, 86);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.5vw;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 1vw;
 }
 .rectangle_2 p{
 	font-size: 0.9vw;

@@ -6,10 +6,15 @@
 	position: relative;
 }
 .caption{
-	z-index:2;
-	text-align: center;
-	top: 43%;
+	z-index: 2;
+    text-align: center;
+    top: 27%;
     position: relative;
+    border: 1px solid rgba(230, 230, 230, 0.3);
+    margin-left: 21vw;
+    margin-right: 21vw;
+    padding-top: 4vw;
+    padding-bottom: 3vw;
 }
 .caption h1{
 	color: white;
@@ -25,8 +30,8 @@
 	text-shadow: 3px 1px 5px black;
 }
 .caption h1 img{
-	padding: 1vw;
-	width: 1%;
+	padding: 1.2vw;
+    width: 1.5%;
 }
 .caption h2{
 	color: white;
@@ -138,4 +143,7 @@
     text-align: center;
     letter-spacing: 0.8vw;
     text-shadow: 3px 1px 5px black;
+}
+button:focus{
+	outline: none;
 }

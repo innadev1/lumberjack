@@ -45,7 +45,7 @@
 				laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
 				voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
-				<p style="margin-top:1vw">Jim Black</p>
+				<p style="margin-top:1vw; text-align: right;">Jim Black</p>
 				</div>
 				</div>
 				<div class="image_2"><img src="img/gal/4.jpg"></div>

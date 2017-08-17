@@ -1,4 +1,5 @@
 <?php
+// hi!
 if(isset($_POST['submit'])) {
 	$to      = 'my.worktest94@gmail.com';
 	$subject = 'the subject';

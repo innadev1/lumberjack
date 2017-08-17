@@ -122,11 +122,11 @@
 	text-align: justify;
 	margin: 0;
 }
-.button{
+.button, .button1{
 	text-align: center;
 	padding-bottom: 5vw;
 }
-.button button{
+.button button, .button1 button{
 	background-color: #bd9456;
     color: rgba(255,255,255,1);
     font-size: 1.8vw;

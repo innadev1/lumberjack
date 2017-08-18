@@ -147,3 +147,20 @@
 button:focus{
 	outline: none;
 }
+#map_latvia{
+	display: none;
+}
+#map_estonia{
+	display: none;
+}
+#map_russia{
+	display: none;
+}
+iframe{
+	width: 75%;
+	height: 35.5vw;
+	padding-bottom: 4vw;
+}
+#but1, #but2, #but3{
+	display: none;
+}

@@ -3,6 +3,11 @@
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>barbershop</title>
+		
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/barbershop.js"></script>
+		
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
@@ -29,8 +34,13 @@
 		</div>
 		
 		<div id="country">
-			<div class="country_name"><h1>Latvia</h1></div>
-			<div class="countries"><img src="img/countries/latvia.jpg"></div>
+			<div class="country_name" id="c1"><h1>Latvia</h1></div>
+			<div class="countries"><img src="img/countries/latvia.jpg" class="gal1">
+				<div id="map_latvia">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
+					height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
 
 			<table id="table" align="center">
 			<tr>
@@ -98,7 +108,8 @@
 			
 			</tr>
 			</table>
-				<div class="button1"><button>OPEN MAP</button></div>
+				<div class="button1" id="tr1"><button>OPEN MAP</button></div>
+				<div class="button1" id="but1"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
@@ -109,8 +120,13 @@
 		</div>
 		
 		<div id="country">
-		<div class="country_name"><h1>Estonia</h1></div>
-			<div class="countries"><img src="img/countries/estonia.jpg"></div>
+			<div class="country_name" id="c2"><h1>Estonia</h1></div>
+			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
+				<div id="map_estonia">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.76387625749!2d24.762843116355008!3d59.43701258169663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935e89169b51%3A0xebca4dd8672bbe25!2zUHJvbmtzaSAzLCAxMDEyNCBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sru!4v1503047115221" width="600" 
+					height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
 
 			<table id="table" align="center" style="width: 45%">
 			<tr>
@@ -154,7 +170,8 @@
 			
 			</tr>
 			</table>
-				<div class="button2"><button>OPEN MAP</button></div>
+				<div class="button2" id="tr2"><button>OPEN MAP</button></div>
+				<div class="button2" id="but2"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
@@ -165,8 +182,13 @@
 		</div>
 		
 		<div id="country">
-		<div class="country_name"><h1>Russia</h1></div>
-			<div class="countries"><img src="img/countries/russia.jpg"></div>
+			<div class="country_name" id="c3"><h1>Russia</h1></div>
+			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
+				<div id="map_russia">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9349913166286!2d30.248911716371083!3d59.933220881874256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630d1427f3f2b%3A0x7e406a0600f36d!2zMjkg0LvQuNC9LiDQktCw0YHQuNC70YzQtdCy0YHQutC-0LPQviDQvtGB0YLRgNC-0LLQsCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5OTEwNg!5e0!3m2!1sru!2sru!4v1503047337531" width="600" 
+					height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
 
 			<table id="table" align="center" style="width: 45%">
 			<tr>
@@ -210,7 +232,8 @@
 			
 			</tr>
 			</table>
-				<div class="button3"><button>OPEN MAP</button></div>
+				<div class="button3" id="tr3"><button>OPEN MAP</button></div>
+				<div class="button3" id="but3"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>

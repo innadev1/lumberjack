@@ -33,13 +33,13 @@
 				<li><a href="/www/testlumberjack/opencart/index.php">online store</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li><a href="#">haircuts</a></li>
+				<li><a href="haircuts.php">haircuts</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li><a href="lifestyle.php">lifestyle</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li><a href="#">contact us</a></li>
+				<li><a href="contacts.php">contact us</a></li>
 			</ul>
 	</div>
 </div>

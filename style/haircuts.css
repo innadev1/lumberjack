@@ -1,0 +1,130 @@
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+#banner{
+    height: 35vw;
+	background-image:  url("../img/background_5.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.caption{
+	z-index: 2;
+    text-align: center;
+    top: 37%;
+    position: relative;
+    border: 1px solid rgba(230, 230, 230, 0.3);
+    margin-left: 29vw;
+    margin-right: 29vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+.caption h1{
+	color: white;
+    font-size: 4.4vw;
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 0.8vw;
+    text-align: center;
+	text-shadow: 3px 1px 5px black;
+}
+.caption h1 img{
+	padding: 1.2vw;
+	width: 2%;
+}
+.button_more{
+	text-align: center;
+	padding-bottom: 5vw;
+}
+.button_more button{
+	background-color: #bd9456;
+    color: rgba(255,255,255,1);
+    font-size: 1.8vw;
+    letter-spacing: 0.3vw;
+    font-stretch: condensed;
+    border: none;
+    height: auto;
+    width: 12%;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    opacity: 0.9;
+	cursor: pointer;
+}
+#main{
+	height: auto;
+	padding: 1vw 5vw 1vw 5vw;
+}
+.wrap{
+	width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.photo {
+	width: 28%;
+    height: 31vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-grid;
+    transition: all ease 0.3s;
+    text-align: center;
+    margin: 1vw;
+}
+.photo_1{background-image:url(../img/haircuts/1.jpg);}
+.photo_2{background-image:url(../img/haircuts/2.jpg);}
+.photo_3{background-image:url(../img/haircuts/3.jpg);}
+.photo_4{background-image:url(../img/haircuts/4.jpg);}
+.photo_5{background-image:url(../img/haircuts/5.jpg);}
+.photo_6{background-image:url(../img/haircuts/6.jpg);}
+.text{
+	margin-top: 20vw;
+}
+.text h1{
+	font-size: 1.7vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(189, 148, 86);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.text p{
+	font-size: 1vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(5, 5, 5);
+    line-height: 1.3vw;
+    text-align: justify;
+    margin: 0;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    opacity: 0.7;
+}
+.button{
+	background-color: white;
+    color: black;
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border: 1px solid rgb(189, 148, 86);
+    cursor: pointer;
+    margin: 1vw;
+    font-size: 1vw;
+    padding: 0.5vw 0.7vw;
+}
+.button:hover{
+	background-color: rgb(189, 148, 86);
+    color: white;
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border: none;
+    cursor: pointer;
+    margin: 1vw;
+    font-size: 1vw;
+    padding: 0.5vw 0.7vw;
+}

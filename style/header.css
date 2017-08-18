@@ -1,6 +1,6 @@
 ul, li{
 	margin: 0;
-	padding: 0;
+	padding: 0.5vw 0 0.5vw 0;
 }
 a{
 	text-decoration: none;
@@ -9,11 +9,10 @@ a{
 	margin: 0;
 }
 #information{
-	height: 2.6vw;
+	height: auto;
 }
 .information{
 	position: relative;
-    top: 0.5vw;
 	text-align: right;
     color: #1f0c06;
     font-size: 1vw;
@@ -42,11 +41,10 @@ a{
     top: 1.5vw;
 }
 #navigation{
-	height: 2.6vw;
+	height: auto;
 }
 .navigation{
 	position: relative;
-    top: 0.8vw;
 	text-align: center;
     color: #1f0c06;
     font-size: 1vw;
@@ -55,11 +53,16 @@ a{
 .navigation li{
 	display: inline;
 	list-style: none;
-	margin-right: 1vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 }
 .radio{
     width: 2%;
     position: absolute;
-    top: -0.5vw;
+    top: 0.1vw;
     left: 10vw;
+}
+.link:hover{
+	background-color: rgb(189, 148, 86);
+	color: white;
 }

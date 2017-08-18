@@ -12,4 +12,4 @@ $(document).ready(function(){
 		$("#main_info").css("display","block");
 		$(".button").css("display","block");
 	});
-	});
+});

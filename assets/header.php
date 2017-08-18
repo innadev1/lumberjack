@@ -22,8 +22,9 @@
 
 <div id="navigation">
 	<div class="navigation">
-		<a><img src="img/radio.png" class="radio"></a>
 			<ul>
+				<li><a><img src="img/radio.png" class="radio"></a></li>
+				
 				<li class="link"><a href="our_story.php">our story</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>

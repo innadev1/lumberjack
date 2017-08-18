@@ -92,7 +92,7 @@ mail($to, $subject, $message, $headers);
 					<div style="position:relative">
 
 						<div class="text_on_photo">
-							<img src="img/logo.png" width="15%">
+							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at diam sed sapien bibendum pharetra. In vel purus sit amet nibiam lorem. Etiam egestas sit amet elit vel bibendum. Nulla non is. Interdum et malesuada fames ac ante ipsum primis in fau. </p>
 						</div>

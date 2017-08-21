@@ -105,15 +105,10 @@ button:focus{
     flex-wrap: wrap;
     margin: auto;
 	padding-top: 0.2vw;
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
 }
 .photo {
 	width: 48%;
-    padding-top: 29%;
+    padding-top: 30%;
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-grid;

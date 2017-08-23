@@ -1,24 +1,27 @@
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
-<label for="from">From</label> <input type="text" id="from" name="from"/> <label for="to">to</label> <input type="text" id="to" name="to"/>
-
-
-
-
-<script>
-$('#from').datepicker(
-         { 
-            minDate: 0,
-            beforeShow: function() {
-            $(this).datepicker('option', 'maxDate', $('#to').val());
-          }
-       });
-$('#to').datepicker(
-         {
-            defaultDate: "+1w",
-            beforeShow: function() {
-            $(this).datepicker('option', 'minDate', $('#from').val());
-if ($('#from').val() === '') $(this).datepicker('option', 'minDate', 0);                             
-         }
-       });
-
-</script>
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#datepicker-10" ).datepicker({
+                minDate: 0,
+               changeMonth:true,
+               changeYear:true,
+               numberOfMonths:[1,1]
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+      <!-- HTML --> 
+      <p>Enter Date: <input type = "text" readonly="readonly" id = "datepicker-10"></p>
+   </body>
+</html>

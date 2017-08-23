@@ -107,10 +107,12 @@
 <html>
     <head>       
 		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<link rel="stylesheet" type="text/css" href="style/form.css">
         <title>lumberjack</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
+		<script type="text/javascript" src="js/open_close.js"></script>
 
         <script type="text/javascript">
                 $(document).ready(function() {                              
@@ -125,18 +127,6 @@
 					margin: 10                      
 					});
                 });
-		</script>
-
-		<script>
-			$(document).ready(function(){
-				$(".read_more").click(function () {
-					$(".remodal-overlay").fadeIn(400);
-					$(".remodal-overlay").css("display","block");
-				});
-				$(".remodal-close").click(function () {
-					$(".remodal-overlay").css("display","none");
-				});
-			});
 		</script>
 
     </head>

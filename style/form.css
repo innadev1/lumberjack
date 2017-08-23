@@ -310,3 +310,13 @@ option {
     letter-spacing: 1px;
     border-right: 1px solid #cfd5d7;
 }
+.wpcf7-date {
+    width: 50%;
+    float: left;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'LumberjackInlineRough';
+    padding: 10px;
+    font-size: 18px;
+}

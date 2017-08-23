@@ -229,7 +229,8 @@
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
-				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</p></td>	
+				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</p></td>
+				<div class="buttons" id="book_an_appointment_4"><button>CHANGE Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
 
 
 				<div class="bookinput">
@@ -301,13 +302,14 @@
 			</div>
 			</div>
 
-			<div class="remodal-overlay_" style="display: none;">
+			<div class="remodal-overlay_4" style="display: none;">
 			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
 				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</p></td>
+				<div class="buttons" id="book_an_appointment_5"><button>CHANGE Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
 
 				<div class="bookinput">
 					<label>Name</label>
@@ -373,7 +375,7 @@
 					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>
 			</form>
-			<a href="#" class="remodal-close"></a>
+			<a href="#" class="remodal-close_4"></a>
 
 			</div>
 			</div>

@@ -7,7 +7,7 @@
 		$error_message_t = "";
 		$error_message_d = "";
 
-	if(isset($_POST['submit']))
+	if(isset($_POST['emailsent']))
 	{
 
 		echo ($error_message_n);
@@ -81,6 +81,7 @@
 			// echo ($error_message);
 		}
 
+		$mailSuccess = false;
 
 		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
 			$to      = 'my.worktest94@gmail.com';
@@ -90,13 +91,16 @@
 			'Reply-To:' . $email . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 
-			mail($to, $subject, $message, $headers);
+			if(mail($to, $subject, $message, $headers)){
+				$mailSuccess = true;
+			}
+			
 
 			echo "check Your Email";
 
 		}else{
-
-			echo "reply";
+			
+			$reply = "reply";
 		}
 
 	}
@@ -189,13 +193,25 @@
 					</div>
 				</div>
 				
+				<!-- te php  -->
+				<div class="remodal-overlay"
+					<?php if(isset($_POST['emailsent'])) { ?>
 
-				<div class="remodal-overlay" style="display: none;">
+							style="display: block;" <?php
+					}else{
+						?>	
+							style="display: none;" <?php
+					} ?>
+				>
+
+
 					<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 						<img src="img/logo-half.png" id="bookin-workshop">
-						
-						<form id="form" name="orderform" method="post" action="index.php">
+
+						<?php if(!$mailSuccess){ ?>
+
+							<form id="form" name="orderform" method="post" action="index.php">
 
 							<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
 
@@ -263,6 +279,17 @@
 									<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
 								</div>
 							</form>
+
+
+
+					<?php	}else if($mailSuccess){
+								
+								$checkemail = "Check yo Email";
+								echo $reply;
+								echo $checkemail;
+
+							} ?>
+						
 
 						<a href="#" class="remodal-close"></a>
 

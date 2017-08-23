@@ -1,19 +1,107 @@
 <?php
-// hi!!!!
-if(isset($_POST['submit'])) {
-	$to      = 'my.worktest94@gmail.com';
-	$subject = 'the subject';
-	$message = 'hello';
-	$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
 
-mail($to, $subject, $message, $headers);
+		$error_message_n = "";
+		$error_message_p1 = "";
+		$error_message_p2 = "";
+		$error_message_m = "";
+		$error_message_t = "";
+		$error_message_d = "";
+
+	if(isset($_POST['submit']))
+	{
+
+		echo ($error_message_n);
+		echo ($error_message_p1);
+		echo ($error_message_p2);
+		echo ($error_message_m);
+		echo ($error_message_t);
+		echo ($error_message_d);
 
 
-}
+		$name = $_POST['name'];
+		$phone = $_POST['phone'];
+		$email = $_POST['mail'];
+		$typeOfService = $_POST['typeOfService'];
+		$date = $_POST['date'];
+		$text = $_POST['text'];
+
+		$error_message_n = "";
+		$error_message_p1 = "";
+		$error_message_p2 = "";
+		$error_message_m = "";
+		$error_message_t = "";
+		$error_message_d = "";
+
+
+		// Name
+		if(strlen($name) < 2) {
+        	$error_message_n .= 'Name too short.';
+			// echo ($error_message);
+    	}
+
+
+		// PHONE
+		$error_message = "";
+    	$email_exp = "/[^0-9]/";
+ 
+    	if(preg_match($email_exp,$_POST['phone'])) {
+        	$error_message_p1 .= 'only numbers!';
+			// echo ($error_message);
+    	}
+
+
+		if(strlen($_POST['phone']) < 7) {
+        	$error_message_p2 .= 'phone too short.';
+			// echo ($error_message);
+    	}
+
+
+		// EMAIL 
+		$error_message = "";
+    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	
+    	if(!preg_match($email_exp,$email)) {
+        	$error_message_m .= 'Please enter email!';
+			// echo ($error_message);
+    	}
+
+
+
+		// Type Of Style
+
+		// if(empty($typeOfService) == $_POST['null']){
+		// 	$error_message_t .= "Type of style is empty. Please enter type of style.";
+		// 	// echo ($error_message);
+		// }
+		
+
+		// DATE 
+		if(empty($date)){
+			$error_message_d .= 'Please enter Date!';
+			// echo ($error_message);
+		}
+
+
+		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
+			$to      = 'my.worktest94@gmail.com';
+			$subject = 'the Client';
+			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
+			$headers = 'From:' . $email . "\r\n" .
+			'Reply-To:' . $email . "\r\n" .
+			'X-Mailer: PHP/' . phpversion();
+
+			mail($to, $subject, $message, $headers);
+
+			echo "check Your Email";
+
+		}else{
+
+			echo "reply";
+		}
+
+	}
+
 ?>
-
 
 <!DOCTYPE html> 
 <html>
@@ -118,51 +206,73 @@ mail($to, $subject, $message, $headers);
 						<img src="img/logo-half.png" id="bookin-workshop">
 						
 						<form id="form" name="orderform" method="post" action="index.php">
-						
+
 							<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
 
-							<div class="bookinput">
-								<label>Name</label>
-								<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
-							</div>
+								<div class="bookinput">
+									<label>Name</label>
+									<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
+								</div>
+								<!--ERRROR  -->
+									<?php echo ($error_message_n); ?>
+								<!--END-->
 
-							<div class="bookinput">
-								<label>Phone</label>
-								<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
-							</div>
 
-							<div class="bookinput">
-								<label>E-mail</label>
-								<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
-							</div>
+								<div class="bookinput">
+									<label>Phone</label>
+									<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
+								</div>
+								<!--ERRROR  -->
+									<?php echo ($error_message_p1); ?>
+									<?php echo ($error_message_p2); ?>
+								<!--END-->
 
-							<div class="styled-select">
-								<span class="wpcf7-form-control-wrap menu-471">
-									<select name="typeOfService" class="wpcf7-select" required="required">
-										<option value="Type of service">Type of service</option>
-										<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
-										<option value="Haircut">Haircut</option>
-										<option value="Beard Trim">Beard Trim</option>
-										<option value="Hot Shave">Hot Shave</option>
-									</select>
-								</span>
-							</div>
 
-							<div class="bookinputdate">
-								<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
-							</div>
 
-							<div class="booktextarea">
-								<label>Details</label>
-								<span class="your-message"><textarea name="details" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
-							</div>
+								<div class="bookinput">
+									<label>E-mail</label>
+									<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
+								</div>
+								<!--ERRROR  -->
+									<?php echo ($error_message_m); ?>
+								<!--END-->
 
-							<div class="col-sm-12">
-								<input class="blackbutton" type="submit" id="submit" name="submit" value="Send appointment">
-							</div>
 
-						</form>
-					
+
+								<div class="styled-select">
+									<span class="wpcf7-form-control-wrap menu-471">
+										<select name="typeOfService" class="wpcf7-select" required="required">
+											<option value="-" name="null">Type of service</option>
+											<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
+											<option value="Haircut">Haircut</option>
+											<option value="Beard Trim">Beard Trim</option>
+											<option value="Hot Shave">Hot Shave</option>
+										</select>
+									</span>
+								</div>
+								<!--ERRROR  -->
+									<?php echo ($error_message_t); ?>
+								<!--END-->
+
+
+
+								<div class="bookinputdate">
+									<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
+								</div>
+								<!--ERRROR  -->
+									<?php echo ($error_message_d); ?>
+								<!--END-->
+
+
+								<div class="booktextarea">
+									<label>Details</label>
+									<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
+								</div>
+
+								<div class="col-sm-12">
+									<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
+								</div>
+							</form>
 
 						<a href="#" class="remodal-close"></a>
 

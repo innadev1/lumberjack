@@ -55,8 +55,8 @@ iframe{
     margin: 0;
 }
 .first{
-	font-weight:bold;
-	background-color: white;
+	font-weight: bold;
+    background-color: white;
     color: black;
     letter-spacing: 0.2vw;
     font-stretch: condensed;
@@ -64,7 +64,7 @@ iframe{
     cursor: pointer;
     margin: 2vw;
     font-size: 1.1vw;
-    padding: 0.7vw 1.5vw;
+    padding: 0.5vw 1vw;
 }
 .second{
 	font-weight:bold;

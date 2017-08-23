@@ -90,13 +90,13 @@ a{
     letter-spacing: 0.3vw;
     font-stretch: condensed;
     border: none;
-    height: 4%;
-    width: 10%;
-    padding: 0.5vw 1vw;
+    height: auto;
+    width: auto;
+    padding: 0.4vw 1.5vw;
     border-radius: 0.3vw;
     opacity: 0.9;
-	margin-top: 6vw;
-   }
+    margin-top: 6vw;
+}
 button:focus{
 	outline: none;
 }

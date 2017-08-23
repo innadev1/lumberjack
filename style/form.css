@@ -1,5 +1,5 @@
 /*FORM*/
-.remodal-overlay p {
+.remodal-overlay p, .remodal-overlay_1 p, .remodal-overlay_2 p, .remodal-overlay_3 p, .remodal-overlay_4 p{
     margin: 20px 0 20px 0;
     font-family: SummerFont-Light, sans-serif;
     z-index: 2;
@@ -121,7 +121,7 @@ select {
     text-transform: uppercase;
     font-weight: 700;
     overflow: hidden;
-    background: url(../img/svg/dropdown.svg) 97% center no-repeat #707B5D;
+    background: url(../img/svg/dropdown.svg) 97% center no-repeat #bd9456;
     background-size: 20px;
     border: 1px solid #b1b8bd;
     outline: 4px solid #7a848e;
@@ -220,7 +220,7 @@ option {
 #bookin-workshop {
     width: 260px;
 }
-.remodal-overlay {
+.remodal-overlay, .remodal-overlay_1, .remodal-overlay_2, .remodal-overlay_3, .remodal-overlay_4 {
     position: fixed;
     top: 0;
     left: 0;
@@ -239,7 +239,7 @@ option {
     min-height: 0;
 }
 }
-.remodal-close {
+.remodal-close, .remodal-close_1, .remodal-close_2, .remodal-close_3, .remodal-close_4 {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -248,6 +248,46 @@ option {
     text-decoration: none;
 }
 .remodal-close::after {
+    display: block;
+    font-size: 28px;
+    content: "×";
+    line-height: 28px;
+    cursor: pointer;
+    color: rgb(112, 123, 93);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.remodal-close_1::after {
+    display: block;
+    font-size: 28px;
+    content: "×";
+    line-height: 28px;
+    cursor: pointer;
+    color: rgb(112, 123, 93);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.remodal-close_2::after {
+    display: block;
+    font-size: 28px;
+    content: "×";
+    line-height: 28px;
+    cursor: pointer;
+    color: rgb(112, 123, 93);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.remodal-close_3::after {
+    display: block;
+    font-size: 28px;
+    content: "×";
+    line-height: 28px;
+    cursor: pointer;
+    color: rgb(112, 123, 93);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.remodal-close_4::after {
     display: block;
     font-size: 28px;
     content: "×";

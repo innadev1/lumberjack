@@ -46,10 +46,33 @@ $(document).ready(function(){
 
 
 $("#book_an_appointment_1").click(function () {
-		$(".remodal-overlay").fadeIn(400);
-		$(".remodal-overlay").css("display","block");
+		$(".remodal-overlay_1").fadeIn(400);
+		$(".remodal-overlay_1").css("display","block");
 	});
-		$(".remodal-close").click(function () {
-		$(".remodal-overlay").css("display","none");
+		$(".remodal-close_1").click(function () {
+		$(".remodal-overlay_1").css("display","none");
+	});
+	
+$("#book_an_appointment_2").click(function () {
+		$(".remodal-overlay_2").fadeIn(400);
+		$(".remodal-overlay_2").css("display","block");
+	});
+		$(".remodal-close_2").click(function () {
+		$(".remodal-overlay_2").css("display","none");
+	});
+	
+$("#book_an_appointment_3").click(function () {
+		$(".remodal-overlay_3").fadeIn(400);
+		$(".remodal-overlay_3").css("display","block");
+	});
+		$(".remodal-close_3").click(function () {
+		$(".remodal-overlay_3").css("display","none");
+	});
+$("#book_an_appointment_4").click(function () {
+		$(".remodal-overlay_4").fadeIn(400);
+		$(".remodal-overlay_4").css("display","block");
+	});
+		$(".remodal-close_4").click(function () {
+		$(".remodal-overlay_4").css("display","none");
 	});
 });

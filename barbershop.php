@@ -223,7 +223,7 @@
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
 
-			<div class="remodal-overlay" style="display: none;">
+			<div class="remodal-overlay_1" style="display: none;">
 			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 			<img src="img/logo-half.png" id="bookin-workshop">
@@ -293,15 +293,15 @@
 				</div>
 
 				<div class="col-sm-12">
-					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
+					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>
 			</form>
-			<a href="#" class="remodal-close"></a>
+			<a href="#" class="remodal-close_1"></a>
 
 			</div>
 			</div>
 
-			<div class="remodal-overlay_1" style="display: none;">
+			<div class="remodal-overlay_" style="display: none;">
 			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 			<img src="img/logo-half.png" id="bookin-workshop">
@@ -370,7 +370,7 @@
 				</div>
 
 				<div class="col-sm-12">
-					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
+					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>
 			</form>
 			<a href="#" class="remodal-close"></a>
@@ -439,12 +439,15 @@
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons"><button>BOOK AN APPOINTMENT</button></div>
+				<div class="buttons"><button id="book_an_appointment_2">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons"><button>BARBERS</button></div>
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
 
+			<div class="remodal-overlay_2" style="display: none;">
+			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
+			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
 				<td><p>Adress: Pronksi 3, Tallin, Estonia-10124</p></td>
@@ -510,15 +513,17 @@
 				</div>
 
 				<div class="col-sm-12">
-					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
+					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>
 			</form>
+			<a href="#" class="remodal-close_2"></a>
+
+			</div>
+			</div>
 
 
 		</div>
 		
-
-
 		<div id="country">
 			<div class="country_name" id="c3"><h1>Russia</h1></div>
 
@@ -579,11 +584,15 @@
 		
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons"><button>BOOK AN APPOINTMENT</button></div>
+				<div class="buttons"><button id="book_an_appointment_3">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons"><button>BARBERS</button></div>
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
+			
+			<div class="remodal-overlay_3" style="display: none;">
+			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
+			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForRussian"> 				
 				
 				<td><p>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></td>
@@ -642,9 +651,13 @@
 				</div>
 
 				<div class="col-sm-12">
-					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
+					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>
-			</form>	
+			</form>
+			<a href="#" class="remodal-close_3"></a>
+
+			</div>
+			</div>
 
 		</div>
 

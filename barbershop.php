@@ -451,7 +451,7 @@
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
-				<td><p>Adress: Pronksi 3, Tallin, Estonia-10124</p></td>
+				<div class="button_appointment_hover"><button>Adress: Pronksi 3, Tallin, Estonia-10124</button></div>
 
 				<div class="bookinput">
 					<label>Name</label>
@@ -596,7 +596,7 @@
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForRussian"> 				
 				
-				<td><p>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></td>
+				<div class="button_appointment_hover"><button>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</button></div>
 
 				<div class="bookinput">
 					<label>Name</label>

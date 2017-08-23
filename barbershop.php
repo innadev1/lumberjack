@@ -228,10 +228,9 @@
 
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
-			
-				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</p></td>
-				<div class="buttons" id="book_an_appointment_4"><button>CHANGE Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
-
+				
+				<div class="button_appointment_hover"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
+				<div class="button_appointment" id="book_an_appointment_4"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
 
 				<div class="bookinput">
 					<label>Name</label>
@@ -308,8 +307,8 @@
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
-				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</p></td>
-				<div class="buttons" id="book_an_appointment_5"><button>CHANGE Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
+				<div class="button_appointment" id="book_an_appointment_5"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
+				<div class="button_appointment_hover"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
 
 				<div class="bookinput">
 					<label>Name</label>

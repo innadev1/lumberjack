@@ -42,4 +42,14 @@ $(document).ready(function(){
 		$("#map_russia").css("display","none");
 		$("#but3").css("display","none");
 	});
+
+
+
+$("#book_an_appointment_1").click(function () {
+		$(".remodal-overlay").fadeIn(400);
+		$(".remodal-overlay").css("display","block");
+	});
+		$(".remodal-close").click(function () {
+		$(".remodal-overlay").css("display","none");
+	});
 });

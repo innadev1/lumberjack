@@ -100,12 +100,13 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/form.css">
 		<title>barbershop</title>
 		
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/barbershop.js"></script>
-		
+
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
@@ -217,11 +218,15 @@
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons"><button>BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="book_an_appointment_1"><button>BOOK AN APPOINTMENT</button></div>
 				<div class="buttons"><button>BARBERS</button></div>
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
 
+			<div class="remodal-overlay" style="display: none;">
+			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
+			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
 				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</p></td>	
@@ -291,8 +296,15 @@
 					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
 				</div>
 			</form>
+			<a href="#" class="remodal-close"></a>
 
+			</div>
+			</div>
 
+			<div class="remodal-overlay_1" style="display: none;">
+			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
+			<img src="img/logo-half.png" id="bookin-workshop">
 			<form action="barbershop.php" method="post" name="formForEstonia"> 				
 			
 				<td><p>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</p></td>
@@ -361,6 +373,10 @@
 					<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
 				</div>
 			</form>
+			<a href="#" class="remodal-close"></a>
+
+			</div>
+			</div>
 		</div>
 
 			<!--Email To Estonia  -->

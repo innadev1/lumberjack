@@ -33,7 +33,7 @@
 		</div>
 		
 		<div id="info">
-			<div>
+			<div id="first_flex">
 				<button class="first">MAIN OFFICE</button>
 				<table align="center">
 					<tr>
@@ -51,7 +51,7 @@
 				</table>
 				<button id="trigger1" class="second">SHOW IN MAP</button>
 			</div>
-			<div>
+			<div id="second_flex">
 				<button class="first">MARKETING</button>
 				<table align="center">
 					<tr>
@@ -69,7 +69,7 @@
 				</table>
 				<button id="trigger2" class="second">SHOW IN MAP</button>
 			</div>
-			<div>
+			<div id="third_flex">
 				<button class="first">INTERNET SHOP/RETAIL</button>
 				<table align="center">
 					<tr>
@@ -87,7 +87,7 @@
 				</table>
 				<button id="trigger3" class="second">SHOW IN MAP</button>
 			</div>
-			<div>
+			<div id="four_flex">
 				<button class="first">FRANCHISE</button>
 				<table align="center">
 					<tr>
@@ -105,6 +105,13 @@
 				</table>
 				<button id="trigger4" class="second">SHOW IN MAP</button>
 			</div>
+		</div>
+		
+		<div class="round_buttons">
+			<button id="flip_1"></button>
+			<button id="flip_2"></button>
+			<button id="flip_3"></button>
+			<button id="flip_4"></button>
 		</div>
 		
 		<?php include 'assets/footer.php'; ?>

@@ -3,6 +3,8 @@
 		<link rel="stylesheet" type="text/css" href="style/our_story.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>our story</title>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>

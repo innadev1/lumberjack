@@ -1,5 +1,6 @@
 <?php
 // iandec.1222222
+		$mailSuccess = "";
 		$error_message_n = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
@@ -95,12 +96,11 @@
 				$mailSuccess = true;
 			}
 			
-
-			echo "check Your Email";
+			// echo "check Your Email";
 
 		}else{
 			
-			$reply = "reply";
+			// $reply = "reply";
 		}
 
 	}
@@ -133,6 +133,26 @@
                 });
 		</script>
 
+
+		<!--for time  -->
+
+		<meta charset = "utf-8">
+      	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      	<!-- Javascript -->
+      	<script>
+         	$(function() {
+            	$( "#datepicker-10" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
     </head>
 
 	<body>
@@ -198,23 +218,25 @@
 					<?php if(isset($_POST['emailsent'])) { ?>
 
 							style="display: block;" <?php
+							
 					}else{
 						?>	
 							style="display: none;" <?php
 					} ?>
 				>
-
-
+				
 					<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 						<img src="img/logo-half.png" id="bookin-workshop">
-
 						<?php if(!$mailSuccess){ ?>
 
+							
 							<form id="form" name="orderform" method="post" action="index.php">
 
-							<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
+								<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
 
+								
+							
 								<div class="bookinput">
 									<label>Name</label>
 									<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
@@ -263,33 +285,36 @@
 
 
 								<div class="bookinputdate">
-									<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
+									<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
+
+									<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" name="date" type = "text" readonly="readonly" id = "datepicker-10" placeholder="Pick your date"></spam>
+
 								</div>
 								<!--ERRROR  -->
 									<?php echo ($error_message_d); ?>
 								<!--END-->
-
-
+								
 								<div class="booktextarea">
 									<label>Details</label>
-									<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
+									<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
 								</div>
+												
+								
 
 								<div class="col-sm-12">
-									<div class="buttons"><button><input type="submit" name="emailsent" value="SENT"></button></div>
-								</div>
+									<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
+								</div>					
+								
 							</form>
 
-
-
-					<?php	}else if($mailSuccess){
+							<?php
+							}else if($mailSuccess){
 								
-								$checkemail = "Check yo Email";
-								echo $reply;
+								$checkemail = "<p>Check yo Email</p>";
+								
 								echo $checkemail;
 
-							} ?>
-						
+							} ?>					
 
 						<a href="#" class="remodal-close"></a>
 

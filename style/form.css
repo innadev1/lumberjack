@@ -320,3 +320,13 @@ option {
     padding: 10px;
     font-size: 18px;
 }
+.booktextarea textarea {
+    width: 50%;
+    float: left;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'LumberjackInlineRough';
+    padding: 10px;
+    font-size: 18px;
+}

@@ -125,12 +125,12 @@ a{
 .box_li ul, li{list-style: none;}
 .box_li{
 	display: block;
-    font-size: 33px;
+    font-size: 5vw;
     font-family: "Roboto", sans-serif;
     color: rgba(203, 148, 78, 0.6);
-    line-height: 57px;
+    line-height: 9vw;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0;
 }
 .box_li a{
 	font-weight: bold;
@@ -141,7 +141,7 @@ a{
 .information {
 	padding-top: 5vw;
     text-align: center;
-    font-size: 24px;
+    font-size: 4vw;
     padding-right: 0;
     text-transform: uppercase;
     color: rgba(203, 148, 78, 1);

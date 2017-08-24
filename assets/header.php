@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style/header.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 <div id="information">

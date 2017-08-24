@@ -36,7 +36,7 @@
 
 		// Name
 		if(strlen($name) < 2) {
-        	$error_message_n .= 'Name too short.';
+        	$error_message_n .= '<p class="red">Name too short.</p>';
 			// echo ($error_message);
     	}
 
@@ -46,13 +46,13 @@
     	$email_exp = "/[^0-9]/";
  
     	if(preg_match($email_exp,$_POST['phone'])) {
-        	$error_message_p1 .= 'only numbers!';
+        	$error_message_p1 .= '<p class="red">only numbers!</p>';
 			// echo ($error_message);
     	}
 
 
 		if(strlen($_POST['phone']) < 7) {
-        	$error_message_p2 .= 'phone too short.';
+        	$error_message_p2 .= '<p class="red">Phone too short!</p>';
 			// echo ($error_message);
     	}
 
@@ -62,7 +62,7 @@
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
     	if(!preg_match($email_exp,$email)) {
-        	$error_message_m .= 'Please enter email!';
+        	$error_message_m .= '<p class="red">Please enter email!</p>';
 			// echo ($error_message);
     	}
 
@@ -78,7 +78,7 @@
 
 		// DATE 
 		if(empty($date)){
-			$error_message_d .= 'Please enter Date!';
+			$error_message_d .= '<p class="red">Please enter Date!</p>';
 			// echo ($error_message);
 		}
 
@@ -298,7 +298,6 @@
 									<label>Details</label>
 									<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
 								</div>
-												
 								
 
 								<div class="col-sm-12">
@@ -310,7 +309,7 @@
 							<?php
 							}else if($mailSuccess){
 								
-								$checkemail = "<p>Check yo Email</p>";
+								$checkemail = "<p>Check your Email</p>";
 								
 								echo $checkemail;
 

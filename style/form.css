@@ -330,3 +330,9 @@ option {
     padding: 10px;
     font-size: 18px;
 }
+.red{
+	color: red !important;
+	font-size: 20px !important;
+	font-family: Lato, Helvetica, sans-serif !important;
+	margin: 0 !important;
+}

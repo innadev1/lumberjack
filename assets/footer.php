@@ -2,7 +2,7 @@
 
 <div id="footer">
 	<div class="footer">
-		<div><img src="img/logo.png" width="9%"></div>
+		<div id="logo_footer"><img src="img/logo.png" width="9%"></div>
 
 <div class="links">
 	<ul>

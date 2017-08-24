@@ -24,3 +24,31 @@
 	width: 2%;
 	margin: 0;
 }
+
+@media screen and (max-width: 900px){
+#footer {
+    height: 140vw;
+}
+#logo_footer img{
+	width: 50%;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+.links{
+	padding-top: 5vw;
+    padding-bottom: 15vw;
+}
+.links ul{
+	display: flex;
+    flex-direction: column;
+}
+.links img{
+	width: 10%;
+	padding: 5vw;
+}
+#footer p {
+    color: #c59a5a;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+}

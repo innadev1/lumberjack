@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="style/header.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 <div id="information">
 	<div class="information">
@@ -18,7 +19,44 @@
 <div id="logo">
 	<a href="index.php"><img src="img/logo.png"></a>
 </div>
-			
+
+<div class="menu"><a id="toggler" href="#"><img src="img/menu.png"></a></div>
+<div id="box" style="display: none;">
+	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="img/close.png"></div></a>
+    <div>
+        <ul class="box_li">
+			<li><a href="index.php">home</a></li>
+			<li><a href="our_story.php">our story</a></li>
+			<li><a href="#">online store</a></li>
+			<li><a href="barbershop.php">barbrshop</a></li>
+			<li><a href="haircuts.php">haircuts</a></li>
+			<li><a href="lifestyle.php">lifestyle</a></li>
+			<li><a href="contacts.php">contact us</a></li>
+        </ul>
+    </div>
+	<div class="information">
+			<p>franchise</p>
+		<ul>
+			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
+			<li class="border"></li>
+			<li><a href="#"><img src="img/bag_brown.png" width="22px" style="padding-right:5px; padding-left:5px"></a></li>
+			<li class="border"></li>
+			<li><a style="padding-left:5px">lv</a></li>
+		</ul>
+	</div>
+</div>
+		<script>
+			$(document).ready(function(){
+				$("#toggler").click(function () {
+					$("#box").css("display","block");
+					$("#toggler_close").css("display","block");
+			});
+			$("#toggler_close").click(function () {
+					$("#box").css("display","none");
+					$("#toggler_close").css("display","none");
+			});
+			});
+		</script>		
 
 <div id="navigation">
 	<div class="navigation">

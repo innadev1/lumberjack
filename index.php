@@ -7,40 +7,31 @@
 		$error_message_m = "";
 		$error_message_t = "";
 		$error_message_d = "";
-
-
 	if(isset($_POST['emailsent']))
 	{
-
 		echo ($error_message_n);
 		echo ($error_message_p1);
 		echo ($error_message_p2);
 		echo ($error_message_m);
 		echo ($error_message_t);
 		echo ($error_message_d);
-
 		$name = $_POST['name'];
 		$phone = $_POST['phone'];
 		$email = $_POST['mail'];
 		$typeOfService = $_POST['typeOfService'];
 		$date = $_POST['date'];
 		$text = $_POST['text'];
-
 		$error_message_n = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
 		$error_message_m = "";
 		$error_message_t = "";
 		$error_message_d = "";
-
-
 		// Name
 		if(strlen($name) < 2) {
         	$error_message_n .= '<p class="red">Name too short.</p>';
 			// echo ($error_message);
     	}
-
-
 		// PHONE
 		$error_message = "";
     	$email_exp = "/[^0-9]/";
@@ -49,14 +40,10 @@
         	$error_message_p1 .= '<p class="red">only numbers!</p>';
 			// echo ($error_message);
     	}
-
-
 		if(strlen($_POST['phone']) < 7) {
         	$error_message_p2 .= '<p class="red">Phone too short!</p>';
 			// echo ($error_message);
     	}
-
-
 		// EMAIL 
 		$error_message = "";
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -65,25 +52,18 @@
         	$error_message_m .= '<p class="red">Please enter email!</p>';
 			// echo ($error_message);
     	}
-
-
-
 		// Type Of Style
-
 		if($_POST['typeOfService'] == '-'){
 			$error_message_t .= '<p class="red">Type of style is empty. Please enter type of style.!</p>';
 			// echo ($error_message);
 		}
 		
-
 		// DATE 
 		if(empty($date)){
 			$error_message_d .= '<p class="red">Please enter Date!</p>';
 			// echo ($error_message);
 		}
-
 		$mailSuccess = false;
-
 		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
 			$to      = 'my.worktest94@gmail.com';
 			$subject = 'the Client';
@@ -91,35 +71,32 @@
 			$headers = 'From:' . $email . "\r\n" .
 			'Reply-To:' . $email . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
-
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
 			
 			// echo "check Your Email";
-
 		}else{
 			
 			// $reply = "reply";
 		}
-
 	}
-
 ?>
 
 <!DOCTYPE html> 
 <html>
-    <head>       
+    <head>     
+		
 		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
         <title>lumberjack</title>
 		
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
 		<script type="text/javascript" src="js/open_close.js"></script>
 
         <script type="text/javascript">
-                $(document).ready(function() {                              
+                $(document).ready(function() { 
 					$('.container').Carousel({
 					visible: 3,
 					rotateBy: 1,
@@ -139,12 +116,13 @@
 		<meta charset = "utf-8">
       	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
          rel = "stylesheet">
-      	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-      	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      	 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> 
+      	 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
       
       	<!-- Javascript -->
       	<script>
          	$(function() {
+				 
             	$( "#datepicker-10" ).datepicker({
 					minDate: 0,
 					changeMonth:true,
@@ -312,7 +290,6 @@
 								$checkemail = "<p>Check your Email</p>";
 								
 								echo $checkemail;
-
 							} ?>					
 
 						<a href="#" class="remodal-close"></a>

@@ -50,10 +50,16 @@
 				$("#toggler").click(function () {
 					$("#box").css("display","block");
 					$("#toggler_close").css("display","block");
+					$("#logo").css("position","fixed");
+					$("#logo").css("z-index","10");
+					$("#logo").css("width","100%");
 			});
 			$("#toggler_close").click(function () {
 					$("#box").css("display","none");
 					$("#toggler_close").css("display","none");
+					$("#logo").css("position","relative");
+					$("#logo").css("z-index","inherit");
+					$("#logo").css("width","inherit");
 			});
 			});
 		</script>		

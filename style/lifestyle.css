@@ -145,3 +145,82 @@
     opacity: 0.9;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 900px){
+#banner {
+    height: 140vw;
+    background-image: url(../img/background_5_mobile.png);
+    background-position: 70%;
+}
+.caption {
+    top: 95vw;
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+.caption h1 {
+    font-size: 9vw;
+    letter-spacing: 2vw;
+    padding-bottom: 2vw;
+}
+.caption h2 {
+    font-size: 3vw;
+    letter-spacing: 2vw;
+}
+.caption img{display: none;}
+.image, .image_2 {
+    position: absolute;
+    left: -64%;
+    right: 0;
+    width: 200%;
+}
+.image img, .image_2 img {
+    width: 100%;
+}
+.main_info{
+	position: relative;
+}
+.blocks {
+    height: 170vw;
+	position: relative;
+}
+.rectangle, .rectangle_2 {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 56px 14px rgba(1, 1, 1, 0.2);
+    width: auto;
+    height: 80vw;
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    margin-top: 86vw;
+}
+.rectangle h1, .rectangle_2 h1 {
+    font-size: 6vw;
+    line-height: 7vw;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.rectangle p, .rectangle_2 p {
+    font-size: 2.5vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(5, 5, 5);
+    line-height: 3.2vw;
+    text-align: justify;
+    margin: 0;
+    padding: 6vw;
+	padding-top:0;
+    padding-bottom: 2vw;
+}
+.date{display:none;}
+.text{margin-top: 5vw;}
+.button button, .button1 button {
+    font-size: 4vw;
+    width: auto;
+    padding: 2vw 9vw;
+
+}
+}

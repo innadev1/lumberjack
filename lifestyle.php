@@ -21,7 +21,7 @@
 			<div class="blocks">
 				<div class="rectangle">
 				<div class="text">
-				<p>03.09.2017</p>
+				<div class="date"><p>03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -37,7 +37,7 @@
 			<div class="blocks">
 				<div class="rectangle_2">
 				<div class="text">
-				<p style="text-align:right;">03.09.2017</p>
+				<div class="date"><p style="text-align:right;">03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -53,7 +53,7 @@
 			<div class="blocks">
 				<div class="rectangle">
 				<div class="text">
-				<p>03.09.2017</p>
+				<div class="date"><p>03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -74,7 +74,7 @@
 			<div class="blocks">
 				<div class="rectangle_2">
 				<div class="text">
-				<p style="text-align:right;">03.09.2017</p>
+				<div class="date"><p style="text-align:right;">03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -90,7 +90,7 @@
 			<div class="blocks">
 				<div class="rectangle">
 				<div class="text">
-				<p>03.09.2017</p>
+				<div class="date"><p>03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -106,7 +106,7 @@
 			<div class="blocks">
 				<div class="rectangle_2">
 				<div class="text">
-				<p style="text-align:right;">03.09.2017</p>
+				<div class="date"><p style="text-align:right;">03.09.2017</p></div>
 				<h1>23 EXPERT HAIR CARE<br>TIPS FOR MAN</h1>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 

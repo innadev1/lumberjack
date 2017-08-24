@@ -199,7 +199,7 @@ body{
     margin-top: 86vw;
 }
 .rectangle h1, .rectangle_2 h1 {
-    font-size: 7vw;
+    font-size: 6vw;
     line-height: 8vw;
     text-align: center;
     margin-top: 3vw;
@@ -209,7 +209,7 @@ body{
     font-size: 2.5vw;
     font-family: "OpenSans", sans-serif;
     color: rgb(5, 5, 5);
-    line-height: inherit;
+    line-height: 3.2vw;
     text-align: justify;
     margin: 0;
     padding: 6vw;

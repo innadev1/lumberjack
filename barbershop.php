@@ -1,22 +1,28 @@
 <?php
 
-		$error_message_n = "";
-		$error_message_p1 = "";
-		$error_message_p2 = "";
-		$error_message_m = "";
-		$error_message_t = "";
-		$error_message_d = "";
+	$mailSuccess = "";
+	$error_message_n = "";
+	$error_message_p1 = "";
+	$error_message_p2 = "";
+	$error_message_m = "";
+	$error_message_t = "";
+	$error_message_d = "";
 
 	if(isset($_POST['emailsent']))
 	{
 
+		echo ($error_message_n);
+		echo ($error_message_p1);
+		echo ($error_message_p2);
+		echo ($error_message_m);
+		echo ($error_message_t);
+		echo ($error_message_d);
 		$name = $_POST['name'];
 		$phone = $_POST['phone'];
 		$email = $_POST['mail'];
 		$typeOfService = $_POST['typeOfService'];
 		$date = $_POST['date'];
 		$text = $_POST['text'];
-
 		$error_message_n = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
@@ -24,56 +30,43 @@
 		$error_message_t = "";
 		$error_message_d = "";
 
-
 		// Name
 		if(strlen($name) < 2) {
-        	$error_message_n .= 'Name too short.';
+			$error_message_n .= '<p class="red">Name too short.</p>';
 			// echo ($error_message);
-    	}
-
-
+		}
 		// PHONE
 		$error_message = "";
-    	$email_exp = "/[^0-9]/";
- 
-    	if(preg_match($email_exp,$_POST['phone'])) {
-        	$error_message_p1 .= 'only numbers!';
+		$email_exp = "/[^0-9]/";
+
+		if(preg_match($email_exp,$_POST['phone'])) {
+			$error_message_p1 .= '<p class="red">only numbers!</p>';
 			// echo ($error_message);
-    	}
-
-
+		}
 		if(strlen($_POST['phone']) < 7) {
-        	$error_message_p2 .= 'phone too short.';
+			$error_message_p2 .= '<p class="red">Phone too short!</p>';
 			// echo ($error_message);
-    	}
-
-
+		}
 		// EMAIL 
 		$error_message = "";
-    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-	
-    	if(!preg_match($email_exp,$email)) {
-        	$error_message_m .= 'Please enter email!';
+		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+
+		if(!preg_match($email_exp,$email)) {
+			$error_message_m .= '<p class="red">Please enter email!</p>';
 			// echo ($error_message);
-    	}
-
-
-
+		}
 		// Type Of Style
-
-		// if(empty($typeOfService) == $_POST['null']){
-		// 	$error_message_t .= "Type of style is empty. Please enter type of style.";
-		// 	// echo ($error_message);
-		// }
-		
-
-		// DATE 
-		if(empty($date)){
-			$error_message_d .= 'Please enter Date!';
+		if($_POST['typeOfService'] == '-'){
+			$error_message_t .= '<p class="red">Type of style is empty. Please enter type of style.!</p>';
 			// echo ($error_message);
 		}
 
-
+		// DATE 
+		if(empty($date)){
+			$error_message_d .= '<p class="red">Please enter Date!</p>';
+			// echo ($error_message);
+		}
+		$mailSuccess = false;
 		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
 			$to      = 'my.worktest94@gmail.com';
 			$subject = 'the Client';
@@ -81,17 +74,34 @@
 			$headers = 'From:' . $email . "\r\n" .
 			'Reply-To:' . $email . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
-
-			mail($to, $subject, $message, $headers);
-
-			echo "check Your Email";
-
-		}else{
-
-			echo "reply";
-		}
-
+			if(mail($to, $subject, $message, $headers)){
+				$mailSuccess = true;
+			}
+		
+		// echo "check Your Email";
+	}else{
+		
+		// $reply = "reply";
 	}
+	}
+
+
+	if(isset($_POST['emailsent'])){
+
+		$stuff = $_POST['emailsent'];
+		
+        if($stuff == "riga1"){
+            $adress = "my.worktest@gmail.com";
+        }else if($stuff == "riga2"){
+			$adress = "@2";
+        }
+        else if($stuff == "estonia"){
+			$adress = "@3";
+        }
+        else if($stuff == "russia"){
+			$adress = "@4";
+        }
+    }
 
 ?>
 
@@ -106,6 +116,65 @@
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/barbershop.js"></script>
+		
+		<!--for time  -->
+
+		<meta charset = "utf-8">
+      	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      	 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> 
+      	 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+      
+      	<!-- Javascript -->
+      	<script>
+         	$(function() {
+				 
+            	$( "#datepicker-10" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+				 
+            	$( "#datepicker-11" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+				 
+            	$( "#datepicker-12" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+				 
+            	$( "#datepicker-13" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		
 
 	</head>
 	<body>
@@ -218,166 +287,15 @@
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons" id="book_an_appointment_1"><button>BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="book_an_appointment_1"><button class="book" id="riga1" stuff="riga1">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2">BOOK AN APPOINTMENT</button></div>
+
 				<div class="buttons"><button>BARBERS</button></div>
+				<!-- <button1 class="book" id="riga1" spot="riga1"> -->
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
 
-			<div class="remodal-overlay_1" style="display: none;">
-			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
-
-			<img src="img/logo-half.png" id="bookin-workshop">
-			<form action="barbershop.php" method="post" name="formForEstonia"> 				
-				
-				<div class="button_appointment_hover"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
-				<div class="button_appointment" id="book_an_appointment_4"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
-
-				<div class="bookinput">
-					<label>Name</label>
-					<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-				<!--END-->
-
-
-				<div class="bookinput">
-					<label>Phone</label>
-					<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_p1); ?>
-					<?php echo ($error_message_p2); ?>
-				<!--END-->
-
-
-
-				<div class="bookinput">
-					<label>E-mail</label>
-					<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
-				<!--END-->
-
-
-
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" name="null">Type of service</option>
-							<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
-							<option value="Haircut">Haircut</option>
-							<option value="Beard Trim">Beard Trim</option>
-							<option value="Hot Shave">Hot Shave</option>
-						</select>
-					</span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
-				<!--END-->
-
-
-
-				<div class="bookinputdate">
-					<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_d); ?>
-				<!--END-->
-
-
-				<div class="booktextarea">
-					<label>Details</label>
-					<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
-				</div>
-
-				<div class="col-sm-12">
-					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
-				</div>
-			</form>
-			<a href="#" class="remodal-close_1"></a>
-
-			</div>
-			</div>
-
-			<div class="remodal-overlay_4" style="display: none;">
-			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
-
-			<img src="img/logo-half.png" id="bookin-workshop">
-			<form action="barbershop.php" method="post" name="formForEstonia"> 				
-			
-				<div class="button_appointment" id="book_an_appointment_5"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (1)</button></div>
-				<div class="button_appointment_hover"><button>Adress: Riharda Vagnera iela 11, Riga, Latvia (2)</button></div>
-
-				<div class="bookinput">
-					<label>Name</label>
-					<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-				<!--END-->
-
-
-				<div class="bookinput">
-					<label>Phone</label>
-					<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_p1); ?>
-					<?php echo ($error_message_p2); ?>
-				<!--END-->
-
-
-
-				<div class="bookinput">
-					<label>E-mail</label>
-					<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
-				<!--END-->
-
-
-
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" name="null">Type of service</option>
-							<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
-							<option value="Haircut">Haircut</option>
-							<option value="Beard Trim">Beard Trim</option>
-							<option value="Hot Shave">Hot Shave</option>
-						</select>
-					</span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
-				<!--END-->
-
-
-
-				<div class="bookinputdate">
-					<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_d); ?>
-				<!--END-->
-
-
-				<div class="booktextarea">
-					<label>Details</label>
-					<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
-				</div>
-
-				<div class="col-sm-12">
-					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
-				</div>
-			</form>
-			<a href="#" class="remodal-close_4"></a>
-
-			</div>
-			</div>
+		
 		</div>
 
 			<!--Email To Estonia  -->
@@ -440,86 +358,9 @@
 				
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons"><button id="book_an_appointment_2">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="book_an_appointment_3"><button class="book" id="estonia" stuff="estonia">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons"><button>BARBERS</button></div>
 				<div class="buttons"><button>REWIEWS</button></div>
-			</div>
-
-			<div class="remodal-overlay_2" style="display: none;">
-			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
-
-			<img src="img/logo-half.png" id="bookin-workshop">
-			<form action="barbershop.php" method="post" name="formForEstonia"> 				
-			
-				<div class="button_appointment_hover"><button>Adress: Pronksi 3, Tallin, Estonia-10124</button></div>
-
-				<div class="bookinput">
-					<label>Name</label>
-					<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-				<!--END-->
-
-
-				<div class="bookinput">
-					<label>Phone</label>
-					<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_p1); ?>
-					<?php echo ($error_message_p2); ?>
-				<!--END-->
-
-
-
-				<div class="bookinput">
-					<label>E-mail</label>
-					<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
-				<!--END-->
-
-
-
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" name="null">Type of service</option>
-							<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
-							<option value="Haircut">Haircut</option>
-							<option value="Beard Trim">Beard Trim</option>
-							<option value="Hot Shave">Hot Shave</option>
-						</select>
-					</span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
-				<!--END-->
-
-
-
-				<div class="bookinputdate">
-					<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_d); ?>
-				<!--END-->
-
-
-				<div class="booktextarea">
-					<label>Details</label>
-					<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
-				</div>
-
-				<div class="col-sm-12">
-					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
-				</div>
-			</form>
-			<a href="#" class="remodal-close_2"></a>
-
-			</div>
 			</div>
 
 
@@ -585,52 +426,64 @@
 		
 			<div class="flex">
 				<div class="buttons"><button>SERVICES</button></div>
-				<div class="buttons"><button id="book_an_appointment_3">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="book_an_appointment_4"><button class="book" id="russia" stuff="russia">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons"><button>BARBERS</button></div>
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
 			
-			<div class="remodal-overlay_3" style="display: none;">
-			<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
-			<img src="img/logo-half.png" id="bookin-workshop">
-			<form action="barbershop.php" method="post" name="formForRussian"> 				
-				
-				<div class="button_appointment_hover"><button>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</button></div>
+		</div>
 
+		<div class="remodal-overlay" style="display: none;">
+				<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
+					<img src="img/logo-half.png" id="bookin-workshop">
+					<?php if(!$mailSuccess){ ?>
+									
+			<form id="form" name="orderform" method="post" action="barbershop.php">
+
+				<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
+
+				<div class="appointment_place"><p>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></div>
+			
 				<div class="bookinput">
 					<label>Name</label>
-					<span class=" your-name"><input type="text" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
+					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_n); ?>
 				<!--END-->
 
+
 				<div class="bookinput">
 					<label>Phone</label>
-					<span class="your-name"><input type="tel" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
+					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone'])){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_p1); ?>
 					<?php echo ($error_message_p2); ?>
 				<!--END-->
 
+
+
 				<div class="bookinput">
 					<label>E-mail</label>
-					<span class="your-name"><input type="text" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
+					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail'])){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_m); ?>
 				<!--END-->
 
+
+
 				<div class="styled-select">
 					<span class="wpcf7-form-control-wrap menu-471">
 						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" name="null">Type of service</option>
-							<option value="Haircut+Beard Trim">Haircut+Beard Trim</option>
-							<option value="Haircut">Haircut</option>
-							<option value="Beard Trim">Beard Trim</option>
-							<option value="Hot Shave">Hot Shave</option>
+							<option value="-" >Type of service</option>
+							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim') echo "selected"; ?> >Haircut+Beard Trim</option>
+							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut') echo "selected"; ?> >Haircut</option>
+							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim') echo "selected"; ?> >Beard Trim</option>
+							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave') echo "selected"; ?> >Hot Shave</option>
 						</select>
 					</span>
 				</div>
@@ -639,29 +492,78 @@
 				<!--END-->
 
 
+
 				<div class="bookinputdate">
-					<label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> 
+					<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
+
+					<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date'])){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-13" placeholder="Pick your date"></spam>
+
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_d); ?>
 				<!--END-->
-
+				
 				<div class="booktextarea">
 					<label>Details</label>
-					<span class="your-message"><input text="type" name="text" class="wpcf7-date"></input></span>
+					<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
 				</div>
+				
 
 				<div class="col-sm-12">
-					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
-				</div>
+
+					<input type="hidden" id="hidden_input" name ='book_place' value="">
+
+					<input class="blackbutton" type="submit" name="emailsent" value="send" placeholder="send">
+				</div>					
+				
 			</form>
-			<a href="#" class="remodal-close_3"></a>
 
+			<?php
+			}else if($mailSuccess){
+				
+				$checkemail = "<p>Check your Email</p>";
+				
+				echo $checkemail;
+			} ?>
+					<a href="#" class="remodal-close_1"></a>
+
+				</div>
 			</div>
-			</div>
 
-		</div>
-
+	
 		<?php include 'assets/footer.php'; ?>
 	</body>
+	<script>
+		$(function(){
+			$('.book').click(function(){
+				val = $(this).attr('stuff')
+				ind = $(this).parent().parent().index()
+				p = $('.appointment_place p')			
+				hiddenInput =$('#hidden_input') 	
+				console.log("daww")
+				$(".remodal-overlay").css("display", "block")
+
+				stuff = $(this).attr('stuff')
+
+				if(stuff=='riga1'){
+					p.html('rezervacija riga1')
+					hiddenInput.attr('value','riga1')
+					
+
+				}else if(stuff=='riga2'){
+					p.html('rezervacija riga2')
+
+				}else if(stuff=='estonia'){
+					p.html('rezervacija estonia')
+
+				}else if(stuff=='russian'){
+					p.html('rezervacija russian')
+			}
+			})
+
+			$(".remodal-close_1").click(function(){
+				$(".remodal-overlay").css("display", "none")
+			})
+		})
+		</script>
 </html>

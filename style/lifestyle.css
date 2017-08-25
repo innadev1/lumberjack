@@ -186,17 +186,18 @@ body{
 .image img, .image_2 img {
     width: 100%;
 }
-.main_info{
-	position: relative;
+#main_info, #main_info_2 {
+    padding: 0;
 }
 .blocks {
     height: 170vw;
 	position: relative;
+	padding-top: 5vw;
 }
 .rectangle, .rectangle_2 {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 3px 56px 14px rgba(1, 1, 1, 0.2);
-    width: auto;
+    width: 80%;
     height: 80vw;
     z-index: 1;
     position: absolute;

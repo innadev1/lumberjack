@@ -166,7 +166,18 @@
 				</div>
 			</div>
 
-
+			<div id="banner_mobile">
+				<div class="caption">
+					<h1>LUMBERJACK</h1>
+					<h2>NEW TRADITIONAL BARBERSHOP</h2>
+				</div>
+				<div class="round_buttons">
+					<button id="flip_1"></button>
+					<button id="flip_2"></button>
+					<button id="flip_3"></button>
+				</div>
+			</div>
+				
 			<div class="wrap">
 				<div class="photo photo_1">
 					<div style="position:relative">
@@ -174,7 +185,8 @@
 						<div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at diam sed sapien bibendum pharetra. In vel purus sit amet nibiam lorem. Etiam egestas sit amet elit vel bibendum. Nulla non is. Interdum et malesuada fames ac ante ipsum primis in fau. </p>
+							<p>All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.
+							</p>
 						</div>
 
 						<button class="read_more_1">read more</button>

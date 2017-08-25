@@ -111,37 +111,16 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style/haircuts.css">
-		<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
-		<title>online shop</title>
- 
-			<link rel="stylesheet" type="text/css" href="style/form.css">
-         <title>lumberjack</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/form.css">
+		<title>haircuts</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
-		<script type="text/javascript" src="js/open_close.js"></script>
-
-        <script type="text/javascript">
-                $(document).ready(function() {                              
-					$('.container').Carousel({
-					visible: 3,
-					rotateBy: 1,
-					speed: 1000,
-					btnNext: '#next',
-					btnPrev: '#prev',                       
-					auto: false,                        
-					backslide: true,    
-					margin: 10                      
-					});
-                });
-		</script> 
-
 
 		<!--for time  -->
 
 		<meta charset = "utf-8">
-      	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
-         rel = "stylesheet">
+      	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
       	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
       
@@ -159,7 +138,7 @@
 
 
 <!--parnem attiecigo iespeju  -->
-		  	 <script>
+		  	<script>
 				$(function(){
 					$('.button').click(function(){
 						val = $(this).attr('haircutsn')
@@ -193,7 +172,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" value="something" haircutsn = "name1" onclick="myFunction()">BOOK AN APPOINTMENT</button>
+						<button id="b1" class="button" value="something" haircutsn = "name1" onclick="myFunction()">BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_2">
@@ -272,12 +251,13 @@
 		</div>
 		
 		<div class="button_more"><button id="button">MORE</button></div>
+		
 		<?php include 'assets/footer.php'; ?>
 
 		<!--FORMA  -->
 
-		<div class="remodal" data-remodal-id="modal" style="visibility: visible; position:fixed; z-index:10;
-			top:0; left:0;">
+		<div class="remodal-overlay" style="display: none;">
+		<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 			<img src="img/logo-half.png" id="bookin-workshop">
 			<?php if(!$mailSuccess){ ?>
@@ -373,15 +353,20 @@
 			<a href="#" class="remodal-close"></a>
 
 		</div>
+		</div>
 
-
-
-
-
-
-
-
-
+		<script>
+			$(document).ready(function(){
+				$(".button").click(function () {
+				$(".remodal-overlay").css("display","none");
+				$(".remodal-overlay").fadeIn(400);
+				$(".remodal-overlay").css("display","block");
+				});
+				$(".remodal-close").click(function () {
+				$(".remodal-overlay").css("display","none");
+				});
+			});
+		</script>
 
 	</body>
 </html>

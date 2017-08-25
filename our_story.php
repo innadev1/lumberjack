@@ -31,6 +31,7 @@
 				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
 				</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image"><img src="img/gal/1.jpg"></div>
 			</div>
@@ -48,6 +49,7 @@
 				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
 				</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image_2"><img src="img/gal/2.jpg"></div>
 			</div>
@@ -65,6 +67,7 @@
 				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
 				</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image"><img src="img/gal/1.jpg"></div>
 			</div>

@@ -73,3 +73,10 @@
     color: white;
     border: 1px solid rgb(189, 148, 86);
 }
+@media screen and (max-width: 900px){
+#banner {
+    height: 90vw;
+    background-image: url(../img/background_6_mobile.jpg);
+    background-position: 70%;
+}
+}

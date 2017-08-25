@@ -147,6 +147,21 @@ body{
 	text-align: justify;
 	margin: 0;
 }
+.this_button button{
+	background-color: rgba(189, 148, 86, 0.7);
+    color: rgba(255,255,255,1);
+    font-size: 1vw;
+    font-stretch: condensed;
+    border: none;
+    padding: 0.5vw 0.8vw;
+    cursor: pointer;
+    font-weight: bold;
+}
+.this_button{
+	text-align: right;
+    margin-top: -3vw;
+    margin-right: 1vw;
+}
 @media screen and (max-width: 900px){
 #banner {
     height: 140vw;
@@ -215,6 +230,19 @@ body{
     padding: 6vw;
     padding-top: 0;
 }
-
-
+.this_button {
+    text-align: right;
+    margin-top: -10vw;
+    margin-right: 3vw;
+}
+.this_button button {
+    background-color: rgba(189, 148, 86, 0.7);
+    color: rgba(255,255,255,1);
+    font-size: 3vw;
+    font-stretch: condensed;
+    border: none;
+    padding: 1.5vw 2.8vw;
+    cursor: pointer;
+    font-weight: bold;
+}
 }

@@ -168,7 +168,7 @@
 			<div class="wrap">
 				<div class="photo photo_1">
 					<div class="text">
-						<h1>1.</h1>
+						<h1>HairStyle 1.</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>

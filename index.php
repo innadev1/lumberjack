@@ -372,6 +372,12 @@
 				}
 			});
 			</script>
+			
+			<div class="swiping_buttons">
+					<img id="Left" src="img/leftArr.png" />
+					<img id="Right" src="img/rightArr.png" />
+			</div>
+			
 			<div id="gallery">
 				<script type="text/javascript" src="js/click-carousel.js"></script>
 				<script type="text/javascript">

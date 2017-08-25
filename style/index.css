@@ -367,7 +367,7 @@ cursor: pointer;
 }
 }
 
-#banner_mobile{display:none;}
+#banner_mobile, .swiping_buttons{display:none;}
 @media screen and (max-width: 900px){
 #banner, #gallery{display:none;}
 #banner_mobile {
@@ -530,4 +530,20 @@ h4 {
     font-weight: 600;
 }
 .product_2, .product_3, .product_4, .product_5{display:none;}
+.product{margin-bottom: 10vw;}
+.swiping_buttons {
+    display: block;
+    position: relative;
+    bottom: 90vw;
+}
+#Left{
+	position: relative;
+    left: 0px;
+    cursor: pointer;
+}
+#Right{
+	position: absolute;
+    right: 0;
+    cursor: pointer;
+}
 }

@@ -336,3 +336,92 @@ option {
 	font-family: Lato, Helvetica, sans-serif !important;
 	margin: 0 !important;
 }
+@media screen and (max-width: 900px){
+.bookinput label {
+    float: none;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'LumberjackInlineRough';
+    color: #4f6675;
+    letter-spacing: 1px;
+    text-align: right;
+    padding: 10px;
+    padding-left: 0px;
+    border-right: none;
+}
+.bookinput input {
+    width: 50%;
+    float: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'LumberjackInlineRough';
+    padding: 10px;
+    font-size: 18px;
+    color: #4f6775;
+}
+.bookinputdate label {
+    float: none;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'LumberjackInlineRough';
+    color: #4f6675;
+    text-align: right;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-right: 1px solid #cfd5d7;
+}
+.bookinputdate input {
+    width: 48%;
+    float: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'LumberjackInlineRough';
+    padding: 10px;
+    font-size: 18px;
+    color: #4f6775;
+}
+.booktextarea label {
+    float: none;
+    width: 40%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "brandon-grotesque";
+    color: #4f6675;
+    text-align: right;
+    padding: 10px;
+    height: 100%;
+    border-right: 1px solid #cfd5d7;
+}
+.booktextarea textarea {
+    width: 50%;
+    float: right;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'LumberjackInlineRough';
+    padding: 10px;
+    font-size: 18px;
+}
+.blackbutton {
+    display: block;
+    margin: 0 auto;
+    border: 4px solid rgba(0, 0, 0, 0.6);
+    background-color: #bd9456;
+    padding: 10px;
+    font-family: 'LumberjackInlineRough';
+    font-size: 3vw;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.5s ease;
+    width: auto;
+}
+}

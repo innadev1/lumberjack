@@ -94,6 +94,7 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
 		<script type="text/javascript" src="js/open_close.js"></script>
+		<script type="text/javascript" src="js/hammer.min.js"></script>
 
         <script type="text/javascript">
                 $(document).ready(function() { 
@@ -315,7 +316,7 @@
 			
 				<div class="products"><h3>products</h3></div>
 
-				<div class="wrap_product">
+				<div class="wrap_product" id="wrap_product">
 					<div class="product product_1">
 						<h4>Mals matu veidosanai no <br>"Mr Natty Dub"</h4>
 						<p>$ 20,95</p>
@@ -343,7 +344,34 @@
 					</div>
 				</div>
 			</div>
-			
+			<script>
+			var hammertime = new Hammer(document.getElementById('wrap_product'),);
+							var productnow = 0
+			hammertime.on('panend', function(ev) {
+				console.log(ev.additionalEvent);
+				pan_dir = ev.additionalEvent
+				
+				count = $('#wrap_product .product').length
+
+				console.log(count)
+				if(pan_dir=='panleft'){
+					if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('.wrap_product .product').css('display','none')
+					$('.wrap_product .product:eq('+productnow+')').fadeIn(200)
+					console.log($('.wrap_product .product:eq('+productnow+')'))
+					
+				}else if(pan_dir=='panright'){
+					if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('.wrap_product .product').css('display','none')
+					$('.wrap_product .product:eq('+productnow+')').fadeIn(200)
+					console.log($('.wrap_product .product:eq('+productnow+')'))
+				}
+			});
+			</script>
 			<div id="gallery">
 				<script type="text/javascript" src="js/click-carousel.js"></script>
 				<script type="text/javascript">

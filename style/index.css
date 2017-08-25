@@ -59,7 +59,7 @@ h6{
     margin-top: 1vw;
 	margin-bottom: 1vw;
 }
-p{
+.product p{
 	color: #303030;
 	font-size: 1vw;
 	font-weight: 500;
@@ -372,7 +372,7 @@ cursor: pointer;
 #banner, #gallery{display:none;}
 #banner_mobile {
 	display: block;
-    height: 140vw;
+    height: 150vw;
     background-image: url(../img/background_1_mobile.png);
     background-position: 70%;
     background-size: cover;
@@ -388,12 +388,12 @@ h2 {
     letter-spacing: 0.7vw;
 }
 .caption{
-	top: 103vw;
+	top: 115vw;
 }
 .round_buttons {
     display: block;
     text-align: center;
-    padding-top: 110vw;
+    padding-top: 120vw;
     padding-bottom: 10vw;
 }
 .round_buttons button {
@@ -412,13 +412,13 @@ h2 {
     position: relative;
     width: 100%;
     padding-top: 0;
-    background-size: 240%;
+    background-size: 250%;
     background-position-x: 50%;
-    height: 140vw;
+    height: 150vw;
 }
 .text_on_photo img{display:none;}
 .text_on_photo {
-    bottom: 45vw;
+    bottom: 50vw;
     left: 0;
     right: 0;
     text-align: center;
@@ -451,7 +451,7 @@ h6 {
     position: relative;
     bottom: 0;
     left: 0;
-    top: 110vw;
+    top: 120vw;
     background-color: transparent;
     color: #bd9456;
     font-size: 4vw;
@@ -472,7 +472,7 @@ h6 {
     width: 100%;
     padding-top: 0;
     margin-top: -1vw;
-    height: 140vw;
+    height: 150vw;
 }
 .wrap_product {
     width: 50%;
@@ -525,8 +525,7 @@ h4 {
     color: #303030;
 	line-height: 7vw;
 }
-p {
-    color: #303030;
+.product p {
     font-size: 4vw;
     font-weight: 600;
 }

@@ -190,3 +190,25 @@ iframe{
     margin-bottom: 0vw;
     pointer-events: none;
 }
+.buttons_2 button{
+	background-color: white;
+    color: black;
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border: none;
+    cursor: pointer;
+    margin: 2vw;
+    font-size: 1.2vw;
+    padding: 0.7vw 1vw;
+}
+.buttons_2 button:hover{
+	background-color: white;
+    color: black;
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border-bottom: 1px solid rgb(189, 148, 86);
+    cursor: pointer;
+    margin: 2vw;
+    font-size: 1.2vw;
+    padding: 0.7vw 1vw;
+}

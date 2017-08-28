@@ -73,6 +73,7 @@
     color: white;
     border: 1px solid rgb(189, 148, 86);
 }
+#first_button{display:none;}
 @media screen and (max-width: 900px){
 #banner {
     height: 90vw;
@@ -117,6 +118,12 @@
     margin-bottom: 5vw;
     margin-left: 10%;
     margin-right: 10%;
+}
+#first_button{
+	display:block;
+}
+#first_button button{
+	width: auto !important;
 }
 #second_button{display: none;}
 .buttons button {

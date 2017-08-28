@@ -59,6 +59,8 @@
 				consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore 
 				et dolore magnam aliquam quaerat voluptatem.</p>
 				
+				<div class="buttons" id="first_button"><button>READ MORE</button></div>
+				
 				<div class="flex">
 					<div class="buttons"><button>PREVIOUS</button></div>
 					<div class="buttons" id="second_button"><a href="our_story.php"><button>BACK TO ALL ARTICLES</button></a></div>

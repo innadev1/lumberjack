@@ -294,6 +294,40 @@
 				<!-- <button1 class="book" id="riga1" spot="riga1"> -->
 				<div class="buttons"><button>REWIEWS</button></div>
 			</div>
+			
+			<div id="services_1">
+
+				<div class="flex">
+					<div class="buttons_2"><button>ALL SERVICES</button></div>
+					<div class="buttons_2"><button>HAIR</button></div>
+					<div class="buttons_2"><button>MASSAGE</button></div>
+					<div class="buttons_2"><button>SHAVING & SKIN</button></div>
+				</div>
+				
+				<div id="table_about">
+					<table border="1" width="100%" cellpadding="5">
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is requested yhe price will be 42eur.</p>
+								</th>
+								<th>
+								<h1>32.00 EUR</h1>
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatment</h1>
+								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
+								</th>
+								<th>
+								<h1>50.00 EUR</h1>
+							</th>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
 
 		
 		</div>

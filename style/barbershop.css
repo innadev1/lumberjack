@@ -243,3 +243,60 @@ iframe{
 #table_about td{
     border-top: 1px solid rgba(1,1,1,0.5);
 }
+.wrap_barbers {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.photo {
+    width: 28%;
+    height: 31vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-grid;
+    transition: all ease 0.3s;
+    text-align: center;
+    margin: 1vw;
+}
+.text {
+    margin-top: 22vw;
+}
+.text h1 {
+    font-size: 1.7vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(189, 148, 86);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.text p {
+    font-size: 1vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(5, 5, 5);
+    line-height: 1.3vw;
+    text-align: justify;
+    margin: 0;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    opacity: 0.7;
+}
+.photo_1 {
+    background-image: url(../img/haircuts/1.jpg);
+}
+.photo_2 {
+    background-image: url(../img/haircuts/2.jpg);
+}
+.photo_3 {
+    background-image: url(../img/haircuts/3.jpg);
+}
+.photo_4 {
+    background-image: url(../img/haircuts/4.jpg);
+}
+.photo_5 {
+    background-image: url(../img/haircuts/5.jpg);
+}
+.photo_6 {
+    background-image: url(../img/haircuts/6.jpg);
+}

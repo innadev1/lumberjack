@@ -390,8 +390,62 @@
 			
 			</div>
 
-			<div id="barbers_1">1</div>
-			<div id="rewiews_1">2</div>
+			<div id="barbers_1">
+				
+				<div class="wrap_barbers">
+					<div class="photo photo_1">
+						<div class="text">
+							<h1>Martins</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_2">
+						<div class="text">
+							<h1>Kristaps</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_3">
+						<div class="text">
+							<h1>Janis</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_4">
+						<div class="text">
+							<h1>Miks</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_5">
+						<div class="text">
+							<h1>Juris</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_6">
+						<div class="text">
+							<h1>Kaspars</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div id="rewiews_1">comment</div>
 		
 		</div>
 
@@ -544,8 +598,61 @@
 			
 			</div>
 
-			<div id="barbers_2">1</div>
-			<div id="rewiews_2">2</div>
+			<div id="barbers_2">
+			
+				<div class="wrap_barbers">
+					<div class="photo photo_1">
+						<div class="text">
+							<h1>Martins</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_2">
+						<div class="text">
+							<h1>Kristaps</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_3">
+						<div class="text">
+							<h1>Janis</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_4">
+						<div class="text">
+							<h1>Miks</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_5">
+						<div class="text">
+							<h1>Juris</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_6">
+						<div class="text">
+							<h1>Kaspars</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div id="rewiews_2">comment</div>
 			
 		</div>
 		
@@ -698,8 +805,62 @@
 			
 			</div>
 			
-			<div id="barbers_3">1</div>
-			<div id="rewiews_3">2</div>
+			<div id="barbers_3">
+			
+				<div class="wrap_barbers">
+					<div class="photo photo_1">
+						<div class="text">
+							<h1>Martins</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_2">
+						<div class="text">
+							<h1>Kristaps</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_3">
+						<div class="text">
+							<h1>Janis</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_4">
+						<div class="text">
+							<h1>Miks</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_5">
+						<div class="text">
+							<h1>Juris</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_6">
+						<div class="text">
+							<h1>Kaspars</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div id="rewiews_3">comment</div>
 			
 		</div>
 

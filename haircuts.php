@@ -25,7 +25,7 @@
 		$name = $_POST['name'];
 		$phone = $_POST['phone'];
 		$email = $_POST['mail'];
-		$typeOfService = $_POST['typeOfService'];
+		// $typeOfService = $_POST['typeOfService'];
 		$date = $_POST['date'];
 		$text = $_POST['text'];
 

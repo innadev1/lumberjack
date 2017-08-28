@@ -90,16 +90,16 @@
 
 		$stuff = $_POST['emailsent'];
 		
-        if($stuff == "riga1"){
+        if($stuff == "riga1"){  
             $adress = "my.worktest@gmail.com";
         }else if($stuff == "riga2"){
-			$adress = "@2";
+			$adress = "my.worktest@gmail.com";
         }
         else if($stuff == "estonia"){
-			$adress = "@3";
+			$adress = "my.worktest@gmail.com";
         }
         else if($stuff == "russia"){
-			$adress = "@4";
+			$adress = "my.worktest@gmail.com";
         }
     }
 
@@ -546,18 +546,18 @@
 				stuff = $(this).attr('stuff')
 
 				if(stuff=='riga1'){
-					p.html('rezervacija riga1')
+					p.html('Riharda Vagnera iela 11, Riga, Latvia')
 					hiddenInput.attr('value','riga1')
 					
 
 				}else if(stuff=='riga2'){
-					p.html('rezervacija riga2')
+					p.html('Riharda Vagnera iela 11, Riga, Latvia(2)')
 
 				}else if(stuff=='estonia'){
-					p.html('rezervacija estonia')
+					p.html('Pronksi 3, Tallin, Estonia-10124')
 
-				}else if(stuff=='russian'){
-					p.html('rezervacija russian')
+				}else if(stuff=='russia'){
+					p.html('29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg')
 			}
 			})
 

@@ -1,7 +1,6 @@
 <?php
 
 
-		$mailSuccess = "";
 		$error_message_n = "";
 		$error_message_n2 = "";
 		$error_message_p1 = "";
@@ -9,6 +8,7 @@
 		$error_message_m = "";
 		$error_message_t = "";
 		$error_message_d = "";
+		$mailSuccess = false;
 
 
 	if(isset($_POST['emailsent']))
@@ -37,7 +37,7 @@
 		$error_message_t = "";
 		$error_message_d = "";
 
-		$errors = ['name'=>0,'phone'=>0,'mail'=>0, 'typeOfService'=>0, 'date'=>0, 'text'=>0];
+		$errors = ['name'=>0,'phone'=>0,'mail'=>0, 'date'=>0, 'text'=>0];
 
 		$email_exp_a = "/[^A-Za-z]/";
 

@@ -212,3 +212,34 @@ iframe{
     font-size: 1.2vw;
     padding: 0.7vw 1vw;
 }
+#services_1, #services_2, #services_3{display:none}
+#barbers_1, #barbers_2, #barbers_3{display:none}
+#rewiews_1, #rewiews_2, #rewiews_3{display:none}
+#table_about{
+	text-align: -webkit-center;
+	margin-bottom: 5vw;
+}
+#table_about p{
+    color: black;
+    font-size: 1.3vw;
+    text-align: left;
+    opacity: 0.5;
+    margin: 0;
+    font-weight: 200;
+}
+#table_about h1{
+	color: black;
+    letter-spacing: 0.1vw;
+    font-stretch: condensed;
+    font-size: 2vw;
+    text-align: left;
+	margin: 0;
+	opacity: 0.8;
+}
+#table_about th{
+	height: 7vw;
+    border-top: 1px solid rgba(1,1,1,0.5);
+}
+#table_about td{
+    border-top: 1px solid rgba(1,1,1,0.5);
+}

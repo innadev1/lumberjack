@@ -84,4 +84,52 @@ $("#book_an_appointment_5").click(function () {
 		$(".remodal-close_1").click(function () {
 		$(".remodal-overlay_1").css("display","none");
 	});
+	
+	
+
+$("#toggler_services_1").click(function () {
+	$( "#services_1" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_services_2").click(function () {
+	$( "#services_2" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_services_3").click(function () {
+	$( "#services_3" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_barbers_1").click(function () {
+	$( "#barbers_1" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_barbers_2").click(function () {
+	$( "#barbers_2" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_barbers_3").click(function () {
+	$( "#barbers_3" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_rewiews_1").click(function () {
+	$( "#rewiews_1" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_rewiews_2").click(function () {
+	$( "#rewiews_2" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_rewiews_3").click(function () {
+	$( "#rewiews_3" ).slideToggle( "slow", function() {
+});
+});
+
 });

@@ -299,13 +299,11 @@
 			<div class="button1" id="but1"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
-				<div class="buttons"><button>SERVICES</button></div>
+				<div class="buttons" id="toggler_services_1"><button>SERVICES</button></div>
 				<div class="buttons" id="book_an_appointment_1"><button class="book" id="riga1" stuff="riga1">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2">BOOK AN APPOINTMENT</button></div>
-
-				<div class="buttons"><button>BARBERS</button></div>
-				<!-- <button1 class="book" id="riga1" spot="riga1"> -->
-				<div class="buttons"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_barbers_1"><button>BARBERS</button></div>
+				<div class="buttons" id="toggler_rewiews_1"><button>REWIEWS</button></div>
 			</div>
 			
 			<div id="services_1">
@@ -318,30 +316,82 @@
 				</div>
 				
 				<div id="table_about">
-					<table border="1" width="100%" cellpadding="5">
+					<table width="80%">
 						<tr>
 							<th>
 								<h1>Beard trim</h1>
 								<p>If any shaving is requested yhe price will be 42eur.</p>
-								</th>
-								<th>
-								<h1>32.00 EUR</h1>
 							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
 						</tr>
 						<tr>
 							<th>
 								<h1>Facial treatment</h1>
 								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
-								</th>
-								<th>
-								<h1>50.00 EUR</h1>
 							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is required the price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatement</h1>
+								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
 						</tr>
 					</table>
 				</div>
 			
 			</div>
 
+			<div id="barbers_1">1</div>
+			<div id="rewiews_1">2</div>
 		
 		</div>
 
@@ -404,13 +454,99 @@
 			<div class="button2" id="but2"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
-				<div class="buttons"><button>SERVICES</button></div>
+				<div class="buttons" id="toggler_services_2"><button>SERVICES</button></div>
 				<div class="buttons" id="book_an_appointment_3"><button class="book" id="estonia" stuff="estonia">BOOK AN APPOINTMENT</button></div>
-				<div class="buttons"><button>BARBERS</button></div>
-				<div class="buttons"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_barbers_2"><button>BARBERS</button></div>
+				<div class="buttons" id="toggler_rewiews_2"><button>REWIEWS</button></div>
 			</div>
 
+			<div id="services_2">
 
+				<div class="flex">
+					<div class="buttons_2"><button>ALL SERVICES</button></div>
+					<div class="buttons_2"><button>HAIR</button></div>
+					<div class="buttons_2"><button>MASSAGE</button></div>
+					<div class="buttons_2"><button>SHAVING & SKIN</button></div>
+				</div>
+				
+				<div id="table_about">
+					<table width="80%">
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is requested yhe price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatment</h1>
+								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is required the price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatement</h1>
+								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+
+			<div id="barbers_2">1</div>
+			<div id="rewiews_2">2</div>
+			
 		</div>
 		
 		<div id="country">
@@ -472,13 +608,99 @@
 			<div class="button3" id="but3"><button>CLOSE MAP</button></div>
 		
 			<div class="flex">
-				<div class="buttons"><button>SERVICES</button></div>
+				<div class="buttons" id="toggler_services_3"><button>SERVICES</button></div>
 				<div class="buttons" id="book_an_appointment_4"><button class="book" id="russia" stuff="russia">BOOK AN APPOINTMENT</button></div>
-				<div class="buttons"><button>BARBERS</button></div>
-				<div class="buttons"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_barbers_3"><button>BARBERS</button></div>
+				<div class="buttons" id="toggler_rewiews_3"><button>REWIEWS</button></div>
 			</div>
 			
+			<div id="services_3">
 
+				<div class="flex">
+					<div class="buttons_2"><button>ALL SERVICES</button></div>
+					<div class="buttons_2"><button>HAIR</button></div>
+					<div class="buttons_2"><button>MASSAGE</button></div>
+					<div class="buttons_2"><button>SHAVING & SKIN</button></div>
+				</div>
+				
+				<div id="table_about">
+					<table width="80%">
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is requested yhe price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatment</h1>
+								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is required the price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatement</h1>
+								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+			
+			<div id="barbers_3">1</div>
+			<div id="rewiews_3">2</div>
+			
 		</div>
 
 		<div class="remodal-overlay" style="display: none;">

@@ -3,6 +3,7 @@
 
 		$mailSuccess = "";
 		$error_message_n = "";
+		$error_message_n2 = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
 		$error_message_m = "";
@@ -14,6 +15,7 @@
 	{
 
 		echo ($error_message_n);
+		echo ($error_message_n2);
 		echo ($error_message_p1);
 		echo ($error_message_p2);
 		echo ($error_message_m);
@@ -28,18 +30,27 @@
 		$text = $_POST['text'];
 
 		$error_message_n = "";
+		$error_message_n2 = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
 		$error_message_m = "";
 		$error_message_t = "";
 		$error_message_d = "";
 
+		$errors = ['name'=>0,'phone'=>0,'mail'=>0, 'typeOfService'=>0, 'date'=>0, 'text'=>0];
+
+		$email_exp_a = "/[^A-Za-z]/";
 
 		// Name
 		if(strlen($name) < 2) {
         	$error_message_n .= '<p class="red">Name too short.</p>';
-			// echo ($error_message);
-    	}
+			$errors['name'] = 1;
+		}
+		
+		if(preg_match($email_exp_a,$_POST['name'])) {
+			$error_message_n2 .= '<p class="red">Only alphabet.</p>';
+			$errors['name'] = 1;
+		}
 
 
 		// PHONE
@@ -48,13 +59,13 @@
  
     	if(preg_match($email_exp,$_POST['phone'])) {
         	$error_message_p1 .= '<p class="red">only numbers!</p>';
-			// echo ($error_message);
+			$errors['phone'] = 1;
     	}
 
 
 		if(strlen($_POST['phone']) < 7) {
         	$error_message_p2 .= '<p class="red">Phone too short!</p>';
-			// echo ($error_message);
+			$errors['phone'] = 1;
     	}
 
 
@@ -64,7 +75,7 @@
 	
     	if(!preg_match($email_exp,$email)) {
         	$error_message_m .= '<p class="red">Please enter email!</p>';
-			// echo ($error_message);
+			$errors['mail'] = 1;
     	}
 
 
@@ -80,7 +91,7 @@
 		// DATE 
 		if(empty($date)){
 			$error_message_d .= '<p class="red">Please enter Date!</p>';
-			// echo ($error_message);
+			$errors['date'] = 1;
 		}
 
 		$mailSuccess = false;
@@ -271,16 +282,17 @@
 				
 					<div class="bookinput">
 						<label>Name</label>
-						<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name'])){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
+						<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
 					</div>
 					<!--ERRROR  -->
 						<?php echo ($error_message_n); ?>
+						<?php echo ($error_message_n2); ?>
 					<!--END-->
 
 
 					<div class="bookinput">
 						<label>Phone</label>
-						<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone'])){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
+						<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
 					</div>
 					<!--ERRROR  -->
 						<?php echo ($error_message_p1); ?>
@@ -291,7 +303,7 @@
 
 					<div class="bookinput">
 						<label>E-mail</label>
-						<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail'])){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
+						<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
 					</div>
 					<!--ERRROR  -->
 						<?php echo ($error_message_m); ?>
@@ -322,7 +334,7 @@
 					<div class="bookinputdate">
 						<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
 
-						<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date'])){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-10" placeholder="Pick your date"></spam>
+						<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-10" placeholder="Pick your date"></spam>
 
 					</div>
 					<!--ERRROR  -->

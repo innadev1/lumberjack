@@ -132,4 +132,23 @@ $("#toggler_rewiews_3").click(function () {
 });
 });
 
+
+	$("#flip_1").click(function () {
+		$(".eesti").css("display","none");
+		$(".russia").css("display","none");
+		$(".latvia").css("display","block");
+	});
+	$("#flip_2").click(function () {
+		$(".latvia").css("display","none");
+		$(".russia").css("display","none");
+		$(".eesti").css("display","block");
+	});
+	$("#flip_3").click(function () {
+		$(".latvia").css("display","none");
+		$(".eesti").css("display","none");
+		$(".russia").css("display","block");
+	});
+
+
+
 });

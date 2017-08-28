@@ -214,7 +214,7 @@
 			</p>
 		</div>
 		
-		<div id="country">
+		<div id="country" class="latvia">
 			<div class="country_name" id="c1"><h1>Latvia</h1></div>
 			<div class="countries"><img src="img/countries/latvia.jpg" class="gal1">
 				<div id="map_latvia">
@@ -450,7 +450,7 @@
 		</div>
 
 			<!--Email To Estonia  -->
-		<div id="country">
+		<div id="country" class="eesti">
 			<div class="country_name" id="c2"><h1>Estonia</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
 				<div id="map_estonia">
@@ -656,7 +656,7 @@
 			
 		</div>
 		
-		<div id="country">
+		<div id="country" class="russia">
 			<div class="country_name" id="c3"><h1>Russia</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
@@ -961,6 +961,11 @@
 				</div>
 			</div>
 
+			<div class="round_buttons">
+				<button id="flip_1"></button>
+				<button id="flip_2"></button>
+				<button id="flip_3"></button>
+			</div>
 	
 		<?php include 'assets/footer.php'; ?>
 	</body>

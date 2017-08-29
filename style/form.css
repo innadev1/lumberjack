@@ -426,4 +426,24 @@ option {
     transition: all 0.5s ease;
     width: auto;
 }
+.bookinput {
+    width: 100%;
+}
+.bookinputdate {
+    width: 100%;
+}
+.booktextarea {
+    width: 100%;
+}
+.bookinput input {
+	font-size: 17px;
+}
+.bookinputdate input {
+	font-size: 17px;
+}
+.booktextarea textarea {
+	font-size: 17px;
+	padding: 0;
+}
+
 }

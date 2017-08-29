@@ -53,8 +53,7 @@
 	text-align: center;
 	margin: 5vw 26vw 5vw 26vw;
 }
-#country{
-}
+
 #table{
 	width: 55%;
 }
@@ -87,17 +86,14 @@
     opacity: 0.7;
 	margin: 0;
 }
-.button1, .button2, .button3{
+.button1, .button2, .button3, .button4{
 	position: absolute;
 	right: 14.5vw;
 }
-.button1{
-	margin-top: -9vw;
-}
-.button2, .button3{
+.button1, .button2, .button3, .button4{
 	margin-top: -5vw;
 }
-.button1 button, .button2 button, .button3 button{
+.button1 button, .button2 button, .button3 button, .button4 button{
 	background-color: rgb(189, 148, 86);
     color: rgba(255,255,255,1);
     font-size: 1.2vw;
@@ -151,6 +147,9 @@ button:focus{
 #map_latvia{
 	display: none;
 }
+#map_latvia_2{
+	display: none;
+}
 #map_estonia{
 	display: none;
 }
@@ -162,7 +161,7 @@ iframe{
 	height: 35.5vw;
 	padding-bottom: 4vw;
 }
-#but1, #but2, #but3{
+#but1, #but2, #but3, #but4{
 	display: none;
 }
 .button_appointment button{
@@ -213,9 +212,9 @@ iframe{
     font-size: 1.2vw;
     padding: 0.7vw 1vw;
 }
-#services_1, #services_2, #services_3{display:none}
-#barbers_1, #barbers_2, #barbers_3{display:none}
-#rewiews_1, #rewiews_2, #rewiews_3{display:none}
+#services_1, #services_2, #services_3, #services_4{display:none}
+#barbers_1, #barbers_2, #barbers_3, #barbers_4{display:none}
+#rewiews_1, #rewiews_2, #rewiews_3, #rewiews_4{display:none}
 #table_about{
 	text-align: -webkit-center;
 	margin-bottom: 5vw;
@@ -304,7 +303,7 @@ iframe{
 
 
 
-#rewiews_1, #rewiews_2, #rewiews_3{
+#rewiews_1, #rewiews_2, #rewiews_3, #rewiews_4{
     text-align: center;
     padding: 3vw;
     margin-left: 10vw;
@@ -383,14 +382,11 @@ iframe {
     height: 100vw;
     padding-bottom: 5vw;
 }
-.button1, .button2, .button3 {
+.button1, .button2, .button3, .button4 {
     position: absolute;
     right: 38.5vw;
 }
-.button1{
-    margin-top: -43vw;
-}
-.button2, .button3 {
+.button1, .button2, .button3, .button4 {
     margin-top: -27vw;
 }
 .button1 button, .button2 button, .button3 button {
@@ -450,7 +446,7 @@ iframe {
     cursor: pointer;
     margin-right: 1vw;
 }
-.russia, .eesti, .buttons_2{display: none;}
+#russia, #eesti, .buttons_2{display: none;}
 #table_about th {
     height: 12vw;
     border-top: 1px solid rgba(1,1,1,0.5);

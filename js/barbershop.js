@@ -20,6 +20,15 @@ $(document).ready(function(){
 		$("#map_russia").css("display","block");
 		$("#but3").css("display","block");
 	});
+	$(".button4").click(function () {
+		$("#c4").css("display","none");
+		$(".gal4").css("display","none");
+		$("#tr4").css("display","none");
+		$("#map_latvia_2").css("display","block");
+		$("#but4").css("display","block");
+	});
+	
+	
 	
 	$("#but1").click(function () {
 		$("#c1").css("display","block");
@@ -41,6 +50,13 @@ $(document).ready(function(){
 		$("#tr3").css("display","block");
 		$("#map_russia").css("display","none");
 		$("#but3").css("display","none");
+	});
+	$("#but4").click(function () {
+		$("#c4").css("display","block");
+		$(".gal4").css("display","inline-block");
+		$("#tr4").css("display","block");
+		$("#map_latvia_2").css("display","none");
+		$("#but4").css("display","none");
 	});
 
 
@@ -102,6 +118,11 @@ $("#toggler_services_3").click(function () {
 });
 });
 
+$("#toggler_services_4").click(function () {
+	$( "#services_4" ).slideToggle( "slow", function() {
+});
+});
+
 $("#toggler_barbers_1").click(function () {
 	$( "#barbers_1" ).slideToggle( "slow", function() {
 });
@@ -114,6 +135,11 @@ $("#toggler_barbers_2").click(function () {
 
 $("#toggler_barbers_3").click(function () {
 	$( "#barbers_3" ).slideToggle( "slow", function() {
+});
+});
+
+$("#toggler_barbers_4").click(function () {
+	$( "#barbers_4" ).slideToggle( "slow", function() {
 });
 });
 
@@ -132,21 +158,35 @@ $("#toggler_rewiews_3").click(function () {
 });
 });
 
+$("#toggler_rewiews_4").click(function () {
+	$( "#rewiews_4" ).slideToggle( "slow", function() {
+});
+});
+
 
 	$("#flip_1").click(function () {
-		$(".eesti").css("display","none");
-		$(".russia").css("display","none");
-		$(".latvia").css("display","block");
+		$("#latvia_2").css("display","none");
+		$("#eesti").css("display","none");
+		$("#russia").css("display","none");
+		$("#latvia").css("display","block");
+	});
+	$("#flip_4").click(function () {
+		$("#latvia").css("display","none");
+		$("#eesti").css("display","none");
+		$("#russia").css("display","none");
+		$("#latvia_2").css("display","block");
 	});
 	$("#flip_2").click(function () {
-		$(".latvia").css("display","none");
-		$(".russia").css("display","none");
-		$(".eesti").css("display","block");
+		$("#latvia").css("display","none");
+		$("#latvia_2").css("display","none");
+		$("#russia").css("display","none");
+		$("#eesti").css("display","block");
 	});
 	$("#flip_3").click(function () {
-		$(".latvia").css("display","none");
-		$(".eesti").css("display","none");
-		$(".russia").css("display","block");
+		$("#latvia").css("display","none");
+		$("#latvia_2").css("display","none");
+		$("#eesti").css("display","none");
+		$("#russia").css("display","block");
 	});
 
 

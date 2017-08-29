@@ -214,7 +214,7 @@
 			</p>
 		</div>
 		
-		<div id="country" class="latvia">
+		<div class="country" id="latvia">
 			<div class="country_name" id="c1"><h1>Latvia</h1></div>
 			<div class="countries"><img src="img/countries/latvia.jpg" class="gal1">
 				<div id="map_latvia">
@@ -223,10 +223,7 @@
 				</div>
 			</div>
 
-
-			<!--Email To Latvia  -->
-
-			<table id="table" align="center">
+			<table id="table" align="center" style="width: 45%">
 				<tr>
 					<td>
 						<div class="info">			
@@ -235,47 +232,23 @@
 									<td><h2>Adress:</h2></td>
 									<td><p>Riharda Vagnera iela 11, Riga, Latvia</p></td>
 								</tr>
+
 								<tr>
 									<td><h2>Email:</h2></td>
 									<td><p>info@lumberjack.lv</p></td>
 								</tr>
+
 								<tr>
 									<td><h2>Tel.:</h2></td>
 									<td><p>+371 67 854 755</p></td>
 								</tr>
-								<tr>
-									<td><h2>Open:</h2></td>
-								<td></td>
-								</tr>
-								<tr>
-									<td><h2>Mon.-Sat.:</h2></td>
-									<td><p>10.00-20.00</p></td>
-								</tr>
-								<tr>
-									<td><h2>Sunday:</h2></td>
-									<td><p>11.00-17.00</p></td>
-								</tr>
 							</table>
 						</div>
 					</td>
-
-					<!--Email To Latvia  -->
 					
 					<td>
 					<div class="info">			
 						<table>
-							<tr>
-								<td><h2>Adress:</h2></td>
-								<td><p>Riharda Vagnera iela 11, Riga, Latvia</p></td>
-							</tr>
-							<tr>
-								<td><h2>Email:</h2></td>
-								<td><p>info@lumberjack.lv</p></td>
-							</tr>
-							<tr>
-								<td><h2>Tel.:</h2></td>
-								<td><p>+371 67 854 755</p></td>
-							</tr>
 							<tr>
 								<td><h2>Open:</h2></td>
 							<td></td>
@@ -301,7 +274,6 @@
 			<div class="flex">
 				<div class="buttons" id="toggler_services_1"><button>SERVICES</button></div>
 				<div class="buttons" id="book_an_appointment_1"><button class="book" id="riga1" stuff="riga1">BOOK AN APPOINTMENT</button></div>
-				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2">BOOK AN APPOINTMENT</button></div>
 				<div class="buttons" id="toggler_barbers_1"><button>BARBERS</button></div>
 				<div class="buttons" id="toggler_rewiews_1"><button>REWIEWS</button></div>
 			</div>
@@ -462,8 +434,228 @@
 		
 		</div>
 
-			<!--Email To Estonia  -->
-		<div id="country" class="eesti">
+		<div class="country" id="latvia_2">
+			<div class="country_name" id="c4"><h1>Latvia 2</h1></div>
+			<div class="countries"><img src="img/countries/latvia.jpg" class="gal4">
+				<div id="map_latvia_2">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
+					height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+
+			<table id="table" align="center" style="width: 45%">
+				<tr>
+					<td>
+						<div class="info">			
+							<table>
+								<tr>
+									<td><h2>Adress:</h2></td>
+									<td><p>Riharda Vagnera iela 11, Riga, Latvia</p></td>
+								</tr>
+
+								<tr>
+									<td><h2>Email:</h2></td>
+									<td><p>info@lumberjack.lv</p></td>
+								</tr>
+
+								<tr>
+									<td><h2>Tel.:</h2></td>
+									<td><p>+371 67 854 755</p></td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					
+					<td>
+					<div class="info">			
+						<table>
+							<tr>
+								<td><h2>Open:</h2></td>
+							<td></td>
+							</tr>
+							<tr>
+								<td><h2>Mon.-Sat.:</h2></td>
+								<td><p>10.00-20.00</p></td>
+							</tr>
+							<tr>
+								<td><h2>Sunday:</h2></td>
+								<td><p>11.00-17.00</p></td>
+							</tr>
+						</table>
+					</div>
+					</td>
+				
+				</tr>
+			</table>
+
+			<div class="button4" id="tr4"><button>OPEN MAP</button></div>
+			<div class="button4" id="but4"><button>CLOSE MAP</button></div>
+				
+			<div class="flex">
+				<div class="buttons" id="toggler_services_4"><button>SERVICES</button></div>
+				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="toggler_barbers_4"><button>BARBERS</button></div>
+				<div class="buttons" id="toggler_rewiews_4"><button>REWIEWS</button></div>
+			</div>
+			
+			<div id="services_4">
+
+				<div class="flex">
+					<div class="buttons_2"><button>ALL SERVICES</button></div>
+					<div class="buttons_2"><button>HAIR</button></div>
+					<div class="buttons_2"><button>MASSAGE</button></div>
+					<div class="buttons_2"><button>SHAVING & SKIN</button></div>
+				</div>
+				
+				<div id="table_about">
+					<table width="80%">
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is requested yhe price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatment</h1>
+								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beard trim</h1>
+								<p>If any shaving is required the price will be 42eur.</p>
+							</th>
+							<td>
+								<h1>32.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Facial treatement</h1>
+								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
+							</th>
+							<td>
+								<h1>50.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Scissors</h1>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Machine</h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+
+			<div id="barbers_4">
+				
+				<div class="wrap_barbers">
+					<div class="photo photo_1">
+						<div class="text">
+							<h1>Martins</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_2">
+						<div class="text">
+							<h1>Kristaps</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_3">
+						<div class="text">
+							<h1>Janis</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_4">
+						<div class="text">
+							<h1>Miks</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_5">
+						<div class="text">
+							<h1>Juris</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+					<div class="photo photo_6">
+						<div class="text">
+							<h1>Kaspars</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+							</p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div id="rewiews_4">
+			
+				<div id="fb-root"></div>
+
+				<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/lv_LV/sdk.js#xfbml=1&version=v2.10&appId=483586638671396";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-comments" data-href="https://www.facebook.com/lumberjackbarbershopriga" data-width="100%" data-numposts="5"></div>
+			</div>
+		
+		</div>
+		
+		<div class="country" id="eesti">
 			<div class="country_name" id="c2"><h1>Estonia</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
 				<div id="map_estonia">
@@ -684,7 +876,7 @@
 			
 		</div>
 		
-		<div id="country" class="russia">
+		<div class="country" id="russia">
 			<div class="country_name" id="c3"><h1>Russia</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">

@@ -445,7 +445,20 @@
 			
 			</div>
 			
-			<div id="rewiews_1">comment</div>
+			<div id="rewiews_1">
+			
+				<div id="fb-root"></div>
+
+				<script>(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/lv_LV/sdk.js#xfbml=1&version=v2.10&appId=483586638671396";
+				fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<div class="fb-comments" data-href="https://www.facebook.com/lumberjackbarbershopriga" data-width="100" data-numposts="5"></div>
+			</div>
 		
 		</div>
 
@@ -652,7 +665,22 @@
 				</div>
 			
 			</div>
-			<div id="rewiews_2">comment</div>
+			<div id="rewiews_2">
+
+				<div id="fb-root"></div>
+
+				<script>(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/lv_LV/sdk.js#xfbml=1&version=v2.10&appId=483586638671396";
+					fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+				<div class="fb-comments" data-href="https://www.facebook.com/lumberjackbarbershoptallin" data-width="100%" data-numposts="5"></div>
+			
+			</div>
 			
 		</div>
 		
@@ -860,9 +888,23 @@
 			
 			</div>
 			
-			<div id="rewiews_3">comment</div>
+			<div id="rewiews_3">
 			
-		</div>
+				<div id="fb-root"></div>
+
+				<script>(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/lv_LV/sdk.js#xfbml=1&version=v2.10&appId=483586638671396";
+					fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+					<div class="fb-comments" data-href="https://ru-ru.facebook.com/lumberjackbarbershopriga/" data-width="100%" data-numposts="5"></div>
+				</div>
+			
+			</div>
 
 		<div class="remodal-overlay" style="display: none;">
 				<div class="remodal" data-remodal-id="modal" style="visibility: visible;">

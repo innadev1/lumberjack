@@ -167,26 +167,26 @@ $("#toggler_rewiews_4").click(function () {
 	$("#flip_1").click(function () {
 		$("#latvia_2").css("display","none");
 		$("#eesti").css("display","none");
-		$("#russia").css("display","none");
+		$("#russia_").css("display","none");
 		$("#latvia").css("display","block");
 	});
 	$("#flip_4").click(function () {
 		$("#latvia").css("display","none");
 		$("#eesti").css("display","none");
-		$("#russia").css("display","none");
+		$("#russia_").css("display","none");
 		$("#latvia_2").css("display","block");
 	});
 	$("#flip_2").click(function () {
 		$("#latvia").css("display","none");
 		$("#latvia_2").css("display","none");
-		$("#russia").css("display","none");
+		$("#russia_").css("display","none");
 		$("#eesti").css("display","block");
 	});
 	$("#flip_3").click(function () {
 		$("#latvia").css("display","none");
 		$("#latvia_2").css("display","none");
 		$("#eesti").css("display","none");
-		$("#russia").css("display","block");
+		$("#russia_").css("display","block");
 	});
 
 

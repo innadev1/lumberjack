@@ -876,7 +876,7 @@
 			
 		</div>
 		
-		<div class="country" id="russia">
+		<div class="country" id="russia_">
 			<div class="country_name" id="c3"><h1>Russia</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
@@ -1197,6 +1197,7 @@
 
 			<div class="round_buttons">
 				<button id="flip_1"></button>
+				<button id="flip_4"></button>
 				<button id="flip_2"></button>
 				<button id="flip_3"></button>
 			</div>

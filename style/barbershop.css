@@ -389,7 +389,7 @@ iframe {
 .button1, .button2, .button3, .button4 {
     margin-top: -27vw;
 }
-.button1 button, .button2 button, .button3 button {
+.button1 button, .button2 button, .button3 button, .button4 button {
     font-size: 3vw;
     padding: 2vw 2vw;
 }
@@ -446,7 +446,7 @@ iframe {
     cursor: pointer;
     margin-right: 1vw;
 }
-#russia, #eesti, .buttons_2{display: none;}
+#russia_, #eesti, #latvia_2, .buttons_2{display: none;}
 #table_about th {
     height: 12vw;
     border-top: 1px solid rgba(1,1,1,0.5);

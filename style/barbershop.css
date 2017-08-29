@@ -302,6 +302,17 @@ iframe{
     background-image: url(../img/haircuts/6.jpg);
 }
 
+
+
+#rewiews_1, #rewiews_2, #rewiews_3{
+    text-align: center;
+    padding: 3vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+
 .round_buttons{display:none;}
 
 @media screen and (max-width: 900px){

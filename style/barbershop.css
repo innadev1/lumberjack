@@ -215,9 +215,9 @@ iframe{
 #services_1, #services_2, #services_3, #services_4{display:none}
 #barbers_1, #barbers_2, #barbers_3, #barbers_4{
 	display:none; 
-	width: 75%;
-    margin-left: 12.5%;
-    margin-right: 12.5%;
+	width: 84%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-bottom: 5vw;
 }
 #rewiews_1, #rewiews_2, #rewiews_3, #rewiews_4{display:none}
@@ -258,7 +258,7 @@ iframe{
 }
 .photo {
     width: 28%;
-    height: 25vw;
+    height: 28vw;
     background-size: 100%;
     background-repeat: no-repeat;
     display: inline-grid;
@@ -267,7 +267,7 @@ iframe{
     margin: 1vw;
 }
 .text {
-    margin-top: 17vw;
+    margin-top: 20vw;
 }
 .text h1 {
     font-size: 1.7vw;
@@ -350,7 +350,7 @@ iframe{
     margin-top: 5vw;
 }
 .text {
-    margin-top: 75vw;
+    margin-top: 81vw;
 }
 .text h1 {
     font-size: 8vw;

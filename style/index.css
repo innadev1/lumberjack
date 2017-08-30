@@ -354,7 +354,7 @@ cursor: pointer;
     -moz-transform: scale(1.5);
 }
 }
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 150px){
 #container {
     zoom: 1.2;
     -moz-transform: scale(1.5);

@@ -6,9 +6,9 @@
 
 <div class="links">
 	<ul>
-		<li><img src="img/facebook.png"></li>
-		<li><img src="img/instagram.png"></li>
-		<li><img src="img/vimeo.png"></li>
+		<li><a href="https://facebook.com"><img src="img/facebook.png"></a></li>
+		<li><a href="https://instagram.com"><img src="img/instagram.png"></a></li>
+		<li><a href="https://vimeo.com"><img src="img/vimeo.png"></a></li>
 	</ul>
 </div>
 

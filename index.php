@@ -367,7 +367,7 @@
 			</div>
 			<script>
 			var hammertime = new Hammer(document.getElementById('wrap_product'),);
-							var productnow = 0
+			var productnow = 0
 			hammertime.on('panend', function(ev) {
 				console.log(ev.additionalEvent);
 				pan_dir = ev.additionalEvent
@@ -391,6 +391,36 @@
 					$('.wrap_product .product:eq('+productnow+')').fadeIn(200)
 					console.log($('.wrap_product .product:eq('+productnow+')'))
 				}
+			});
+			</script>
+			
+			
+			<script>
+			var productnow = 0
+			$(document).ready(function(){
+				
+				count = $('#wrap_product .product').length
+				
+				$("#Right").click(function () {
+					if(productnow>0){
+					productnow-=1
+					}else{productnow=count-1}
+					$('.wrap_product .product').css('display','none')
+					$('.wrap_product .product:eq('+productnow+')').fadeIn(200)
+					console.log($('.wrap_product .product:eq('+productnow+')'))
+					
+				});
+				
+				$("#Left").click(function () {
+				
+				if(productnow<count-1){
+					productnow+=1
+					}else{productnow=0}
+					$('.wrap_product .product').css('display','none')
+					$('.wrap_product .product:eq('+productnow+')').fadeIn(200)
+					console.log($('.wrap_product .product:eq('+productnow+')'))
+				
+				});
 			});
 			</script>
 			

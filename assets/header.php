@@ -31,6 +31,7 @@
 			<li><a href="barbershop.php">barbrshop</a></li>
 			<li><a href="haircuts.php">haircuts</a></li>
 			<li><a href="lifestyle.php">lifestyle</a></li>
+			<li><a href="wall_of_fame.php">wall of fame</a></li>
 			<li><a href="contacts.php">contact us</a></li>
         </ul>
     </div>

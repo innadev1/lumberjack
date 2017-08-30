@@ -6,6 +6,9 @@
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
+		
+		<center style="font-size: 8vw; padding: 25vw 0vw 25vw 0vw">ONLINE STORE</center>
+		
 		<?php include 'assets/footer.php'; ?>
 	</body>
 </html>

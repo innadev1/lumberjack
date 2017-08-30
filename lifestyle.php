@@ -31,6 +31,7 @@
 				</p>
 				<p style="margin-top:1vw">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image"><img src="img/gal/3.jpg"></div>
 			</div>
@@ -47,6 +48,7 @@
 				</p>
 				<p style="margin-top:1vw; text-align: right;">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image_2"><img src="img/gal/4.jpg"></div>
 			</div>
@@ -63,6 +65,7 @@
 				</p>
 				<p style="margin-top:1vw">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image"><img src="img/gal/5.jpg"></div>
 			</div>
@@ -84,6 +87,7 @@
 				</p>
 				<p style="margin-top:1vw; text-align:right;">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image_2"><img src="img/gal/4.jpg"></div>
 			</div>
@@ -100,6 +104,7 @@
 				</p>
 				<p style="margin-top:1vw">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image"><img src="img/gal/5.jpg"></div>
 			</div>
@@ -116,6 +121,7 @@
 				</p>
 				<p style="margin-top:1vw; text-align:right;">Jim Black</p>
 				</div>
+				<div class="this_button"><a href="one_story.php"><button>></button></a></div>
 				</div>
 				<div class="image_2"><img src="img/gal/4.jpg"></div>
 			</div>

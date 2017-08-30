@@ -63,7 +63,7 @@
 				
 				<div class="flex">
 					<div class="buttons"><button>PREVIOUS</button></div>
-					<div class="buttons" id="second_button"><a href="our_story.php"><button>BACK TO ALL ARTICLES</button></a></div>
+					<div class="buttons" id="second_button"><a href="lifestyle.php"><button>BACK TO ALL ARTICLES</button></a></div>
 					<div class="buttons"><button>NEXT</button></div>
 				</div>
 			</div>

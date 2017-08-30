@@ -104,61 +104,85 @@ $("#book_an_appointment_5").click(function () {
 	
 
 $("#toggler_services_1").click(function () {
+	$("#barbers_1").css("display","none");
+	$("#rewiews_1").css("display","none");
 	$( "#services_1" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_services_2").click(function () {
+	$("#barbers_2").css("display","none");
+	$("#rewiews_2").css("display","none");
 	$( "#services_2" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_services_3").click(function () {
+	$("#barbers_3").css("display","none");
+	$("#rewiews_3").css("display","none");
 	$( "#services_3" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_services_4").click(function () {
+	$("#barbers_4").css("display","none");
+	$("#rewiews_4").css("display","none");
 	$( "#services_4" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_barbers_1").click(function () {
+	$("#services_1").css("display","none");
+	$("#rewiews_1").css("display","none");
 	$( "#barbers_1" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_barbers_2").click(function () {
+	$("#services_2").css("display","none");
+	$("#rewiews_2").css("display","none");
 	$( "#barbers_2" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_barbers_3").click(function () {
+	$("#services_3").css("display","none");
+	$("#rewiews_3").css("display","none");
 	$( "#barbers_3" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_barbers_4").click(function () {
+	$("#services_4").css("display","none");
+	$("#rewiews_4").css("display","none");
 	$( "#barbers_4" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_rewiews_1").click(function () {
+	$("#services_1").css("display","none");
+	$("#barbers_1").css("display","none");
 	$( "#rewiews_1" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_rewiews_2").click(function () {
+	$("#services_2").css("display","none");
+	$("#barbers_2").css("display","none");
 	$( "#rewiews_2" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_rewiews_3").click(function () {
+	$("#services_3").css("display","none");
+	$("#barbers_3").css("display","none");
 	$( "#rewiews_3" ).slideToggle( "slow", function() {
 });
 });
 
 $("#toggler_rewiews_4").click(function () {
+	$("#services_4").css("display","none");
+	$("#barbers_4").css("display","none");
 	$( "#rewiews_4" ).slideToggle( "slow", function() {
 });
 });

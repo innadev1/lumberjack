@@ -288,7 +288,7 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="80%">
+					<table width="75%">
 						<tr>
 							<th>
 								<h1>Beard trim</h1>
@@ -509,7 +509,7 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="80%">
+					<table width="75%">
 						<tr>
 							<th>
 								<h1>Beard trim</h1>
@@ -729,7 +729,7 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="80%">
+					<table width="75%">
 						<tr>
 							<th>
 								<h1>Beard trim</h1>
@@ -951,7 +951,7 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="80%">
+					<table width="75%">
 						<tr>
 							<th>
 								<h1>Beard trim</h1>

@@ -165,7 +165,7 @@
 					<div class="caption">
 						<h1>LUMBERJACK</h1>
 						<h2>NEW TRADITIONAL BARBERSHOP</h2>
-						<div class="button_more"><button>MORE</button></div>
+						<div class="button_more"><a href="online_store.php"><button>MORE</button></a></div>
 					</div>
 
 					<div class="inner-wrapper">
@@ -211,7 +211,7 @@
 							</p>
 						</div>
 
-						<button class="read_more_1">read more</button>
+						<a href="our_story.php"><button class="read_more_1">read more</button></a>
 
 					</div>
 				</div>

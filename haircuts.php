@@ -143,6 +143,7 @@
       	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
       	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<script src="js/haircuts_mobile.js"></script>
       
       	<!-- Javascript -->
       	<script>
@@ -213,6 +214,8 @@
 						<button class="button" haircutsn = "name3" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
+			</div>
+			<div class="wrap" id="wrap2">
 				<div class="photo photo_4">
 					<div class="text">
 						<h1>HairStyle 4.</h1>

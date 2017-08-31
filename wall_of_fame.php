@@ -6,6 +6,8 @@
 		
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/wall_of_fame.js"></script>
+		
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
@@ -17,7 +19,7 @@
 		</div>
 		
 		<div id="main">
-			<div class="wrap">
+			<div class="wrap" id="wrap1">
 				<div class="photo photo_1">
 					<div class="text">
 						<h1>Martins Zvaigzne</h1>
@@ -38,6 +40,8 @@
 						<h1>Kaspars Zvaigzne</h1>
 					</div>
 				</div>
+			</div>
+			<div class="wrap" id="wrap2">
 				<div class="photo photo_5">
 					<div class="text">
 						<h1>Miks Zvaigzne</h1>
@@ -102,7 +106,7 @@
 		</div>
 		
 		<div class="button_more"><button id="button">MORE</button></div>
-		
+				
 		<?php include 'assets/footer.php'; ?>
 	</body>
 </html>

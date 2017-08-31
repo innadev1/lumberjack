@@ -44,7 +44,7 @@
 
 		$email_exp_a = "/[^A-Za-z]/";
 
-		// Type Of Style
+		// Chosse palce
 		if($_POST['chooseMail'] == '-'){
 			$error_message_choose_m .= '<p class="red"> Place is empty. Please enter place.!</p>';
 			$errors['chooseMail'] = 1;
@@ -106,7 +106,7 @@
 		$mailSuccess = false;
 
 		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
-			$to      = 'my.worktest94@gmail.com';
+			$to      = $_POST['chooseMail'];
 			$subject = 'the Client';
 			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
 			$headers = 'From:' . $email . "\r\n" .
@@ -294,10 +294,10 @@
 						<span class="wpcf7-form-control-wrap menu-471">
 							<select name="chooseMail" class="wpcf7-select" required="required">
 								<option value="-" >Choose Email</option>
-								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0)  echo "selected"; ?> >'Riharda Vagnera iela 11, Riga, Latvia'</option>
-								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'Riharda Vagnera iela 11, Riga, Latvia(2)'</option>
-								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'Pronksi 3, Tallin, Estonia-10124'</option>
-								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg'</option>
+								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
+								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia(2)</option>
+								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
+								<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
 							</select>
 						</span>
 					</div>

@@ -176,7 +176,7 @@
 					<div class="caption">
 						<h1>LUMBERJACK</h1>
 						<h2>NEW TRADITIONAL BARBERSHOP</h2>
-						<div class="button_more"><a href="online_store.php"><button>MORE</button></a></div>
+						<div class="button_more"><button class="read_more">book now</button></div>
 					</div>
 
 					<div class="inner-wrapper">
@@ -229,12 +229,12 @@
 
 				<div class="photo photo_2"></div>
 				
-				<div class="photo1 photo_4">
+				<!--<div class="photo1 photo_4">
 					<div class="position_on_photo">
 						<h5>book an appointment</h5>
 						<button class="read_more">book now</button>
 					</div>
-				</div>
+				</div>-->
 				
 				<!-- te php  -->
 				<div class="remodal-overlay"

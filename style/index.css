@@ -112,7 +112,7 @@ button:focus{
     padding-top: 30%;
     background-size: 100%;
     background-repeat: no-repeat;
-    display: inline-grid;
+    display: inline-block;
     transition: all ease 0.3s;
     text-align: center;
 }

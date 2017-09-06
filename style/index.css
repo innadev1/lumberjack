@@ -388,12 +388,12 @@ h2 {
     letter-spacing: 0.7vw;
 }
 .caption{
-	top: 115vw;
+	top: 110vw;
 }
 .round_buttons {
     display: block;
     text-align: center;
-    padding-top: 120vw;
+    padding-top: 112vw;
     padding-bottom: 10vw;
 }
 .round_buttons button {
@@ -506,6 +506,7 @@ h5 {
     height: auto;
     width: auto;
     padding: 2vw 9vw;
+	margin-top: 3vw;
 }
 h3 {
     text-transform: uppercase;

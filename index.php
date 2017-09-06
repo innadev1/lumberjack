@@ -203,6 +203,7 @@
 				<div class="caption">
 					<h1>LUMBERJACK</h1>
 					<h2>NEW TRADITIONAL BARBERSHOP</h2>
+					<button class="read_more">book now</button>
 				</div>
 				<div class="round_buttons">
 					<button id="flip_1"></button>

@@ -418,7 +418,7 @@ h2 {
 }
 .text_on_photo img{display:none;}
 .text_on_photo {
-    bottom: 50vw;
+    bottom: -90vw;
     left: 0;
     right: 0;
     text-align: center;

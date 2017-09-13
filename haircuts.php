@@ -388,7 +388,7 @@
 
 				} ?>					
 
-			<a href="#" class="remodal-close"></a>
+			<a class="remodal-close"></a>
 
 		</div>
 		</div>

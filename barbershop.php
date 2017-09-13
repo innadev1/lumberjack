@@ -1190,10 +1190,10 @@
 				
 				echo $checkemail;
 			} ?>
-					<a href="#" class="remodal-close_1"></a>
+					<a class="remodal-close_1"></a>
 
 				</div>
-			</div>
+		</div>
 
 			<div class="round_buttons">
 				<button id="flip_1"></button>

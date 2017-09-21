@@ -24,6 +24,7 @@
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<div class="header">
 <div id="information">
 	<div class="information">
 		<ul>
@@ -40,7 +41,7 @@
 			
 
 <div id="logo">
-	<a href="<?php echo $_SERVER['HTTP_HOST'];?>/index.php"><img src="<?php echo home_url(); ?>/img/logo.png"></a>
+	<a href="http://testlumberjack.tk/index.php"><img src="<?php echo home_url(); ?>/img/logo.png"></a>
 </div>
 
 <div class="menu"><a id="toggler" href="#"><img src="<?php echo home_url(); ?>/img/menu.png"></a></div>
@@ -48,14 +49,14 @@
 	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="<?php echo home_url(); ?>/img/close.png"></div></a>
     <div>
         <ul class="box_li">
-			<li><a href="../lumberjack/index.php">home</a></li>
-			<li><a href="../lumberjack/our_story.php">our story</a></li>
-			<li><a href="../lumberjack/online_store.php">online store</a></li>
-			<li><a href="../lumberjack/barbershop.php">barbershop</a></li>
-			<li><a href="../lumberjack/haircuts.php">haircuts</a></li>
-			<li><a href="../lumberjack/lifestyle.php">lifestyle</a></li>
-			<li><a href="../lumberjack/wall_of_fame.php">wall of fame</a></li>
-			<li><a href="../lumberjack/contacts.php">contact us</a></li>
+			<li><a href="http://testlumberjack.tk/index.php">home</a></li>
+			<li><a href="http://testlumberjack.tk/our_story.php">our story</a></li>
+			<li><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
+			<li><a href="http://testlumberjack.tk/barbershop.php">barbershop</a></li>
+			<li><a href="http://testlumberjack.tk/haircuts.php">haircuts</a></li>
+			<!--<li><a href="../lumberjack/lifestyle.php">lifestyle</a></li>-->
+			<li><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>
+			<li><a href="http://testlumberjack.tk/contacts.php">contact us</a></li>
         </ul>
     </div>
 	<div class="information">
@@ -93,30 +94,32 @@
 			<ul>
 				<li><a><img src="<?php echo home_url(); ?>/img/radio.png" class="radio"></a></li>
 				
-				<li class="link"><a href="our_story.php">our story</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/our_story.php">our story</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="barbershop.php">barbershop</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/barbershop.php">barbershop</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="online_store.php">online store</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="haircuts.php">haircuts</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/haircuts.php">haircuts</a></li>
 
-				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="lifestyle.php">lifestyle</a></li>
+				<!--<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
+				<li class="link"><a href="lifestyle.php">lifestyle</a></li>-->
 				
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="contacts.php">contact us</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/contacts.php">contact us</a></li>
 			</ul>
 	</div>
 </div>
+</div>
 
 <style>
+.header{height: 14.5vw;}
 ul, li{
 	margin: 0;
 	padding: 0.5vw 0 0.5vw 0;
@@ -195,6 +198,7 @@ a{
 	display: none;
 }
 @media screen and (max-width: 900px){
+.header{height: unset;}
 #information,
 #navigation
 {
@@ -271,14 +275,45 @@ a{
 }
 </style>
 
-<div id="banner" style=" background-image: url(<?php echo home_url(); ?>/img/background_shop.jpg);"></div>
+<div id="banner" style=" background-image: url(<?php echo home_url(); ?>/img/background_shop.jpg);">
+	<div class="caption">
+		<h1><img src="<?php echo home_url(); ?>/img/vector_white.png">ONLINE STORE<img src="<?php echo home_url(); ?>/img/vector_white.png"></h1>
+	</div>
+</div>
 
 <style>
 #banner {
     height: 35vw;
-   
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+}
+.caption {
+    text-align: center;
+    top: 37%;
+    position: relative;
+   /* border: 1px solid rgba(230, 230, 230, 0.3);*/
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+	border: 6px double rgba(230, 230, 230, 0.5);
+    background-color: rgba(255,255,255,0.05);
+}
+.caption h1 {
+    color: white;
+    font-size: 4.4vw;
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    text-shadow: 3px 1px 5px black;
+}
+.caption h1 img{
+	margin: 1.2vw;
+	width: 2%;
 }
 </style>

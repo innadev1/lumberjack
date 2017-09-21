@@ -6,12 +6,12 @@
 
 <div class="links">
 	<ul>
-		<li><a href="https://facebook.com"><img src="img/facebook.png"></a></li>
-		<li><a href="https://instagram.com"><img src="img/instagram.png"></a></li>
-		<li><a href="https://vimeo.com"><img src="img/vimeo.png"></a></li>
+		<li><a href="https://www.facebook.com/lumberjackbarbershop.latvia/?ref=br_rs"><img src="img/facebook.png"></a></li>
+		<li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li>
+		<!--<li><a href="https://vimeo.com"><img src="img/vimeo.png"></a></li>-->
 	</ul>
 </div>
 
-<div><p>Copyright 2016. All rights reserved</p></div>
+<div><p>Copyright 2017. All rights reserved</p></div>
 	</div>
 </div>

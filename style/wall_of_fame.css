@@ -10,11 +10,13 @@
     text-align: center;
     top: 31%;
     position: relative;
-    border: 1px solid rgba(230, 230, 230, 0.3);
+    /*border: 1px solid rgba(230, 230, 230, 0.3);*/
     margin-left: 21vw;
     margin-right: 21vw;
     padding-top: 4vw;
     padding-bottom: 3vw;
+	border: 6px double rgba(230, 230, 230, 0.5);
+    background-color: rgba(255,255,255,0.05);
 }
 .caption h1{
 	color: white;

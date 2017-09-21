@@ -16,11 +16,20 @@
     text-align: center;
     top: 37%;
     position: relative;
-    border: 1px solid rgba(230, 230, 230, 0.3);
+    /*border: 1px solid rgba(230, 230, 230, 0.3);*/
     margin-left: 29vw;
     margin-right: 29vw;
     padding-top: 2vw;
     padding-bottom: 2vw;
+	
+	/*border: 6px solid rgba(230, 230, 230, 0.5);
+    background-color: rgba(255,255,255,0.05);
+	border-top-left-radius: 15em 1em;
+    border-bottom-right-radius: 15em 1em;
+    border-bottom-left-radius: 15em 1em;
+    border-top-right-radius: 15em 1em;*/
+	border: 6px double rgba(230, 230, 230, 0.5);
+    background-color: rgba(255,255,255,0.05);
 }
 .caption h1{
 	color: white;

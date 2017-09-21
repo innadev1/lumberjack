@@ -159,14 +159,14 @@ button:focus{
 }
 .text_on_photo{
 	position: absolute;
-    bottom: 4.5vw;
+    bottom: 5.5vw;
     left: 4vw;
 	right: 4vw;
 }
 .text_on_photo p{
 	font-size: 0.8vw;
 	color: #bd9456;
-	letter-spacing: 0.1vw;
+	letter-spacing: 0.05vw;
 	font-stretch: condensed;
 	text-align: center;
 }

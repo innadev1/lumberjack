@@ -163,7 +163,8 @@
 				$(function(){
 					$('.button').click(function(){
 						val = $(this).attr('haircutsn')
-						ind = $(this).parent().parent().index()
+						ind = parseInt($(this).attr('value'))//$(this).parent().parent().index()
+						
 
 						$('#typeOfService option:eq('+ind+')').attr('selected','selected')
 						console.log($('#typeOfService option:eq('+ind+')'), ind)
@@ -193,7 +194,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button id="b1" class="button" value="something" haircutsn = "name1" onclick="myFunction()">BOOK AN APPOINTMENT</button>
+						<button id="b1" class="button" value=0 haircutsn = "name1" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_2">
@@ -202,7 +203,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name2" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=1  haircutsn = "name2" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_3">
@@ -211,7 +212,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name3" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=2 haircutsn = "name3" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 			</div>
@@ -222,7 +223,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name4" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=3 haircutsn = "name4" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_5">
@@ -231,7 +232,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name5" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=4 haircutsn = "name5" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_6">
@@ -249,7 +250,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name7" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=5 haircutsn = "name7" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_2">
@@ -258,7 +259,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name8" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=6 haircutsn = "name8" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_3">
@@ -267,7 +268,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name9" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=7 haircutsn = "name9" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 			</div>

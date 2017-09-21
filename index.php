@@ -190,9 +190,9 @@
 						<label for="Slide3" id="s3"></label>
 
 						<div class="overflow-wrapper">
-							<a class="slide" href=""><img src="img/background.jpg" /></a>
-							<a class="slide" href=""><img src="img/background.jpg" /></a>
-							<a class="slide" href=""><img src="img/background.jpg" /></a>
+							<a class="slide"><img src="img/background.jpg" /></a>
+							<a class="slide"><img src="img/background_2.jpg" /></a>
+							<a class="slide"><img src="img/background_3.jpg" /></a>
 						</div>
 
 					</div>
@@ -363,8 +363,9 @@
 			
 				<div class="products"><h3>products</h3></div>
 
+				<a href="../lumberjack/shop/shop/">
 				<div class="wrap_product" id="wrap_product">
-					<div class="product product_1">
+					<div class="product product_1" >
 						<h4>Mals matu veidosanai no <br>"Mr Natty Dub"</h4>
 						<p>$ 20,95</p>
 					</div>
@@ -390,6 +391,7 @@
 						<p>$ 20,95</p>
 					</div>
 				</div>
+				</a>
 			</div>
 			<script>
 			var hammertime = new Hammer(document.getElementById('wrap_product'),);

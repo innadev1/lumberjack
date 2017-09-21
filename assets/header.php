@@ -27,7 +27,7 @@
         <ul class="box_li">
 			<li><a href="index.php">home</a></li>
 			<li><a href="our_story.php">our story</a></li>
-			<li><a href="online_store.php">online store</a></li>
+			<li><a href="lumberjack/shop/shop/">online store</a></li>
 			<li><a href="barbershop.php">barbershop</a></li>
 			<li><a href="haircuts.php">haircuts</a></li>
 			<li><a href="lifestyle.php">lifestyle</a></li>
@@ -76,7 +76,7 @@
 				<li class="link"><a href="barbershop.php">barbershop</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="online_store.php">online store</a></li>
+				<li class="link"><a href="../lumberjack/shop/shop/">online store</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="haircuts.php">haircuts</a></li>

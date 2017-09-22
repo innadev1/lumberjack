@@ -62,6 +62,7 @@ body{
     text-align: center;
 	text-shadow: 3px 1px 5px black;
 }
+/*
 #main_info{
 	height: auto;
 	padding: 5vw;
@@ -150,6 +151,112 @@ body{
 	text-align: justify;
 	margin: 0;
 }
+*/
+#main_info{
+	margin-bottom: 2vw;
+	text-align: center;
+}
+#main_info h1{
+	font-size: 1.5vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(176, 145, 93);
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+}
+#main_info h2{
+	font-size: 1.2vw;
+    font-family: "OpenSans", sans-serif;
+    color: rgb(176, 145, 93);
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 2vw;
+    border: 1px solid;
+    padding: 0.5vw;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.year img{
+	width: 7vw;
+    padding: 1vw;
+}
+.wrapping{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.div{
+	background-color: white;
+    width: 14.5vw;
+    height: 15vw;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    margin: 2.5vw;
+    padding: 1vw;
+	text-align: center;
+	color: rgb(176, 145, 93);
+	background-size: 30%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: 50%;
+    background-position-y: 20%;
+}
+.div:hover{
+	background-color: rgb(176, 145, 93);
+	color: white;
+}
+#ph1{background-image: url(../img/ikonas/1.png);}
+#ph2{background-image: url(../img/ikonas/2.png);}
+#ph3{background-image: url(../img/ikonas/8.png);}
+#ph4{background-image: url(../img/ikonas/3.png);}
+#ph5{background-image: url(../img/ikonas/4.png);}
+#ph6{background-image: url(../img/ikonas/8.png);}
+#ph7{background-image: url(../img/ikonas/7.png);background-size: 40%}
+#ph8{background-image: url(../img/ikonas/5.png);}
+#ph9{background-image: url(../img/ikonas/4.png);}
+#ph10{background-image: url(../img/ikonas/6.png);background-size: 40%}
+#ph11{background-image: url(../img/ikonas/9.png);}
+
+#ph1:hover{background-image: url(../img/ikonas/white/1.png);}
+#ph2:hover{background-image: url(../img/ikonas/white/2.png);}
+#ph3:hover{background-image: url(../img/ikonas/white/8.png);}
+#ph4:hover{background-image: url(../img/ikonas/white/3.png);}
+#ph5:hover{background-image: url(../img/ikonas/white/4.png);}
+#ph6:hover{background-image: url(../img/ikonas/white/8.png);}
+#ph7:hover{background-image: url(../img/ikonas/white/7.png);background-size: 40%}
+#ph8:hover{background-image: url(../img/ikonas/white/5.png);}
+#ph9:hover{background-image: url(../img/ikonas/white/4.png);}
+#ph10:hover{background-image: url(../img/ikonas/white/6.png);background-size: 40%}
+#ph11:hover{background-image: url(../img/ikonas/white/9.png);}
+
+.div div{
+	height: 8vw;
+}
+.wrapping p{
+	font-size: 1vw;
+    font-family: "OpenSans", sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.2vw;
+}
+.wrapping div img{
+	width: 4vw;
+    padding: 2vw;
+}
+
+/*NEW DESIGN*/
+
 @media screen and (max-width: 900px){
 #banner {
     height: 140vw;
@@ -174,7 +281,7 @@ body{
     letter-spacing: 2vw;
 }
 .caption img{display: none;}
-.image, .image_2 {
+/*.image, .image_2 {
     position: absolute;
     left: -64%;
     right: 0;
@@ -217,5 +324,5 @@ body{
     margin: 0;
     padding: 6vw;
     padding-top: 0;
-}
+}*/
 }

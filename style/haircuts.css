@@ -47,6 +47,7 @@
 	padding: 1.2vw;
 	width: 2%;
 }
+.button_more{display:none;}
 .button_more{
 	text-align: center;
 	padding-bottom: 5vw;
@@ -180,7 +181,21 @@
     font-size: 4.5vw;
     padding: 2vw 4vw;
 }
+.button_more{
+	text-align: center;
+	padding-bottom: 5vw;
+	display:block
+}
 .button_more button{
+	background-color: #bd9456;
+    color: rgba(255,255,255,1);
+    font-stretch: condensed;
+    border: none;
+    height: auto;
+    border-radius: 0.3vw;
+    opacity: 0.9;
+	cursor: pointer;
+	
 	letter-spacing: 0.5vw;
     margin: 7vw;
     font-size: 4.5vw;

@@ -18,8 +18,7 @@
 		</div>
 		
 		<div id="map_latvia_2">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
-			height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.800093302033!2d24.10330631627597!3d56.952226180891145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfda76257645%3A0x9c15d2ce05d3dfe9!2sPullman+Riga+Old+Town!5e0!3m2!1sru!2sru!4v1506079163955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_estonia">
@@ -56,7 +55,7 @@
 				<table align="center">
 					<tr>
 						<th><h2>Adress:</h2></th>
-						<td><p>Riharda Vagnera iela 11,<br> Riga, Latvia</p></td>
+						<td><p>Jēkaba iela 24,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
 						<th><h2>Email:</h2></th>

@@ -2087,8 +2087,9 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .single-featured-image-header {
-	background-color: #fafafa;
+	background-color: white;
     border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
     position: absolute;
     left: 0;
     right: 0;
@@ -3335,7 +3336,7 @@ object {
 	/* Layout */
 
 	.wrap {
-		max-width: 1000px;
+		    max-width: 70%;
 		padding-left: 3em;
 		padding-right: 3em;
 		padding-top: 3vw;

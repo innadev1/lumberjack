@@ -52,10 +52,10 @@
 			<li><a href="http://testlumberjack.tk/index.php">home</a></li>
 			<li><a href="http://testlumberjack.tk/our_story.php">our story</a></li>
 			<li><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
-			<li><a href="http://testlumberjack.tk/barbershop.php">barbershop</a></li>
+			<li><a href="http://testlumberjack.tk/barbershop.php">our barbershops</a></li>
 			<li><a href="http://testlumberjack.tk/haircuts.php">haircuts</a></li>
 			<!--<li><a href="../lumberjack/lifestyle.php">lifestyle</a></li>-->
-			<li><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>
+			<!--<li><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>-->
 			<li><a href="http://testlumberjack.tk/contacts.php">contact us</a></li>
         </ul>
     </div>
@@ -97,7 +97,7 @@
 				<li class="link"><a href="http://testlumberjack.tk/our_story.php">our story</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/barbershop.php">barbershop</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/barbershop.php">our barbershops</a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
@@ -108,8 +108,8 @@
 				<!--<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="lifestyle.php">lifestyle</a></li>-->
 				
-				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>
+				<!--<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
+				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php">wall of fame</a></li>-->
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/contacts.php">contact us</a></li>

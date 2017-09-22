@@ -465,13 +465,13 @@
 				});
 				</script>
 				<div id="wrapper"> 
-					<div id="container">   	
+					<a href="https://www.instagram.com/lumberjack_barbershop_/"><div id="container">   	
 						<img src="img/111.png" alt="Cuba" />
 						<img src="img/222.png" alt="Cuba" />
 						<img src="img/333.png" alt="Cuba" />
 						<img src="img/444.png" alt="Cuba" />
 						<img src="img/111.png" alt="Cuba" />
-					</div>
+					</div></a>
 					<div class="buttons-left-right">
 					<img id="carouselLeft" src="img/leftArr.png" alt="Left Arrow" />
 					<img id="carouselRight" src="img/rightArr.png" alt="Right Arrow" />

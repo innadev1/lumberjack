@@ -458,7 +458,7 @@
 			</div>
 			
 			<div id="gallery">
-				<!--<script type="text/javascript" src="js/click-carousel.js"></script>
+				<script type="text/javascript" src="js/click-carousel.js"></script>
 				<script type="text/javascript">
 				$(function(){
 					$("#container").clickCarousel({margin: 5});	
@@ -476,8 +476,7 @@
 					<img id="carouselLeft" src="img/leftArr.png" alt="Left Arrow" />
 					<img id="carouselRight" src="img/rightArr.png" alt="Right Arrow" />
 					</div>
-				</div>-->
-				<iframe src="//widget.stapico.ru/?q=lumberjack_barbershop_&s=100&w=10&h=2&b=1&p=5&profile=no&header=no&effect=0" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:1170px; height: 375px" ></iframe> <!-- stapico - stapico.ru -->
+				</div>
 			</div>
 			
 			<?php include 'assets/footer.php'; ?>

@@ -1,0 +1,108 @@
+#main{
+    height: auto;
+    background-image: url(../img/background_7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+	width: 100%;
+	padding-top: 20vw;
+	padding-bottom: 10vw;
+}
+.box table{
+	width: 50%;
+	border: double rgba(189, 148, 86, 0.3);
+	border-width: 7px;
+	border-top: none;
+}
+.top_border{
+	border: 7px double rgba(189, 148, 86, 0.3);
+    width: 26vw;
+    border-radius: 33vw 33vw 0vw 0vw;
+    height: 12.5vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 7.5vw;
+    border-bottom: none;
+}
+.top_border_2{
+	border-top: 7px double rgba(189, 148, 86, 0.3);
+    width: 11.5vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 25%;
+    margin-right: auto;
+}
+.top_border_3{
+	border-top: 7px double rgba(189, 148, 86, 0.3);
+    width: 11.5vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 25%;
+}
+.box table tr{
+	height: 4vw;
+	padding: 0.5vw;
+}
+.box table th{
+	text-align: center;
+}
+.box h1{
+	font-size: 1.2vw;
+	font-family: "Myriad Pro", sans-serif;
+	color: rgb(189, 148, 86);
+	text-align: left;
+	margin: 0;
+	padding-left: 1vw;
+}
+.box p{
+	font-size: 1.1vw;
+	font-family: "Myriad Pro", sans-serif;
+	color: rgb(189, 148, 86);
+	text-align: right;
+	margin: 0;
+}
+button{
+    background-color: transparent;
+    color: rgb(189, 148, 86);
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border: 1px solid rgb(189, 148, 86);
+    cursor: pointer;
+    font-size: 1vw;
+    padding: 0.4vw 0.8vw;
+}
+.caption {
+	z-index: 2;
+    text-align: center;
+    position: absolute;
+    margin-left: 32%;
+    margin-right: 32%;
+    padding-top: 2vw;
+    border: 4px double rgb(189, 148, 86);
+    background-color: rgba(255,255,255,0.05);
+    margin-top: 5vw;
+    width: 36%;
+}
+.caption h1 {
+    color:  rgb(189, 148, 86);
+    font-size: 3.5vw;
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 0.8vw;
+    text-align: center;
+    padding-bottom: 2vw;
+    text-shadow: 3px 1px 5px black;
+}
+.caption h1 img {
+    padding: 1.2vw;
+    width: 1.8%;
+}

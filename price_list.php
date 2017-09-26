@@ -136,15 +136,12 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style/online_store.css">
-		<link rel="stylesheet" type="text/css" href="style/style.css">
-
-		<link rel="stylesheet" type="text/css" href="style/haircuts.css">
+		<link rel="stylesheet" type="text/css" href="style/price_list.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
 
 		<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
-		<title>haircuts</title>
+		<title>price list</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -154,7 +151,6 @@
       	
       	<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       	<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-		<script src="js/haircuts_mobile.js"></script>
       
       	<!-- Javascript -->
       	<script>
@@ -188,68 +184,79 @@
 			}
 		</script> 
 
-
 	</head>
-
-	<style>
-		h1{
-			font-size: 25px;
-
-		}
-
-		.box{
-			border-style: solid;
-    		border-width: 2px;
-			margin-bottom: 50px;
-			width: 1000px;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		.box input{
-
-		}
-
-	</style>
 
 	<body>
 		<?php include 'assets/header.php'; ?>
 		
-		<div class = "box">
-			<h1>Haircut Scissors: 30-40e</h1>
-			<button class="button" value=1 haircutsn = "name1" >BOOK AN APPOINTMENT</button>
-
-			<h1>Brooming: 15-25e</h1>
-			<button class="button" value=2 haircutsn = "name2" >BOOK AN APPOINTMENT</button>
-
-			<h1>Haircut + beardtrim: 40e</h1>
-			<button class="button" value=3 haircutsn = "name3" >BOOK AN APPOINTMENT</button>
-
-			<h1>Beardtrim: 15-20e</h1>
-			<button class="button" value=4 haircutsn = "name4" >BOOK AN APPOINTMENT</button>
-
-			<h1>Hot Shave: 25e</h1>
-			<button class="button" value=5 haircutsn = "name5" >BOOK AN APPOINTMENT</button>
-
-			<h1>Haircut Kid (under 10 years): 15e</h1>
-			<button class="button" value=6 haircutsn = "name6" >BOOK AN APPOINTMENT</button>
-
-			<h1>DAD & SON: 40e</h1>
-			<button class="button" value=7 haircutsn = "name7" >BOOK AN APPOINTMENT</button>
-
-			<h1>HeadWash: 10-15e</h1>
-			<button class="button" value=8 haircutsn = "name8" >BOOK AN APPOINTMENT</button>
-
-			<h1>Beardcoloring: 15e</h1>
-			<button class="button" value=9 haircutsn = "name9" >BOOK AN APPOINTMENT</button>
-
-			<h1>Students specials price sun. and thu.: 20e</h1>
-			<button class="button" value=10 haircutsn = "name10" >BOOK AN APPOINTMENT</button>
+		<div class="caption">
+			<h1><img src="img/vector.png">PRICE LIST<img src="img/vector.png"></h1>
 		</div>
+		
+		<div id="main">
+		<div class = "box" align="center">
+		<div class="top_border"></div>
+		<table>
+		<div class="top_border_2"></div>
+		<div class="top_border_3"></div>
+			<tr>
+				<td><h1>Haircut Scissors</h1></td>
+				<td><p>30.00-40.00 EUR</p></td>
+				<th><button class="button" value=1 haircutsn = "name1" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Grooming</h1></td>
+				<td><p>15.00-25.00 EUR</p></td>
+				<th><button class="button" value=2 haircutsn = "name2" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Haircut + Beardtrim</h1></td>
+				<td><p>40.00 EUR</p></td>
+				<th><button class="button" value=3 haircutsn = "name3" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Hot Shave</h1></td>
+				<td><p>25.00 EUR</p></td>
+				<th><button class="button" value=4 haircutsn = "name4" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Haircut Kids (under 10 years)</h1></td>
+				<td><p>15.00 EUR</p></td>
+				<th><button class="button" value=5 haircutsn = "name5" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>DAD & SON</h1></td>
+				<td><p> 15.00 EUR</p></td>
+				<th><button class="button" value=6 haircutsn = "name6" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Headwash</h1></td>
+				<td><p>10.00-15.00 EUR</p></td>
+				<th><button class="button" value=7 haircutsn = "name7" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Beardcoloring</h1></td>
+				<td><p>10.00 EUR</p></td>
+				<th><button class="button" value=8 haircutsn = "name8" >BOOK</button></th>
+			</tr>
+			<tr>
+				<td><h1>Students special price sun.-thu.</h1></td>
+				<td><p>20.00 EUR</p></td>
+				<th><button class="button" value=9 haircutsn = "name9" >BOOK</button></th>
+			</tr>
+		</table>
+
+		</div>
+		</div>
+		
+		<div class="remodal-overlay" style="display: none;">
+		<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
+		<img src="img/logo-half.png" id="bookin-workshop">
 
 		<?php if(!$mailSuccess){ ?>
 
-			<form id="form" name="orderform" method="post" action="price_list.php">
+		<form id="form" name="orderform" method="post" action="price_list.php">
 
 				<div class="styled-select">
 					<span class="wpcf7-form-control-wrap menu-471">
@@ -340,7 +347,7 @@
 					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
 				</div>					
 					
-			</form>
+		</form>
 
 			<?php
 
@@ -350,11 +357,16 @@
 			
 			echo $checkemail;
 
-		} ?>					
+		} ?>
+
+		<a class="remodal-close"></a>
+
+		</div>
+		</div>		
 
 		<?php include 'assets/footer.php'; ?>
 
-		<!-- <script>
+		<script>
 			$(document).ready(function(){
 				$(".button").click(function () {
 				$(".remodal-overlay").css("display","none");
@@ -365,6 +377,6 @@
 				$(".remodal-overlay").css("display","none");
 				});
 			});
-		</script> -->
+		</script>
 	</body>
 </html>

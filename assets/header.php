@@ -32,6 +32,7 @@
 			<li><a href="haircuts.php">haircuts</a></li>
 			<!--<li><a href="lifestyle.php">lifestyle</a></li>-->
 			<!--<li><a href="wall_of_fame.php">wall of fame</a></li>-->
+			<li><a href="price_list.php">price list</a></li>
 			<li><a href="contacts.php">contact us</a></li>
         </ul>
     </div>
@@ -86,6 +87,9 @@
 				
 				<!--<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>-->
+				
+				<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="price_list.php">price list</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="contacts.php">contact us</a></li>

@@ -108,7 +108,7 @@
 
 		$mailSuccess = false;
 
-		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
+		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
 			$to      = $_POST['chooseMail'];
 			$subject = 'the Client';
 			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
@@ -202,47 +202,47 @@
 			<tr>
 				<td><h1>Haircut Scissors</h1></td>
 				<td><p>30.00-40.00 EUR</p></td>
-				<th><button class="button" value=1 haircutsn = "name1" >BOOK</button></th>
+				<th><button class="button" value=0 haircutsn = "name1" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Grooming</h1></td>
 				<td><p>15.00-25.00 EUR</p></td>
-				<th><button class="button" value=2 haircutsn = "name2" >BOOK</button></th>
+				<th><button class="button" value=1 haircutsn = "name2" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Haircut + Beardtrim</h1></td>
 				<td><p>40.00 EUR</p></td>
-				<th><button class="button" value=3 haircutsn = "name3" >BOOK</button></th>
+				<th><button class="button" value=2 haircutsn = "name3" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Hot Shave</h1></td>
 				<td><p>25.00 EUR</p></td>
-				<th><button class="button" value=4 haircutsn = "name4" >BOOK</button></th>
+				<th><button class="button" value=3 haircutsn = "name4" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Haircut Kids (under 10 years)</h1></td>
 				<td><p>15.00 EUR</p></td>
-				<th><button class="button" value=5 haircutsn = "name5" >BOOK</button></th>
+				<th><button class="button" value=4 haircutsn = "name5" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>DAD & SON</h1></td>
 				<td><p> 15.00 EUR</p></td>
-				<th><button class="button" value=6 haircutsn = "name6" >BOOK</button></th>
+				<th><button class="button" value=5 haircutsn = "name6" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Headwash</h1></td>
 				<td><p>10.00-15.00 EUR</p></td>
-				<th><button class="button" value=7 haircutsn = "name7" >BOOK</button></th>
+				<th><button class="button" value=6 haircutsn = "name7" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Beardcoloring</h1></td>
 				<td><p>10.00 EUR</p></td>
-				<th><button class="button" value=8 haircutsn = "name8" >BOOK</button></th>
+				<th><button class="button" value=7 haircutsn = "name8" >BOOK</button></th>
 			</tr>
 			<tr>
 				<td><h1>Students special price sun.-thu.</h1></td>
 				<td><p>20.00 EUR</p></td>
-				<th><button class="button" value=9 haircutsn = "name9" >BOOK</button></th>
+				<th><button class="button" value=8 haircutsn = "name9" >BOOK</button></th>
 			</tr>
 		</table>
 

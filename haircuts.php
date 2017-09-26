@@ -105,7 +105,7 @@
 
 		$mailSuccess = false;
 
-		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
+		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
 			$to      = $_POST['chooseMail'];
 			$subject = 'the Client';
 			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
@@ -241,7 +241,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" haircutsn = "name6" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=5 haircutsn = "name6" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_1">
@@ -250,7 +250,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" value=5 haircutsn = "name7" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=6 haircutsn = "name7" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_2">
@@ -259,7 +259,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" value=6 haircutsn = "name8" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=7 haircutsn = "name8" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 				<div class="photo photo_3">
@@ -268,7 +268,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 						</p>
-						<button class="button" value=7 haircutsn = "name9" >BOOK AN APPOINTMENT</button>
+						<button class="button" value=8 haircutsn = "name9" >BOOK AN APPOINTMENT</button>
 					</div>
 				</div>
 			</div>

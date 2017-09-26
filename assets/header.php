@@ -4,7 +4,7 @@
 <div id="information">
 	<div class="information">
 		<ul>
-			<li><a href="#">franchise</a></li>
+			<li><a href="downloads/Lumberjack.pdf" download="Lumberjack">franchise</a></li>
 			<li class="border"></li>
 			<li><a href="#"><img src="img/call.png" width="1.2%"></a></li>
 			<li class="border"></li>

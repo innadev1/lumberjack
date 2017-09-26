@@ -24,6 +24,9 @@ a{
 	list-style: none;
 	margin-right: 4px;
 }
+.information a{
+	cursor: pointer;
+}
 .border{
 	border-right-color: #e0bf95;
     border-right-style: solid;

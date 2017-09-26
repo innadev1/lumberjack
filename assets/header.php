@@ -4,17 +4,18 @@
 <div id="information">
 	<div class="information">
 		<ul>
-			<li><a href="downloads/Lumberjack.pdf" download="Lumberjack">franchise</a></li>
+			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en">franchise</a></li>
 			<li class="border"></li>
 			<li><a href="#"><img src="img/call.png" width="1.2%"></a></li>
 			<li class="border"></li>
 			<li><a href="#"><img src="img/bag.png" width="1%"></a></li>
 			<li class="border"></li>
 			<li><a>lv</a></li>
+			<li><a>ru</a></li>
+			<li><a>eng</a></li>
 		</ul>
 	</div>
 </div>
-			
 
 <div id="logo">
 	<a href="index.php"><img src="img/logo.png"></a>

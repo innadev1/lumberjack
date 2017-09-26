@@ -307,15 +307,14 @@
 					<span class="wpcf7-form-control-wrap menu-471">
 						<select id="typeOfService" name="hairStyle" class="wpcf7-select" required="required">
 							<option value= "1" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '1') echo "selected"; ?>>Haircut Scissors</option>
-							<option value="2"<?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '2') echo "selected"; ?>>Brooming</option>
+							<option value="2"<?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '2') echo "selected"; ?>>Grooming</option>
 							<option value="3" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '3') echo "selected"; ?>>Haircut + beardtrim</option>
-							<option value="4" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '4') echo "selected"; ?>>Beardtrim</option>
-							<option value="5" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '5') echo "selected"; ?>>Hot Shave</option>
-							<option value="6" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '6') echo "selected"; ?>>Haircut Kid (under 10 years)</option>
-							<option value="7" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '7') echo "selected"; ?>>DAD & SON</option>
-							<option value="8" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '8') echo "selected"; ?>>HeadWash </option>
-							<option value="9" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '9') echo "selected"; ?>>Beardcoloring</option>
-							<option value="10" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '10') echo "selected"; ?>>Students specials price sun. and thu.</option>
+							<option value="4" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '4') echo "selected"; ?>>Hot Shave</option>
+							<option value="5" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '5') echo "selected"; ?>>Haircut Kid (under 10 years)</option>
+							<option value="6" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '6') echo "selected"; ?>>DAD & SON</option>
+							<option value="7" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '7') echo "selected"; ?>>HeadWash </option>
+							<option value="8" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '8') echo "selected"; ?>>Beardcoloring</option>
+							<option value="9" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == '9') echo "selected"; ?>>Students specials price sun. and thu.</option>
 
 						</select>
 					</span>

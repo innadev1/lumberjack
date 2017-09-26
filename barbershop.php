@@ -1,4 +1,9 @@
 <?php
+// yoooyoyoyo
+echo "10";
+
+
+
 	include 'assets/lang.php';
 
 	$error_message_n = "";

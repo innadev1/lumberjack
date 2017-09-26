@@ -391,7 +391,7 @@ h2 {
 	top: 110vw;
 }
 .round_buttons {
-    display: block;
+    display: none;
     text-align: center;
     padding-top: 112vw;
     padding-bottom: 10vw;

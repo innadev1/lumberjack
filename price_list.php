@@ -182,7 +182,7 @@
 				var x = document.getElementById("myBtn").value;
 				document.getElementById("demo").innerHTML = x;
 			}
-		</script> 
+		</script>
 
 	</head>
 

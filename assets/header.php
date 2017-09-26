@@ -10,9 +10,10 @@
 			<li class="border"></li>
 			<li><a href="#"><img src="img/bag.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a>lv</a></li>
-			<li><a>ru</a></li>
-			<li><a>eng</a></li>
+			
+			<li><a href="index.php?lang=lv">LV</a></li>
+			<li><a href="index.php?lang=ru">RU</a></li>
+			<li><a href="index.php?lang=en">EN</a></li>
 		</ul>
 	</div>
 </div>

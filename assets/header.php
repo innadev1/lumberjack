@@ -6,9 +6,9 @@
 		<ul>
 			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en">franchise</a></li>
 			<li class="border"></li>
-			<li><a href="#"><img src="img/call.png" width="1.2%"></a></li>
+			<li><a href="contacts.php"><img src="img/call.png" width="1.2%"></a></li>
 			<li class="border"></li>
-			<li><a href="#"><img src="img/bag.png" width="1%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="1%"></a></li>
 			<li class="border"></li>
 			
 			<li><a href="index.php?lang=lv">LV</a></li>

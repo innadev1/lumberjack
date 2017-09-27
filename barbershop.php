@@ -283,33 +283,42 @@
 					<table width="100%">
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is requested yhe price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatment</h1>
-								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
 								<h1>Haircut Scissors</h1>
+								<p></p>
 							</th>
 							<td>
-								<h1>30.00 EUR</h1>
+								<h1>30.00-40.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut Machine</h1>
+								<h1>Grooming</h1>
+								<p></p>
+							</th>
+							<td>
+								<h1>15.00-25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut + Beardtrim</h1>
+							</th>
+							<td>
+								<h1>40.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Hot Shave</h1>
+							</th>
+							<td>
+								<h1>25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Kids (under 10 years)</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
@@ -317,36 +326,35 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is required the price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatement</h1>
-								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-							</th>
-							<td>
-								<h1>30.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Machine</h1>
+								<h1>DAD & SON</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Headwash</h1>
+							</th>
+							<td>
+								<h1>10.00-15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beardcoloring</h1>
+							</th>
+							<td>
+								<h1>10.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Students special price sun.-thu.</h1>
+							</th>
+							<td>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 					</table>
@@ -502,33 +510,42 @@
 					<table width="100%">
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is requested yhe price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatment</h1>
-								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
 								<h1>Haircut Scissors</h1>
+								<p></p>
 							</th>
 							<td>
-								<h1>30.00 EUR</h1>
+								<h1>30.00-40.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut Machine</h1>
+								<h1>Grooming</h1>
+								<p></p>
+							</th>
+							<td>
+								<h1>15.00-25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut + Beardtrim</h1>
+							</th>
+							<td>
+								<h1>40.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Hot Shave</h1>
+							</th>
+							<td>
+								<h1>25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Kids (under 10 years)</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
@@ -536,36 +553,35 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is required the price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatement</h1>
-								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-							</th>
-							<td>
-								<h1>30.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Machine</h1>
+								<h1>DAD & SON</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Headwash</h1>
+							</th>
+							<td>
+								<h1>10.00-15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beardcoloring</h1>
+							</th>
+							<td>
+								<h1>10.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Students special price sun.-thu.</h1>
+							</th>
+							<td>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 					</table>
@@ -721,33 +737,42 @@
 					<table width="100%">
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is requested yhe price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatment</h1>
-								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
 								<h1>Haircut Scissors</h1>
+								<p></p>
 							</th>
 							<td>
-								<h1>30.00 EUR</h1>
+								<h1>30.00-40.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut Machine</h1>
+								<h1>Grooming</h1>
+								<p></p>
+							</th>
+							<td>
+								<h1>15.00-25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut + Beardtrim</h1>
+							</th>
+							<td>
+								<h1>40.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Hot Shave</h1>
+							</th>
+							<td>
+								<h1>25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Kids (under 10 years)</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
@@ -755,36 +780,35 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is required the price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatement</h1>
-								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-							</th>
-							<td>
-								<h1>30.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Machine</h1>
+								<h1>DAD & SON</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Headwash</h1>
+							</th>
+							<td>
+								<h1>10.00-15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beardcoloring</h1>
+							</th>
+							<td>
+								<h1>10.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Students special price sun.-thu.</h1>
+							</th>
+							<td>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 					</table>
@@ -942,33 +966,42 @@
 					<table width="100%">
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is requested yhe price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatment</h1>
-								<p>Cleanse, tone, mask, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
 								<h1>Haircut Scissors</h1>
+								<p></p>
 							</th>
 							<td>
-								<h1>30.00 EUR</h1>
+								<h1>30.00-40.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut Machine</h1>
+								<h1>Grooming</h1>
+								<p></p>
+							</th>
+							<td>
+								<h1>15.00-25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut + Beardtrim</h1>
+							</th>
+							<td>
+								<h1>40.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Hot Shave</h1>
+							</th>
+							<td>
+								<h1>25.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Haircut Kids (under 10 years)</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
@@ -976,36 +1009,35 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Beard trim</h1>
-								<p>If any shaving is required the price will be 42eur.</p>
-							</th>
-							<td>
-								<h1>32.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Facial treatement</h1>
-								<p>Cleanse, tone, mack, face massage and extraction. 30 MIN approx.</p>
-							</th>
-							<td>
-								<h1>50.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-							</th>
-							<td>
-								<h1>30.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Machine</h1>
+								<h1>DAD & SON</h1>
+								<p></p>
 							</th>
 							<td>
 								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Headwash</h1>
+							</th>
+							<td>
+								<h1>10.00-15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Beardcoloring</h1>
+							</th>
+							<td>
+								<h1>10.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1>Students special price sun.-thu.</h1>
+							</th>
+							<td>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 					</table>

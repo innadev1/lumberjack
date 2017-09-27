@@ -363,7 +363,7 @@
 			
 				<div class="products"><h3>products</h3></div>
 
-				<a href="../lumberjack/shop/shop/">
+				<a href="http://testlumberjack.tk/shop/shop">
 				<div class="wrap_product" id="wrap_product">
 					<div class="product product_1" >
 						<h4>Mals matu veidosanai no <br>"Mr Natty Dub"</h4>

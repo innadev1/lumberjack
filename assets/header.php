@@ -1,3 +1,27 @@
+<?php
+
+session_start();
+
+if (isset($_GET['lang'])) {
+
+    $lang=$_GET['lang'];
+
+    $_SESSION['lang'] = $lang;
+
+}
+
+if(!isset($_SESSION['lang'])){
+
+    $lang="en";
+
+}else{
+
+    $lang = $_SESSION['lang'];
+
+}
+
+?>
+
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,9 +35,12 @@
 			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="1%"></a></li>
 			<li class="border"></li>
 			
-			<li><a href="index.php?lang=lv">LV</a></li>
-			<li><a href="index.php?lang=ru">RU</a></li>
-			<li><a href="index.php?lang=en">EN</a></li>
+	
+
+			<li><a href="?lang=lv">LV</a></li>
+			<li><a href="?lang=ru">RU</a></li>
+			<li><a href="?lang=en">EN</a></li>
+			
 		</ul>
 	</div>
 </div>
@@ -79,7 +106,7 @@
 				<li class="link"><a href="barbershop.php">our barbershops</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/shop/shop">online store</a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="haircuts.php">haircuts</a></li>

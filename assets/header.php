@@ -56,7 +56,7 @@ if(!isset($_SESSION['lang'])){
         <ul class="box_li">
 			<li><a href="index.php">home</a></li>
 			<li><a href="our_story.php">our story</a></li>
-			<li><a href="http://testlumberjack.tk/lumberjack/shop/shop">online store</a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop">online store</a></li>
 			<li><a href="barbershop.php">our barbershops</a></li>
 			<li><a href="haircuts.php">haircuts</a></li>
 			<!--<li><a href="lifestyle.php">lifestyle</a></li>-->

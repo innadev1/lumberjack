@@ -78,7 +78,7 @@ iframe{
     font-size: 0.8vw;
     padding: 0.4vw 0.7vw;
 }
-.first:hover, .second:hover{
+.second:hover{
 	background-color: rgb(189, 148, 86);
 	color: white;
 }

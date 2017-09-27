@@ -11,7 +11,7 @@
 		
 		<div id="banner">
 			<div class="caption">
-				<h1><img src="img/vector_white.png">GREATINESS<img src="img/vector_white.png"></h1>
+				<h1><img src="img/vector_white.png">GREATNESS<img src="img/vector_white.png"></h1>
 				<h2>SINCE 1990</h2>
 			</div>
 		</div>

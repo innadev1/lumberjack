@@ -1,25 +1,6 @@
 <?php
 
-session_start();
-
-if (isset($_GET['lang'])) {
-
-    $lang=$_GET['lang'];
-
-    $_SESSION['lang'] = $lang;
-
-}
-
-if(!isset($_SESSION['lang'])){
-
-    $lang="en";
-
-}else{
-
-    $lang = $_SESSION['lang'];
-
-}
-
+include 'assets/lang.php';
 ?>
 
 <link rel="stylesheet" type="text/css" href="style/header.css">
@@ -28,18 +9,17 @@ if(!isset($_SESSION['lang'])){
 <div id="information">
 	<div class="information">
 		<ul>
-			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en">franchise</a></li>
+			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
 			<li><a href="contacts.php"><img src="img/call.png" width="1.2%"></a></li>
 			<li class="border"></li>
 			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="1%"></a></li>
 			<li class="border"></li>
 			
-	
 
 			<li><a href="?lang=lv">LV</a></li>
-			<li><a href="?lang=ru">RU</a></li>
 			<li><a href="?lang=en">EN</a></li>
+			<li><a href="?lang=ru">RU</a></li>
 			
 		</ul>
 	</div>
@@ -55,18 +35,18 @@ if(!isset($_SESSION['lang'])){
     <div>
         <ul class="box_li">
 			<li><a href="index.php">home</a></li>
-			<li><a href="our_story.php">our story</a></li>
-			<li><a href="http://testlumberjack.tk/shop/shop">online store</a></li>
-			<li><a href="barbershop.php">our barbershops</a></li>
-			<li><a href="haircuts.php">haircuts</a></li>
+			<li><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['our_barber'] ?></a></li>
+			<li><a href="barbershop.php"><?php echo $language[$lang]['online_store'] ?></a></li>
+			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 			<!--<li><a href="lifestyle.php">lifestyle</a></li>-->
 			<!--<li><a href="wall_of_fame.php">wall of fame</a></li>-->
-			<li><a href="price_list.php">price list</a></li>
-			<li><a href="contacts.php">contact us</a></li>
+			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
+			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
     </div>
 	<div class="information">
-			<p>franchise</p>
+			<p><?php echo $language['ru']['franch.'] ?></p>
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
@@ -100,16 +80,16 @@ if(!isset($_SESSION['lang'])){
 			<ul>
 				<li><a><img src="img/radio.png" class="radio"></a></li>
 				
-				<li class="link"><a href="our_story.php">our story</a></li>
+				<li class="link"><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="barbershop.php">our barbershops</a></li>
+				<li class="link"><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/shop/shop">online store</a></li>
+				<li class="link"><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="haircuts.php">haircuts</a></li>
+				<li class="link"><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
 				<!--<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="lifestyle.php">lifestyle</a></li>-->
@@ -118,10 +98,10 @@ if(!isset($_SESSION['lang'])){
 				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>-->
 				
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="price_list.php">price list</a></li>
+				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="contacts.php">contact us</a></li>
+				<li class="link"><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
 			</ul>
 	</div>
 </div>

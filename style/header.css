@@ -77,6 +77,15 @@ a{
 }
 
 
+@media screen and (min-width: 1500px){
+.navigation {
+    font-size: 0.75vw;
+}
+.radio {
+    width: 1.7vw;
+}
+}
+
 .menu,
 .close,
 .box_li,

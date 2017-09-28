@@ -135,19 +135,65 @@
 
 
     // BarBerShop 
-    $language['lv']['barbtext'] = '
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-    ';
+
+
+    $language['lv']['barbtext'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
     
-    $language['en']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    
-    ';
+    $language['en']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
 
-    $language['ru']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    $language['ru']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
+
     
-    ';
+    // LV
+    $language['lv']['service'] = "servisi";
+    $language['lv']['book'] = "pieteikties";
+    $language['lv']['rew'] = "atsauces";
+
+
+    $language['lv']['hair1.'] = "Matu griezums";
+    $language['lv']['hair2.'] = "Groomings";
+    $language['lv']['hair3.'] = "Bārdas+ matu griezums";
+    $language['lv']['hair4.'] = "Karstā skūšanās";
+    $language['lv']['hair5.'] = "Bērnu matu griezums";
+    $language['lv']['hair6.'] = "Matu griezums Dēls+ Tēvs";
+    $language['lv']['hair7.'] = "Matu mazgāšana";
+    $language['lv']['hair8.'] = "Bārdas krāsošana";
+    $language['lv']['hair9.'] = "Studentu īpaša cena no sv.-cet. ";
+
+    // RUS
+    $language['ru']['service'] = "услуги";
+    $language['ru']['book'] = "Записатся на приём";
+    $language['ru']['rew'] = "Отзывы";
+
+
+    $language['ru']['hair1.'] = "Стрижка ножницами";
+    $language['ru']['hair2.'] = "Груминг";
+    $language['ru']['hair3.'] = "Стрижка+коррекция бороды";
+    $language['ru']['hair4.'] = "Горячее бритьё";
+    $language['ru']['hair5.'] = "Детская стрижка";
+    $language['ru']['hair6.'] = "Стрижка отец + сын";
+    $language['ru']['hair7.'] = "Мойка головы";
+    $language['ru']['hair8.'] = "Покраска бороды";
+    $language['ru']['hair9.'] = "Специальная цена для студентов воск.- чет.";
+
+     // EN
+     $language['en']['service'] = "services";
+     $language['en']['book'] = "book an appointment ";
+     $language['en']['rew'] = "reviews";
+     
+     $language['en']['hair1.'] = "Haircut Scissors";
+     $language['en']['hair2.'] = "Grooming";
+     $language['en']['hair3.'] = "Haircut + Beardtrim";
+     $language['en']['hair4.'] = "Hot Shave";
+     $language['en']['hair5.'] = "Haircut Kids (under 10 years)";
+     $language['en']['hair6.'] = "DAD & SON";
+     $language['en']['hair7.'] = "Headwash";
+     $language['en']['hair8.'] = "Beardcoloring";
+     $language['en']['hair9.'] = "Students special price sun.-thu.";
+ 
 
 
     //  Sūtīšanas Forma

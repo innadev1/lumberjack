@@ -203,7 +203,7 @@
 		
 		<div id="info_about_barbershop">
 			<p>
-			<?php echo $language[$lang]['barbtext'] ?>
+			<!-- <?php echo $language[$lang]['barbtext'] ?> -->
 			</p>
 		</div>
 		
@@ -264,10 +264,10 @@
 			<div class="button1" id="but1"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
-				<div class="buttons" id="toggler_services_1"><button>SERVICES</button></div>
-				<div class="buttons" id="book_an_appointment_1"><button class="book" id="riga1" stuff="riga1">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="toggler_services_1"><button><?php echo $language[$lang]['service'] ?></button></div>
+				<div class="buttons" id="book_an_appointment_1"><button class="book" id="riga1" stuff="riga1"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_1"><button>BARBERS</button></div>-->
-				<div class="buttons" id="toggler_rewiews_1"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_rewiews_1"><button><?php echo $language[$lang]['rew'] ?></button></div>
 			</div>
 			
 			<div id="services_1">
@@ -283,7 +283,7 @@
 					<table width="100%">
 						<tr>
 							<th>
-								<h1>Haircut Scissors</h1>
+								<h1><?php echo $language[$lang]['hair1.'] ?></h1>
 								<p></p>
 							</th>
 							<td>
@@ -292,7 +292,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Grooming</h1>
+								<h1><?php echo $language[$lang]['hair2.'] ?></h1>
 								<p></p>
 							</th>
 							<td>
@@ -301,7 +301,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut + Beardtrim</h1>
+								<h1><?php echo $language[$lang]['hair3.'] ?></h1>
 							</th>
 							<td>
 								<h1>40.00 EUR</h1>
@@ -309,7 +309,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Hot Shave</h1>
+								<h1><?php echo $language[$lang]['hair4.'] ?></h1>
 							</th>
 							<td>
 								<h1>25.00 EUR</h1>
@@ -317,7 +317,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Haircut Kids (under 10 years)</h1>
+								<h1><?php echo $language[$lang]['hair5.'] ?></h1>
 								<p></p>
 							</th>
 							<td>
@@ -326,7 +326,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>DAD & SON</h1>
+								<h1><?php echo $language[$lang]['hair6.'] ?></h1>
 								<p></p>
 							</th>
 							<td>
@@ -335,7 +335,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Headwash</h1>
+								<h1><?php echo $language[$lang]['hair7.'] ?></h1>
 							</th>
 							<td>
 								<h1>10.00-15.00 EUR</h1>
@@ -343,7 +343,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Beardcoloring</h1>
+								<h1><?php echo $language[$lang]['hair8.'] ?></h1>
 							</th>
 							<td>
 								<h1>10.00 EUR</h1>
@@ -351,7 +351,7 @@
 						</tr>
 						<tr>
 							<th>
-								<h1>Students special price sun.-thu.</h1>
+								<h1><?php echo $language[$lang]['hair9.'] ?></h1>
 							</th>
 							<td>
 								<h1>20.00 EUR</h1>
@@ -491,8 +491,8 @@
 			<div class="button4" id="but4"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
-				<div class="buttons" id="toggler_services_4"><button>SERVICES</button></div>
-				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="toggler_services_4"><button><?php echo $language[$lang]['service'] ?></button></div>
+				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_4"><button>BARBERS</button></div>-->
 				<div class="buttons" id="toggler_rewiews_4"><button>REWIEWS</button></div>
 			</div>
@@ -718,8 +718,8 @@
 			<div class="button2" id="but2"><button>CLOSE MAP</button></div>
 				
 			<div class="flex">
-				<div class="buttons" id="toggler_services_2"><button>SERVICES</button></div>
-				<div class="buttons" id="book_an_appointment_3"><button class="book" id="estonia" stuff="estonia">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="toggler_services_2"><button><?php echo $language[$lang]['service'] ?></button></div>
+				<div class="buttons" id="book_an_appointment_3"><button class="book" id="estonia" stuff="estonia"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_2"><button>BARBERS</button></div>-->
 				<div class="buttons" id="toggler_rewiews_2"><button>REWIEWS</button></div>
 			</div>
@@ -947,8 +947,8 @@
 			<div class="button3" id="but3"><button>CLOSE MAP</button></div>
 		
 			<div class="flex">
-				<div class="buttons" id="toggler_services_3"><button>SERVICES</button></div>
-				<div class="buttons" id="book_an_appointment_4"><button class="book" id="russia" stuff="russia">BOOK AN APPOINTMENT</button></div>
+				<div class="buttons" id="toggler_services_3"><button><?php echo $language[$lang]['service'] ?></button></div>
+				<div class="buttons" id="book_an_appointment_4"><button class="book" id="russia" stuff="russia"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_3"><button>BARBERS</button></div>-->
 				<div class="buttons" id="toggler_rewiews_3"><button>REWIEWS</button></div>
 			</div>

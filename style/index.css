@@ -248,7 +248,7 @@ button:focus{
   background: #bd9456;
   position: absolute;
   /*left: 50%;*/
-  left: 52%;
+  left: 51%;
   bottom: 25px;
   margin-left: -36px;
   border-radius: 20px;
@@ -261,7 +261,7 @@ button:focus{
   background: #bd9456;
   position: absolute;
   /*left: 50%;*/
-  left: 52%;
+  left: 51%;
   bottom: 25px;
   margin-left: -12px;
   border-radius: 20px;
@@ -465,7 +465,6 @@ h6 {
     position: relative;
     bottom: 0;
     left: 0;
-    top: 120vw;
     background-color: transparent;
     color: #bd9456;
     font-size: 4vw;

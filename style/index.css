@@ -80,7 +80,7 @@ a{
 .caption{
 	z-index:2;
 	text-align: center;
-	top: 35%;
+	top: 25%;
     position: relative;
 }
 .button_more button{
@@ -187,6 +187,14 @@ button:focus{
     text-transform: uppercase;
 	cursor: pointer;
 }
+.caption_ieksa{
+	border: 6px double rgba(230, 230, 230, 0.5);
+    background-color: rgba(255,255,255,0.05);
+    padding: 2vw;
+    width: 56%;
+    margin-left: 22%;
+    margin-right: 22%;
+}
 .position_on_photo {
     text-align: center;
     position: relative;
@@ -239,7 +247,8 @@ button:focus{
   padding: 6px;
   background: #bd9456;
   position: absolute;
-  left: 50%;
+  /*left: 50%;*/
+  left: 52%;
   bottom: 25px;
   margin-left: -36px;
   border-radius: 20px;
@@ -251,7 +260,8 @@ button:focus{
   padding: 6px;
   background: #bd9456;
   position: absolute;
-  left: 50%;
+  /*left: 50%;*/
+  left: 52%;
   bottom: 25px;
   margin-left: -12px;
   border-radius: 20px;

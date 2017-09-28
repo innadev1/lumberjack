@@ -178,7 +178,7 @@ button:focus{
 	background-color: transparent;
     color: rgba(255,255,255,1);
     font-size: 1.3vw;
-    letter-spacing: 0.3vw;
+    letter-spacing: 0.1vw;
     font-stretch: condensed;
     border: 2px solid white;
     width: 40%;

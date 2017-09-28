@@ -97,11 +97,12 @@
     $language['lv']['that5'] = 'Arvien vairāk sportistu un slavenību izvēlas Lumberjack Barbershop ';
     $language['lv']['that6'] = 'Oficiāli kļuvām par Dinamo Rīga partneriem KHL ietvaros';
     
-    $language['lv']['that7'] = 'Barbershop atvēršana Tallinā ';
-    $language['lv']['that8'] = 'Grupa DE-PHAZZ – gatavojoties koncertam, izvēlas Lumberjack Barbershop ';
-    $language['lv']['that9'] = 'Pāvels Voļa, Comedy Club rezidents, pirms gatavošanās koncertam izvēlas Lumberjack Barbershop ';
+    $language['lv']['that7'] = 'Grupa DE-PHAZZ – gatavojoties koncertam, izvēlas Lumberjack Barbershop ';
+    $language['lv']['that8'] = 'Pāvels Voļa, Comedy Club rezidents, pirms gatavošanās koncertam izvēlas Lumberjack Barbershop ';
+
+    $language['lv']['that9'] = 'Barbershop atvēršana Tallinā ';
     $language['lv']['that10'] = 'Nākamā Premium klases barbershop atvēršana Pullman viesnīcā ';
-    $language['lv']['that11'] = 'Nākamā Premium klases barbershop atvēršana Pullman viesnīcā ';
+    $language['lv']['that11'] = 'Kopā ar Pullman viesnīcu dalība Gumball 3000 pasākumā, galvenais viesis CeeLo Green';
 
      // ru
      $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
@@ -116,9 +117,10 @@
      $language['ru']['that5'] = 'Все больше и больше латвийских спортсменов и знаменитостей выбирают Lumberjack Barbershop';
      $language['ru']['that6'] = 'В рамках турнира КХЛ стали официальным партнером хоккейного клуба Dinamo Rīga';
      
-     $language['ru']['that7'] = 'Открытие барбершопа в Таллине';
-     $language['ru']['that8'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
-     $language['ru']['that9'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
+     $language['ru']['that7'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
+     $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
+     
+     $language['ru']['that9'] = 'Открытие барбершопа в Таллине';
      $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум класса Pullman';
      $language['ru']['that11'] = 'Совместно с гостиницей Pullman участие в мероприятии Gumball 3000, один из гостей - CeeLo Green (может написать как отдельный пункт «В рамках участия в мероприятии Gumball 3000 CeeLo Green выбирает Lumberjack Barbershop» ?)';
 
@@ -135,15 +137,31 @@
     $language['en']['that5'] = 'More and more Latvian sportsmen and celebrities choose Lumberjack Barbershop';
     $language['en']['that6'] = 'As part of the tournament, the KHL became the official partner of the hockey club Dinamo Riga';
     
-    $language['en']['that7'] = 'Opening of a barbershop in Tallinn';
-    $language['en']['that8'] = 'To prepare for the concert, De-Phazz chooses Lumberjack Barbershop';
-    $language['en']['that9'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop ';
+    $language['en']['that7'] = ' To prepare for the concert, De-Phazz chooses Lumberjack Barbershop';
+    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop 
+    
+    ';
+    $language['en']['that9'] = 'Opening of a barbershop in Tallinn';
     $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
     $language['en']['that11'] = 'Together with the hotel Pullman participated in the event Gumball 3000, one of the guests - CeeLo Green';
 
 
 
     // BarBerShop 
+    $language['en']['opmap'] = "Open map";
+    $language['en']['closmap'] = "Close map";
+   
+
+    $language['lv']['opmap'] = "Atvērt karti";
+    $language['lv']['closmap'] = "Aizvērt karti";
+    
+
+    $language['ru']['opmap'] = "Открыть карту";
+    $language['ru']['closmap'] = "Закрыть карту";
+
+
+
+
     $language['en']['4barb'] = "4 barbershops";
     $language['en']['3country'] = "3 countries";
    
@@ -155,7 +173,18 @@
     $language['ru']['4barb'] = "4 барбершопа";
     $language['ru']['3country'] = "3 страны";
 
+    // valstis
+    $language['lv']['lv'] = "LATVIJA";
+    $language['lv']['est'] = "IGAUNIJA";
+    $language['lv']['russ'] = "KRIEVIJA";
 
+    $language['ru']['lv'] = "ЛАТВИЯ";
+    $language['ru']['est'] = "ЭСТОНИЯ";
+    $language['ru']['russ'] = "KRIEVIJA";
+
+    $language['en']['lv'] = "LATVIA";
+    $language['en']['est'] = "ESTONIA";
+    $language['en']['russ'] = "RUSSIA";
 
 
     // lv
@@ -165,16 +194,16 @@
     $language['lv']['skin'] = "SKŪŠANA UN ĀDA";
 
     // en
-    $language['en']['adr'] = "ALL SERVICES";
-    $language['en']['em'] = "HAIR";
-    $language['en']['te'] = "MASSAGE";
-    $language['en']['op'] = "SHAVING & SKIN";
+    $language['en']['all'] = "ALL SERVICES";
+    $language['en']['hair'] = "HAIR";
+    $language['en']['mass'] = "MASSAGE";
+    $language['en']['skin'] = "SHAVING & SKIN";
 
     // ru
-    $language['ru']['adr'] = "ВСЕ УСЛУГИ";
-    $language['ru']['em'] = "ВОЛОСЫ";
-    $language['ru']['te'] = "МАССАЖ";
-    $language['ru']['op'] = "БРИТЬЁ И КОЖА";
+    $language['ru']['all'] = "ВСЕ УСЛУГИ";
+    $language['ru']['hair'] = "ВОЛОСЫ";
+    $language['ru']['mass'] = "МАССАЖ";
+    $language['ru']['skin'] = "БРИТЬЁ И КОЖА";
 
 
 
@@ -290,7 +319,8 @@
     $language['lv']['form3_1'] = 'Jūsu ēpasts';
     $language['lv']['form3_e1'] = 'Lūdzu, ievadiet e-pastu!';
     -
-    $language['lv']['form4'] = 'Servisa nosukums ';
+    $language['lv']['form4'] = 'Servisa nosaukums';
+    $language['lv']['form4_1'] = 'Datums';
     $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu.!';
     -
     $language['lv']['form5'] = 'Datums';
@@ -319,6 +349,7 @@
     $language['ru']['form2_e1'] = 'Только цифры! ';
     $language['ru']['form2_e2'] = 'Телефон слишком короткий!';
     -
+    $language['ru']['form4_1'] = 'Дата';
     $language['ru']['form3'] = 'электронная почта';
     $language['ru']['form3_1'] = 'Ваша электронная почта';
     $language['ru']['form3_e1'] = 'Пожалуйста, введите адрес электронной почты!';
@@ -354,6 +385,7 @@
     $language['en']['form3'] = 'E-mail';
     $language['en']['form3_1'] = 'Your email';
     $language['en']['form3_e1'] = 'Please enter email!';
+    $language['en']['form4_1'] = 'Date';
     -
     $language['en']['form4'] = 'Type of service';
     $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style.!';

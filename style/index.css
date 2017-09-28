@@ -176,18 +176,16 @@ button:focus{
 }
 .read_more{
 	background-color: transparent;
-    color: #bd9456;
-    font-size: 1vw;
+    color: rgba(255,255,255,1);
+    font-size: 1.3vw;
     letter-spacing: 0.3vw;
-    line-height: 0.3vw;
     font-stretch: condensed;
-    border: 2px solid #bd9456;
-    padding: 1vw 1vw;
+    border: 2px solid white;
+    width: 40%;
+    padding: 0.5vw 1vw;
     border-radius: 0.3vw;
     text-transform: uppercase;
-    bottom: 1.5vw;
-    left: 11vw;
-    cursor: pointer;
+	cursor: pointer;
 }
 .position_on_photo {
     text-align: center;

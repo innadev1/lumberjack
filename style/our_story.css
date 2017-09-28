@@ -199,7 +199,7 @@ body{
 .div{
 	background-color: white;
     width: 14.5vw;
-    height: 15vw;
+    height: 16vw;
     box-shadow: 0 0 30px rgba(0,0,0,0.4);
     margin: 2.5vw;
     padding: 1vw;
@@ -243,12 +243,12 @@ body{
 	height: 8vw;
 }
 .wrapping p{
-	font-size: 1vw;
+	font-size: 0.9vw;
     font-family: "OpenSans", sans-serif;
     text-align: center;
     margin: 0;
     font-weight: 300;
-    line-height: 1.2vw;
+    line-height: 1.1vw;
 }
 .wrapping div img{
 	width: 4vw;

@@ -176,7 +176,7 @@ include 'assets/lang.php';
 				<div id="slider-wrapper">
 
 					<div class="caption">
-						<h1>LUMBERJACK</h1>
+						<h1>LUMBERJACK BARBERSHOP</h1>
 						<h2>REMIND YOURSELF HOW COOL IT IS TO BE A MAN!</h2>
 						<div class="button_more"><button class="read_more">book now</button></div>
 					</div>
@@ -216,17 +216,15 @@ include 'assets/lang.php';
 				
 			<div class="wrap">
 				<div class="photo photo_1">
-					<div style="position:relative">
 
 						<div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
 							<p><?php echo $language[$lang]['madelv_text'] ?></p>
+							
+							<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
 						</div>
 
-						<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
-
-					</div>
 				</div>
 
 				<div class="photo photo_2"></div>

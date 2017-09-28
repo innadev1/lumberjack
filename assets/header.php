@@ -12,7 +12,7 @@
 <div id="information">
 	<div class="information">
 		<ul>
-			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" open="lumberjack_barbershop_franchise_en"><?php echo $language[$lang]['franch.'] ?></a></li>
+			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" open="lumberjack_barbershop_franchise_en" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
 			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>

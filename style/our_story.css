@@ -273,8 +273,9 @@ body{
 }
 .caption h1 {
     font-size: 9vw;
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     padding-bottom: 2vw;
+    line-height: 9vw;
 }
 .caption h2 {
     font-size: 3vw;

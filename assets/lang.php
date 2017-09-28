@@ -74,6 +74,15 @@
         $language['ru']['readmore'] = 'читать дальше';
 
     // OURSTORY
+    $language['lv']['great'] = 'PRICE LIST ';
+    $language['lv']['from'] = 'С 1990';
+
+    $language['en']['great'] = 'GREATNESS';
+    $language['en']['from'] = 'Since 1990';
+
+    $language['ru']['great'] = 'ВЕЛИЧИЕ';
+    $language['ru']['from'] = 'Kopš 1990';
+
 
     // LV
     $language['lv']['Lumberjack_development'] = 'Lumberjack attīstība  – spilgti momenti, nozīmīgi datumi';
@@ -96,7 +105,7 @@
 
      // ru
      $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
-     $language['ru']['our_barber2'] = 'На рынке с: <br> 01.06.2015 </br> Рынок –  <br>Латвия, Эстония, Россия</br>';
+     $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 Рынок – Латвия, Эстония, Россия';
  
  
      $language['ru']['that1'] = 'Представители большого спорта выбирают Lumberjack Barbershop';
@@ -135,6 +144,20 @@
 
 
     // BarBerShop 
+    $language['en']['4barb'] = "4 barbershops";
+    $language['en']['3country'] = "3 countries";
+   
+
+    $language['lv']['4barb'] = "4 barberšopi";
+    $language['lv']['3country'] = "3 valstis";
+    
+
+    $language['ru']['4barb'] = "4 барбершопа";
+    $language['ru']['3country'] = "3 страны";
+
+
+
+
     // lv
     $language['lv']['all'] = "VISI PAKALPOJUMI";
     $language['lv']['hair'] = "MATI";

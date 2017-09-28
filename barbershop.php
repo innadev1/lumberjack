@@ -201,8 +201,8 @@
 		
 		<div id="banner">
 			<div class="caption">
-				<h1><img src="img/vector_white.png">4 BARBERSHOPS<img src="img/vector_white.png"></h1>
-				<h2>3 COUNTRIES</h2>
+				<h1><img src="img/vector_white.png"><?php echo $language[$lang]['4barb'] ?><img src="img/vector_white.png"></h1>
+				<h2><?php echo $language[$lang]['3country'] ?></h2>
 			</div>
 		</div>
 		

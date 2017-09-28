@@ -1,6 +1,9 @@
 <?php
 
-include 'assets/lang.php';
+	if(!isset($language)){
+		include 'assets/lang.php';
+	}
+	
 ?>
 
 <link rel="stylesheet" type="text/css" href="style/header.css">

@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    if(!isset($_SESSION)) {
+        session_start();
+   }
 
     $language = [];    
 
@@ -22,8 +24,7 @@
     }else{
         $lang = 'lv';
     }
-    echo $lang;
-    echo $_SESSION['lang'];
+
     
 
     
@@ -59,7 +60,6 @@
         $language['en']['haircuts'] = 'HAIRCUTS ';
         $language['en']['price_list'] = 'PRICE LIST ';
         $language['en']['contact_us'] = 'CONTACT US ';
-
 
 
     // OURSTORY
@@ -139,14 +139,108 @@
     ';
 
 
+    //  Sūtīšanas Forma
+    // LV
+    $language['lv']['form_top'] = 'Lai pieteiktos uz kādu no mūsu pakalpojumu - vienkārši aizpildiet zemāk redzamo veidlapu, noklikšķiniet uz Sūtīt un drīz administrātors ar jums sazināsies, lai apstiprinātu rezervāciju.';
+    -
+    $language['lv']['form0'] = 'Izvēlieties adresi';
+    // $language['lv']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
+    -
+    $language['lv']['form1'] = 'Vārds';
+    $language['lv']['form1_1'] = 'Pilns vārds';
+    $language['lv']['form1_e1'] = 'Vārds ir par īsu';
+    $language['lv']['form1_e2'] = 'Tikai alfabēts.';
+    -
+    $language['lv']['form2'] = 'Telefona numurs';
+    $language['lv']['form2_1'] = 'Kontakt numurs';
+    $language['lv']['form2_e1'] = 'Tikai cipari!';
+    $language['lv']['form2_e2'] = 'Pārāk īss telefons!';
+    -
+    $language['lv']['form3'] = 'ēpasts';
+    $language['lv']['form3_1'] = 'Jūsu ēpasts';
+    $language['lv']['form3_e1'] = 'Lūdzu, ievadiet e-pastu!';
+    -
+    $language['lv']['form4'] = 'Servisa nosukums ';
+    $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu.!';
+    -
+    $language['lv']['form5'] = 'Datums';
+    $language['lv']['form5_1'] = 'Izvēlaties datumu';
+    $language['lv']['form5_e1'] = 'Lūdzu, ievadiet datumu!';
+    -
+    $language['lv']['form6'] = 'Detaļas';
+    $language['lv']['form6_1'] = 'Lūdzu uzrakstiet pēc iespējas vairā informācijas';
+    -
+    $language['lv']['form8'] = 'Aizsūtīt pieteikumu';
+
+    //RUS
+
+    $language['ru']['form_top'] = 'Чтобы записаться на встречу на один из наших сервисов, просто заполните форму ниже, нажмите «Отправить», и администратор свяжется с вами, чтобы подтвердить ваше бронирование.';
+    -
+    $language['ru']['form0'] = 'Выберите адрес';
+    // $language['ru']['form0_1'] = 'Место пусто. Пожалуйста, введите место. ';
+    -
+    $language['ru']['form1'] = 'Имя';
+    $language['ru']['form1_1'] = 'Полное имя';
+    $language['ru']['form1_e1'] = 'Имя слишком короткое.';
+    $language['ru']['form1_e2'] = 'Только алфавит.';
+    -
+    $language['ru']['form2'] = 'Номер телефона';
+    $language['ru']['form2_1'] = 'контактный номер';
+    $language['ru']['form2_e1'] = 'Только цифры! ';
+    $language['ru']['form2_e2'] = 'Телефон слишком короткий!';
+    -
+    $language['ru']['form3'] = 'электронная почта';
+    $language['ru']['form3_1'] = 'Ваша электронная почта';
+    $language['ru']['form3_e1'] = 'Пожалуйста, введите адрес электронной почты!';
+    -
+    $language['ru']['form4'] = 'Тип стиля';
+    $language['ru']['form4_e1'] = 'Тип стиля пуст. Введите тип стиля.!';
+    -
+    $language['ru']['form5'] = 'Дата';
+    $language['ru']['form5_1'] = 'Выберите дату';
+    $language['ru']['form5_e1'] = 'Введите дату!';
+    -
+    $language['ru']['form6'] = 'Детали';
+    $language['ru']['form6_1'] = 'Пожалуйста напишите по возможности больше информации';
+    -
+    $language['ru']['form8'] = 'Отправить заявку';
+
+    // ENG
+    $language['en']['form_top'] = 'To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.';
+    -
+    $language['en']['form0'] = 'Choose adress';
+    // $language['en']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
+    -
+    $language['en']['form1'] = 'Name';
+    $language['en']['form1_1'] = 'Your full name';
+    $language['en']['form1_e1'] = 'Name too short.';
+    $language['en']['form1_e2'] = 'Only alphabet.';
+    -
+    $language['en']['form2'] = 'Phone';
+    $language['en']['form2_1'] = 'Contact number';
+    $language['en']['form2_e1'] = 'Only numbers!';
+    $language['en']['form2_e2'] = 'Phone too short!';
+    -
+    $language['en']['form3'] = 'E-mail';
+    $language['en']['form3_1'] = 'Your email';
+    $language['en']['form3_e1'] = 'Please enter email!';
+    -
+    $language['en']['form4'] = 'Type of service';
+    $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style.!';
+    -
+    $language['en']['form5'] = 'Date';
+    $language['en']['form5_1'] = 'Pick your date';
+    $language['en']['form5_e1'] = 'Please enter Date!';
+    -
+    $language['en']['form6'] = 'Details';
+    $language['en']['form6_1'] = 'Please give us as much details as possible!';
+    -
+    $language['en']['form8'] = 'Send appointment';
+
 
     // FOOTER
-    $language['lv']['about company'] = 'about company';
-    $language['en']['about company'] = 'about company';
-    $language['ru']['about company'] = 'about company';
-    $language['ee']['about company'] = 'about company';
-
-
-
+    $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+    $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+    $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
 
 ?>

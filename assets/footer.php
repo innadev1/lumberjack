@@ -1,3 +1,4 @@
+
 <link rel="stylesheet" type="text/css" href="style/footer.css">
 
 <div id="footer">
@@ -12,6 +13,6 @@
 	</ul>
 </div>
 
-<div><p>Copyright 2017. All rights reserved</p></div>
+<div><p><?php echo $language[$lang]['copy_right'] ?></p></div>
 	</div>
 </div>

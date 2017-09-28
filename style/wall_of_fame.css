@@ -1,3 +1,4 @@
+.button_more{display:none;}
 #banner{
     height: 35vw;
 	background-image:  url("../img/background_3.jpg"); 
@@ -132,6 +133,7 @@
     font-size: 5vw;
     padding-bottom: 0vw;
 }
+.button_more{display:block;}
 .button_more button{
 	letter-spacing: 0.5vw;
     margin: 7vw;

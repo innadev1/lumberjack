@@ -14,9 +14,9 @@
 		<ul>
 			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
-			<li><a href="contacts.php"><img src="img/call.png" width="1.2%"></a></li>
+			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="1%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 			
 

@@ -188,13 +188,13 @@ include 'assets/lang.php';
 						<input type="radio" name="slide" class="control" id="Slide2" />
 						<label for="Slide2" id="s2"></label>
 						
-						<input type="radio" name="slide" class="control" id="Slide3" />
-						<label for="Slide3" id="s3"></label>
+						<!--<input type="radio" name="slide" class="control" id="Slide3" />
+						<label for="Slide3" id="s3"></label>-->
 
 						<div class="overflow-wrapper">
-							<a class="slide"><img src="img/background.jpg" /></a>
 							<a class="slide"><img src="img/background_2.jpg" /></a>
 							<a class="slide"><img src="img/background_3.jpg" /></a>
+							<!--<a class="slide"><img src="img/background.jpg" /></a>-->
 						</div>
 
 					</div>

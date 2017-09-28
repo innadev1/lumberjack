@@ -217,13 +217,13 @@ include 'assets/lang.php';
 			<div class="wrap">
 				<div class="photo photo_1">
 
-						<div class="text_on_photo">
+						<!-- <div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
 							<p><?php echo $language[$lang]['madelv_text'] ?></p>
 							
 							<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
-						</div>
+						</div> -->
 
 				</div>
 
@@ -308,10 +308,15 @@ include 'assets/lang.php';
 									<span class="wpcf7-form-control-wrap menu-471">
 										<select name="typeOfService" class="wpcf7-select" required="required">
 											<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
-											<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0)  echo "selected"; ?> >Haircut+Beard Trim</option>
-											<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> >Haircut</option>
-											<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> >Beard Trim</option>
-											<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> >Hot Shave</option>
+											<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
+											<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
+											<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
+											<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
+											<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
+											<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
+											<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
+											<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
+											<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
 										</select>
 									</span>
 								</div>
@@ -346,7 +351,7 @@ include 'assets/lang.php';
 							<?php
 							}else if($mailSuccess){
 								
-								$checkemail = "<p>Check your Email</p>";
+								$checkemail = "<p><?php echo $language[$lang]['check'] ?></p>";
 								
 								echo $checkemail;
 							} ?>					

@@ -48,63 +48,57 @@
 
 		// Chosse palce
 		if($_POST['chooseMail'] == '-'){
-			$error_message_choose_m .= '<p class="red"> Place is empty. Please enter place.!</p>';
+			$error_message_choose_m .= '<p class="red">'.$language[$lang]['form0'].'</p>';
 			$errors['chooseMail'] = 1;
 		}
 
 		// Name
 		if(strlen($name) < 2) {
-			$error_message_n .= '<p class="red">Name too short.</p>';
+        	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
 			$errors['name'] = 1;
 		}
 		
 		if(preg_match($email_exp_a,$_POST['name'])) {
-			$error_message_n2 .= '<p class="red">Only alphabet.</p>';
+			$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
 			$errors['name'] = 1;
 		}
 
 
 		// PHONE
 		$error_message = "";
-		$email_exp = "/[^0-9]/";
-
-		if(preg_match($email_exp,$_POST['phone'])) {
-			$error_message_p1 .= '<p class="red">only numbers!</p>';
+    	$email_exp = "/[^0-9]/";
+ 
+    	if(preg_match($email_exp,$_POST['phone'])) {
+        	$error_message_p1 .= '<p class="red">'.$language[$lang]['form2_e1'].'</p>';
 			$errors['phone'] = 1;
-		}
-
-
+    	}
 		if(strlen($_POST['phone']) < 7) {
-			$error_message_p2 .= '<p class="red">Phone too short!</p>';
+        	$error_message_p2 .= '<p class="red">'.$language[$lang]['form2_e2'].'</p>';
 			$errors['phone'] = 1;
 		}
-
+		
 
 		// EMAIL 
 		$error_message = "";
-		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
-		if(!preg_match($email_exp,$email)) {
-			$error_message_m .= '<p class="red">Please enter email!</p>';
+    	if(!preg_match($email_exp,$email)) {
+        	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
 			$errors['mail'] = 1;
 		}
-
-
-
-		// Type Of Style
-
-		// if($_POST['typeOfService'] == '-'){
-		// 	$error_message_t .= '<p class="red">Type of style is empty. Please enter type of style.!</p>';
-		// 	// echo ($error_message);
-		// }
 		
 
+		// // Type Of Style
+		// if($_POST['typeOfService'] == '-'){
+		// 	$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
+		// 	$errors['typeOfService'] = 1;
+		// }
+		
 		// DATE 
 		if(empty($date)){
-			$error_message_d .= '<p class="red">Please enter Date!</p>';
+			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
 		}
-
 		$mailSuccess = false;
 
 		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
@@ -199,49 +193,49 @@
 		<div class="top_border_2"></div>
 		<div class="top_border_3"></div>
 			<tr>
-				<td><h1>Haircut Scissors</h1></td>
+				<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
 				<td><p>30.00-40.00 EUR</p></td>
-				<th><button class="button" value=0 haircutsn = "name1" >BOOK</button></th>
+				<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Grooming</h1></td>
+				<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>
 				<td><p>15.00-25.00 EUR</p></td>
-				<th><button class="button" value=1 haircutsn = "name2" >BOOK</button></th>
+				<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Haircut + Beardtrim</h1></td>
+				<td><h1><?php echo $language[$lang]['hair3.'] ?></h1></td>
 				<td><p>40.00 EUR</p></td>
-				<th><button class="button" value=2 haircutsn = "name3" >BOOK</button></th>
+				<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Hot Shave</h1></td>
+				<td><h1><?php echo $language[$lang]['hair4.'] ?></h1></td>
 				<td><p>25.00 EUR</p></td>
-				<th><button class="button" value=3 haircutsn = "name4" >BOOK</button></th>
+				<th><button class="button" value=3 haircutsn = "name4" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Haircut Kids (under 10 years)</h1></td>
+				<td><h1><?php echo $language[$lang]['hair5.'] ?></h1></td>
 				<td><p>15.00 EUR</p></td>
-				<th><button class="button" value=4 haircutsn = "name5" >BOOK</button></th>
+				<th><button class="button" value=4 haircutsn = "name5" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>DAD & SON</h1></td>
+				<td><h1><?php echo $language[$lang]['hair6.'] ?></h1></td>
 				<td><p> 15.00 EUR</p></td>
-				<th><button class="button" value=5 haircutsn = "name6" >BOOK</button></th>
+				<th><button class="button" value=5 haircutsn = "name6" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Headwash</h1></td>
+				<td><h1><?php echo $language[$lang]['hair7.'] ?></h1></td>
 				<td><p>10.00-15.00 EUR</p></td>
-				<th><button class="button" value=6 haircutsn = "name7" >BOOK</button></th>
+				<th><button class="button" value=6 haircutsn = "name7" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Beardcoloring</h1></td>
+				<td><h1><?php echo $language[$lang]['hair8.'] ?></h1></td>
 				<td><p>10.00 EUR</p></td>
-				<th><button class="button" value=7 haircutsn = "name8" >BOOK</button></th>
+				<th><button class="button" value=7 haircutsn = "name8" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 			<tr>
-				<td><h1>Students special price sun.-thu.</h1></td>
+				<td><h1><?php echo $language[$lang]['hair9.'] ?></h1></td>
 				<td><p>20.00 EUR</p></td>
-				<th><button class="button" value=8 haircutsn = "name9" >BOOK</button></th>
+				<th><button class="button" value=8 haircutsn = "name9" ><?php echo $language[$lang]['book'] ?></button></th>
 			</tr>
 		</table>
 
@@ -257,93 +251,95 @@
 
 		<form id="form" name="orderform" method="post" action="price_list.php">
 
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select name="chooseMail" class="wpcf7-select" required="required">
-							<option value="-" >Choose Email</option>
-							<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
-							<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia(2)</option>
-							<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
-							<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
-						</select>
-					</span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_choose_m); ?>
-				<!--END-->
-				
+		<p><?php echo $language[$lang]['form_top'] ?></p>
+		
+			<div class="styled-select">
+				<span class="wpcf7-form-control-wrap menu-471">
+					<select name="chooseMail" class="wpcf7-select" required="required">
+						<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
+						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
+						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia(2)</option>
+						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
+						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
+					</select>
+				</span>
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_choose_m); ?>
+			<!--END-->
+
+			<div class="bookinput">
+				<label><?php echo $language[$lang]['form1'] ?></label>
+				<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form1_1'] ?>"></span>
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_n); ?>
+				<?php echo ($error_message_n2); ?>
+			<!--END-->
+
+
+			<div class="bookinput">
+				<label><?php echo $language[$lang]['form2'] ?></label>
+				<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form2_1'] ?>"></span>
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_p1); ?>
+				<?php echo ($error_message_p2); ?>
+			<!--END-->
+
+
+
+			<div class="bookinput">
+				<label><?php echo $language[$lang]['form3'] ?></label>
+				<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="<?php echo $language[$lang]['form3_1'] ?>"></span>
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_m); ?>
+			<!--END-->
+
+
+
+			<div class="styled-select">
+				<span class="wpcf7-form-control-wrap menu-471">
+					<select name="typeOfService" class="wpcf7-select" required="required">
+						<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
+						<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
+						<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
+						<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
+						<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
+						<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
+						<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
+						<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
+						<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
+						<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
+					</select>
+				</span>
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_t); ?>
+			<!--END-->
+
+
+
+			<div class="bookinputdate">
+				<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
+
+				<label><?php echo $language[$lang]['form5'] ?></label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-10" placeholder="<?php echo $language[$lang]['form5_1'] ?>"></spam>
+
+			</div>
+			<!--ERRROR  -->
+				<?php echo ($error_message_d); ?>
+			<!--END-->
 			
-				<div class="bookinput">
-					<label>Name</label>
-					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-					<?php echo ($error_message_n2); ?>
-				<!--END-->
+			<div class="booktextarea">
+				<label><?php echo $language[$lang]['form6'] ?></label>
+				<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="<?php echo $language[$lang]['form6_1'] ?>"></textarea></span>
+			</div>
+			
 
-
-				<div class="bookinput">
-					<label>Phone</label>
-					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_p1); ?>
-					<?php echo ($error_message_p2); ?>
-				<!--END-->
-
-
-
-				<div class="bookinput">
-					<label>E-mail</label>
-					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
-				<!--END-->
-
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select id="typeOfService" name="hairStyle" class="wpcf7-select" required="required">
-							<option value= "1" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '1') echo "selected"; ?>>Haircut Scissors</option>
-							<option value="2"<?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '2') echo "selected"; ?>>Grooming</option>
-							<option value="3" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '3') echo "selected"; ?>>Haircut + beardtrim</option>
-							<option value="4" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '4') echo "selected"; ?>>Hot Shave</option>
-							<option value="5" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '5') echo "selected"; ?>>Haircut Kid (under 10 years)</option>
-							<option value="6" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '6') echo "selected"; ?>>DAD & SON</option>
-							<option value="7" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '7') echo "selected"; ?>>HeadWash </option>
-							<option value="8" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '8') echo "selected"; ?>>Beardcoloring</option>
-							<option value="9" <?php if(isset($_POST["hairStyle"]) && $_POST['hairStyle'] == '9') echo "selected"; ?>>Students specials price sun. and thu.</option>
-
-						</select>
-					</span>
-				</div>
-
-				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
-				<!--END-->
-
-
-
-				<div class="bookinputdate">
-					<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
-
-					<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-10" placeholder="Pick your date"></spam>
-
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_d); ?>
-				<!--END-->
-				
-				<div class="booktextarea">
-					<label>Details</label>
-					<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
-				</div>
-				
-
-				<div class="col-sm-12">
-					<input class="blackbutton" type="submit" name="emailsent" value="Send appointment">
-				</div>					
+			<div class="col-sm-12">
+				<input class="blackbutton" type="submit" name="emailsent" value="<?php echo $language[$lang]['form8'] ?>">
+			</div>								
 					
 		</form>
 
@@ -351,7 +347,7 @@
 
 		}else if($mailSuccess){
 			
-			$checkemail = "<p>Check your Email</p>";
+			$checkemail = "<p><?php echo $language[$lang]['check'] ?></p>";
 			
 			echo $checkemail;
 

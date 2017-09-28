@@ -36,7 +36,7 @@
 				<button class="first">MAIN OFFICE</button>
 				<table align="center">
 					<tr>
-						<th><h2>Adress:</h2></th>
+						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
 						<td><p>Riharda Vagnera iela 11,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
@@ -44,7 +44,7 @@
 						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
-						<th><h2>Tel.:</h2></th>
+						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
@@ -54,15 +54,15 @@
 				<button class="first">MARKETING</button>
 				<table align="center">
 					<tr>
-						<th><h2>Adress:</h2></th>
+						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
 						<td><p>Jēkaba iela 24,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
-						<th><h2>Email:</h2></th>
+						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
 						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
-						<th><h2>Tel.:</h2></th>
+						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
@@ -72,15 +72,15 @@
 				<button class="first">INTERNET SHOP/RETAIL</button>
 				<table align="center">
 					<tr>
-						<th><h2>Adress:</h2></th>
+						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
 						<td><p>Pronksi 3, Tallin,<br> Estonia-10124</p></td>
 					</tr>
 					<tr>
-						<th><h2>Email:</h2></th>
+						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
 						<td><p>info@lumberjack.ee</p></td>
 					</tr>
 					<tr>
-						<th><h2>Tel.:</h2></th>
+						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
 						<td><p>+372 56969119</p></td>
 					</tr>
 				</table>
@@ -90,15 +90,15 @@
 				<button class="first">FRANCHISE</button>
 				<table align="center">
 					<tr>
-						<th><h2>Adress:</h2></th>
+						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
 						<td><p>29 lin. Vasilyevskogo<br> ostrova, 2, Sankt-Peterburg</p></td>
 					</tr>
 					<tr>
-						<th><h2>Email:</h2></th>
+						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
 						<td><p>info@lumberjack.ru</p></td>
 					</tr>
 					<tr>
-						<th><h2>Tel.:</h2></th>
+						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
 						<td><p>+37 812 3240809</p></td>
 					</tr>
 				</table>

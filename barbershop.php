@@ -130,7 +130,7 @@
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
-		<title>our barbershops</title>
+		<!-- <title>our barbershops</title> -->
 		
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>

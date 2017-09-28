@@ -31,14 +31,14 @@
     // HEADER 
     $language['lv']['franch.'] = 'FRANČĪZE';
     $language['en']['franch.'] = 'FRANCHISE';
-    $language['ru']['franch.'] = 'ФРАНЧИЗА';
+    $language['ru']['franch.'] = 'ФРАНШИЗА';
 
         // LV 
 
         $language['lv']['our_story'] = 'MŪSU VĒSTURE ';
         $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS ';
         $language['lv']['online_store'] = 'INTERNETA VEIKALS ';
-        $language['lv']['haircuts'] = 'FRIZŪRAS';
+        $language['lv']['haircuts'] = 'MATU GIEZUMS';
         $language['lv']['price_list'] = 'CENAS';
         $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
 
@@ -399,7 +399,23 @@
     -
     $language['en']['form8'] = 'Send appointment';
 
+
+    $language['lv']['bookanpoint'] = 'Send appointment';
+    $language['ru']['bookanpoint'] = 'Send appointment';
+    $language['en']['bookanpoint'] = 'Send appointment';
+
+
+
+
+
     // LIFE STYLE
+
+    $language['en']['lfs'] = 'Lifestyle';
+    $language['lv']['lfs'] = 'Dzīves stils';
+    $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
+
+
+
         //1
         $language['lv']['title1'] = "Sis ir pirmais virsraksts";
         $language['en']['title1'] = "This is first title";
@@ -444,10 +460,17 @@
         $language['ru']['article1'] = "Eto sesht Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
     
 
+//  Wall Of FAme
 
-    // FOOTER
     $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
     $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
     $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
+
+
+
+    // FOOTER
+    $language['lv']['wof'] = 'SLAVAS ZĀLE';
+    $language['en']['wof'] = 'WALL OF FAME';
+    $language['ru']['wof'] = 'СТЕНА СЛАВЫ';
 
 ?>

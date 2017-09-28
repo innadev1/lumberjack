@@ -95,10 +95,10 @@
 				<li class="link"><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="lifestyle.php">lifestyle</a></li>
+				<li class="link"><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
 				
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>
+				<li class="link"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 				
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>

@@ -12,11 +12,11 @@
 <div id="information">
 	<div class="information">
 		<ul>
-			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" download="lumberjack_barbershop_franchise_en"><?php echo $language[$lang]['franch.'] ?></a></li>
+			<li><a href="downloads/lumberjack_barbershop_franchise_en.pdf" open="lumberjack_barbershop_franchise_en"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
-			<li><a href="contacts.php"><img src="img/call.png" width="1.2%"></a></li>
+			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="1%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 			
 
@@ -42,8 +42,8 @@
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="barbershop.php"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
-			<!--<li><a href="lifestyle.php">lifestyle</a></li>-->
-			<!--<li><a href="wall_of_fame.php">wall of fame</a></li>-->
+			<li><a href="lifestyle.php">lifestyle</a></li>
+			<li><a href="wall_of_fame.php">wall of fame</a></li>
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
@@ -94,11 +94,11 @@
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
-				<!--<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="lifestyle.php">lifestyle</a></li>-->
+				<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="lifestyle.php">lifestyle</a></li>
 				
-				<!--<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>-->
+				<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="wall_of_fame.php">wall of fame</a></li>
 				
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>

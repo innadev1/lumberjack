@@ -22,52 +22,52 @@
 			<div class="wrap" id="wrap1">
 				<div class="photo photo_1">
 					<div class="text">
-						<h1>Martins Zvaigzne</h1>
+						<h1></h1>
 					</div>
 				</div>
 				<div class="photo photo_2">
 					<div class="text">
-						<h1>Kristaps Zvaigzne</h1>
+						<h1>Kaspars Gorkšs</h1>
 					</div>
 				</div>
 				<div class="photo photo_3">
 					<div class="text">
-						<h1>Janis Zvaigzne</h1>
+						<h1>Roberto Meloni</h1>
 					</div>
 				</div>
 				<div class="photo photo_4">
 					<div class="text">
-						<h1>Kaspars Zvaigzne</h1>
+						<h1>Armands Simsons</h1>
 					</div>
 				</div>
 			</div>
 			<div class="wrap" id="wrap2">
 				<div class="photo photo_5">
 					<div class="text">
-						<h1>Miks Zvaigzne</h1>
+						<h1>Zaur Dzhavadov</h1>
 					</div>
 				</div>
 				<div class="photo photo_6">
 					<div class="text">
-						<h1>Juris Zvaigzne</h1>
+						<h1>Miks Indrasis</h1>
 					</div>
 				</div>
 				<div class="photo photo_7">
 					<div class="text">
-						<h1>Kaspars Zvaigzne</h1>
+						<h1>Edgars Masaļskis</h1>
 					</div>
 				</div>
 				<div class="photo photo_8">
 					<div class="text">
-						<h1>Kaspars Zvaigzne</h1>
+						<h1>Aivars Smaukstelis</h1>
 					</div>
 				</div>
-				<div class="photo photo_9">
+			<!--	<div class="photo photo_9">
 					<div class="text">
-						<h1>Martins Zvaigzne</h1>
+						<h1></h1>
 					</div>
 				</div>
-			<!--	<div class="photo photo_10">
+				<div class="photo photo_10">
 					<div class="text">
 						<h1>Kristaps Zvaigzne</h1>
 					</div>

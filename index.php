@@ -176,7 +176,7 @@ include 'assets/lang.php';
 				<div id="slider-wrapper">
 
 					<div class="caption">
-						<h1>LUMBERJACK</h1>
+						<h1>LUMBERJACK BARBERSHOP</h1>
 						<h2>REMIND YOURSELF HOW COOL IT IS TO BE A MAN!</h2>
 						<div class="button_more"><button class="read_more">book now</button></div>
 					</div>

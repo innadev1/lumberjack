@@ -40,44 +40,49 @@
 		$email_exp_a = "/[^A-Za-z]/";
 		// Name
 		if(strlen($name) < 2) {
-			$error_message_n .= '<p class="red">Name too short.</p>';
+        	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
+			$errors['name'] = 1;
+		}
+		
+		if(preg_match($email_exp_a,$_POST['name'])) {
+			$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
 			$errors['name'] = 1;
 		}
 
-		if(preg_match($email_exp_a,$_POST['name'])) {
-			$error_message_n2 .= '<p class="red">Only alphabet.</p>';
-			$errors['name'] = 1;
-		}
 
 		// PHONE
 		$error_message = "";
-		$email_exp = "/[^0-9]/";
-
-		if(preg_match($email_exp,$_POST['phone'])) {
-			$error_message_p1 .= '<p class="red">only numbers!</p>';
+    	$email_exp = "/[^0-9]/";
+ 
+    	if(preg_match($email_exp,$_POST['phone'])) {
+        	$error_message_p1 .= '<p class="red">'.$language[$lang]['form2_e1'].'</p>';
 			$errors['phone'] = 1;
-		}
+    	}
 		if(strlen($_POST['phone']) < 7) {
-			$error_message_p2 .= '<p class="red">Phone too short!</p>';
+        	$error_message_p2 .= '<p class="red">'.$language[$lang]['form2_e2'].'</p>';
 			$errors['phone'] = 1;
 		}
+		
+
 		// EMAIL 
 		$error_message = "";
-		$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-		if(!preg_match($email_exp,$email)) {
-			$error_message_m .= '<p class="red">Please enter email!</p>';
+    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	
+    	if(!preg_match($email_exp,$email)) {
+        	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
 			$errors['mail'] = 1;
 		}
+		
+
 		// Type Of Style
 		if($_POST['typeOfService'] == '-'){
-			$error_message_t .= '<p class="red">Type of style is empty. Please enter type of style.!</p>';
-			// echo ($error_message);
+			$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
+			$errors['typeOfService'] = 1;
 		}
-
+		
 		// DATE 
 		if(empty($date)){
-			$error_message_d .= '<p class="red">Please enter Date!</p>';
+			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
 		}
 		$mailSuccess = false;
@@ -222,17 +227,17 @@
 						<div class="info">			
 							<table>
 								<tr>
-									<td><h2>Adress:</h2></td>
+									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
 									<td><p>Riharda Vagnera iela 11, Riga, Latvia</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Email:</h2></td>
+									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
 									<td><p>info@lumberjack.lv</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Tel.:</h2></td>
+									<td><h2><?php echo $language[$lang]['te'] ?></h2></td>
 									<td><p>+371 67 854 755</p></td>
 								</tr>
 							</table>
@@ -243,14 +248,14 @@
 					<div class="info">			
 						<table>
 							<tr>
-								<h2><center>Open</center></h2>
+								<h2><center><?php echo $language[$lang]['op'] ?></center></h2>
 							</tr>
 							<tr>
-								<td><h2>Mon.-Sat.:</h2></td>
+								<td><h2><?php echo $language[$lang]['mon'] ?></h2></td>
 								<td><p>10.00-20.00</p></td>
 							</tr>
 							<tr>
-								<td><h2>Sunday:</h2></td>
+								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
 								<td><p>11.00-17.00</p></td>
 							</tr>
 						</table>
@@ -449,17 +454,17 @@
 						<div class="info">			
 							<table>
 								<tr>
-									<td><h2>Adress:</h2></td>
+									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
 									<td><p>Jēkaba iela 24, Riga, Latvia</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Email:</h2></td>
+									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
 									<td><p>info@lumberjack.lv</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Tel.:</h2></td>
+									<td><h2><?php echo $language[$lang]['te'] ?></h2></td>
 									<td><p>+371 67 854 755</p></td>
 								</tr>
 							</table>
@@ -470,14 +475,14 @@
 					<div class="info">			
 						<table>
 							<tr>
-								<h2><center>Open</center></h2>
+								<h2><center><?php echo $language[$lang]['op'] ?></center></h2>
 							</tr>
 							<tr>
-								<td><h2>Mon.-Sat.:</h2></td>
+								<td><h2><?php echo $language[$lang]['mon'] ?></h2></td>
 								<td><p>10.00-20.00</p></td>
 							</tr>
 							<tr>
-								<td><h2>Sunday:</h2></td>
+								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
 								<td><p>11.00-17.00</p></td>
 							</tr>
 						</table>
@@ -494,7 +499,7 @@
 				<div class="buttons" id="toggler_services_4"><button><?php echo $language[$lang]['service'] ?></button></div>
 				<div class="buttons" id="book_an_appointment_2"><button class="book" id="riga2" stuff="riga2"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_4"><button>BARBERS</button></div>-->
-				<div class="buttons" id="toggler_rewiews_4"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_rewiews_4"><button><?php echo $language[$lang]['rew'] ?></button></div>
 			</div>
 			
 			<div id="services_4">
@@ -507,84 +512,84 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="100%">
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>30.00-40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Grooming</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00-25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut + Beardtrim</h1>
-							</th>
-							<td>
-								<h1>40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Hot Shave</h1>
-							</th>
-							<td>
-								<h1>25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Kids (under 10 years)</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>DAD & SON</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Headwash</h1>
-							</th>
-							<td>
-								<h1>10.00-15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Beardcoloring</h1>
-							</th>
-							<td>
-								<h1>10.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Students special price sun.-thu.</h1>
-							</th>
-							<td>
-								<h1>20.00 EUR</h1>
-							</td>
-						</tr>
-					</table>
+				<table width="100%">
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair1.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>30.00-40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00-25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
+					</th>
+					<td>
+						<h1>40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair4.'] ?></h1>
+					</th>
+					<td>
+						<h1>25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair5.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair6.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair7.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00-15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair8.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair9.'] ?></h1>
+					</th>
+					<td>
+						<h1>20.00 EUR</h1>
+					</td>
+				</tr>
+			</table>
 				</div>
 			
 			</div>
@@ -676,17 +681,17 @@
 						<div class="info">			
 							<table>
 								<tr>
-									<td><h2>Adress:</h2></td>
+									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
 									<td><p>Pronksi 3, Tallin, Estonia-10124</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Email:</h2></td>
+									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
 									<td><p>info@lumberjack.ee</p></td>
 								</tr>
 
 								<tr>
-									<td><h2>Tel.:</h2></td>
+									<td><h2><?php echo $language[$lang]['te'] ?></h2></td>
 									<td><p>+372 56969119</p></td>
 								</tr>
 							</table>
@@ -697,14 +702,14 @@
 					<div class="info">			
 						<table>
 							<tr>
-								<h2><center>Open</center></h2>
+								<h2><center><?php echo $language[$lang]['op'] ?></center></h2>
 							</tr>
 							<tr>
-								<td><h2>Mon.-Sat.:</h2></td>
+								<td><h2><?php echo $language[$lang]['mon'] ?></h2></td>
 								<td><p>10.00-20.00</p></td>
 							</tr>
 							<tr>
-								<td><h2>Sunday:</h2></td>
+								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
 								<td><p>11.00-17.00</p></td>
 							</tr>
 						</table>
@@ -721,7 +726,7 @@
 				<div class="buttons" id="toggler_services_2"><button><?php echo $language[$lang]['service'] ?></button></div>
 				<div class="buttons" id="book_an_appointment_3"><button class="book" id="estonia" stuff="estonia"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_2"><button>BARBERS</button></div>-->
-				<div class="buttons" id="toggler_rewiews_2"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_rewiews_2"><button><?php echo $language[$lang]['rew'] ?></button></div>
 			</div>
 
 			<div id="services_2">
@@ -734,84 +739,84 @@
 				</div>
 				
 				<div id="table_about">
-					<table width="100%">
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>30.00-40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Grooming</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00-25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut + Beardtrim</h1>
-							</th>
-							<td>
-								<h1>40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Hot Shave</h1>
-							</th>
-							<td>
-								<h1>25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Kids (under 10 years)</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>DAD & SON</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Headwash</h1>
-							</th>
-							<td>
-								<h1>10.00-15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Beardcoloring</h1>
-							</th>
-							<td>
-								<h1>10.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Students special price sun.-thu.</h1>
-							</th>
-							<td>
-								<h1>20.00 EUR</h1>
-							</td>
-						</tr>
-					</table>
+				<table width="100%">
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair1.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>30.00-40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00-25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
+					</th>
+					<td>
+						<h1>40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair4.'] ?></h1>
+					</th>
+					<td>
+						<h1>25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair5.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair6.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair7.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00-15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair8.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair9.'] ?></h1>
+					</th>
+					<td>
+						<h1>20.00 EUR</h1>
+					</td>
+				</tr>
+			</table>
 				</div>
 			
 			</div>
@@ -907,15 +912,15 @@
 						<div class="info">			
 							<table>
 								<tr>
-									<td><h2>Adress:</h2></td>
+									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
 									<td><p>29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></td>
 								</tr>
 								<tr>
-									<td><h2>Email:</h2></td>
+									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
 									<td><p>info@lumberjack.ru</p></td>
 								</tr>
 								<tr>
-									<td><h2>Tel.:</h2></td>
+									<td><h2><?php echo $language[$lang]['te'] ?></h2></td>
 									<td><p>+37 812 3240809</p></td>
 								</tr>
 							</table>
@@ -926,14 +931,14 @@
 					<div class="info">			
 						<table>
 							<tr>
-								<h2><center>Open</center></h2>
+								<h2><center><?php echo $language[$lang]['op'] ?></center></h2>
 							</tr>
 							<tr>
-								<td><h2>Mon.-Sat.:</h2></td>
+								<td><h2><?php echo $language[$lang]['mon'] ?></h2></td>
 								<td><p>10.00-20.00</p></td>
 							</tr>
 							<tr>
-								<td><h2>Sunday:</h2></td>
+								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
 								<td><p>11.00-17.00</p></td>
 							</tr>
 						</table>
@@ -950,97 +955,97 @@
 				<div class="buttons" id="toggler_services_3"><button><?php echo $language[$lang]['service'] ?></button></div>
 				<div class="buttons" id="book_an_appointment_4"><button class="book" id="russia" stuff="russia"><?php echo $language[$lang]['book'] ?></button></div>
 				<!--<div class="buttons" id="toggler_barbers_3"><button>BARBERS</button></div>-->
-				<div class="buttons" id="toggler_rewiews_3"><button>REWIEWS</button></div>
+				<div class="buttons" id="toggler_rewiews_3"><button><?php echo $language[$lang]['rew'] ?></button></div>
 			</div>
 			
 			<div id="services_3">
 
 				<div class="flex">
-					<div class="buttons_2"><button>ALL SERVICES</button></div>
-					<div class="buttons_2"><button>HAIR</button></div>
-					<div class="buttons_2"><button>MASSAGE</button></div>
-					<div class="buttons_2"><button>SHAVING & SKIN</button></div>
+					<div class="buttons_2"><button><?php echo $language[$lang]['all'] ?></button></div>
+					<div class="buttons_2"><button><?php echo $language[$lang]['hair'] ?></button></div>
+					<div class="buttons_2"><button><?php echo $language[$lang]['mass'] ?></button></div>
+					<div class="buttons_2"><button><?php echo $language[$lang]['skin'] ?></button></div>
 				</div>
 				
 				<div id="table_about">
-					<table width="100%">
-						<tr>
-							<th>
-								<h1>Haircut Scissors</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>30.00-40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Grooming</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00-25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut + Beardtrim</h1>
-							</th>
-							<td>
-								<h1>40.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Hot Shave</h1>
-							</th>
-							<td>
-								<h1>25.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Haircut Kids (under 10 years)</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>DAD & SON</h1>
-								<p></p>
-							</th>
-							<td>
-								<h1>15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Headwash</h1>
-							</th>
-							<td>
-								<h1>10.00-15.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Beardcoloring</h1>
-							</th>
-							<td>
-								<h1>10.00 EUR</h1>
-							</td>
-						</tr>
-						<tr>
-							<th>
-								<h1>Students special price sun.-thu.</h1>
-							</th>
-							<td>
-								<h1>20.00 EUR</h1>
-							</td>
-						</tr>
-					</table>
+				<table width="100%">
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair1.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>30.00-40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00-25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
+					</th>
+					<td>
+						<h1>40.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair4.'] ?></h1>
+					</th>
+					<td>
+						<h1>25.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair5.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair6.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair7.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00-15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair8.'] ?></h1>
+					</th>
+					<td>
+						<h1>10.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair9.'] ?></h1>
+					</th>
+					<td>
+						<h1>20.00 EUR</h1>
+					</td>
+				</tr>
+			</table>
 				</div>
 			
 			</div>
@@ -1126,13 +1131,13 @@
 									
 			<form id="form" name="orderform" method="post" action="barbershop.php">
 
-				<p>To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.</p>
+				<p><?php echo $language[$lang]['form_top'] ?></p>
 
 				<div class="appointment_place"><p>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></div>
 			
 				<div class="bookinput">
-					<label>Name</label>
-					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0 ){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="Your full name"></span>
+					<label><?php echo $language[$lang]['form1'] ?></label>
+					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0 ){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form1_1'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_n); ?>
@@ -1141,8 +1146,8 @@
 
 
 				<div class="bookinput">
-					<label>Phone</label>
-					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="Contact number"></span>
+					<label><?php echo $language[$lang]['form2'] ?></label>
+					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form2_1'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_p1); ?>
@@ -1152,8 +1157,8 @@
 
 
 				<div class="bookinput">
-					<label>E-mail</label>
-					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="Your email"></span>
+					<label><?php echo $language[$lang]['form3'] ?></label>
+					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="<?php echo $language[$lang]['form3_1'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_m); ?>
@@ -1164,11 +1169,16 @@
 				<div class="styled-select">
 					<span class="wpcf7-form-control-wrap menu-471">
 						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" >Type of service</option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> >Haircut+Beard Trim</option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> >Haircut</option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> >Beard Trim</option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> >Hot Shave</option>
+							<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
+							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
+							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
+							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
+							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
+							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
+							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
+							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
+							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
+							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
 						</select>
 					</span>
 				</div>
@@ -1181,7 +1191,9 @@
 				<div class="bookinputdate">
 					<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
 
-					<label>Date</label><span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-13" placeholder="Pick your date"></spam>
+					<label><?php echo $language[$lang]['form5'] ?></label>
+					<span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-13" placeholder="<?php echo $language[$lang]['form4_1'] ?>"></spam>
+					
 
 				</div>
 				<!--ERRROR  -->
@@ -1189,8 +1201,8 @@
 				<!--END-->
 				
 				<div class="booktextarea">
-					<label>Details</label>
-					<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="Please give us as much detail as possible!"></textarea></span>
+					<label><?php echo $language[$lang]['form6'] ?></label>
+					<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="<?php echo $language[$lang]['form5_1'] ?>"></textarea></span>
 				</div>
 				
 
@@ -1198,7 +1210,7 @@
 
 					<input type="hidden" id="hidden_input" name ='book_place' value="">
 
-					<input class="blackbutton" type="submit" name="emailsent" value="send" placeholder="send">
+					<input class="blackbutton" type="submit" name="emailsent" value="send" placeholder="<?php echo $language[$lang]['form8'] ?>">
 				</div>					
 				
 			</form>
@@ -1206,7 +1218,7 @@
 			<?php
 			}else if($mailSuccess){
 				
-				$checkemail = "<p>Check your Email</p>";
+				$checkemail = "<p><?php echo $language[$lang]['check'] ?></p>";
 				
 				echo $checkemail;
 			} ?>

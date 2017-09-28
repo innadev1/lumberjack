@@ -222,11 +222,10 @@ include 'assets/lang.php';
 						<div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
-							<p>All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.
-							</p>
+							<p><?php echo $language[$lang]['madelv_text'] ?></p>
 						</div>
 
-						<a href="our_story.php"><button class="read_more_1">read more</button></a>
+						<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
 
 					</div>
 				</div>

@@ -62,6 +62,17 @@
         $language['en']['contact_us'] = 'CONTACT US ';
 
 
+        // index 
+
+        $language['lv']['madelv_text'] = 'Visi mūsu produkti ir rūpīgi izstrādāti Anglijā kopš 1805. gada, un tie vislabāk iemieso britu mantojuma būtību. Mūsu īpašā augsti kvalificētu speciālistu, ķīmiķu, dizaineru un amatnieku komanda nepārtraukti strādā, lai piegādātu mūsu šodien pazīstamos produktus par viņu atšķirīgām inovācijām un izcilām tradīcijām. Anglijā turpināsies mūsu ikonu klāsts, jo mēs pastāvīgi cenšamies radīt jaunus un aizraujošus produktus, iegaumējot uz mūsu klientu vēlmēm.';
+        $language['lv']['readmore'] = 'lasīt tālāk';
+     
+        $language['en']['madelv_text'] = 'All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.';
+        $language['en']['readmore'] = 'read more';
+
+        $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
+        $language['ru']['readmore'] = 'читать дальше';
+
     // OURSTORY
 
     // LV
@@ -85,7 +96,7 @@
 
      // ru
      $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
-     $language['ru']['our_barber2'] = 'Tirgū no: <br> 01.06.2015 </br> Рынок –  <br>Латвия, Эстония, Россия</br>';
+     $language['ru']['our_barber2'] = 'На рынке с: <br> 01.06.2015 </br> Рынок –  <br>Латвия, Эстония, Россия</br>';
  
  
      $language['ru']['that1'] = 'представители большого спорта выбирают Lumberjack Barbershop';

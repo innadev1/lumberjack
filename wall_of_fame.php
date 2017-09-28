@@ -67,7 +67,7 @@
 						<h1>Martins Zvaigzne</h1>
 					</div>
 				</div>
-				<div class="photo photo_10">
+			<!--	<div class="photo photo_10">
 					<div class="text">
 						<h1>Kristaps Zvaigzne</h1>
 					</div>
@@ -101,7 +101,7 @@
 					<div class="text">
 						<h1>Kaspars Zvaigzne</h1>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 		

@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     $language = [];    
 
@@ -21,6 +22,9 @@
     }else{
         $lang = 'lv';
     }
+    echo $lang;
+    echo $_SESSION['lang'];
+    
 
     
     // HEADER 
@@ -62,7 +66,7 @@
 
     // LV
     $language['lv']['Lumberjack_development'] = 'Lumberjack attīstība  – spilgti momenti, nozīmīgi datumi';
-    $language['lv']['our_barber2'] = 'Tirgū no: <br> 01.06.2015 </br> Tirgus – <br>Latvija, Igaunija, Krievija </br>';
+    $language['lv']['our_barber2'] = 'Tirgū no: 01.06.2015 Tirgus – Latvija, Igaunija, Krievija';
 
 
     $language['lv']['that1'] = 'lielā sporta pārstāvji izvēlas Lumberjack Barbershop';
@@ -116,9 +120,6 @@
     $language['en']['that9'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop ';
     $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
     $language['en']['that11'] = 'Together with the hotel Pullman participated in the event Gumball 3000, one of the guests - CeeLo Green';
-
-
-
 
 
 

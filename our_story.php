@@ -72,23 +72,23 @@
 		-->
 		
 		<div id="main_info">
-			<h1>Lumberjack's development - bright moments, significant dates</h1>
-			<div><h2>Since - <b>01.06.2015</b>   Market - <b>Latvia, Estonia, Russia</b></h2></div>
+			<h1><?php echo $language[$lang]['Lumberjack_development'] ?></h1>
+			<div><h2><?php echo $language[$lang]['our_barber2'] ?></h2></div>
 			
 			<div class="year"><img src="img/ikonas/2015.png"></div>
 			
 			<div class="wrapping">
 				<div class="div" id="ph1">
 					<div></div>
-					<p>Big sports representatives choosing Lumberjack Barbershop</p>
+					<p><?php echo $language[$lang]['that1'] ?></p>
 				</div>
 				<div class="div" id="ph2">
 					<div></div>
-					<p>famous Edgars Gaurachs, Kaspars Kambala among themfamous Edgars Gaurachs, Kaspars Kambala among them</p>				
+					<p><?php echo $language[$lang]['that2'] ?></p>				
 				</div>
 				<div class="div" id="ph3">
 					<div></div>
-					<p>First participation in MOVEMBER in conjunction with the DINAMO RIGA ice hockey club</p>				
+					<p><?php echo $language[$lang]['that3'] ?></p>				
 				</div>
 			</div>
 			
@@ -97,27 +97,27 @@
 			<div class="wrapping">
 				<div class="div" id="ph4">
 					<div></div>
-					<p>More and more Latvian Media personalities and athletes choose Lumberjack Barbershop</p>				
+					<p><?php echo $language[$lang]['that4'] ?></p>				
 				</div>
 				<div class="div" id="ph5">
 					<div></div>
-					<p>2nd Lumberjack barbershop branch opening</p>				
+					<p><?php echo $language[$lang]['that5'] ?></p>				
 				</div>
 				<div class="div" id="ph6">
 					<div></div>
-					<p>Became official partner of ice hockey club Dinamo Riga for the KHL tournament. </p>				
+					<p><?php echo $language[$lang]['that6'] ?></p>				
 				</div>
 				<div class="div" id="ph7">
 					<div></div>
-					<p>De-Phazz band grooming in Lumberjack Barbershop before the concert</p>				
+					<p><?php echo $language[$lang]['that7'] ?></p>				
 				</div>
 				<div class="div" id="ph8">
 					<div></div>
-					<p>Pavel Volya, resident of the Comedy Club, grooming in Lumberjack Barbershop before the concert</p>				
+					<p><?php echo $language[$lang]['that8'] ?></p>				
 				</div>
 				<div class="div" id="ph9">
 					<div></div>
-					<p>Lumberjack barbershop branch opening in Tallinn</p>				
+					<p><?php echo $language[$lang]['that9'] ?></p>				
 				</div>
 			</div>
 			
@@ -126,11 +126,11 @@
 			<div class="wrapping">
 				<div class="div" id="ph10">
 					<div></div>
-					<p>Lumberjack Barbershop branch opening in premium-class hotel Pullman</p>				
+					<p><?php echo $language[$lang]['that10'] ?></p>				
 				</div>
 				<div class="div" id="ph11">
 					<div></div>
-					<p>Participation in Gumball 3000 in co-operation with Pullman Hotel. One of the clients – CeeLo Green</p>				
+					<p><?php echo $language[$lang]['that11'] ?></p>				
 				</div>
 			</div>
 		

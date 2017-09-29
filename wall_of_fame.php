@@ -27,7 +27,7 @@
 				</div>
 				<div class="photo photo_2">
 					<div class="text">
-						<h1>Kaspars Gorkšs</h1>
+						<h1>Kaspars Gorkss</h1>
 					</div>
 				</div>
 				<div class="photo photo_3">
@@ -54,7 +54,7 @@
 				</div>
 				<div class="photo photo_7">
 					<div class="text">
-						<h1>Edgars Masaļskis</h1>
+						<h1>Edgars Masalskis</h1>
 					</div>
 				</div>
 				<div class="photo photo_8">

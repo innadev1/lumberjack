@@ -35,9 +35,9 @@
 
         // LV 
 
-        $language['lv']['our_story'] = 'MŪSU VĒSTURE ';
-        $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS ';
-        $language['lv']['online_store'] = 'INTERNETA VEIKALS ';
+        $language['lv']['our_story'] = 'MŪSU VĒSTURE';
+        $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
+        $language['lv']['online_store'] = 'INTERNETA VEIKALS';
         $language['lv']['haircuts'] = 'MATU GIEZUMS';
         $language['lv']['price_list'] = 'CENAS';
         $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
@@ -57,7 +57,7 @@
         $language['en']['our_story'] = 'OUR STORY';
         $language['en']['our_barber'] = 'OUR BARBERSHOPS';
         $language['en']['online_store'] = 'ONLINE STORE ';
-        $language['en']['haircuts'] = 'HAIRCUTS ';
+        $language['en']['haircuts'] = 'HAIRCUTS';
         $language['en']['price_list'] = 'PRICE LIST ';
         $language['en']['contact_us'] = 'CONTACT US ';
 
@@ -126,7 +126,7 @@
 
     // en
     $language['en']['Lumberjack_development'] = 'Chronology of the development of Lumberjack Barbershop - bright moments by dates and years ';
-    $language['en']['our_barber2'] = 'Date of foundation - <br> 01.06.2015 </br> The market -  <br>Latvia, Estonia, Russia</br>';
+    $language['en']['our_barber2'] = 'Date of foundation -  01.06.2015 The market - Latvia, Estonia, Russia';
 
 
     $language['en']['that1'] = 'Representatives of a large sport choose Lumberjack Barbershop';
@@ -228,7 +228,7 @@
     $language['ru']['em'] = "Электронная почта:";
     $language['ru']['te'] = "Тел.:";
     $language['ru']['op'] = "Открыт";
-    $language['ru']['mon'] = "Пон.-Суб:";
+    $language['ru']['mon'] = "Пн.-Сб:";
     $language['ru']['sun'] = "Воскресенье:";
 
 
@@ -250,9 +250,9 @@
 
     
     // LV
-    $language['lv']['service'] = "servisi";
-    $language['lv']['book'] = "pieteikties";
-    $language['lv']['rew'] = "atsauces";
+    $language['lv']['service'] = "Servisi";
+    $language['lv']['book'] = "Pieteikties";
+    $language['lv']['rew'] = "Atsauces";
 
 
     $language['lv']['hair1.'] = "Matu griezums";
@@ -266,8 +266,8 @@
     $language['lv']['hair9.'] = "Studentu īpaša cena no sv.-cet. ";
 
     // RUS
-    $language['ru']['service'] = "услуги";
-    $language['ru']['book'] = "Записатся на приём";
+    $language['ru']['service'] = "Услуги";
+    $language['ru']['book'] = "Записаться";
     $language['ru']['rew'] = "Отзывы";
 
 
@@ -282,9 +282,9 @@
     $language['ru']['hair9.'] = "Специальная цена для студентов воск.- чет.";
 
      // EN
-     $language['en']['service'] = "services";
-     $language['en']['book'] = "book an appointment ";
-     $language['en']['rew'] = "reviews";
+     $language['en']['service'] = "Services";
+     $language['en']['book'] = "Book";
+     $language['en']['rew'] = "Reviews";
      
      $language['en']['hair1.'] = "Haircut Scissors";
      $language['en']['hair2.'] = "Grooming";

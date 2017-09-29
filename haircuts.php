@@ -280,7 +280,7 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 	</div>
 </div>
 
-<div class="button_more"><button id="button"><?php echo $language[$lang]['bookanpoint'] ?></button></div>
+<div class="button_more"><button id="button">MORE</button></div>
 
 <?php include 'assets/footer.php'; ?>
 

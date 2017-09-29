@@ -19,18 +19,17 @@ body{
 	background-repeat: no-repeat;
 	position: relative;
 }
-.caption{
-	z-index: 2;
+.caption {
+    z-index: 2;
     text-align: center;
     top: 37%;
     position: relative;
-   /* border: 1px solid rgba(230, 230, 230, 0.3);*/
-    margin-left: 27vw;
-    margin-right: 27vw;
+    /* border: 1px solid rgba(230, 230, 230, 0.3); */
+    margin-left: 22vw;
+    margin-right: 22vw;
     padding-top: 2vw;
-    padding-bottom: 2vw;
-
-	border: 6px double rgba(230, 230, 230, 0.5);
+    padding-bottom: 1vw;
+    border: 6px double rgba(230, 230, 230, 0.5);
     background-color: rgba(255,255,255,0.05);
 }
 .caption h1{
@@ -326,4 +325,37 @@ body{
     padding: 6vw;
     padding-top: 0;
 }*/
+#main_info h1 {
+    font-size: 3vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
+#main_info h2 {
+    font-size: 2.5vw;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.year img {
+    width: 25vw;
+    padding: 6vw;
+}
+.wrapping {
+    display: block;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.div {
+    width: 90%;
+    height: 52vw;
+}
+.div div {
+    height: 31vw;
+}
+.wrapping p {
+    font-size: 3vw;
+    line-height: 4vw;
+}
 }

@@ -150,7 +150,7 @@ iframe{
 }
 .round_buttons button {
     background-color: rgb(189, 148, 86);
-    padding: 1vw;
+    padding: 1.5vw;
     border-radius: 3vw;
     border: none;
     cursor: pointer;

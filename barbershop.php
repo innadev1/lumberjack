@@ -913,7 +913,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></td>
+									<td><p>29 lin. Vasilyevskogo ostrova, 2,<br> Sankt-Peterburg</p></td>
 								</tr>
 								<tr>
 									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>

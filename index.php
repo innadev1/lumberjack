@@ -203,8 +203,8 @@ include 'assets/lang.php';
 
 			<div id="banner_mobile">
 				<div class="caption">
-					<h1>LUMBERJACK</h1>
-					<h2>NEW TRADITIONAL BARBERSHOP</h2>
+					<h1>LUMBERJACK<br>BARBERSHOP</h1>
+					<!--<h2>NEW TRADITIONAL BARBERSHOP</h2>-->
 					<button class="read_more">book now</button>
 				</div>
 				<div class="round_buttons">
@@ -217,13 +217,13 @@ include 'assets/lang.php';
 			<div class="wrap">
 				<div class="photo photo_1">
 
-						<!-- <div class="text_on_photo">
+						<div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
 							<h6>made in latvia</h6>
 							<p><?php echo $language[$lang]['madelv_text'] ?></p>
 							
 							<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
-						</div> -->
+						</div>
 
 				</div>
 

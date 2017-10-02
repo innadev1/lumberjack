@@ -88,11 +88,11 @@
 		}
 		
 
-		// // Type Of Style
-		// if($_POST['typeOfService'] == '-'){
-		// 	$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
-		// 	$errors['typeOfService'] = 1;
-		// }
+		// Type Of Style
+		if($_POST['typeOfService'] == '-'){
+			$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
+			$errors['typeOfService'] = 1;
+		}
 		
 		// DATE 
 		if(empty($date)){

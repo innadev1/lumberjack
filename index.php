@@ -177,7 +177,7 @@ include 'assets/lang.php';
 					<div class="caption">
 						<div class="caption_ieksa" style="display:none;"><h1>LUMBERJACK BARBERSHOP</h1>
 						<h2>REMIND YOURSELF HOW COOL IT IS TO BE A MAN!</h2></div>
-						<div class="button_more" style="margin-top:12vw;"><button class="read_more">book now</button></div>
+						<div class="button_more" style="margin-top:12vw;"><button class="read_more"><?php echo $language[$lang]['book'] ?></button></div>
 					</div>
 
 					<div class="inner-wrapper">
@@ -204,7 +204,7 @@ include 'assets/lang.php';
 				<div class="caption">
 					<h1>LUMBERJACK<br>BARBERSHOP</h1>
 					<!--<h2>NEW TRADITIONAL BARBERSHOP</h2>-->
-					<button class="read_more">book now</button>
+					<button class="read_more"><?php echo $language[$lang]['readmore'] ?></button>
 				</div>
 				<div class="round_buttons">
 					<button id="flip_1"></button>
@@ -218,8 +218,8 @@ include 'assets/lang.php';
 
 						<div class="text_on_photo">
 							<img src="img/logo.png" width="30%">
-							<h6>made in latvia</h6>
-							<p><?php echo $language[$lang]['madelv_text'] ?></p>
+							<h6></h6>
+							<p></p>
 							
 							<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
 						</div>

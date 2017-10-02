@@ -11,6 +11,8 @@
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
+		<?php include 'assets/lang.php'; ?>
+
 		
 		<div id="map_latvia">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
@@ -33,7 +35,7 @@
 		
 		<div id="info">
 			<div id="first_flex">
-				<button class="first"><?php echo $language[$lang]['ofiss'] ?></button>
+				<button class="first"><?php echo $language[$lang]['ofiss1'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -48,10 +50,10 @@
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
-				<button id="trigger1" class="second"><?php echo $language[$lang]['map'] ?></button>
+				<button id="trigger1" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 			<div id="second_flex">
-				<button class="first"><?php echo $language[$lang]['marketing'] ?></button>
+				<button class="first"><?php echo $language[$lang]['marketing4'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -66,10 +68,10 @@
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
-				<button id="trigger2" class="second"><?php echo $language[$lang]['map'] ?></button>
+				<button id="trigger2" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 			<div id="third_flex">
-				<button class="first"><?php echo $language[$lang]['shop'] ?></button>
+				<button class="first"><?php echo $language[$lang]['shop3'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -84,7 +86,7 @@
 						<td><p>+372 56969119</p></td>
 					</tr>
 				</table>
-				<button id="trigger3" class="second"><?php echo $language[$lang]['map'] ?></button>
+				<button id="trigger3" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 			<div id="four_flex">
 				<button class="first"><?php echo $language[$lang]['franch.'] ?></button>
@@ -102,7 +104,7 @@
 						<td><p>+37 812 3240809</p></td>
 					</tr>
 				</table>
-				<button id="trigger4" class="second"><?php echo $language[$lang]['map'] ?></button>
+				<button id="trigger4" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 		</div>
 		

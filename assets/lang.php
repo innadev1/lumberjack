@@ -27,9 +27,25 @@
 
     
 
+    $language['lv']['ofiss1'] = 'GALVENAIS BIROJS';
+    $language['lv']['map2'] = 'PARĀDĪT KARTĒ';
+    $language['lv']['shop3'] = 'INTERNETVEIKALS/RETAIL';
+    $language['lv']['marketing4'] = 'MĀRKETINGS';
+
+    $language['en']['ofiss1'] = 'MAIN OFFICE';
+    $language['en']['map2'] = 'SHOW IN MAP';
+    $language['en']['shop3'] = 'INTERNET SHOP/RETAIL';
+    $language['en']['marketing4'] = 'MARKETING';
+
+    $language['ru']['ofiss1'] = 'ГЛАВНЫЙ ОФИС';
+    $language['ru']['map2'] = 'ПОКАЗАТЬ НА КАРТЕ';
+    $language['ru']['shop3'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
+    $language['ru']['marketing4'] = 'МАРКЕТИНГ';
+    
+
     
     // HEADER 
-    $language['lv']['franch.'] = 'FRANČĪZE';
+    $language['lv']['franch.'] = 'FRANŠĪZE';
     $language['en']['franch.'] = 'FRANCHISE';
     $language['ru']['franch.'] = 'ФРАНШИЗА';
 
@@ -180,7 +196,7 @@
 
     $language['ru']['lv'] = "ЛАТВИЯ";
     $language['ru']['est'] = "ЭСТОНИЯ";
-    $language['ru']['russ'] = "KRIEVIJA";
+    $language['ru']['russ'] = "РОССИЯ";
 
     $language['en']['lv'] = "LATVIA";
     $language['en']['est'] = "ESTONIA";
@@ -307,7 +323,8 @@
     -
     $language['lv']['form0'] = 'Izvēlieties adresi';
     // $language['lv']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
-    -
+
+    $language['lv']['check-e'] = 'Pārbaudiet Jūsu e-pastu';
     $language['lv']['from'] = 'No:';
     $language['lv']['client'] = 'Klients';
 
@@ -340,7 +357,7 @@
     $language['lv']['form8'] = 'Aizsūtīt pieteikumu';
 
     //RUS
-
+    $language['ru']['check-e'] = 'Pārbaudiet Jūsu e-pastu';
     $language['ru']['from'] = 'Oт:';
     $language['ru']['client'] = 'Kлиент';
 
@@ -377,10 +394,10 @@
     $language['ru']['form8'] = 'Отправить заявку';
 
     // ENG
-
+    $language['en']['check-e'] = 'Check your e-mail';
     $language['en']['from'] = 'From:';
     $language['en']['client'] = 'The Client';
-
+  
 
     $language['en']['form_top'] = 'To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.';
     -
@@ -424,7 +441,7 @@
     // LIFE STYLE
 
     $language['en']['lfs'] = 'Lifestyle';
-    $language['lv']['lfs'] = 'Dzīves stils';
+    $language['lv']['lfs'] = 'DZĪVES STILS';
     $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
 
 
@@ -481,35 +498,8 @@
 
 
 // E-Mail Stuff
-
-        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
-        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
-        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
-
-        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
-        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
-        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
-
-        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
-        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
-        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
-
 // CONTACT
 
-        $language['lv']["ofiss"] = 'GALVENAIS BIROJS';
-        $language['lv']['map'] = 'PARĀDĪT KARTĒ';
-        $language['lv']['shop'] = 'INTERNETVEIKALS/RETAIL';
-        $language['lv']['marketing'] = 'MĀRKETINGS';
-
-        $language['en']["ofiss"] = 'MAIN OFFICE';
-        $language['en']['map'] = 'SHOW IN MAP';
-        $language['en']['shop'] = 'INTERNET SHOP/RETAIL';
-        $language['en']['marketing'] = 'MARKETING';
-
-        $language['ru']["ofiss"] = 'ГЛАВНЫЙ ОФИС';
-        $language['ru']['map'] = 'ПОКАЗАТЬ НА КАРТЕ';
-        $language['ru']['shop'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
-        $language['ru']['marketing'] = 'МАРКЕТИНГ';
 
 
         

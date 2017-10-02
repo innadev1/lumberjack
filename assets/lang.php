@@ -38,7 +38,7 @@
         $language['lv']['our_story'] = 'MŪSU VĒSTURE';
         $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
         $language['lv']['online_store'] = 'INTERNETA VEIKALS';
-        $language['lv']['haircuts'] = 'MATU GIEZUMS';
+        $language['lv']['haircuts'] = 'MATU GRIEZUMI';
         $language['lv']['price_list'] = 'CENAS';
         $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
 
@@ -297,6 +297,9 @@
      $language['en']['hair9.'] = "Students special price sun.-thu.";
  
 
+     $language['lv']['product'] = "produkti";
+     $language['en']['product'] = "products";
+     $language['ru']['product'] = "продукты";
 
     //  Sūtīšanas Forma
     // LV
@@ -305,6 +308,10 @@
     $language['lv']['form0'] = 'Izvēlieties adresi';
     // $language['lv']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
     -
+    $language['lv']['from'] = 'No:';
+    $language['lv']['client'] = 'Klients';
+
+
     $language['lv']['form1'] = 'Vārds';
     $language['lv']['form1_1'] = 'Pilns vārds';
     $language['lv']['form1_e1'] = 'Vārds ir par īsu';
@@ -315,13 +322,13 @@
     $language['lv']['form2_e1'] = 'Tikai cipari!';
     $language['lv']['form2_e2'] = 'Pārāk īss telefons!';
     -
-    $language['lv']['form3'] = 'ēpasts';
-    $language['lv']['form3_1'] = 'Jūsu ēpasts';
+    $language['lv']['form3'] = 'e-pasts';
+    $language['lv']['form3_1'] = 'Jūsu e-pasts';
     $language['lv']['form3_e1'] = 'Lūdzu, ievadiet e-pastu!';
     -
     $language['lv']['form4'] = 'Servisa nosaukums';
-    $language['lv']['form4_1'] = 'Datums';
-    $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu.!';
+    // $language['lv']['form4_1'] = 'Datums';
+    $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu!';
     -
     $language['lv']['form5'] = 'Datums';
     $language['lv']['form5_1'] = 'Izvēlaties datumu';
@@ -333,6 +340,9 @@
     $language['lv']['form8'] = 'Aizsūtīt pieteikumu';
 
     //RUS
+
+    $language['ru']['from'] = 'Oт:';
+    $language['ru']['client'] = 'Kлиент';
 
     $language['ru']['form_top'] = 'Чтобы записаться на встречу на один из наших сервисов, просто заполните форму ниже, нажмите «Отправить», и администратор свяжется с вами, чтобы подтвердить ваше бронирование.';
     -
@@ -355,7 +365,7 @@
     $language['ru']['form3_e1'] = 'Пожалуйста, введите адрес электронной почты!';
     -
     $language['ru']['form4'] = 'Тип стиля';
-    $language['ru']['form4_e1'] = 'Тип стиля пуст. Введите тип стиля.!';
+    $language['ru']['form4_e1'] = 'Тип стиля пуст. Введите тип стиля!';
     -
     $language['ru']['form5'] = 'Дата';
     $language['ru']['form5_1'] = 'Выберите дату';
@@ -367,6 +377,11 @@
     $language['ru']['form8'] = 'Отправить заявку';
 
     // ENG
+
+    $language['en']['from'] = 'From:';
+    $language['en']['client'] = 'The Client';
+
+
     $language['en']['form_top'] = 'To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.';
     -
     $language['en']['form0'] = 'Choose adress';
@@ -388,7 +403,7 @@
     $language['en']['form4_1'] = 'Date';
     -
     $language['en']['form4'] = 'Type of service';
-    $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style.!';
+    $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style!';
     -
     $language['en']['form5'] = 'Date';
     $language['en']['form5_1'] = 'Pick your date';
@@ -403,8 +418,6 @@
     $language['lv']['bookanpoint'] = 'Send appointment';
     $language['ru']['bookanpoint'] = 'Send appointment';
     $language['en']['bookanpoint'] = 'Send appointment';
-
-
 
 
 
@@ -462,10 +475,44 @@
 
 //  Wall Of FAme
 
-    $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
-    $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
-    $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
+        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
 
+
+// E-Mail Stuff
+
+        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
+
+        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
+
+        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
+
+// CONTACT
+
+        $language['lv']["ofiss"] = 'GALVENAIS BIROJS';
+        $language['lv']['map'] = 'PARĀDĪT KARTĒ';
+        $language['lv']['shop'] = 'INTERNETVEIKALS/RETAIL';
+        $language['lv']['marketing'] = 'MĀRKETINGS';
+
+        $language['en']["ofiss"] = 'MAIN OFFICE';
+        $language['en']['map'] = 'SHOW IN MAP';
+        $language['en']['shop'] = 'INTERNET SHOP/RETAIL';
+        $language['en']['marketing'] = 'MARKETING';
+
+        $language['ru']["ofiss"] = 'ГЛАВНЫЙ ОФИС';
+        $language['ru']['map'] = 'ПОКАЗАТЬ НА КАРТЕ';
+        $language['ru']['shop'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
+        $language['ru']['marketing'] = 'МАРКЕТИНГ';
+
+
+        
 
 
     // FOOTER

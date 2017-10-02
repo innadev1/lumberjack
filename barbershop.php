@@ -88,11 +88,9 @@
 		$mailSuccess = false;
 		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
 			$to      = 'my.worktest94@gmail.com';
-			$subject = 'the Client';
-			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
-			$headers = 'From:' . $email . "\r\n" .
-			'Reply-To:' . $email . "\r\n" .
-			'X-Mailer: PHP/' . phpversion();
+			$subject = $language[$lang]['client'];
+			$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+			$headers = "";
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}

@@ -104,25 +104,23 @@ $mailSuccess = false;
 
 if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
 	$to      = $_POST['chooseMail'];
-	$subject = 'the Client';
-	$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $hair_syles[strval($typeOfService) ]. "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
-	$headers = 'From:' . $email . "\r\n" .
-	'Reply-To:' . $email . "\r\n" .
-	'X-Mailer: PHP/' . phpversion();
+	$subject = $language[$lang]['client'];
+	$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+	$headers = "";
 
 	if(mail($to, $subject, $message, $headers)){
 		$mailSuccess = true;
 	}
 	$to2      = $email;
-	$subject2 = 'the Client';
-	$message2 = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" .  "Type of service:" . " " . $hair_syles[strval($typeOfService) ]. "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
-	$headers2 = 'From:' . $_POST['chooseMail'] . "\r\n" .
+	$subject = $language[$lang]['client'];
+	$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $hair_syles[strval($typeOfService) ] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+	$headers = $language[$lang]['from'] . $email . "\r\n" .
+	
 	'Reply-To:' . $email . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
 	mail($to2, $subject2, $message2, $headers2);
-	
-	
+
 	// echo "check Your Email";
 
 }else{

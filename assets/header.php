@@ -42,8 +42,8 @@
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
-			<li><a href="lifestyle.php">LIFESTYLE</a></li>
-			<li><a href="wall_of_fame.php">WALL OF FAME</a></li>
+			<li><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
+			<li><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>

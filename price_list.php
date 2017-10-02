@@ -1,6 +1,6 @@
 <?php
 
-	// include 'assets/lang.php';
+	include 'assets/lang.php';
 
 		$error_message_choose_m = "";
 		$error_message_n = "";
@@ -103,12 +103,9 @@
 
 		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
 			$to      = $_POST['chooseMail'];
-			$subject = 'the Client';
-			$message = "Name:" . " " . $name . "\r\n" . "Phone:" . " " . $phone . "\r\n" . "E-mail:" . " " . $email . "\r\n" . "Type of service:" . " " . $typeOfService . "\r\n" . "Date:" . " " . $date . "\r\n" . "Details:" . " " . $text;
-			$headers = 'From:' . $email . "\r\n" .
-			'Reply-To:' . $email . "\r\n" .
-			'X-Mailer: PHP/' . phpversion();
-
+			$subject = $language[$lang]['client'];
+			$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $hair_syles[strval($typeOfService) ] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+			$headers = "";
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
@@ -119,9 +116,6 @@
 			
 			// $reply = "reply";
 		}
-
-		print_r($_POST);
-
 	}
 
 ?>
@@ -183,7 +177,7 @@
 		<?php include 'assets/header.php'; ?>
 		
 		<div class="caption">
-			<h1><img src="img/vector.png">PRICE LIST<img src="img/vector.png"></h1>
+			<h1><img src="img/vector.png"><?php echo $language[$lang]['price_list'] ?><img src="img/vector.png"></h1>
 		</div>
 		
 		<div id="main">

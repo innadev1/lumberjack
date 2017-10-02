@@ -33,14 +33,14 @@
 		
 		<div id="info">
 			<div id="first_flex">
-				<button class="first">MAIN OFFICE</button>
+				<button class="first"><?php echo $language[$lang]['ofiss'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
 						<td><p>Riharda Vagnera iela 11,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
-						<th><h2>Email:</h2></th>
+						<th><h2><?php echo $language[$lang]['form3'] ?></h2></th>
 						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
@@ -48,10 +48,10 @@
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
-				<button id="trigger1" class="second">SHOW IN MAP</button>
+				<button id="trigger1" class="second"><?php echo $language[$lang]['map'] ?></button>
 			</div>
 			<div id="second_flex">
-				<button class="first">MARKETING</button>
+				<button class="first"><?php echo $language[$lang]['marketing'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -66,10 +66,10 @@
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
-				<button id="trigger2" class="second">SHOW IN MAP</button>
+				<button id="trigger2" class="second"><?php echo $language[$lang]['map'] ?></button>
 			</div>
 			<div id="third_flex">
-				<button class="first">INTERNET SHOP/RETAIL</button>
+				<button class="first"><?php echo $language[$lang]['shop'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -84,10 +84,10 @@
 						<td><p>+372 56969119</p></td>
 					</tr>
 				</table>
-				<button id="trigger3" class="second">SHOW IN MAP</button>
+				<button id="trigger3" class="second"><?php echo $language[$lang]['map'] ?></button>
 			</div>
 			<div id="four_flex">
-				<button class="first">FRANCHISE</button>
+				<button class="first"><?php echo $language[$lang]['franch.'] ?></button>
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
@@ -102,7 +102,7 @@
 						<td><p>+37 812 3240809</p></td>
 					</tr>
 				</table>
-				<button id="trigger4" class="second">SHOW IN MAP</button>
+				<button id="trigger4" class="second"><?php echo $language[$lang]['map'] ?></button>
 			</div>
 		</div>
 		

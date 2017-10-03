@@ -46,6 +46,7 @@
 	width: 35vw;
     margin-top: 8vw;
     left: 12vw;
+	box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 .photo_background{
 	position: absolute;
@@ -57,6 +58,7 @@
 	width: 35vw;
     margin-top: 8vw;
     right: 12vw;
+	box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 .photo_background2{
 	position: absolute;

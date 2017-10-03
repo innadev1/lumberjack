@@ -70,8 +70,6 @@
 button{
     background-color: transparent;
     color: rgb(189, 148, 86);
-    letter-spacing: 0.2vw;
-    font-stretch: condensed;
     border: 1px solid rgb(189, 148, 86);
     cursor: pointer;
     font-size: 1vw;

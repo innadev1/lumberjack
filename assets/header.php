@@ -3,6 +3,9 @@
 	if(!isset($language)){
 		include 'assets/lang.php';
 	}
+
+
+	$currentLang = isset($_GET['lang']) ? $_GET['lang'] : 'lv';
 	
 ?>
 
@@ -27,6 +30,7 @@
 		</ul>
 	</div>
 </div>
+
 
 <div id="logo">
 	<a href="index.php"><img src="img/logo.png"></a>

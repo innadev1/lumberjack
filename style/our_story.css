@@ -22,9 +22,8 @@ body{
 .caption {
     z-index: 2;
     text-align: center;
-    top: 37%;
+    top: 40%;
     position: relative;
-    /* border: 1px solid rgba(230, 230, 230, 0.3); */
     margin-left: 26vw;
     margin-right: 26vw;
     padding-top: 1vw;

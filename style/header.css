@@ -152,6 +152,7 @@ a{
 }
 .box_li a{
 	font-weight: bold;
+	text-transform: uppercase;
 }
 .box_li a:hover{
 	color: rgba(203, 148, 78, 1);

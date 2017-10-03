@@ -189,7 +189,7 @@
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
 				<td><p>30.00-40.00 EUR</p></td>
-				<th><button class="button" value=0 haircutsn = "name1" >+</button></th>
+				<th><button class="button" value=0 haircutsn = "name1" ><!--<?php echo $language[$lang]['book'] ?>-->+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>

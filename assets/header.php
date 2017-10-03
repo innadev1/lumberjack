@@ -3,9 +3,6 @@
 	if(!isset($language)){
 		include 'assets/lang.php';
 	}
-
-
-	$currentLang = isset($_GET['lang']) ? $_GET['lang'] : 'lv';
 	
 ?>
 
@@ -30,7 +27,6 @@
 		</ul>
 	</div>
 </div>
-
 
 <div id="logo">
 	<a href="index.php"><img src="img/logo.png"></a>
@@ -57,9 +53,11 @@
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
-			<li><a href="#"><img src="img/bag_brown.png" width="22px" style="padding-right:5px; padding-left:5px"></a></li>
+			<li><a href="#"><img src="img/bag_brown.png" width="20px" style="padding-right:5px; padding-left:5px"></a></li>
 			<li class="border"></li>
-			<li><a style="padding-left:5px">lv</a></li>
+			<li style="padding-left:5px"><a href="?lang=lv">LV</a></li>
+			<li><a href="?lang=en">EN</a></li>
+			<li><a href="?lang=ru">RU</a></li>
 		</ul>
 	</div>
 </div>

@@ -325,12 +325,12 @@ body{
     padding-top: 0;
 }*/
 #main_info h1 {
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin-right: 10vw;
     margin-left: 10vw;
 }
 #main_info h2 {
-    font-size: 2.5vw;
+    font-size: 3vw;
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
@@ -348,13 +348,14 @@ body{
 }
 .div {
     width: 90%;
-    height: 52vw;
+    height: 80vw;
 }
 .div div {
-    height: 31vw;
+    height: 42vw;
 }
 .wrapping p {
     font-size: 3vw;
     line-height: 4vw;
+	padding: 3vw;
 }
 }

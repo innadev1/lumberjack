@@ -9,19 +9,18 @@
 .caption{
 	z-index: 2;
     text-align: center;
-    top: 31%;
+    top: 35%;
     position: relative;
-    /*border: 1px solid rgba(230, 230, 230, 0.3);*/
-    margin-left: 21vw;
-    margin-right: 21vw;
-    padding-top: 4vw;
-    padding-bottom: 3vw;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
 	border: 6px double rgba(230, 230, 230, 0.5);
     background-color: rgba(255,255,255,0.05);
 }
 .caption h1{
 	color: white;
-    font-size: 4.4vw;
+    font-size: 3.4vw;
     margin: 0;
     font-family: "OpenSans", sans-serif;
     font-weight: bold;

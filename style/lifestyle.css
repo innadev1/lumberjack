@@ -24,17 +24,16 @@ body{
     text-align: center;
     top: 37%;
     position: relative;
-   /* border: 1px solid rgba(230, 230, 230, 0.3);*/
-	margin-left: 24vw;
-    margin-right: 24vw;
-    padding-top: 2vw;
+	margin-left: 28vw;
+    margin-right: 28vw;
+    padding-top: 1vw;
     padding-bottom: 2vw;
 	border: 6px double rgba(230, 230, 230, 0.5);
     background-color: rgba(255,255,255,0.05);
 }
 .caption h1{
 	color: white;
-    font-size: 4.4vw;
+    font-size: 3.4vw;
     margin: 0;
     font-family: "OpenSans", sans-serif;
     font-weight: bold;

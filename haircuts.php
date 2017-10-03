@@ -285,6 +285,20 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 <!--FORMA  -->
 
 <div class="remodal-overlay" style="display: none;">
+
+
+	<div class="remodal-overlay"
+
+	<?php if(isset($_POST['emailsent'])) { ?>
+
+			style="display: block;" <?php
+			
+	}else{
+		?>	
+			style="display: none;" <?php
+	} ?>
+	>
+
 <div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 	<img src="img/logo-half.png" id="bookin-workshop">
@@ -394,6 +408,9 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 		} ?>					
 
 	<a class="remodal-close"></a>
+
+	</div>
+</div>
 
 </div>
 </div>

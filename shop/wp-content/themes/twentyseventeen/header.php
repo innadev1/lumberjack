@@ -1,3 +1,7 @@
+<?php
+	
+?>
+
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -38,6 +42,7 @@
 			<li><a>lv</a></li>
 			<li><a>en</a></li>
 			<li><a>ru</a></li>
+			
 		</ul>
 	</div>
 </div>

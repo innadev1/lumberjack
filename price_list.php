@@ -237,7 +237,21 @@
 		</div>
 		
 		<div class="remodal-overlay" style="display: none;">
-		<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
+		<div class="remodal-overlay"
+
+	<?php if(isset($_POST['emailsent'])) { ?>
+
+			style="display: block;" <?php
+			
+	}else{
+		?>	
+			style="display: none;" <?php
+	} ?>
+	>
+
+	<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
+
 
 		<img src="img/logo-half.png" id="bookin-workshop">
 
@@ -348,6 +362,9 @@
 		} ?>
 
 		<a class="remodal-close"></a>
+
+		</div>
+</div>
 
 		</div>
 		</div>		

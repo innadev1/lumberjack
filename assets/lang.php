@@ -275,7 +275,7 @@
     $language['lv']['hair2.'] = "Groomings";
     $language['lv']['hair3.'] = "Bārdas+ matu griezums";
     $language['lv']['hair4.'] = "Karstā skūšanās";
-    $language['lv']['hair5.'] = "Bērnu matu griezums";
+    $language['lv']['hair5.'] = "Bērnu griezums ( no 5 līdz 10 gadiem)";
     $language['lv']['hair6.'] = "Matu griezums Dēls+ Tēvs";
     $language['lv']['hair7.'] = "Matu mazgāšana";
     $language['lv']['hair8.'] = "Bārdas krāsošana";
@@ -291,12 +291,12 @@
     $language['ru']['hair2.'] = "Груминг";
     $language['ru']['hair3.'] = "Стрижка+коррекция бороды";
     $language['ru']['hair4.'] = "Горячее бритьё";
-    $language['ru']['hair5.'] = "Детская стрижка";
+    $language['ru']['hair5.'] = "Детская стрижка ( от 5 до 10 лет )";
     $language['ru']['hair6.'] = "Стрижка отец + сын";
     $language['ru']['hair7.'] = "Мойка головы";
     $language['ru']['hair8.'] = "Покраска бороды";
     $language['ru']['hair9.'] = "Специальная цена для студентов воск.- чет.";
-
+ 
      // EN
      $language['en']['service'] = "Services";
      $language['en']['book'] = "Book";
@@ -306,7 +306,7 @@
      $language['en']['hair2.'] = "Grooming";
      $language['en']['hair3.'] = "Haircut + Beardtrim";
      $language['en']['hair4.'] = "Hot Shave";
-     $language['en']['hair5.'] = "Haircut Kids (under 10 years)";
+     $language['en']['hair5.'] = "Kids haircut ( 5-10 years old )";
      $language['en']['hair6.'] = "DAD & SON";
      $language['en']['hair7.'] = "Headwash";
      $language['en']['hair8.'] = "Beardcoloring";

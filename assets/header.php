@@ -43,7 +43,7 @@
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 			<li><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
-			<li><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+			<li><a href="wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
@@ -100,7 +100,7 @@
 				<li class="link"><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
 				
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+				<li class="link"><a href="wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
 				
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>

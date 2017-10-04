@@ -51,7 +51,7 @@
     $language['ru']['franch.'] = 'ФРАНШИЗА';
 
         // LV 
-
+        $language['lv']['home'] = 'SĀKUMS';
         $language['lv']['our_story'] = 'MŪSU VĒSTURE';
         $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
         $language['lv']['online_store'] = 'INTERNETA VEIKALS';
@@ -60,7 +60,7 @@
         $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
 
         // RU
-
+        $language['ru']['home'] = 'ГЛАВНАЯ';
         $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
         $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
         $language['ru']['online_store'] = 'ОНЛАЙН МАГАЗИН';
@@ -70,7 +70,7 @@
 
 
         // EN 
-
+        $language['en']['home'] = 'HOME';
         $language['en']['our_story'] = 'OUR STORY';
         $language['en']['our_barber'] = 'OUR BARBERSHOPS';
         $language['en']['online_store'] = 'ONLINE STORE ';

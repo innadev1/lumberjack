@@ -37,7 +37,7 @@
 	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="img/close.png"></div></a>
     <div>
         <ul class="box_li">
-			<li><a href="index.php">HOME</a></li>
+			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
 			<li><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>

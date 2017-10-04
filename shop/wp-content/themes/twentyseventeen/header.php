@@ -832,19 +832,19 @@ a{
 }
 .caption {
     text-align: center;
-    top: 37%;
+    top: 40%;
     position: relative;
    /* border: 1px solid rgba(230, 230, 230, 0.3);*/
-    margin-left: 25vw;
-    margin-right: 25vw;
-    padding-top: 2vw;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    padding-top: 1vw;
     padding-bottom: 2vw;
 	border: 6px double rgba(230, 230, 230, 0.5);
     background-color: rgba(255,255,255,0.05);
 }
 .caption h1 {
     color: white;
-    font-size: 4.4vw;
+    font-size: 3.4vw;
     margin: 0;
     font-family: "OpenSans", sans-serif;
     font-weight: bold;
@@ -909,5 +909,21 @@ ul.products li.product .button {
     padding: 1.3vw;
     font-size: 3vw;
 }
+.single-featured-image-header img {
+    display: block;
+    margin: unset;
+    width: unset;
+    margin-top: unset;
+    height: unset;
+    margin-left: unset;
+}
+.summary, .entry-summary {
+    display: block;
+    position: relative;
+    margin-top: unset;
+    z-index: 3;
+    margin-left: unset;
+}
+
 }
 </style>

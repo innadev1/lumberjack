@@ -54,7 +54,7 @@
         $language['lv']['home'] = 'SĀKUMS';
         $language['lv']['our_story'] = 'MŪSU VĒSTURE';
         $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
-        $language['lv']['online_store'] = 'INTERNETA VEIKALS';
+        $language['lv']['online_store'] = 'I-SHOP';
         $language['lv']['haircuts'] = 'MATU GRIEZUMI';
         $language['lv']['price_list'] = 'CENAS';
         $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
@@ -63,7 +63,7 @@
         $language['ru']['home'] = 'ГЛАВНАЯ';
         $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
         $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
-        $language['ru']['online_store'] = 'ОНЛАЙН МАГАЗИН';
+        $language['ru']['online_store'] = 'I-SHOP';
         $language['ru']['haircuts'] = 'СТРИЖКИ';
         $language['ru']['price_list'] = 'ЦЕНЫ';
         $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
@@ -73,7 +73,7 @@
         $language['en']['home'] = 'HOME';
         $language['en']['our_story'] = 'OUR STORY';
         $language['en']['our_barber'] = 'OUR BARBERSHOPS';
-        $language['en']['online_store'] = 'ONLINE STORE ';
+        $language['en']['online_store'] = 'I-SHOP';
         $language['en']['haircuts'] = 'HAIRCUTS';
         $language['en']['price_list'] = 'PRICE LIST ';
         $language['en']['contact_us'] = 'CONTACT US ';
@@ -507,8 +507,8 @@
 
 
     // FOOTER
-    $language['lv']['wof'] = 'SLAVAS ZĀLE';
+    $language['lv']['wof'] = 'WALL OF FAME';
     $language['en']['wof'] = 'WALL OF FAME';
-    $language['ru']['wof'] = 'СТЕНА СЛАВЫ';
+    $language['ru']['wof'] = 'WALL OF FAME';
 
 ?>

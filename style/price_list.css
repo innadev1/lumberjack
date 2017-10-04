@@ -70,12 +70,10 @@
 button{
     background-color: transparent;
     color: rgb(189, 148, 86);
-    letter-spacing: 0.2vw;
-    font-stretch: condensed;
     border: 1px solid rgb(189, 148, 86);
     cursor: pointer;
     font-size: 1vw;
-    padding: 0.4vw 0.8vw;
+    padding: 1px 6px;
 }
 .caption {
 	z-index: 2;
@@ -108,9 +106,9 @@ button{
 }
 @media screen and (max-width: 900px){
 .caption {
-    margin-left: 5%;
-    margin-right: 5%;
-	width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
 }
 .caption h1 {
     font-size: 9vw;
@@ -120,26 +118,43 @@ button{
 }
 .caption img, .top_border, .top_border_2, .top_border_3{display: none;}
 #main {
-    height: 120vw;
-    background-position: 50%;
+    height: 174vw;
+	background-image: url(../img/background_7_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+	width: 100%;
+	padding-top: 20vw;
+	padding-bottom: 10vw;
 }
 .box table {
     width: 90%;
-    border: double rgba(189, 148, 86, 0.3);
-	border-top: 17px double rgba(189, 148, 86, 0.3);
+    border: none;
+    border-top: none;
     border-width: 17px;
-	margin-top: 10vw;
+    margin-top: 10vw;
 }
 .box h1 {
-    font-size: 3.2vw;
+    font-size: 4vw;
+    font-stretch: condensed;
+    opacity: 0.7;
 }
 .box table tr {
-    height: 10vw;
+    height: 16vw;
 }
+/*.box table th, .box table td{border-top: 0.5px solid rgba(255,255,255,0.4);}*/
 .box p {
-    font-size: 2.8vw;
+    font-size: 3vw;
+	padding-right: 2vw;
 }
 button {
-    font-size: 3.5vw;
+    font-size: 5vw;
+    border-radius: 30px;
+    padding: 5px 11px;
+    letter-spacing: unset;
+    font-stretch: unset;
+    font-weight: lighter;
+    opacity: 0.5;
+    background-color: rgba(255,255,255,0.05);
 }
 }

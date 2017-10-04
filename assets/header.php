@@ -3,9 +3,6 @@
 	if(!isset($language)){
 		include 'assets/lang.php';
 	}
-
-
-	$currentLang = isset($_GET['lang']) ? $_GET['lang'] : 'lv';
 	
 ?>
 
@@ -31,7 +28,6 @@
 	</div>
 </div>
 
-
 <div id="logo">
 	<a href="index.php"><img src="img/logo.png"></a>
 </div>
@@ -41,7 +37,7 @@
 	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="img/close.png"></div></a>
     <div>
         <ul class="box_li">
-			<li><a href="index.php"></a></li>
+			<li><a href="index.php">HOME</a></li>
 			<li><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
@@ -57,9 +53,11 @@
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
-			<li><a href="#"><img src="img/bag_brown.png" width="22px" style="padding-right:5px; padding-left:5px"></a></li>
+			<li><a href="#"><img src="img/bag_brown.png" width="20px" style="padding-right:5px; padding-left:5px"></a></li>
 			<li class="border"></li>
-			<li><a style="padding-left:5px">lv</a></li>
+			<li style="padding-left:5px"><a href="?lang=lv">LV</a></li>
+			<li><a href="?lang=en">EN</a></li>
+			<li><a href="?lang=ru">RU</a></li>
 		</ul>
 	</div>
 </div>

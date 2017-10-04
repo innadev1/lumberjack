@@ -189,47 +189,47 @@
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
 				<td><p>30.00-40.00 EUR</p></td>
-				<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=0 haircutsn = "name1" ><!--<?php echo $language[$lang]['book'] ?>-->+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>
 				<td><p>15.00-25.00 EUR</p></td>
-				<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=1 haircutsn = "name2" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair3.'] ?></h1></td>
 				<td><p>40.00 EUR</p></td>
-				<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=2 haircutsn = "name3" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair4.'] ?></h1></td>
 				<td><p>25.00 EUR</p></td>
-				<th><button class="button" value=3 haircutsn = "name4" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=3 haircutsn = "name4" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair5.'] ?></h1></td>
 				<td><p>15.00 EUR</p></td>
-				<th><button class="button" value=4 haircutsn = "name5" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=4 haircutsn = "name5" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair6.'] ?></h1></td>
 				<td><p> 15.00 EUR</p></td>
-				<th><button class="button" value=5 haircutsn = "name6" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=5 haircutsn = "name6" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair7.'] ?></h1></td>
 				<td><p>10.00-15.00 EUR</p></td>
-				<th><button class="button" value=6 haircutsn = "name7" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=6 haircutsn = "name7" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair8.'] ?></h1></td>
 				<td><p>10.00 EUR</p></td>
-				<th><button class="button" value=7 haircutsn = "name8" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=7 haircutsn = "name8" >+</button></th>
 			</tr>
 			<tr>
 				<td><h1><?php echo $language[$lang]['hair9.'] ?></h1></td>
 				<td><p>20.00 EUR</p></td>
-				<th><button class="button" value=8 haircutsn = "name9" ><?php echo $language[$lang]['book'] ?></button></th>
+				<th><button class="button" value=8 haircutsn = "name9" >+</button></th>
 			</tr>
 		</table>
 

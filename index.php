@@ -119,7 +119,6 @@ include 'assets/lang.php';
 <!DOCTYPE html> 
 <html>
     <head>     
-		
 		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
         <title>lumberjack</title>
@@ -128,6 +127,8 @@ include 'assets/lang.php';
         <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
 		<script type="text/javascript" src="js/open_close.js"></script>
 		<script type="text/javascript" src="js/hammer.min.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Arvo:400i" rel="stylesheet">
 
         <script type="text/javascript">
                 $(document).ready(function() { 
@@ -173,32 +174,162 @@ include 'assets/lang.php';
 			
 			<div id="banner">
 				<div id="slider-wrapper">
-
-					<div class="caption">
-						<div class="caption_ieksa" style="display:none;"><h1>LUMBERJACK BARBERSHOP</h1>
-						<h2>REMIND YOURSELF HOW COOL IT IS TO BE A MAN!</h2></div>
-						<div class="button_more" style="margin-top:12vw;"><button class="read_more"><?php echo $language[$lang]['book'] ?></button></div>
-					</div>
-
-					<div class="inner-wrapper">
-						<input checked type="radio" name="slide" class="control" id="Slide1" />
-						<label for="Slide1" id="s1"></label>
-
-						<input type="radio" name="slide" class="control" id="Slide2" />
-						<label for="Slide2" id="s2"></label>
+						<div class="slide"></div>
+						<div class="slide"></div>
+						<div class="slide"></div>
+						<div class="slide"></div>
+						<div class="slide"></div>
+						<div class="button_more" style=""><button class="read_more"><?php echo $language[$lang]['book'] ?></button></div>
+						<div class="text"><div class="line1"></div><div class="line2"></div><p></p></div>
 						
-						<!--<input type="radio" name="slide" class="control" id="Slide3" />
-						<label for="Slide3" id="s3"></label>-->
-
-						<div class="overflow-wrapper">
-							<a class="slide"><img src="img/background_2.jpg" /></a>
-							<a class="slide"><img src="img/background_3.jpg" /></a>
-							<!--<a class="slide"><img src="img/background.jpg" /></a>-->
+						<div class="nav flex">
+							<div class="active"></div>
+							<div></div>
+							<div></div>
+							<div></div>
 						</div>
 
-					</div>
 				</div>
 			</div>
+			<script>
+				var clickable = true;
+				var now = 0;
+				var next = 1;
+				texts = ['<b>It is not simply a haircut</b><br><b> – it is the philosophy of masculinity.</b>','<b>We will emphasize the male character</b><br><b> and the mood of a growing and an already held gentleman</b><br><b> with irreproachable professionalism.</b>','<b>We believe that representatives of the stronger sex</b><br> <b>have rights to rely on a verified</b><br><b> and top-quality personal care.</b>','<b>Lumberjack Barber- shop – remind yourself</b><br><b> how cool it is to be a man!</b>'];
+
+				$('#banner .text p').html(texts[0]);
+				$('#banner .text p b').css({'top':0,'opacity':1})
+
+				var textLen = 0;
+				stringOld = texts[now]
+				function rmoveLetter(l=0){
+					console.log($('#banner .text b').length)
+				/*	s = ""
+					for (var i = 0; i < l-1; i++) {
+						s+=stringOld[i]
+						if (stringOld[i]=='<') {
+							while(stringOld[i]!='>'){
+								i++
+								s+=stringOld[i]
+							}
+						}
+					}
+					$('#banner .text p').html(s)
+					if (l>0) {
+						setTimeout(function(){
+							rmoveLetter(l-1)
+						},2500/stringOld.length)
+					}else{
+						$('#banner .slide:eq('+(next)+')').css({'opacity':1,'z-index':0})
+						$('#banner .slide:eq('+(now)+')').animate({'opacity':0},400,function(){
+							$(this).css({'z-index':1})
+						})
+
+
+						addLetter(0,'')
+					}*/
+					var counter = 0
+					for (var i = 0; i < $('#banner .text b').length; i++) {
+
+						$('#banner .text b:eq('+i+')').delay(300*i).animate({"opacity":0,'top':'1vw'},400,function(){
+							//console.log(counter,$('#banner .text b').length)
+							counter++
+							if (counter==$('#banner .text b').length) {
+								//alert('go')
+								$('#banner .slide:eq('+(next)+')').css({'opacity':1,'z-index':0})
+								$('#banner .slide:eq('+(now)+')').animate({'opacity':0},400,function(){
+									$(this).css({'z-index':1})
+								})
+								$('#banner .text p').html(texts[next])
+								counter = 0
+								addLetter()
+							}
+						})
+					}
+
+				}
+			//	rmoveLetter()
+
+				function addLetter(l,s){
+					var counter = 0
+					for (var i = 0; i < $('#banner .text b').length; i++) {
+						$('#banner .text b:eq('+i+')').delay(300*i).animate({"opacity":1,'top':'0'},300,function(){
+							counter++
+							console.log(counter,$('#banner .text b').length)
+							if (counter==$('#banner .text b').length) {
+							//	alert('go')
+								now = next
+								next++
+								counter = 0
+								if (next==$('#banner .slide').length-1) {
+									next=0
+								}
+								clickable=true
+								animInterval = setInterval(function(){animEng(next)},5000)
+
+
+							}
+						})
+					}
+					/*
+					s+=texts[next][l];
+
+					if (texts[next][l]=='<') {
+							while(texts[next][l]!='>'){
+								l++
+								s+=texts[next][l]
+							}
+						}
+
+					$('#banner .text p').html(s)
+					if (l<texts[next].length-1) {
+						setTimeout(function(){
+							addLetter(l+1,s)
+						},2500/texts[next].length)
+					}else{
+						stringOld = s
+						clickable = true
+						now = next
+						next++
+						animInterval = setInterval(function(){animEng(next)},8000)
+
+						if (next==$('#banner .slide').length-1) {
+							next=0
+						}
+					}*/
+
+
+				}
+
+
+
+				function animEng(to){
+					//alert('GO')
+					clearInterval(animInterval)
+
+					clickable = false
+					next = to 
+					rmoveLetter(stringOld.length)
+					console.log('aaaaaadddddd')
+					$('#banner .nav div').removeClass('active')
+					$('#banner .nav div:eq('+to+')').addClass('active')
+
+
+				}
+				//animEng(1)
+
+				var animInterval = setInterval(function(){animEng(next)},4000)
+
+				$('#banner .nav div').click(function(){
+					if (clickable) {
+					//alert('go')
+						that = $(this)
+						ind = that.index()
+						animEng(ind)
+					}
+				})
+
+			</script>
 
 			<div id="banner_mobile">
 				<div class="caption">

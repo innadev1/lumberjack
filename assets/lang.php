@@ -60,8 +60,6 @@
     $language['ru']['marketing4'] = 'МАРКЕТИНГ';
     
     
-
-    
     // HEADER 
     $language['lv']['franch.'] = 'FRANŠĪZE';
     $language['en']['franch.'] = 'FRANCHISE';
@@ -71,7 +69,7 @@
     $language['lv']['home'] = 'SĀKUMS';
     $language['lv']['our_story'] = 'MŪSU VĒSTURE';
     $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
-    $language['lv']['online_store'] = 'I-SHOP';
+    $language['lv']['online_store'] = 'E-SHOP';
     $language['lv']['haircuts'] = 'MATU GRIEZUMI';
     $language['lv']['price_list'] = 'CENAS';
     $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
@@ -80,7 +78,7 @@
     $language['ru']['home'] = 'ГЛАВНАЯ';
     $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
     $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
-    $language['ru']['online_store'] = 'I-SHOP';
+    $language['ru']['online_store'] = 'E-SHOP';
     $language['ru']['haircuts'] = 'СТРИЖКИ';
     $language['ru']['price_list'] = 'ЦЕНЫ';
     $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
@@ -90,7 +88,7 @@
     $language['en']['home'] = 'HOME';
     $language['en']['our_story'] = 'OUR STORY';
     $language['en']['our_barber'] = 'OUR BARBERSHOPS';
-    $language['en']['online_store'] = 'I-SHOP';
+    $language['en']['online_store'] = 'E-SHOP';
     $language['en']['haircuts'] = 'HAIRCUTS';
     $language['en']['price_list'] = 'PRICE LIST ';
     $language['en']['contact_us'] = 'CONTACT US ';
@@ -129,24 +127,24 @@
     $language['lv']['that11'] = 'Kopā ar Pullman viesnīcu dalība Gumball 3000 pasākumā, galvenais viesis CeeLo Green';
 
      // ru
-     $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
-     $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 Рынок – Латвия, Эстония, Россия';
- 
- 
-     $language['ru']['that1'] = 'Представители большого спорта выбирают Lumberjack Barbershop';
-     $language['ru']['that2'] = 'Среди них Эдгарс Гаурачс и Каспарс Камбала тоже выбирают Lumberjack Barbershop (вот над этим предложением нужно подумать, звучит как-то коряво)';
-     $language['ru']['that3'] = 'Первое участие в движении MOVEMBER совместно с хоккейным клубом Dinamo Rīga';
- 
-     $language['ru']['that4'] = 'Открытие второго барбершопа в Риге';
-     $language['ru']['that5'] = 'Все больше и больше латвийских спортсменов и знаменитостей выбирают Lumberjack Barbershop';
-     $language['ru']['that6'] = 'В рамках турнира КХЛ стали официальным партнером хоккейного клуба Dinamo Rīga';
-     
-     $language['ru']['that7'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
-     $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
-     
-     $language['ru']['that9'] = 'Открытие барбершопа в Таллине';
-     $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум класса Pullman';
-     $language['ru']['that11'] = 'Совместно с гостиницей Pullman участие в мероприятии Gumball 3000, один из гостей - CeeLo Green (может написать как отдельный пункт «В рамках участия в мероприятии Gumball 3000 CeeLo Green выбирает Lumberjack Barbershop» ?)';
+    $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
+    $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 Рынок – Латвия, Эстония, Россия';
+
+
+    $language['ru']['that1'] = 'Представители большого спорта выбирают Lumberjack Barbershop';
+    $language['ru']['that2'] = 'Среди них Эдгарс Гаурачс и Каспарс Камбала тоже выбирают Lumberjack Barbershop (вот над этим предложением нужно подумать, звучит как-то коряво)';
+    $language['ru']['that3'] = 'Первое участие в движении MOVEMBER совместно с хоккейным клубом Dinamo Rīga';
+
+    $language['ru']['that4'] = 'Открытие второго барбершопа в Риге';
+    $language['ru']['that5'] = 'Все больше и больше латвийских спортсменов и знаменитостей выбирают Lumberjack Barbershop';
+    $language['ru']['that6'] = 'В рамках турнира КХЛ стали официальным партнером хоккейного клуба Dinamo Rīga';
+    
+    $language['ru']['that7'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
+    $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
+    
+    $language['ru']['that9'] = 'Открытие барбершопа в Таллине';
+    $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум класса Pullman';
+    $language['ru']['that11'] = 'Совместно с гостиницей Pullman участие в мероприятии Gumball 3000, один из гостей - CeeLo Green (может написать как отдельный пункт «В рамках участия в мероприятии Gumball 3000 CeeLo Green выбирает Lumberjack Barbershop» ?)';
 
     // en
     $language['en']['Lumberjack_development'] = 'Chronology of the development of Lumberjack Barbershop - bright moments by dates and years ';
@@ -182,8 +180,6 @@
 
     $language['ru']['opmap'] = "Открыть карту";
     $language['ru']['closmap'] = "Закрыть карту";
-
-
 
 
     $language['en']['4barb'] = "4 barbershops";
@@ -455,58 +451,53 @@
 
 
         //1
-        $language['lv']['title1'] = "Sis ir pirmais virsraksts";
-        $language['en']['title1'] = "This is first title";
-        $language['ru']['title1'] = "Eto pervij ";
-        $language['lv']['article1'] = "Sis ir pirmais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is first Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto pervij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        //2
-        $language['lv']['title1'] = "Sis ir otrais virsraksts";
-        $language['en']['title1'] = "This is second title";
-        $language['ru']['title1'] = "Eto taroj ";
-        $language['lv']['article1'] = "Sis ir otrais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is second Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto tarjo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        //3
-        $language['lv']['title1'] = "Sis ir tresais virsraksts";
-        $language['en']['title1'] = "This is third title";
-        $language['ru']['title1'] = "Eto tekjij ";
-        $language['lv']['article1'] = "Sis ir tresais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is third Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto trekjij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        //4
-        $language['lv']['title1'] = "Sis ir ceturtais virsraksts";
-        $language['en']['title1'] = "This is fourth title";
-        $language['ru']['title1'] = "Eto chetirij ";
-        $language['lv']['article1'] = "Sis ir ceturtais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is fourth Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto chetirij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        //5
-        $language['lv']['title1'] = "Sis ir piektais virsraksts";
-        $language['en']['title1'] = "This is fift title";
-        $language['ru']['title1'] = "Eto pjetij ";
-        $language['lv']['article1'] = "Sis ir piektais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is fift Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto pjetij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        //6
-        $language['lv']['title1'] = "Sis ir sestais virsraksts";
-        $language['en']['title1'] = "This is sixth title";
-        $language['ru']['title1'] = "Eto sesht ";
-        $language['lv']['article1'] = "Sis ir sestais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['en']['article1'] = "This is sixth Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-        $language['ru']['article1'] = "Eto sesht Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
-    
+    $language['lv']['title1'] = "Sis ir pirmais virsraksts";
+    $language['en']['title1'] = "This is first title";
+    $language['ru']['title1'] = "Eto pervij ";
+    $language['lv']['article1'] = "Sis ir pirmais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is first Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto pervij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    //2
+    $language['lv']['title1'] = "Sis ir otrais virsraksts";
+    $language['en']['title1'] = "This is second title";
+    $language['ru']['title1'] = "Eto taroj ";
+    $language['lv']['article1'] = "Sis ir otrais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is second Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto tarjo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    //3
+    $language['lv']['title1'] = "Sis ir tresais virsraksts";
+    $language['en']['title1'] = "This is third title";
+    $language['ru']['title1'] = "Eto tekjij ";
+    $language['lv']['article1'] = "Sis ir tresais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is third Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto trekjij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    //4
+    $language['lv']['title1'] = "Sis ir ceturtais virsraksts";
+    $language['en']['title1'] = "This is fourth title";
+    $language['ru']['title1'] = "Eto chetirij ";
+    $language['lv']['article1'] = "Sis ir ceturtais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is fourth Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto chetirij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    //5
+    $language['lv']['title1'] = "Sis ir piektais virsraksts";
+    $language['en']['title1'] = "This is fift title";
+    $language['ru']['title1'] = "Eto pjetij ";
+    $language['lv']['article1'] = "Sis ir piektais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is fift Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto pjetij Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    //6
+    $language['lv']['title1'] = "Sis ir sestais virsraksts";
+    $language['en']['title1'] = "This is sixth title";
+    $language['ru']['title1'] = "Eto sesht ";
+    $language['lv']['article1'] = "Sis ir sestais Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['en']['article1'] = "This is sixth Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    $language['ru']['article1'] = "Eto sesht Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+
 
 //  Wall Of FAme
-
-        $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
-        $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
-        $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
-
-
-// E-Mail Stuff
-// CONTACT
+    $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
+    $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
+    $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
 
 
     // FOOTER

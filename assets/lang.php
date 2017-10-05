@@ -25,7 +25,24 @@
         $lang = 'lv';
     }
 
+    // INDEX
+
+    $language['lv']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";
+    $language['en']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";
+    $language['ru']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";
+
+    $language['lv']['madelv_text'] = 'Visi mūsu produkti ir rūpīgi izstrādāti Anglijā kopš 1805. gada, un tie vislabāk iemieso britu mantojuma būtību. Mūsu īpašā augsti kvalificētu speciālistu, ķīmiķu, dizaineru un amatnieku komanda nepārtraukti strādā, lai piegādātu mūsu šodien pazīstamos produktus par viņu atšķirīgām inovācijām un izcilām tradīcijām. Anglijā turpināsies mūsu ikonu klāsts, jo mēs pastāvīgi cenšamies radīt jaunus un aizraujošus produktus, iegaumējot uz mūsu klientu vēlmēm.';
+    $language['lv']['readmore'] = 'lasīt tālāk';
     
+    $language['en']['madelv_text'] = 'All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.';
+    $language['en']['readmore'] = 'read more';
+
+    $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
+    $language['ru']['readmore'] = 'читать дальше';
+
+    
+// [[[[-----]]]]
+
 
     $language['lv']['ofiss1'] = 'GALVENAIS BIROJS';
     $language['lv']['map2'] = 'PARĀDĪT KARTĒ';
@@ -50,45 +67,35 @@
     $language['en']['franch.'] = 'FRANCHISE';
     $language['ru']['franch.'] = 'ФРАНШИЗА';
 
-        // LV 
-        $language['lv']['home'] = 'SĀKUMS';
-        $language['lv']['our_story'] = 'MŪSU VĒSTURE';
-        $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
-        $language['lv']['online_store'] = 'I-SHOP';
-        $language['lv']['haircuts'] = 'MATU GRIEZUMI';
-        $language['lv']['price_list'] = 'CENAS';
-        $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
+    // LV 
+    $language['lv']['home'] = 'SĀKUMS';
+    $language['lv']['our_story'] = 'MŪSU VĒSTURE';
+    $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
+    $language['lv']['online_store'] = 'I-SHOP';
+    $language['lv']['haircuts'] = 'MATU GRIEZUMI';
+    $language['lv']['price_list'] = 'CENAS';
+    $language['lv']['contact_us'] = 'SAZINĀTIES AR MUMS';
 
-        // RU
-        $language['ru']['home'] = 'ГЛАВНАЯ';
-        $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
-        $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
-        $language['ru']['online_store'] = 'I-SHOP';
-        $language['ru']['haircuts'] = 'СТРИЖКИ';
-        $language['ru']['price_list'] = 'ЦЕНЫ';
-        $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
-
-
-        // EN 
-        $language['en']['home'] = 'HOME';
-        $language['en']['our_story'] = 'OUR STORY';
-        $language['en']['our_barber'] = 'OUR BARBERSHOPS';
-        $language['en']['online_store'] = 'I-SHOP';
-        $language['en']['haircuts'] = 'HAIRCUTS';
-        $language['en']['price_list'] = 'PRICE LIST ';
-        $language['en']['contact_us'] = 'CONTACT US ';
+    // RU
+    $language['ru']['home'] = 'ГЛАВНАЯ';
+    $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
+    $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
+    $language['ru']['online_store'] = 'I-SHOP';
+    $language['ru']['haircuts'] = 'СТРИЖКИ';
+    $language['ru']['price_list'] = 'ЦЕНЫ';
+    $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
 
 
-        // index 
+    // EN 
+    $language['en']['home'] = 'HOME';
+    $language['en']['our_story'] = 'OUR STORY';
+    $language['en']['our_barber'] = 'OUR BARBERSHOPS';
+    $language['en']['online_store'] = 'I-SHOP';
+    $language['en']['haircuts'] = 'HAIRCUTS';
+    $language['en']['price_list'] = 'PRICE LIST ';
+    $language['en']['contact_us'] = 'CONTACT US ';
 
-        $language['lv']['madelv_text'] = 'Visi mūsu produkti ir rūpīgi izstrādāti Anglijā kopš 1805. gada, un tie vislabāk iemieso britu mantojuma būtību. Mūsu īpašā augsti kvalificētu speciālistu, ķīmiķu, dizaineru un amatnieku komanda nepārtraukti strādā, lai piegādātu mūsu šodien pazīstamos produktus par viņu atšķirīgām inovācijām un izcilām tradīcijām. Anglijā turpināsies mūsu ikonu klāsts, jo mēs pastāvīgi cenšamies radīt jaunus un aizraujošus produktus, iegaumējot uz mūsu klientu vēlmēm.';
-        $language['lv']['readmore'] = 'lasīt tālāk';
-     
-        $language['en']['madelv_text'] = 'All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.';
-        $language['en']['readmore'] = 'read more';
 
-        $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
-        $language['ru']['readmore'] = 'читать дальше';
 
     // OURSTORY
     $language['lv']['great'] = 'PRICE LIST ';
@@ -500,10 +507,6 @@
 
 // E-Mail Stuff
 // CONTACT
-
-
-
-        
 
 
     // FOOTER

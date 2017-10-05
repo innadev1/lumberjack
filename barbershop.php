@@ -211,10 +211,10 @@
 		</div>
 		
 		<div id="big_buttons">
-			<button id="first_latvia">LATVIA</button>
-			<button id="second_lithuania">LITHUANIA</button>
-			<button id="third_estonia">ESTONIA</button>
-			<button id="four_russia">RUSSIA</button>
+			<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+			<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+			<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+			<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
 		</div>
 		
 		<script>

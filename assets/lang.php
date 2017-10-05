@@ -197,14 +197,17 @@
     $language['lv']['lv'] = "LATVIJA";
     $language['lv']['est'] = "IGAUNIJA";
     $language['lv']['russ'] = "KRIEVIJA";
+    $language['lv']['lt'] = "LIETUVA";
 
     $language['ru']['lv'] = "ЛАТВИЯ";
     $language['ru']['est'] = "ЭСТОНИЯ";
     $language['ru']['russ'] = "РОССИЯ";
+    $language['ru']['lt'] = "ЛИТВА";
 
     $language['en']['lv'] = "LATVIA";
     $language['en']['est'] = "ESTONIA";
     $language['en']['russ'] = "RUSSIA";
+    $language['en']['lt'] = "LITHUANIA";
 
 
     // lv

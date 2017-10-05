@@ -210,8 +210,27 @@
 			</p>
 		</div>
 		
+		<div id="big_buttons">
+			<button id="first_latvia">LATVIA</button>
+			<button id="second_lithuania">LITHUANIA</button>
+			<button id="third_estonia">ESTONIA</button>
+			<button id="four_russia">RUSSIA</button>
+		</div>
+		
+		<script>
+			$(document).ready(function(){
+				$('#big_buttons button').click(function(){
+				id = $(this).index()
+				$('#countries_ .c').css('display','none')
+				$('#countries_ .c:eq('+id+')').fadeIn(300)
+				})
+			});
+		</script>
+
+<div id="countries_">
+	<div class="c">		
 		<div class="country" id="latvia">
-			<div class="country_name" id="c1"><h1><?php echo $language[$lang]['lv'] ?></h1></div>
+			<div class="country_name" id="c1"><h1>Riharda Vagnera iela 11, Riga, Latvia</h1></div>
 			<div class="countries"><img src="img/countries/latvia.jpg" class="gal1">
 				<div id="map_latvia">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
@@ -438,7 +457,7 @@
 		</div>
 
 		<div class="country" id="latvia_2">
-			<div class="country_name" id="c4"><h1><?php echo $language[$lang]['lv'] ?> PULLMAN</h1></div>
+			<div class="country_name" id="c4"><h1>Jēkaba iela 24, Riga, Latvia</h1></div>
 			<div class="countries"><img src="img/countries/latvia2.jpg" class="gal4">
 				<div id="map_latvia_2">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.800093302033!2d24.10330631627597!3d56.952226180891145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfda76257645%3A0x9c15d2ce05d3dfe9!2sPullman+Riga+Old+Town!5e0!3m2!1sru!2sru!4v1506079163955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -664,8 +683,19 @@
 		
 		</div>
 		
+	</div>
+	
+	<div class="c" style="display:none">
+	
+		<div class="country_name" id="c5"><h1>LITHUANIA COMING SOON</h1></div>
+		<div class="countries"><img src="img/countries/latvia2.jpg" class="gal5"></div>
+		<!--<h1 style="text-align: center; padding: 3vw; margin:0; padding-top:0vw;">COMING SOON</h1>-->
+		<!--<img style="padding: 3vw; margin:0; padding-top:0vw; width: 21vw; margin-left: 36.5%; margin-right: 35.5%" src="img/countries/coming_soon.png">-->
+	</div>
+	
+	<div class="c" style="display:none">
 		<div class="country" id="eesti">
-			<div class="country_name" id="c2"><h1><?php echo $language[$lang]['est'] ?></h1></div>
+			<div class="country_name" id="c2"><h1>Pronksi 3, Tallin, Estonia-10124</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
 				<div id="map_estonia">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.76387625749!2d24.762843116355008!3d59.43701258169663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935e89169b51%3A0xebca4dd8672bbe25!2zUHJvbmtzaSAzLCAxMDEyNCBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sru!4v1503047115221" width="600" 
@@ -890,10 +920,12 @@
 			
 			</div>
 			
-		</div>
-		
+		</div>	
+	</div>
+	
+	<div class="c" style="display:none">
 		<div class="country" id="russia_">
-			<div class="country_name" id="c3"><h1><?php echo $language[$lang]['russ'] ?></h1></div>
+			<div class="country_name" id="c3"><h1>29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
 				<div id="map_russia">
@@ -1120,7 +1152,9 @@
 				</div>
 			
 			</div>
-
+	</div>
+</div>
+			
 		<div class="remodal-overlay" style="display: none;">
 				<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
@@ -1226,11 +1260,21 @@
 		</div>
 
 			<div class="round_buttons">
-				<button id="flip_1"></button>
-				<button id="flip_4"></button>
-				<button id="flip_2"></button>
-				<button id="flip_3"></button>
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
 			</div>
+			
+		<script>
+			$(document).ready(function(){
+				$('.round_buttons button').click(function(){
+				id = $(this).index()
+				$('#countries_ .c').css('display','none')
+				$('#countries_ .c:eq('+id+')').fadeIn(300)
+				})
+			});
+		</script>
 	
 		<?php include 'assets/footer.php'; ?>
 	</body>

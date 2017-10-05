@@ -1,3 +1,5 @@
+#info_about_barbershop{display: none;}
+
 #banner{
     height: 35vw;
 	background-image:  url("../img/background_3.jpg"); 
@@ -129,17 +131,17 @@
 .country_name{
 	position: absolute;
     width: 100%;
-    margin-top: 13vw;
+    margin-top: 16vw;
 }
 .country_name h1{
-	font-size: 4vw;
+	font-size: 2vw;
     font-family: "OpenSans", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 0.8;
     text-align: center;
-    letter-spacing: 0.8vw;
+    letter-spacing: 0.2vw;
     text-shadow: 3px 1px 5px black;
 }
 button:focus{
@@ -321,11 +323,36 @@ iframe{
     margin-right: 10vw;
 }
 
-
+#big_buttons{
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+}
+#big_buttons button{
+	display: block;	
+	font-weight: bold;
+    background-color: white;
+    color: black;
+    letter-spacing: 0.2vw;
+    font-stretch: condensed;
+    border: 1px solid rgb(189, 148, 86);
+    cursor: pointer;
+    margin: 2vw;
+    font-size: 0.8vw;
+    padding: 0.5vw 1vw;
+}
+#big_buttons button:hover{
+	background-color: rgb(189, 148, 86);
+	color: white;
+}
 
 .round_buttons{display:none;}
 
 @media screen and (max-width: 900px){
+#big_buttons{display: none;}
 #banner {
     height: 140vw;
     background-image: url(../img/background_3_mobile.jpg);
@@ -376,10 +403,12 @@ iframe{
     margin: 5vw 12vw 5vw 12vw;
 }
 .country_name {
-    margin-top: 38vw;
+    margin-top: 40vw;
 }
 .country_name h1 {
-    font-size: 12vw;
+    font-size: 6vw;
+	padding: 3vw;
+    line-height: 7vw;
 }
 .countries img {
     width: 200%;
@@ -455,7 +484,7 @@ iframe {
     cursor: pointer;
     margin-right: 1vw;
 }
-#russia_, #eesti, #latvia_2, .buttons_2{display: none;}
+
 #table_about th {
     height: 12vw;
     border-top: 1px solid rgba(1,1,1,0.5);
@@ -486,6 +515,9 @@ html{
 }
 body{
 	max-width: 100%;
+}
+.c{
+	margin-top: 5vw;
 }
 
 }

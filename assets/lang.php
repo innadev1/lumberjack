@@ -25,6 +25,12 @@
         $lang = 'lv';
     }
 
+	// FRANCHISE
+	
+	$language['lv']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';
+	$language['en']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';
+	$language['ru']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_ru.pdf';
+	
     // INDEX
 
     $language['lv']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";

@@ -8,6 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic-ext" rel="stylesheet">
 
 <div id="information">
 	<div class="information">
@@ -76,6 +77,7 @@
 					$("#logo").css("position","relative");
 					$("#logo").css("z-index","inherit");
 					$("#logo").css("width","inherit");
+					
 			});
 			});
 		</script>		

@@ -106,12 +106,12 @@
     margin-top: 0.5vw;
 }
 .text_about_fame p, .text_about_fame2 p{
-	font-size: 1vw;
+	font-size: 0.8vw;
 	font-family: "OpenSans", sans-serif;
 	text-align: justify;
 	font-weight: 300;
 	margin: 0;
-	line-height: 1.2vw;
+	line-height: 1vw;
 }
 @media screen and (max-width: 900px){
 #banner {

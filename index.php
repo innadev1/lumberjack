@@ -516,7 +516,7 @@ include 'assets/lang.php';
 					</div>
 
 					<div class="product product_4">
-						<h4>Kremveida matu kondicionieris ar kokosriekstu ellu <br>"D R Harris"</h4>
+						<h4>Matu sampuns <br>"Baxter of California"</h4>
 						<p>$ 20,95</p>
 					</div>
 

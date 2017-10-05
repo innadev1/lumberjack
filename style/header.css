@@ -114,19 +114,19 @@ a{
     z-index: 1;
 }
 .menu img{
-	width: 50px;
+	width: 45px;
 }
 .close {
 	display: block;
     position: absolute;
-    width: 62px;
+    width: 60px;
     z-index: 2;
     top: -90px;
-    right: 3px;
+    right: 0px;
     background-color: rgba(31, 12, 6, 0.9);
 }
 .close img{
-	width: 50px;
+	width: 45px;
 }
 #box{
 	position: fixed;

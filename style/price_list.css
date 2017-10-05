@@ -73,7 +73,7 @@ button{
     border: 1px solid rgb(189, 148, 86);
     cursor: pointer;
     font-size: 1vw;
-    padding: 1px 6px;
+    padding: 4px 8px;
 }
 .caption {
 	z-index: 2;

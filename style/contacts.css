@@ -35,24 +35,27 @@ iframe{
 }
 #info table th{
 	width: 30%;
+	vertical-align: top;
 }
 #info table h2{
-	font-size: 1.2vw;
+	font-size: 1vw;
     font-family: "OpenSans", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    line-height: 1.9vw;
+    /* line-height: 1.9vw; */
     text-align: left;
     margin: 0;
 }
 #info table p{
-	font-size: 1.2vw;
+	font-size: 1vw;
     font-family: "OpenSans", sans-serif;
     color: rgb(0, 0, 0);
-    line-height: 1.345;
+    /* line-height: 1.345; */
     text-align: left;
     opacity: 0.7;
+    font-weight: 100;
     margin: 0;
+	margin-bottom: 0.6vw;
 }
 .first{
 	font-weight: bold;

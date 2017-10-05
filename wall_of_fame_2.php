@@ -20,7 +20,7 @@
 		
 		<div id="main">
 			<div class="main">
-				<div class="photo"><img src="img/wall_of_fame/1.png"></div>
+				<div class="photo"><img src="img/wall_of_fame/1.jpg"></div>
 				<div class="text_about_fame">
 					<h1>Armands Simsons</h1>
 					<h2>tv producer | event manager</h2>
@@ -34,7 +34,7 @@
 				<div class="photo_background"><img src="img/wall_of_fame/2.png"></div>
 			</div>
 			<div class="main">
-				<div class="photo2"><img src="img/wall_of_fame/3.png"></div>
+				<div class="photo2"><img src="img/wall_of_fame/3.jpg"></div>
 				<div class="text_about_fame2">
 					<h1>Edgars Masaļskis</h1>
 					<h2>hockey player | goalkeeper</h2>
@@ -48,7 +48,7 @@
 				<div class="photo_background2"><img src="img/wall_of_fame/4.png"></div>
 			</div>
 			<div class="main">
-				<div class="photo"><img src="img/wall_of_fame/5.png"></div>
+				<div class="photo"><img src="img/wall_of_fame/5.jpg"></div>
 				<div class="text_about_fame">
 					<h1>Zaur Dzhavadov</h1>
 					<h2>fighter</h2>
@@ -62,7 +62,7 @@
 				<div class="photo_background"><img src="img/wall_of_fame/6.png"></div>
 			</div>
 			<div class="main">
-				<div class="photo2"><img src="img/wall_of_fame/7.png"></div>
+				<div class="photo2"><img src="img/wall_of_fame/7.jpg"></div>
 				<div class="text_about_fame2">
 					<h1>Roberto Meloni</h1>
 					<h2>tv producer | event manager</h2>

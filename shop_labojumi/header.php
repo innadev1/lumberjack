@@ -909,8 +909,9 @@ a{
     width: 50vw !important;
 }
 .woocommerce-loop-product__title {
-    height: 23vw;
+    height: 26vw;
     font-size: 6vw;
+    line-height: unset !important;
 }
 ul.products li.product .button {
     padding: 1.3vw;

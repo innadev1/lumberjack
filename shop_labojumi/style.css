@@ -2,6 +2,11 @@
 	.price span{font-size: 0.8vw;}
 }
 .price span{font-size: 1vw;}
+@media screen and (max-width: 900px){
+.price span{
+    font-size: 20px !important;
+}
+}
 /*
 Theme Name: Twenty Seventeen
 Theme URI: https://wordpress.org/themes/twentyseventeen/

@@ -599,17 +599,8 @@ include 'assets/lang.php';
 				});
 				</script>
 				<div id="wrapper"> 
-					<a href="https://www.instagram.com/lumberjack_barbershop_/"><div id="container">   	
-						<img src="img/111.png" alt="Cuba" />
-						<img src="img/222.png" alt="Cuba" />
-						<img src="img/333.png" alt="Cuba" />
-						<img src="img/444.png" alt="Cuba" />
-						<img src="img/111.png" alt="Cuba" />
-					</div></a>
-					<div class="buttons-left-right">
-					<img id="carouselLeft" src="img/leftArr.png" alt="Left Arrow" />
-					<img id="carouselRight" src="img/rightArr.png" alt="Right Arrow" />
-					</div>
+					<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1643d0d20257552c9f1cd97ef73be4ef.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
 				</div>
 			</div>
 			

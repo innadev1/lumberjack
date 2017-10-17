@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     if(!isset($_SESSION)) {
         session_start();
    }
@@ -46,7 +46,7 @@
     $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
     $language['ru']['readmore'] = 'читать дальше';
 
-    
+   
 // [[[[-----]]]]
 
 
@@ -188,16 +188,16 @@
     $language['ru']['closmap'] = "Закрыть карту";
 
 
-    $language['en']['4barb'] = "4 barbershops";
-    $language['en']['3country'] = "3 countries";
+    $language['en']['4barb'] = "5 barbershops";
+    $language['en']['3country'] = "4 countries";
    
 
-    $language['lv']['4barb'] = "4 barberšopi";
-    $language['lv']['3country'] = "3 valstis";
+    $language['lv']['4barb'] = "5 barberšopi";
+    $language['lv']['3country'] = "4 valstis";
     
 
-    $language['ru']['4barb'] = "4 барбершопа";
-    $language['ru']['3country'] = "3 страны";
+    $language['ru']['4barb'] = "5 барбершопа";
+    $language['ru']['3country'] = "4 страны";
 
     // valstis
     $language['lv']['lv'] = "LATVIJA";
@@ -449,17 +449,13 @@
     $language['ru']['bookanpoint'] = 'Send appointment';
     $language['en']['bookanpoint'] = 'Send appointment';
 
-
-
     // LIFE STYLE
 
     $language['en']['lfs'] = 'Lifestyle';
     $language['lv']['lfs'] = 'DZĪVES STILS';
     $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
 
-
-
-        //1
+    //1
     $language['lv']['title1'] = "Sis ir pirmais virsraksts";
     $language['en']['title1'] = "This is first title";
     $language['ru']['title1'] = "Eto pervij ";

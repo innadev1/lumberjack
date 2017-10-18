@@ -11,17 +11,29 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	justify-content: center;
+    align-items: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 .caption{
+    z-index: 2;
     text-align: center;
-    top: 40%;
     position: relative;
-    margin-left: 27vw;
-    margin-right: 27vw;
-    padding-top: 1vw;
-    padding-bottom: 2vw;
-	border: 6px double rgba(230, 230, 230, 0.5);
-    background-color: rgba(255,255,255,0.05);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/frame2.png);
+    height: 8vw;
+    width: auto;
+    align-items: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 .caption h1{
 	color: white;
@@ -31,9 +43,11 @@
     font-weight: bold;
     text-transform: uppercase;
     line-height: 0.8;
-    letter-spacing: 0.8vw;
+    letter-spacing: 0.6vw;
     text-align: center;
 	text-shadow: 3px 1px 5px black;
+	padding-left: 2.5vw;
+    padding-right: 2vw;
 }
 .caption h1 img{
 	padding: 1.2vw;
@@ -130,17 +144,17 @@
     background-position: 70%;
 }
 .caption {
-    top: 95vw;
+	top: 45vw;
     position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    padding-top: 7vw;
+    padding-bottom: 6vw;
 }
 .caption h1 {
     font-size: 9vw;
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     padding-bottom: 2vw;
+	padding-left: 9vw;
+    padding-right: 8vw;
 }
 .caption h2 {
     font-size: 3vw;

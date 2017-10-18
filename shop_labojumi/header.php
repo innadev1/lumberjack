@@ -824,8 +824,8 @@ a{
 </style>
 
 <div id="banner" style=" background-image: url(<?php echo home_url(); ?>/img/background_shop.jpg);">
-	<div class="caption">
-		<h1><img src="<?php echo home_url(); ?>/img/vector_white.png"><?php echo $language[$lang]['online_store'] ?><img src="<?php echo home_url(); ?>/img/vector_white.png"></h1>
+	<div class="caption" style=" background-image: url(<?php echo home_url(); ?>/img/frame2.png);">
+		<h1><!--<img src="<?php echo home_url(); ?>/img/vector_white.png">--><?php echo $language[$lang]['online_store'] ?><!--<img src="<?php echo home_url(); ?>/img/vector_white.png">--></h1>
 	</div>
 </div>
 
@@ -835,31 +835,45 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+	
+	justify-content: center;
+    align-items: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 .caption {
+	z-index: 2;
     text-align: center;
-    top: 40%;
     position: relative;
-   /* border: 1px solid rgba(230, 230, 230, 0.3);*/
-    margin-left: 27vw;
-    margin-right: 27vw;
-    padding-top: 1vw;
-    padding-bottom: 2vw;
-	border: 6px double rgba(230, 230, 230, 0.5);
-    background-color: rgba(255,255,255,0.05);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 6vw;
+    width: auto;
+    align-items: center;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 .caption h1 {
     color: white;
-    font-size: 3.4vw;
+    text-transform: uppercase;
+	letter-spacing: 0.6vw !important;
+	letter-height: unset !important;
+	
+	font-size: 3.4vw;
     margin: 0;
     font-family: "OpenSans", sans-serif;
     font-weight: bold;
-    text-transform: uppercase;
     line-height: 0.8;
-	letter-spacing: 0.8vw !important;
     text-align: center;
-    text-shadow: 3px 1px 5px black;
-	letter-height: unset !important;
+	text-shadow: 3px 1px 5px black;
+	padding-left: 2.5vw;
+    padding-right: 2vw;
 }
 .caption h1 img{
 	margin: 1.2vw;
@@ -872,18 +886,20 @@ a{
 }
 .header{height: 120px;}
 .caption h1 {
-    font-size: 9vw;
+	font-size: 9vw;
     letter-spacing: 1vw;
     padding-bottom: 2vw;
     line-height: 9vw;
+    padding-left: 11vw;
+    padding-right: 10vw;
+    padding-top: 1vw;
+	padding-top: 4vw;
+    padding-bottom: 4vw;
 }
 .caption {
     position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 5vw;
-    padding-bottom: 4vw;
-    top: 75vw;
+    top: 15vw;
+    height: auto;
 }
 .caption img{display:none;}
 .single-featured-image-header {

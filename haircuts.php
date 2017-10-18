@@ -186,7 +186,7 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 
 <div id="banner">
 	<div class="caption">
-		<h1><img src="img/vector_white.png"><?php echo $language[$lang]['haircuts'] ?><img src="img/vector_white.png"></h1>
+		<h1><!--<img src="img/vector_white.png">--><?php echo $language[$lang]['haircuts'] ?><!--<img src="img/vector_white.png">--></h1>
 	</div>
 </div>
 

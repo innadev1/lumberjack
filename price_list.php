@@ -189,7 +189,7 @@
 		<?php include 'assets/header.php'; ?>
 		
 		<div class="caption">
-			<h1><img src="img/vector.png"><?php echo $language[$lang]['price_list'] ?><img src="img/vector.png"></h1>
+			<h1><!--<img src="img/vector.png">--><?php echo $language[$lang]['price_list'] ?><!--<img src="img/vector.png">--></h1>
 		</div>
 		
 		<div id="main">

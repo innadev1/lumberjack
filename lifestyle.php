@@ -13,7 +13,7 @@
 	
 	<div id="banner">
 		<div class="caption">
-			<h1><img src="img/vector_white.png"><?php echo $language[$lang]['lfs'] ?><img src="img/vector_white.png"></h1>
+			<h1><!--<img src="img/vector_white.png">--><?php echo $language[$lang]['lfs'] ?><!--<img src="img/vector_white.png">--></h1>
 		</div>
 	</div>
 	

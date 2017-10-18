@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	// include 'shop/wp-content/theme/twentyseventeen/assets/lang.php';
     if(!isset($_SESSION)) {
         session_start();

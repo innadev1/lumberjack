@@ -845,7 +845,6 @@ a{
     display: flex;
 }
 .caption {
-	z-index: 2;
     text-align: center;
     position: relative;
     background-size: 100% 100%;

@@ -62,8 +62,8 @@
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/9.jpg"></div>
 				<div class="text_about_fame">
-					<h1>Zaur Dzhavadov</h1>
-					<h2>fighter</h2>
+					<h1></h1>
+					<h2></h2>
 					<p>  
 					</p>
 				</div>
@@ -72,8 +72,8 @@
 			<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/12.jpg"></div>
 				<div class="text_about_fame2">
-					<h1>Roberto Meloni</h1>
-					<h2>tv producer | event manager</h2>
+					<h1></h1>
+					<h2></h2>
 					<p>  
 					</p>
 				</div>
@@ -82,8 +82,8 @@
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/13.jpg"></div>
 				<div class="text_about_fame">
-					<h1>Zaur Dzhavadov</h1>
-					<h2>fighter</h2>
+					<h1>Kaspars Gorkss</h1>
+					<h2>Latvian professional footballer</h2>
 					<p>  
 					</p>
 				</div>
@@ -92,8 +92,8 @@
 			<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/16.jpg"></div>
 				<div class="text_about_fame2">
-					<h1>Roberto Meloni</h1>
-					<h2>tv producer | event manager</h2>
+					<h1>Aivars Smaukstelis</h1>
+					<h2>Spēkavīrs</h2>
 					<p>  
 					</p>
 				</div>
@@ -102,8 +102,8 @@
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/17.jpg"></div>
 				<div class="text_about_fame">
-					<h1>Zaur Dzhavadov</h1>
-					<h2>fighter</h2>
+					<h1></h1>
+					<h2></h2>
 					<p>  
 					</p>
 				</div>

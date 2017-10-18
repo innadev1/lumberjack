@@ -140,10 +140,10 @@ button:focus{
   background-image: url(../img/background_3.jpg);
 }
 #banner .slide:nth-child(3) {
-  background-image: url(../img/background_2.jpg);
+  background-image: url(../img/background_5.jpg);
 }
 #banner .slide:nth-child(4) {
-  background-image: url(../img/background_3.jpg);
+  background-image: url(../img/background_6.jpg);
 }
 #banner .text {
   display: flex;
@@ -157,12 +157,18 @@ button:focus{
   left: 5%;
   min-height: 55%;
   text-align: center;
-  font-size: 2vw;
-  width: 55%;
-  background-color: rgba(70,30,0,0.4);
+ /* font-size: 2vw; */
+  font-size: 1.5vw;
+ /* width: 55%; */
+	width: 42%;
+ /* background-color: rgba(70,30,0,0.4); */
   box-sizing: border-box;
   padding: 1.8vw;
-  font-family: 'Arvo', serif;
+ /* font-family: 'Arvo', serif; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/frame.png);
+	text-shadow: 3px 1px 5px black;
 }
 #banner .text .line1 {
   width: calc(100% - 1vw);
@@ -170,9 +176,9 @@ button:focus{
   top: 0.5vw;
   left: 0.5vw;
   position: absolute;
-  border: solid 2px rgba(150,75,0,1);
+ /* border: solid 2px rgba(150,75,0,1); */
   box-sizing: border-box;
-  box-shadow: 0 0 0.5vw rgba(50,25,0,1);
+ /* box-shadow: 0 0 0.5vw rgba(50,25,0,1); */
 
 }
 #banner .text .line2 {
@@ -181,7 +187,7 @@ button:focus{
   top: 0;
   left: 0;
   position: absolute;
-  border: dotted 2px rgba(100,50,0,1);
+ /* border: dotted 2px rgba(100,50,0,1); */
   box-sizing: border-box;
  
 

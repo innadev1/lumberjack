@@ -500,29 +500,29 @@ include 'assets/lang.php';
 				<a href="http://testlumberjack.tk/shop/shop">
 				<div class="wrap_product" id="wrap_product">
 					<div class="product product_1" >
-						<h4>Mals matu veidosanai no <br>"Mr Natty Dub"</h4>
-						<p>$ 20,95</p>
+						<h4>Uppercut Deluxe Pomade</h4>
+						<p>20,00 €</p>
 					</div>
 
 					<div class="product product_2">
-						<h4>Matu sampuns <br>"Baxter of California"</h4>
+						<h4>Mr. Bear Beard Balm</h4>
 
-						<p>$ 20,95</p>
+						<p>20,00 €</p>
 					</div>
 
 					<div class="product product_3">
-						<h4>Pomade matu veidosanai <br>"Corleone Sticky Stuff"</h4>
-						<p>$ 20,95</p>
+						<h4>Corleone</h4>
+						<p>20,00 €</p>
 					</div>
 
 					<div class="product product_4">
-						<h4>Matu sampuns <br>"Baxter of California"</h4>
-						<p>$ 20,95</p>
+						<h4>Reuzel Blue W/B<br> Strong Hold Pig</h4>
+						<p>20,00 €</p>
 					</div>
 
 					<div class="product product_5">
-						<h4>Pomade matu veidosanai <br>"Reuzel Red"</h4>
-						<p>$ 20,95</p>
+						<h4>Uppercut Featherweight</h4>
+						<p>20,00 €</p>
 					</div>
 				</div>
 				</a>

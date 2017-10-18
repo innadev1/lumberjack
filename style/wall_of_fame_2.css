@@ -11,6 +11,7 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+	background-color: #1f0c06;
 }
 .caption{
     z-index: 2;

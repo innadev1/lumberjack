@@ -87,13 +87,13 @@
 					<p>  
 					</p>
 				</div>
-				<!--<div class="photo_background"><img src="img/wall_of_fame/14.png"></div>-->
+				<div class="photo_background"><img src="img/wall_of_fame/14.png"></div>
 			</div>
 			<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/16.jpg"></div>
 				<div class="text_about_fame2">
 					<h1>Aivars Smaukstelis</h1>
-					<h2>Spēkavīrs</h2>
+					<h2>Strongman</h2>
 					<p>  
 					</p>
 				</div>
@@ -102,12 +102,22 @@
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/17.jpg"></div>
 				<div class="text_about_fame">
-					<h1></h1>
-					<h2></h2>
+					<h1>Afrojack</h1>
+					<h2>Dutch DJ</h2>
 					<p>  
 					</p>
 				</div>
-				<!--<div class="photo_background"><img src="img/wall_of_fame/18.png"></div>-->
+				<div class="photo_background"><img src="img/wall_of_fame/18.png"></div>
+			</div>
+			<div class="main">
+				<div class="photo2"><img src="img/wall_of_fame/20.jpg"></div>
+				<div class="text_about_fame2">
+					<h1>Miks Indrasis</h1>
+					<h2>Hockey player</h2>
+					<p>  
+					</p>
+				</div>
+				<div class="photo_background2"><img src="img/wall_of_fame/19.png"></div>
 			</div>
 		</div>
 		

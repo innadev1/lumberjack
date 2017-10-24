@@ -39,15 +39,15 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Riharda Vagnera iela 11,<br> Riga, Latvia</p></td>
+						<td><p>Krišjāņa Valdemāra iela 100,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['form3'] ?></h2></th>
 						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
-						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+371 67 854 755</p></td>
+						<th><h2><!--<?php echo $language[$lang]['te'] ?>--></h2></th>
+						<td><p><!--+371 67 854 755--></p></td>
 					</tr>
 				</table>
 				<button id="trigger1" class="second"><?php echo $language[$lang]['map2'] ?></button>
@@ -57,7 +57,7 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Jēkaba iela 24,<br> Riga, Latvia</p></td>
+						<td><p>Riharda Vāgnera iela 11,<br> Riga, Latvia</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
@@ -97,11 +97,11 @@
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>info@lumberjack.ru</p></td>
+						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+37 812 3240809</p></td>
+						<td><p>+371 67854755</p></td>
 					</tr>
 				</table>
 				<button id="trigger4" class="second"><?php echo $language[$lang]['map2'] ?></button>

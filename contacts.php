@@ -101,7 +101,7 @@
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+371 67854755</p></td>
+						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
 				<button id="trigger4" class="second"><?php echo $language[$lang]['map2'] ?></button>

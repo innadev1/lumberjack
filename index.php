@@ -151,6 +151,7 @@ include 'assets/lang.php';
 		<meta charset = "utf-8">
       	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
          rel = "stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext" rel="stylesheet">
       	 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script> 
       	 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
       

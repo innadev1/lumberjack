@@ -15,22 +15,19 @@
 
 		
 		<div id="map_latvia">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.0142993381833!2d24.10916245184924!3d56.948556280796225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1sru!2slv!4v1503046502723" width="600" 
-			height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.7135164737665!2d24.132421451849957!3d56.9708396808029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb3d5d42e77%3A0xf59aeb68f1505ec7!2zS3JpxaFqxIHFhmEgVmFsZGVtxIFyYSBpZWxhIDEwMCwgVmlkemVtZXMgcHJpZWvFoXBpbHPEk3RhLCBSxKtnYSwgTFYtMTAxMw!5e0!3m2!1slv!2slv!4v1509022499820" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_latvia_2">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.800093302033!2d24.10330631627597!3d56.952226180891145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfda76257645%3A0x9c15d2ce05d3dfe9!2sPullman+Riga+Old+Town!5e0!3m2!1sru!2sru!4v1506079163955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.6303751369614!2d24.070593251849466!3d56.95513378079826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfe3a3385cb9%3A0xea12a58c86969715!2s%C5%AAdens+iela+12%2C+Kurzemes+rajons%2C+R%C4%ABga%2C+LV-1007!5e0!3m2!1slv!2slv!4v1509022543720" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_estonia">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.76387625749!2d24.762843116355008!3d59.43701258169663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692935e89169b51%3A0xebca4dd8672bbe25!2zUHJvbmtzaSAzLCAxMDEyNCBUYWxsaW5uLCDQrdGB0YLQvtC90LjRjw!5e0!3m2!1sru!2sru!4v1503047115221" width="600" 
-			height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.014299338182!2d24.109162451849254!3d56.948556280796254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1slv!2slv!4v1509022568281" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_russia">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9349913166286!2d30.248911716371083!3d59.933220881874256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630d1427f3f2b%3A0x7e406a0600f36d!2zMjkg0LvQuNC9LiDQktCw0YHQuNC70YzQtdCy0YHQutC-0LPQviDQvtGB0YLRgNC-0LLQsCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5OTEwNg!5e0!3m2!1sru!2sru!4v1503047337531" width="600" 
-			height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.014299338182!2d24.109162451849254!3d56.948556280796254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1slv!2slv!4v1509022568281" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="info">
@@ -39,10 +36,10 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Krišjāņa Valdemāra iela 100,<br> Riga, Latvia</p></td>
+						<td><p>Krišjāņa Valdemāra iela 100,<br>Rīga, Latvija, LV-1013</p></td>
 					</tr>
 					<tr>
-						<th><h2><?php echo $language[$lang]['form3'] ?></h2></th>
+						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
 						<td><p>info@lumberjack.lv</p></td>
 					</tr>
 					<tr>
@@ -57,7 +54,25 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Riharda Vāgnera iela 11,<br> Riga, Latvia</p></td>
+						<td><p>“Zundas Pasāža”, Ūdens 12<br>LV-1048</p></td>
+					</tr>
+					<tr>
+						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
+						<td><p>info@vinille.com</p></td>
+					</tr>
+					<tr>
+						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
+						<td><p>+371 25220132</p></td>
+					</tr>
+				</table>
+				<button id="trigger2" class="second"><?php echo $language[$lang]['map2'] ?></button>
+			</div>
+			<div id="third_flex">
+				<button class="first"><?php echo $language[$lang]['shop3'] ?></button>
+				<table align="center">
+					<tr>
+						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
+						<td><p>Riharda Vāgnera iela 11,<br> Rīga, Latvija, LV-1050</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
@@ -68,24 +83,6 @@
 						<td><p>+371 67 854 755</p></td>
 					</tr>
 				</table>
-				<button id="trigger2" class="second"><?php echo $language[$lang]['map2'] ?></button>
-			</div>
-			<div id="third_flex">
-				<button class="first"><?php echo $language[$lang]['shop3'] ?></button>
-				<table align="center">
-					<tr>
-						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Pronksi 3, Tallin,<br> Estonia-10124</p></td>
-					</tr>
-					<tr>
-						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>info@lumberjack.ee</p></td>
-					</tr>
-					<tr>
-						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+372 56969119</p></td>
-					</tr>
-				</table>
 				<button id="trigger3" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 			<div id="four_flex">
@@ -93,7 +90,7 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>29 lin. Vasilyevskogo<br> ostrova, 2, Sankt-Peterburg</p></td>
+						<td><p>Riharda Vāgnera iela 11,<br> Rīga, Latvija, LV-1050</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>

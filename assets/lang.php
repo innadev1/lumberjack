@@ -114,7 +114,7 @@
 
     // LV
     $language['lv']['Lumberjack_development'] = 'Lumberjack attīstība  – spilgti momenti, nozīmīgi datumi';
-    $language['lv']['our_barber2'] = 'Tirgū no: 01.06.2015 Tirgus – Latvija, Igaunija, Krievija';
+    $language['lv']['our_barber2'] = 'Tirgū no: 01.06.2015 <br> Tirgus – Latvija, Igaunija, Krievija';
 
 
     $language['lv']['that1'] = 'Lielā sporta pārstāvji izvēlas Lumberjack Barbershop';
@@ -134,7 +134,7 @@
 
      // ru
     $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
-    $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 Рынок – Латвия, Эстония, Россия';
+    $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 <br> Рынок – Латвия, Эстония, Россия';
 
 
     $language['ru']['that1'] = 'Представители большого спорта выбирают Lumberjack Barbershop';
@@ -154,7 +154,7 @@
 
     // en
     $language['en']['Lumberjack_development'] = 'Chronology of the development of Lumberjack Barbershop - bright moments by dates and years ';
-    $language['en']['our_barber2'] = 'Date of foundation -  01.06.2015 The market - Latvia, Estonia, Russia';
+    $language['en']['our_barber2'] = 'Date of foundation -  01.06.2015 <br> The market - Latvia, Estonia, Russia';
 
 
     $language['en']['that1'] = 'Representatives of a large sport choose Lumberjack Barbershop';

@@ -5,6 +5,89 @@
 @media screen and (max-width: 900px){
 .price span{
     font-size: 20px !important;
+	
+
+}
+
+*, *:before, *:after {
+    box-sizing: unset !important;
+}
+
+ul.page-numbers {
+    margin-bottom: 10vw !important;
+}
+}
+
+
+.product_title, .entry-title{
+	text-align: left !important;
+}
+h1:first-child{
+	text-align: center;
+    padding-right: 3vw;
+    font-size: 20px;
+}
+.wrap{min-height: 75vw !important;}
+.related .products{
+    margin-left: unset !important;
+}
+.woocommerce-product-gallery{
+    position: absolute !important;
+}
+textarea#comment,
+input#author,
+input#email
+{
+    width:50vw !important;
+}
+.woocommerce-message {
+    margin-left: 10vw !important;
+}
+.woocommerce-product-gallery img {
+    display: none;
+    z-index: 0;
+}
+.related {
+    margin-left: 0 !important;
+}
+.wpf-search-container {
+    margin-left: 3vw !important;
+	
+}
+.menu-main-menu-container {
+    display: none !important;
+}
+
+.wpf_submenu{
+	padding-bottom: 1vw !important;
+}
+/*.wpf_links li a:first-child {
+    font-size: 14px !important;
+    border-bottom: 1px solid !important;
+}*/
+
+
+@media screen and (max-width: 900px){
+.post-75, product, .type-product, .status-publish, .has-post-thumbnail, .product_cat-accessories, first, instock, taxable, .shipping-taxable, purchasable, .product-type-simple {
+    margin-left: 0 !important;
+}
+textarea#comment, input#author, input#email {
+    width: 100% !important;
+}
+.wpf-search-container {
+    margin-left: 0 !important;
+}
+.products {
+ margin-left: 0;
+}
+
+.menu-main-menu-container {
+    display: flex !important;
+	justify-content: center !important;
+	-webkit-justify-content: center !important;
+}
+.widget ul li, .widget ol li {
+	padding-right: 0 !important;
 }
 }
 /*
@@ -59,7 +142,38 @@ Use it to make something cool, have fun, and share what you've learned with othe
 1.0 Normalize
 Styles based on Normalize v5.0.0 @link https://github.com/necolas/normalize.css
 --------------------------------------------------------------*/
+/* EDIT */
 
+
+
+.wrap{
+	position: relative;
+}
+
+#text-3.widget.widget_text{
+	position: absolute;
+	top: 0;
+	left: -17%;
+	width: 0;
+	white-space: nowrap;
+}
+.wpf_items_wrapper .wpf_item ul li {
+	display: block!important;
+}
+.woocommerce-ordering {
+	float: right;
+}
+.woocommerce-result-count {
+	float: right!important;
+	    padding-left: 3vw;
+}
+#menu-main-menu {
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+}
+
+/* EDIT */
 html {
 	font-family: sans-serif;
 	/*line-height: 1.15;*/
@@ -91,11 +205,11 @@ main {
 	display: block;
 }
 .summary, .entry-summary {
-	display: block;
+	/*display: block;
     position: absolute;
     margin-top: -25vw;
     z-index: 3;
-    margin-left: 37vw;
+    margin-left: 37vw;*/
 }
 
 figure {
@@ -310,6 +424,14 @@ template {
 
 [hidden] {
 	display: none;
+}
+.menu-main-menu-container{
+
+width: 100%;
+display: flex;
+display: -webkit-flex;
+justify-content: flex-end;
+-webkit-justify-content: flex-end;
 }
 
 /*--------------------------------------------------------------
@@ -995,7 +1117,7 @@ select {
 	border: 1px solid #bbb;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
-	height: 3em;
+	/* height: 3em; */
 	max-width: 100%;
 }
 
@@ -1228,6 +1350,7 @@ a .nav-title,
 .widget ul li a,
 .site-footer .widget-area ul li a,
 .site-footer .widget-area ul li a {
+	font-weight: bold;
 	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
 	text-decoration: none;
@@ -1286,8 +1409,8 @@ a:hover .nav-title,
 .widget ul li a:focus,
 .widget ul li a:hover {
 	color: #000;
-	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 rgb(122, 122, 122);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 rgb(122, 122, 122);
 }
 
 /* Fixes linked images */
@@ -1463,8 +1586,8 @@ a:hover .nav-title,
 	top: -2px;
 }
 
-.toggled-on .menu-toggle .icon-bars,
-.menu-toggle .icon-close, .product-categories, #woocommerce_widget_cart-3, #woocommerce_product_categories-3, #secondary {
+/*.toggled-on .menu-toggle .icon-bars,
+.menu-toggle .icon-close, .product-categories, #woocommerce_widget_cart-3, #woocommerce_product_categories-3, #secondary*/ {
 	display: none;
 }
 
@@ -2121,12 +2244,13 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 .single-featured-image-header img {
-	    display: block;
+	display: block;
     margin: auto;
     width: auto;
     margin-top: 2vw;
     height: 30vw;
     margin-left: 8vw;
+	margin: auto;
 }
 
 .page-links {
@@ -2523,6 +2647,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 
 .form-submit {
 	text-align: right;
+	text-align:left
 }
 
 /*--------------------------------------------------------------
@@ -2569,11 +2694,12 @@ h2.widget-title {
 .widget ol li {
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
-	padding: 0.5em 0;
+	padding: 0.3em 0;
+	padding-right: 12px;
 }
 
 .widget ul li + li {
-	margin-top: -1px;
+	/* margin-top: -1px; */
 }
 
 .widget ul li ul {
@@ -2625,6 +2751,7 @@ h2.widget-title {
 
 .widget_text {
 	word-wrap: break-word;
+	
 }
 
 .widget_text ul {
@@ -3497,6 +3624,11 @@ object {
 	.js .dropdown-toggle {
 		display: none;
 	}
+	#menu-main-menu.menu{
+		display: flex;
+		/* margin-right: 22vw; */
+	}
+
 
 	.main-navigation {
 		width: auto;
@@ -4149,6 +4281,108 @@ object {
 	}
 }
 
+@media only screen and (max-width: 901px) {
+    body {
+        /* background-color: lightblue; */
+	}
+	
+	.wpf_links, wpf_hierachy{
+		display: none;
+	}
+
+	.post-75, product, .type-product, .status-publish, .has-post-thumbnail, .product_cat-accessories, first, instock, taxable, .shipping-taxable, purchasable, .product-type-simple{
+		margin-left: -23%;
+	}
+	
+	ul.menu{
+		background-color: white;
+		opacity: 0.7;
+	}
+
+
+	.woocommerce-products-header__title, .page-title {
+		text-align: center;
+	}
+
+/* sakums nenud rop */
+	.menu{
+		background-color: red;
+	}
+
+	.menu li {
+		float: left;
+		margin-right: 10px;
+		position: relative;
+	}
+
+	.menu a {
+		display: block;
+		padding: 5px;
+		color: #fff;
+		background-color: #333;
+		text-decoration: none;
+	}
+
+	.menu a:hover {
+		color: #fff;
+		background-color: #6b0c36;
+		text-decoration: underline;
+	}
+
+
+	/* dorpdoanr */
+
+	.menu ul{
+		background-color: #fff;
+		background: rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+		list-style: none;
+		position: absolute;
+		left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+	}
+
+	.menu ul li {
+		padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+		float: none;
+	}
+
+	.menu ul a {
+		white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+	}
+
+	.menu li:hover ul { /* Display the dropdown on hover */
+		left: 0; /* Bring back on-screen when needed */
+	}
+
+	.menu li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+		background-color: #C3F00B;
+		text-decoration: underline;
+	}
+
+	.menu li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+		text-decoration: none;
+	}
+
+	.menu li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+		background-color: #333;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        /* background-color: red; */
+	}
+	
+	.wpf_links, wpf_hierachy{
+		display: none;
+	}
+
+	.post-75, product, .type-product, .status-publish, .has-post-thumbnail, .product_cat-accessories, first, instock, taxable, .shipping-taxable, purchasable, .product-type-simple{
+		margin-left: -23%;
+	}
+}
+
+
+
+
 /*--------------------------------------------------------------
 20.0 Print
 --------------------------------------------------------------*/
@@ -4314,4 +4548,18 @@ object {
 	.site-footer {
 		padding: 0;
 	}
+
+	#menu-main-menu{
+		/* display: block; */
+	}
+
+	#menu-main-menu.menu ul {
+
+		display: inline-flex;
+	}
+	
+	#nav_menu-5{
+		display: block;
+	}
 }
+

@@ -14,6 +14,7 @@
 	font-style:normal
 }
 	.woocommerce-breadcrumb{
+	text-align: center;	
 	padding-bottom: 2em;
     margin-bottom: 4em;
     margin-top: 4em;
@@ -21,8 +22,30 @@
     font-size: 13px;
     font-size: .8125rem;
     font-family: Lato, Helvetica, sans-serif;
-	display: none;
+	/*display: none;*/
 }
+#text-3 {
+	top: 0;
+	left: 0;
+}
+.woocommerce-pagination{
+	text-align: center;
+}
+
+#navigation ul, li {
+	list-style: none;
+	margin-right: 10px;
+}
+.page-numbers ul, li {
+	margin-right: 10px;
+}
+
+.orderby{
+	/* width: 11vw;
+    height: 2vw; */
+}
+
+.woocommerce-ordering{z-index:100}
 header,
 .woocommerce-result-count,
 .orderby,
@@ -42,7 +65,7 @@ h2.widget-title,
 #submit,
 .comment-notes,
 .woocommerce-info
-{display:none !important;}
+{/*display:none !important;*/}
 .products{
 	display: flex;
     flex-direction: row-reverse;
@@ -50,6 +73,7 @@ h2.widget-title,
 	width: 100%;
     text-align: center;
 	flex-wrap: wrap;
+	margin-left: 12vw;
 }
 .products li{
 	padding: 1vw;
@@ -70,13 +94,19 @@ h2.widget-title,
 	.woocommerce-pagination{
 	padding-top:2em;
 	margin-top:4em;
-	border-top:1px solid #eee;
+	/* border-top:1px solid #eee; */
 	font-size:13px;
-	font-size:.8125rem
+	font-size:.8125rem;
+	position: relative;
+    bottom: 0;
 }
+	ul li.page-numbers{
+		margin-right: 20px;
+	}
 	.woocommerce-pagination ul.page-numbers{
 	padding:0;
-	display:block
+	display:block;
+	display: inline-flex;
 }
 	.woocommerce-pagination .next.page-numbers,.woocommerce-pagination .prev.page-numbers,.woocommerce-pagination a.page-numbers,.woocommerce-pagination span.page-numbers{
 	padding:.5em 1em;
@@ -121,7 +151,8 @@ h2.widget-title,
 	.woocommerce-error,.woocommerce-info,.woocommerce-message{
 	margin-bottom:1.5em;
 	padding:2em;
-	background:#eee
+	background:#eee;
+	    margin-left: 6vw;
 }
 	.woocommerce-message{
 	background:#1f0c06;
@@ -167,7 +198,7 @@ h2.widget-title,
 	color:#fff
 }
 	.woocommerce-result-count{
-	padding:.75em 0;
+	/* padding:.75em 0; */
 	float: left;
 }
 	ul.products li.product{
@@ -337,7 +368,7 @@ h2.widget-title,
 	.woocommerce-product-gallery{
 	position:relative;
 	margin-bottom:3em;
-	    display: none;
+	   /* display: none;*/
 }
 	.woocommerce-product-gallery figure{
 	margin:0
@@ -788,6 +819,10 @@ h2.widget-title,
 	.wc_payment_method input.input-radio[name=payment_method]:checked+label:before{
 	background:#000
 }
+	/* ul.page-numbers{
+		display: inline-flex;
+	} */
+
 	.colors-dark .page-numbers{
 	color:#444
 }

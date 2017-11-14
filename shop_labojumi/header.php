@@ -541,7 +541,7 @@
 	endif;
 	?>
 	
-	
+<link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>" />	
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -570,7 +570,7 @@
 	<a href="http://testlumberjack.tk/index.php"><img src="<?php echo home_url(); ?>/img/logo.png"></a>
 </div>
 
-<div class="menu"><a id="toggler" href="#"><img src="<?php echo home_url(); ?>/img/menu.png"></a></div>
+<div class="menu2"><a id="toggler" href="#"><img src="<?php echo home_url(); ?>/img/menu.png"></a></div>
 <div id="box" style="display: none;">
 	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="<?php echo home_url(); ?>/img/close.png"></div></a>
     <div>
@@ -738,7 +738,7 @@ a{
 .header{height: 13.8vw;}
 }
 
-.menu,
+.menu2,
 .close,
 .box_li,
 #box
@@ -759,14 +759,14 @@ a{
     width: 155px;
     top: 20px;
 }
-.menu {
+.menu2 {
     display: block;
     position: fixed;
     top: 35px;
     right: 15px;
     z-index: 1;
 }
-.menu img{
+.menu2 img{
 	width: 45px;
 }
 .close {

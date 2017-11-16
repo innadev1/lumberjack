@@ -137,13 +137,13 @@ button:focus{
   opacity: 1;
 }
 #banner .slide:nth-child(2) {
-  background-image: url(../img/background_3.jpg);
+  background-image: url(../img/background_10.jpg);
 }
 #banner .slide:nth-child(3) {
-  background-image: url(../img/background_5.jpg);
+  background-image: url(../img/background_11.jpg);
 }
 #banner .slide:nth-child(4) {
-  background-image: url(../img/background_6.jpg);
+  background-image: url(../img/background_3.jpg);
 }
 #banner .text {
   display: flex;

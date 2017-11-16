@@ -446,7 +446,7 @@
 
     // LIFE STYLE
 
-    $language['en']['lfs'] = 'Lifestyle';
+    $language['en']['lfs'] = 'Lumberjack LIVE';
     $language['lv']['lfs'] = 'DZĪVES STILS';
     $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
 
@@ -545,6 +545,25 @@
 <link rel="stylesheet" type="text/css" href="style/header.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    jQuery(document).ready(function($){
+        $('.woocommerce-ordering select').change(function(){
+           selected = $(this).val()
+           curent_url = "<?php 
+                global $wp;
+              echo $current_url = home_url(add_query_arg(array(),$wp->request));
+            ?>";
+            language = '<?php if(isset($_GET['lang'])){
+                echo $_GET['lang'];
+            }else{
+                echo '';
+            }?>'
+
+            console.log(curent_url, language, selected)
+            window.location = curent_url+language+"/"+"?id=primery_product_filter&wpf=1&orderby="+selected;
+        })
+    }); 
+</script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic-ext" rel="stylesheet">
 
 <div class="header">
@@ -581,7 +600,7 @@
 			<li><a href="http://testlumberjack.tk/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+			<li><a href="http://testlumberjack.tk/wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
@@ -636,7 +655,7 @@
 				<li class="link"><a href="http://testlumberjack.tk/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
 				
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
 								
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
@@ -787,7 +806,7 @@ a{
     height: 140vw;
     background-color: rgba(31, 12, 6, 0.9);
     right: 0;
-    padding: 30px;
+    /*padding: 30px;*/
     box-sizing: border-box;
     z-index: 100;
     top: 0;

@@ -688,7 +688,7 @@
 	<div class="c" style="display:none">
 	
 		<div class="country_name" id="c5"><h1>COMING SOON</h1></div>
-		<div class="countries"><img src="img/countries/latvia2.jpg" class="gal5"></div>
+		<div class="countries"><img src="img/countries/lietuva.jpg" class="gal5"></div>
 		<!--<h1 style="text-align: center; padding: 3vw; margin:0; padding-top:0vw;">COMING SOON</h1>-->
 		<!--<img style="padding: 3vw; margin:0; padding-top:0vw; width: 21vw; margin-left: 36.5%; margin-right: 35.5%" src="img/countries/coming_soon.png">-->
 	</div>
@@ -1291,12 +1291,12 @@
 				stuff = $(this).attr('stuff')
 
 				if(stuff=='riga1'){
-					p.html('Riharda Vagnera iela 11, Riga, Latvia')
+					p.html('Riharda Vagnera iela 11, Rīga, Latvia')
 					hiddenInput.attr('value','riga1')
 					
 
 				}else if(stuff=='riga2'){
-					p.html('Riharda Vagnera iela 11, Riga, Latvia(2)')
+					p.html('Jēkaba iela 24, Rīga, Latvia')
 
 				}else if(stuff=='estonia'){
 					p.html('Pronksi 3, Tallin, Estonia-10124')

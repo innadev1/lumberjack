@@ -451,9 +451,9 @@
 
     // LIFE STYLE
 
-    $language['en']['lfs'] = 'Lifestyle';
-    $language['lv']['lfs'] = 'DZĪVES STILS';
-    $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
+    $language['en']['lfs'] = 'Lumberjack LIVE';
+    $language['lv']['lfs'] = 'Lumberjack LIVE';
+    $language['ru']['lfs'] = 'Lumberjack LIVE';
 
     //1
     $language['lv']['title1'] = "Sis ir pirmais virsraksts";

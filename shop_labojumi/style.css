@@ -2,6 +2,7 @@
 	.price span{font-size: 0.8vw;}
 }
 .price span{font-size: 1vw;}
+.summary .price span{font-size: 2vw;}
 @media screen and (max-width: 900px){
 .price span{
     font-size: 20px !important;
@@ -34,11 +35,15 @@ h1:first-child{
 .woocommerce-product-gallery{
     position: absolute !important;
 }
-textarea#comment,
+textarea#comment{
+	width: 50vw !important;
+	height: 5vw !important;
+}
 input#author,
 input#email
 {
-    width:50vw !important;
+	width: 50vw !important;
+	height: 2vw !important;
 }
 .woocommerce-message {
     margin-left: 10vw !important;
@@ -72,7 +77,12 @@ input#email
     margin-left: 0 !important;
 }
 textarea#comment, input#author, input#email {
-    width: 100% !important;
+    width: 80% !important;
+    padding: 0;
+    margin: auto;
+}
+.woocommerce-message, .woocommerce-info {
+    margin-left: 0vw !important;
 }
 .wpf-search-container {
     margin-left: 0 !important;
@@ -80,7 +90,16 @@ textarea#comment, input#author, input#email {
 .products {
  margin-left: 0;
 }
-
+.wrap {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+}
+.menu li {
+    float: left;
+    margin-right: 0 !important;
+    position: relative;
+    font-size: 12px;
+}
 .menu-main-menu-container {
     display: flex !important;
 	justify-content: center !important;
@@ -594,7 +613,7 @@ h2,
 	color: #666;
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-weight: 300;
+	font-weight: 600;
 }
 
 h3 {
@@ -1654,6 +1673,11 @@ html {
 	box-sizing: inherit;
 }
 
+.posted_in{
+	display: none;
+}
+
+
 body {
 	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
@@ -2251,6 +2275,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
     height: 30vw;
     margin-left: 8vw;
 	margin: auto;
+	height: 34.5vw;
 }
 
 .page-links {
@@ -4562,4 +4587,3 @@ object {
 		display: block;
 	}
 }
-

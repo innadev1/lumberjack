@@ -30,8 +30,13 @@ iframe{
 	margin-bottom: 3vw;
 }
 #info div{
-	width: 23%;
-	text-align: center;
+    width: 23%;
+    text-align: center;
+    
+	display: -webkit-flex;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #info table th{
 	width: 30%;
@@ -70,8 +75,8 @@ iframe{
     padding: 0.5vw 1vw;
 }
 .second{
-	font-weight:bold;
-	background-color: white;
+	font-weight: bold;
+    background-color: white;
     color: black;
     letter-spacing: 0.2vw;
     font-stretch: condensed;
@@ -80,6 +85,7 @@ iframe{
     margin: 1vw;
     font-size: 0.8vw;
     padding: 0.4vw 0.7vw;
+    margin: 1vw 5vw 1vw 5vw;
 }
 .second:hover{
 	background-color: rgb(189, 148, 86);
@@ -109,6 +115,11 @@ iframe{
 }
 #info div {
     width: 100%;
+	
+	display: unset !important;
+	display: unset !important;
+    flex-direction: unset !important;
+    justify-content: unset !important;
 }
 #info {
     flex-direction: column;

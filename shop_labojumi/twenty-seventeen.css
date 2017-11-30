@@ -276,22 +276,22 @@ h2.widget-title,
 	left:0
 }
 	.woocommerce-loop-product__title{
-	font-size: 13px;
-    font-size: .8125rem;
-    text-transform: capitalize;
-    font-weight: 600;
-    letter-spacing: .15em;
-    height: 0vw;
-    color: black;
-    font-size: 1vw;
-    margin-bottom: 3vw;
-    letter-spacing: 0;
-	line-height: 0.9vw;
+		font-size: 13px;
+		font-size: .8125rem;
+		text-transform: capitalize;
+		font-weight: 600;
+		letter-spacing: .15em;
+		height: 3vw;
+		color: black;
+		font-size: 0.95vw;
+		margin-bottom: 4.5vw;
+		letter-spacing: 0;
+		line-height: 1.2vw;
 }
 @media screen and (min-width: 1400px){
 	.woocommerce-loop-product__title{
     font-size: 0.8vw;
-	margin-bottom: 2vw;
+	margin-bottom: 3vw;
 }
 }
 	a.remove{
@@ -444,7 +444,8 @@ h2.widget-title,
 	font-weight:300;
 	line-height:1.4;
 	margin:0 0 .75em;
-	display:block
+	display: none;
+
 }
 	.woocommerce-tabs #reviews li.comment,.woocommerce-tabs #reviews li.review{
 	list-style:none;
@@ -864,4 +865,15 @@ h2.widget-title,
 	body.page-two-column.woocommerce-account:not(.archive) #primary .entry-content,body.page-two-column.woocommerce-cart:not(.archive) #primary .entry-content,body.page-two-column.woocommerce-checkout:not(.archive) #primary .entry-content{
 	width:78
 }
+}
+.tabs{
+	display: none;
+}
+
+.comment-reply-title{
+	display: none;
+}
+
+.description_tab{
+	display: none;
 }

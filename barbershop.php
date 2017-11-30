@@ -85,40 +85,41 @@
 			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
 		}
+
+		$streets= [ 
+			'riga1' => 'Riharda Vagnera iela 11, Riga, Latvia',
+			'riga2' => 'Jēkaba iela 24, Riga, Latvia',
+		];
+
+		$stuff = $_POST['book_place'];
+		
 		$mailSuccess = false;
+
 		if( empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
-			$to      = 'my.worktest94@gmail.com';
 			$subject = $language[$lang]['client'];
-			$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+			$message = $streets[$stuff] . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 			$headers = "";
+
+			if($stuff == "riga1" || $stuff == "riga2"){  
+				$to = "my.worktest94@gmail.com";
+			}
+			else if($stuff == "estonia"){
+				$to = "my.worktest94@gmail.com";
+			}
+			else if($stuff == "russia"){
+				$to = "my.worktest94@gmail.com";
+			}
+
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
 		
 		// echo "check Your Email";
-	}else{
+		}else{
 		
 		// $reply = "reply";
+		}
 	}
-	}
-
-
-	if(isset($_POST['emailsent'])){
-
-		$stuff = $_POST['emailsent'];
-		
-        if($stuff == "riga1"){  
-            $adress = "my.worktest@gmail.com";
-        }else if($stuff == "riga2"){
-			$adress = "my.worktest@gmail.com";
-        }
-        else if($stuff == "estonia"){
-			$adress = "my.worktest@gmail.com";
-        }
-        else if($stuff == "russia"){
-			$adress = "my.worktest@gmail.com";
-        }
-    }
 
 ?>
 
@@ -1161,7 +1162,7 @@
 					<img src="img/logo-half.png" id="bookin-workshop">
 					<?php if(!$mailSuccess){ ?>
 									
-			<form id="form" name="orderform" method="post" action="barbershop.php">
+			<form id="form" name="orderform" method="post" action="barbershop.php?openPopup">
 
 				<p><?php echo $language[$lang]['form_top'] ?></p>
 
@@ -1285,7 +1286,6 @@
 				ind = $(this).parent().parent().index()
 				p = $('.appointment_place p')			
 				hiddenInput =$('#hidden_input') 	
-				console.log("daww")
 				$(".remodal-overlay").css("display", "block")
 
 				stuff = $(this).attr('stuff')
@@ -1303,7 +1303,9 @@
 
 				}else if(stuff=='russia'){
 					p.html('29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg')
-			}
+				}
+
+				$('#hidden_input').attr('value', stuff)
 			})
 
 			$(".remodal-close_1").click(function(){

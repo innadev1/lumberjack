@@ -99,12 +99,38 @@
 			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
 		}
+
+		if($_POST['chooseMail'] == "vagnera")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Riharda Vagnera iela 11, Riga, Latvia';
+		}
+
+		if($_POST['chooseMail'] == "jekaba")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Jēkaba iela 24, Centra rajons, Riga, Latvia';
+		}
+
+		if($_POST['chooseMail'] == "pronski")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Pronksi 3, Tallin, Estonia-10124';
+		}
+
+		if($_POST['chooseMail'] == "ostrova")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = '29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg';
+		}
+
 		$mailSuccess = false;
 
+		// $hair_syles[strval($typeOfService) ] - šis ir priekš haircut tipiem.
+
 		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
-			$to      = $_POST['chooseMail'];
 			$subject = $language[$lang]['client'];
-			$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $hair_syles[strval($typeOfService) ] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $_POST["typeOfService"] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 			$headers = "";
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
@@ -116,6 +142,8 @@
 			
 			// $reply = "reply";
 		}
+
+		print_r($_POST["typeOfService"]);
 	}
 
 ?>
@@ -277,10 +305,11 @@
 				<span class="wpcf7-form-control-wrap menu-471">
 					<select name="chooseMail" class="wpcf7-select" required="required">
 						<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
-						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
-						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia(2)</option>
-						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
-						<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
+						
+						<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
+						<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Riga, Latvia</option>
+						<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
+						<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
 					</select>
 				</span>
 			</div>

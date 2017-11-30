@@ -14,9 +14,31 @@
 
 <div><p>Copyright 2017. All rights reserved</p></div>
 	</div>
+	
+	<div class="pay-systems">
+		<div><img src="<?php echo home_url(); ?>/img/visa.png"></div>
+		<div><img src="<?php echo home_url(); ?>/img/mastercard.png"></div>
+		<div><img src="<?php echo home_url(); ?>/img/paypal.png"></div>
+	</div>
 </div>
 
 <style>
+.pay-systems{
+    position: absolute;
+    display: -webkit-flex;
+    display: flex;
+    top: 1vw;
+    right: 5vw;
+}
+.pay-systems div{
+	display: -webkit-flex;
+    display: flex;
+	align-items: center;
+}
+.pay-systems img{
+    width: 5vw;
+    padding: 0.5vw;
+}
 #footer{
 	background-color: #1f0c06;
 	height: 12vw;
@@ -45,6 +67,20 @@
 }
 
 @media screen and (max-width: 900px){
+.pay-systems{	
+    bottom: 0;
+    position: relative;
+    right: unset;
+    text-align: center;
+    top: unset;
+    width: 50%;
+    margin: auto;
+    top: 10vw;
+}
+.pay-systems img{
+    width: 15vw;
+    padding: 0.5vw;
+}
 #footer {
     height: 140vw;
 }

@@ -447,8 +447,8 @@
     // LIFE STYLE
 
     $language['en']['lfs'] = 'Lumberjack LIVE';
-    $language['lv']['lfs'] = 'DZĪVES STILS';
-    $language['ru']['lfs'] = 'СТИЛЬ ЖИЗНИ';
+    $language['lv']['lfs'] = 'Lumberjack LIVE';
+    $language['ru']['lfs'] = 'Lumberjack LIVE';
 
 
 
@@ -600,7 +600,7 @@
 			<li><a href="http://testlumberjack.tk/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
+			<li><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
@@ -655,7 +655,7 @@
 				<li class="link"><a href="http://testlumberjack.tk/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
 				
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame_2.php"><?php echo $language[$lang]['wof'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 								
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>

@@ -98,11 +98,36 @@ include 'assets/lang.php';
 			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
 		}
+
+		if($_POST['chooseMail'] == "vagnera")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Riharda Vagnera iela 11, Riga, Latvia';
+		}
+
+		if($_POST['chooseMail'] == "jekaba")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Jēkaba iela 24, Centra rajons, Riga, Latvia';
+		}
+
+		if($_POST['chooseMail'] == "pronski")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = 'Pronksi 3, Tallin, Estonia-10124';
+		}
+
+		if($_POST['chooseMail'] == "ostrova")
+		{
+			$to = 'my.worktest94@gmail.com';
+			$place = '29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg';
+		}
+
 		$mailSuccess = false;
 		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
-			$to      = 'my.worktest94@gmail.com';
+			// $to      = 'my.worktest94@gmail.com';
 			$subject = $language[$lang]['client'];
-			$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 			$headers = "";
 
 			if(mail($to, $subject, $message, $headers)){
@@ -272,34 +297,6 @@ include 'assets/lang.php';
 							}
 						})
 					}
-					/*
-					s+=texts[next][l];
-
-					if (texts[next][l]=='<') {
-							while(texts[next][l]!='>'){
-								l++
-								s+=texts[next][l]
-							}
-						}
-
-					$('#banner .text p').html(s)
-					if (l<texts[next].length-1) {
-						setTimeout(function(){
-							addLetter(l+1,s)
-						},2500/texts[next].length)
-					}else{
-						stringOld = s
-						clickable = true
-						now = next
-						next++
-						animInterval = setInterval(function(){animEng(next)},8000)
-
-						if (next==$('#banner .slide').length-1) {
-							next=0
-						}
-					}*/
-
-
 				}
 
 
@@ -393,11 +390,13 @@ include 'assets/lang.php';
 									<span class="wpcf7-form-control-wrap menu-471">
 										<select name="chooseMail" class="wpcf7-select" required="required">
 											<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
-											<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
-											<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia(2)</option>
-											<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
-											<option value="my.worktest94@gmail.com" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
+											
+											<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
+											<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Riga, Latvia</option>
+											<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
+											<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
 										</select>
+										
 									</span>
 								</div>
 								<!--ERRROR  -->
@@ -498,36 +497,119 @@ include 'assets/lang.php';
 			
 				<div class="products"><h3><?php echo $language[$lang]['product'] ?></h3></div>
 
-				<a href="http://testlumberjack.tk/shop/shop">
-				<div class="wrap_product" id="wrap_product">
-					<div class="product product_1" >
-						<h4>Uppercut Deluxe Pomade</h4>
-						<p>20,00 €</p>
-					</div>
 
-					<div class="product product_2">
-						<h4>Mr. Bear Beard Balm</h4>
+						<div class="slide_nav right"></div>	
+						<div class="slide_nav left"></div>	
+						<div class="wrap_product" id="wrap_product">
+							<div class="product_slider">
 
-						<p>20,00 €</p>
-					</div>
+								<div class="product product_1" >
+									<h4>Uppercut Deluxe Pomade</h4>
+									<p>20,00 €</p>
+								</div>
 
-					<div class="product product_3">
-						<h4>Corleone</h4>
-						<p>20,00 €</p>
-					</div>
+								<div class="product product_2">
+									<h4>Mr. Bear Beard Balm</h4>
 
-					<div class="product product_4">
-						<h4>Reuzel Blue W/B<br> Strong Hold Pig</h4>
-						<p>20,00 €</p>
-					</div>
+									<p>20,00 €</p>
+								</div>
 
-					<div class="product product_5">
-						<h4>Uppercut Featherweight</h4>
-						<p>20,00 €</p>
-					</div>
-				</div>
-				</a>
+								<div class="product product_3">
+									<h4>Corleone</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_4">
+									<h4>Reuzel Blue W/B<br> Strong Hold Pig</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+								<div class="product product_5">
+									<h4>Uppercut Featherweight</h4>
+									<p>20,00 €</p>
+								</div>
+
+
+							</div>
+
+						</div>
+				
 			</div>
+			<script type="text/javascript">
+				$(function(){
+					var clickable = true
+					pw = $('.product').width()
+					
+					limit = $('.product').length - 5;
+					now_pr = 0
+					auto_dir = -1;
+					
+					function slide_pr(dir){
+							to = now_pr+dir
+
+						if (clickable&&to<1&&to>-(limit+1)) {
+							clickable=false
+							clearTimeout(slide_timer)
+
+							console.log(to)
+							$('.product').animate({'left': to*pw},400,function(){
+								clickable = true
+								now_pr = to
+							 	if (to==-limit) {
+
+							 	auto_dir=1
+
+							 	}else if( to==0){
+
+							 	auto_dir=-1
+
+							 	}
+							})
+								slide_timer = setTimeout(function(){slide_pr(auto_dir)},3000)
+
+						}
+					}
+
+						$('.slide_nav.left ').click(function(){
+							slide_pr(1)
+						})
+						$('.slide_nav.right ').click(function(){
+							slide_pr(-1)
+
+						})
+					if (window.innerWidth>900) {
+							var slide_timer = setTimeout(function(){slide_pr(auto_dir)},3000)
+						
+					}
+
+				})
+
+			</script>
 			<script>
 			var hammertime = new Hammer(document.getElementById('wrap_product'),);
 			var productnow = 0

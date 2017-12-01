@@ -17,7 +17,7 @@
 			<li class="border"></li>
 			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/shop"><img src="img/bag.png" width="0.8%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 			
 

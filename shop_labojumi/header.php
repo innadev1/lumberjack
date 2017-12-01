@@ -574,7 +574,7 @@
 			<li class="border"></li>
 			<li><a href="http://testlumberjack.tk/contacts.php"><img src="<?php echo home_url(); ?>/img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/shop"><img src="<?php echo home_url(); ?>/img/bag.png" width="0.8%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/lv/cart/"><img src="<?php echo home_url(); ?>/img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 			<li><a href="?lang=lv">LV</a></li>
 			<li><a href="?lang=en">EN</a></li>

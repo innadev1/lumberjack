@@ -74,7 +74,7 @@
     // LV 
     $language['lv']['home'] = 'SĀKUMS';
     $language['lv']['our_story'] = 'MŪSU VĒSTURE';
-    $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
+    $language['lv']['our_barber'] = 'MŪSU BARBERŠOPI';
     $language['lv']['online_store'] = 'E-SHOP';
     $language['lv']['haircuts'] = 'MATU GRIEZUMI';
     $language['lv']['price_list'] = 'CENAS';
@@ -83,7 +83,7 @@
     // RU
     $language['ru']['home'] = 'ГЛАВНАЯ';
     $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
-    $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
+    $language['ru']['our_barber'] = 'НАШИ БАРБЕРШОПЫ';
     $language['ru']['online_store'] = 'E-SHOP';
     $language['ru']['haircuts'] = 'СТРИЖКИ';
     $language['ru']['price_list'] = 'ЦЕНЫ';
@@ -188,16 +188,16 @@
     $language['ru']['closmap'] = "Закрыть карту";
 
 
-    $language['en']['4barb'] = "5 barbershops";
-    $language['en']['3country'] = "4 countries";
+    $language['en']['4barb'] = "4 barbershops";
+    $language['en']['3country'] = "3 countries";
    
 
-    $language['lv']['4barb'] = "5 barberšopi";
-    $language['lv']['3country'] = "4 valstis";
+    $language['lv']['4barb'] = "4 barberšopi";
+    $language['lv']['3country'] = "3 valstis";
     
 
-    $language['ru']['4barb'] = "5 барбершопа";
-    $language['ru']['3country'] = "4 страны";
+    $language['ru']['4barb'] = "4 барбершопа";
+    $language['ru']['3country'] = "3 страны";
 
     // valstis
     $language['lv']['lv'] = "LATVIJA";

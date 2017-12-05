@@ -58,7 +58,7 @@
         // LV 
 
         $language['lv']['our_story'] = 'MŪSU VĒSTURE';
-        $language['lv']['our_barber'] = 'MŪSU FRIZĒTAVAS';
+        $language['lv']['our_barber'] = 'MŪSU BARBERŠOPI';
         $language['lv']['online_store'] = 'E-SHOP';
         $language['lv']['haircuts'] = 'MATU GRIEZUMI';
         $language['lv']['price_list'] = 'CENAS';
@@ -67,7 +67,7 @@
         // RU
 
         $language['ru']['our_story'] = 'НАША ИСТОРИЯ';
-        $language['ru']['our_barber'] = 'НАШИ ПАРИКМАХЕРСКИЕ';
+        $language['ru']['our_barber'] = 'НАШИ БАРБЕРШОПЫ';
         $language['ru']['online_store'] = 'E-SHOP';
         $language['ru']['haircuts'] = 'СТРИЖКИ';
         $language['ru']['price_list'] = 'ЦЕНЫ';
@@ -599,7 +599,7 @@
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
+			<!--<li><a href="http://testlumberjack.tk/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
 			<li><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
@@ -651,8 +651,8 @@
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
-				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>
+				<!--<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
+				<li class="link"><a href="http://testlumberjack.tk/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
 				
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
 				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
@@ -896,6 +896,17 @@ a{
 .caption h1 img{
 	margin: 1.2vw;
 	width: 2%;
+}
+@media screen and (max-width: 1200px){
+#banner {
+    height: 30vw;
+}
+.single-featured-image-header {
+    height: 30vw;
+}
+.single-featured-image-header img {
+    height: 29.5vw;
+}	
 }
 @media screen and (max-width: 900px){
 #banner {

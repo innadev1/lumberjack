@@ -96,8 +96,9 @@ a{
 }
 .button_more button{
 	background-color:rgba(120,50,0,0.7);
+	background-color: #bd9456;
     color: rgba(255,255,255,1);
-    font-size: 1em;
+    font-size: 1.5vw;
     letter-spacing: 1px;
     font-stretch: condensed;
     border: none;
@@ -234,8 +235,8 @@ font-family: 'Lobster', cursive;
     justify-content: center;
 }
 .photo {
-   width: 50%;
-    padding-top: 30%;
+	width: 50%;
+    height: 22vw;
     background-size: 100%;
     background-repeat: no-repeat;
     transition: all ease 0.3s;
@@ -255,7 +256,7 @@ font-family: 'Lobster', cursive;
 	background-image:url(../img/photo_1.jpg);
 }
 .photo_2{
-	background-image:url(../img/photo_2.jpg);
+	background-image:url(../img/gift_card.jpg);
 }
 .photo_3{
 	background-image:url(../img/1.jpg);
@@ -263,10 +264,10 @@ font-family: 'Lobster', cursive;
 .photo_4{
 	background-image:url(../img/2.jpg);
 }
-.photo_2:hover {
+/*.photo_2:hover {
 	background-color: #ffffff;
 	opacity:0.5;
-}
+}*/
 .read_more_1{
 	background-color: transparent;
     color: #bd9456;
@@ -281,6 +282,22 @@ font-family: 'Lobster', cursive;
     bottom: 1.5vw;
     left: 11vw;
     cursor: pointer;
+}
+.read_more_card{
+	background-color: #bd9456;
+    color: rgba(255,255,255,1);
+    font-size: 1vw;
+    letter-spacing: 0.3vw;
+    line-height: 0.3vw;
+    font-stretch: condensed;
+    border: 2px solid #bd9456;
+    padding: 1vw 1vw;
+    border-radius: 0.3vw;
+    text-transform: uppercase;
+    bottom: 1.5vw;
+    left: 11vw;
+    cursor: pointer;
+	margin-top: 18vw;
 }
 .text_on_photo{
 	position:absolute;
@@ -541,6 +558,11 @@ cursor: pointer;
 }
 
 #banner_mobile, .swiping_buttons{display:none;}
+@media screen and (max-width: 1200px){
+#banner {
+    height: 30vw;
+}	
+}
 @media screen and (max-width: 900px){
 #banner, #gallery{display:none;}
 #banner_mobile {
@@ -561,7 +583,7 @@ h2 {
     letter-spacing: 0.7vw;
 }
 .caption{
-	top: 110vw;
+	top: 85vw;
 }
 .round_buttons {
     display: none;
@@ -729,5 +751,21 @@ h4 {
 .product_slider 
 {
   width: 100%;
+}
+.read_more_card{
+	margin-top: 135vw;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 4vw;
+    letter-spacing: 0.3vw;
+    line-height: unset;
+    font-stretch: condensed;
+    border: 2px solid #bd9456;
+    height: auto;
+    width: auto;
+    padding: 2vw 9vw;
+    border-radius: 0.3vw;
+    text-transform: uppercase;
 }
 }

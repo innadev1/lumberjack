@@ -129,7 +129,7 @@
 				</div>
 				<div class="photo_background2"><img src="img/wall_of_fame/36.png"></div>
 			</div>
-			<div class="main">
+			<!--<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/21.jpg"></div>
 				<div class="text_about_fame">
 					<h1>Pjotr Riba</h1>
@@ -138,6 +138,16 @@
 					</p>
 				</div>
 				<div class="photo_background"><img src="img/wall_of_fame/22.png"></div>
+			</div>-->
+			<div class="main">
+				<div class="photo"><img src="img/wall_of_fame/37.jpg"></div>
+				<div class="text_about_fame">
+					<h1>Barbers from Holland</h1>
+					<h2></h2>
+					<p>  
+					</p>
+				</div>
+				<div class="photo_background"><img src="img/wall_of_fame/38.png"></div>
 			</div>
 			<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/23.jpg"></div>
@@ -188,16 +198,6 @@
 					</p>
 				</div>
 				<div class="photo_background2"><img src="img/wall_of_fame/32.png"></div>
-			</div>
-			<div class="main">
-				<div class="photo"><img src="img/wall_of_fame/37.jpg"></div>
-				<div class="text_about_fame">
-					<h1>Barbers from Holland</h1>
-					<h2></h2>
-					<p>  
-					</p>
-				</div>
-				<div class="photo_background"><img src="img/wall_of_fame/38.png"></div>
 			</div>
 			<!--<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/33.jpg"></div>

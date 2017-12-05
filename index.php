@@ -333,7 +333,7 @@ include 'assets/lang.php';
 				<div class="caption">
 					<h1>LUMBERJACK<br>BARBERSHOP</h1>
 					<!--<h2>NEW TRADITIONAL BARBERSHOP</h2>-->
-					<button class="read_more"><?php echo $language[$lang]['readmore'] ?></button>
+					<button class="read_more"><?php echo $language[$lang]['book'] ?></button>
 				</div>
 				<div class="round_buttons">
 					<button id="flip_1"></button>
@@ -355,7 +355,11 @@ include 'assets/lang.php';
 
 				</div>
 
-				<div class="photo photo_2"></div>
+				<div class="photo photo_2">
+				
+					<button class="read_more_card"><?php echo $language[$lang]['book'] ?></button>
+				
+				</div>
 				
 				<!--<div class="photo1 photo_4">
 					<div class="position_on_photo">

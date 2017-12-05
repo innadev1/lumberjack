@@ -81,6 +81,23 @@ textarea#comment, input#author, input#email {
     padding: 0;
     margin: auto;
 }
+
+textarea#comment{
+	width: 80% !important;
+	height: 8% !important;
+    padding: 0;
+    margin: auto;
+}
+
+input#author, input#email {
+    width: 80% !important;
+    padding: 0;
+	margin: auto;
+	height: 5% !important;
+}
+
+
+
 .woocommerce-message, .woocommerce-info {
     margin-left: 0vw !important;
 }
@@ -4346,6 +4363,7 @@ object {
 		color: #fff;
 		background-color: #333;
 		text-decoration: none;
+		border-right: 5px solid;
 	}
 
 	.menu a:hover {
@@ -4586,4 +4604,15 @@ object {
 	#nav_menu-5{
 		display: block;
 	}
+}
+@media screen and (max-width: 900px){
+.woocommerce-ordering {
+    float: unset !important;
+    text-align: center;
+}
+.woocommerce-result-count {
+    float: unset !important;
+    padding-left: 0;
+    text-align: center;
+}
 }

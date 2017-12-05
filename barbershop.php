@@ -213,9 +213,9 @@
 		
 		<div id="big_buttons">
 			<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-			<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
 			<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
 			<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+			<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
 		</div>
 		
 		<script>
@@ -687,14 +687,6 @@
 	</div>
 	
 	<div class="c" style="display:none">
-	
-		<div class="country_name" id="c5"><h1>COMING SOON</h1></div>
-		<div class="countries"><img src="img/countries/lietuva.jpg" class="gal5"></div>
-		<!--<h1 style="text-align: center; padding: 3vw; margin:0; padding-top:0vw;">COMING SOON</h1>-->
-		<!--<img style="padding: 3vw; margin:0; padding-top:0vw; width: 21vw; margin-left: 36.5%; margin-right: 35.5%" src="img/countries/coming_soon.png">-->
-	</div>
-	
-	<div class="c" style="display:none">
 		<div class="country" id="eesti">
 			<div class="country_name" id="c2"><h1>Pronksi 3</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
@@ -1154,6 +1146,14 @@
 			
 			</div>
 	</div>
+
+	<div class="c" style="display:none">
+	
+		<div class="country_name" id="c5"><h1>COMING SOON</h1></div>
+		<div class="countries"><img src="img/countries/lietuva.jpg" class="gal5"></div>
+		<!--<h1 style="text-align: center; padding: 3vw; margin:0; padding-top:0vw;">COMING SOON</h1>-->
+		<!--<img style="padding: 3vw; margin:0; padding-top:0vw; width: 21vw; margin-left: 36.5%; margin-right: 35.5%" src="img/countries/coming_soon.png">-->
+	</div>	
 </div>
 			
 		<div class="remodal-overlay" style="display: none;">

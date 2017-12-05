@@ -1,5 +1,5 @@
 #banner{
-    height: 46vw;
+    height: 35vw;
 	background-image:  url("../img/background_3_new.jpg"); 
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -12,6 +12,7 @@
     display: -webkit-flex;
     display: flex;
 	background-color: #1f0c06;
+	background-position-y: 15%;
 }
 .caption{
     z-index: 2;
@@ -125,6 +126,11 @@
 	font-weight: 300;
 	margin: 0;
 	line-height: 1vw;
+}
+@media screen and (max-width: 1200px){
+#banner {
+    height: 30vw;
+}	
 }
 @media screen and (max-width: 900px){
 #banner {

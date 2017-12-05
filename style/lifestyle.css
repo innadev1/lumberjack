@@ -181,6 +181,11 @@ body{
     margin-top: -3vw;
     margin-right: 1vw;
 }
+@media screen and (max-width: 1200px){
+#banner {
+    height: 30vw;
+}	
+}
 @media screen and (max-width: 900px){
 #banner {
     height: 140vw;

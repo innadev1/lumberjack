@@ -360,7 +360,11 @@ iframe{
 }
 
 .round_buttons{display:none;}
-
+@media screen and (max-width: 1200px){
+#banner {
+    height: 30vw;
+}	
+}
 @media screen and (max-width: 900px){
 #big_buttons{display: none;}
 #banner {

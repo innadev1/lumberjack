@@ -41,13 +41,18 @@ a{
 }
 #logo{
 	background-color: #1f0c06;
-	height: 10vw;
-	text-align: center;	
+	height: 8vw;
+	text-align: center;
+	display: -webkit-flex;
+    display: flex;
+	align-items: center;
+}
+#logo a{
+	width: 100%;
 }
 #logo img{
-	width: 14%;
+	width: 12%;
 	position: relative;
-    top: 1.5vw;
 }
 #navigation{
 	height: auto;
@@ -93,6 +98,9 @@ a{
 {
 	display: none;
 }
+@media screen and (max-width: 1200px){
+	
+}
 @media screen and (max-width: 900px){
 #information,
 #navigation
@@ -104,7 +112,6 @@ a{
 }
 #logo img {
     width: 155px;
-    top: 20px;
 }
 .menu {
     display: block;

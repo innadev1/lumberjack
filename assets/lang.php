@@ -25,6 +25,12 @@
         $lang = 'lv';
     }
 
+	// GIFT CARD
+	
+	$language['lv']['gift_card'] = 'Nopirkt karti';
+	$language['en']['gift_card'] = 'Buy card';
+	$language['ru']['gift_card'] = 'Купить карту';
+	
 	// FRANCHISE
 	
 	$language['lv']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';

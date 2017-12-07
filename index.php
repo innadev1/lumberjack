@@ -357,7 +357,7 @@ include 'assets/lang.php';
 
 				<div class="photo photo_2">
 				
-					<button class="read_more_card"><?php echo $language[$lang]['book'] ?></button>
+					<a href="http://testlumberjack.tk/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_card'] ?></button></a>
 				
 				</div>
 				

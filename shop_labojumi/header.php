@@ -668,7 +668,7 @@
 </div>
 
 <style>
-.header{height: 14.2vw; font-family: "Open Sans", sans-serif;}
+.header{height: 12.2vw; font-family: "Open Sans", sans-serif;}
 ul, li{
 	margin: 0;
 	padding: 0;
@@ -712,13 +712,18 @@ a{
 }
 #logo{
 	background-color: #1f0c06;
-	height: 10vw;
-	text-align: center;	
+	height: 8vw;
+	text-align: center;
+	display: -webkit-flex;
+    display: flex;
+	align-items: center;
+}
+#logo a{
+	width: 100%;
 }
 #logo img{
-	width: 14%;
+	width: 12%;
 	position: relative;
-    top: 1.5vw;
 }
 #navigation{
 	height: auto;
@@ -754,7 +759,7 @@ a{
 .radio {
     width: 1.7vw;
 }
-.header{height: 13.8vw;}
+.header{height: 11.8vw;}
 }
 
 .menu2,
@@ -776,7 +781,6 @@ a{
 }
 #logo img {
     width: 155px;
-    top: 20px;
 }
 .menu2 {
     display: block;

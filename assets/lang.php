@@ -77,6 +77,11 @@
     $language['en']['franch.'] = 'FRANCHISE';
     $language['ru']['franch.'] = 'ФРАНШИЗА';
 
+	// BUTTON
+    $language['lv']['click'] = '<img src="img/lv.svg">';
+    $language['en']['click'] = '<img src="img/en.svg">';
+    $language['ru']['click'] = '<img src="img/ru.svg">';
+	
     // LV 
     $language['lv']['home'] = 'SĀKUMS';
     $language['lv']['our_story'] = 'MŪSU VĒSTURE';

@@ -1,3 +1,31 @@
+#big-book-button{
+	position: fixed;
+    width: 10vw;
+    height: 10vw;
+    z-index: 1000;
+    cursor: pointer;
+    bottom: 3vw;
+    right: 2vw;
+	
+	background-color: unset !important;
+    color: unset !important;
+    font-size: unset !important;
+    letter-spacing: unset !important;
+    font-stretch: unset !important;
+    border: unset !important;
+    width: unset !important;
+    padding: unset !important;
+    border-radius: unset !important;
+    text-transform: unset !important;
+    cursor: pointer;
+}
+#big-book-button img{
+	width: 11vw;
+}
+/*KNOPKA*/
+
+/**/
+
 ul, li{
 	margin: 0;
 	padding: 0;

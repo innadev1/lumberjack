@@ -92,7 +92,7 @@ a{
     left: 0;
     width: 100%;
     z-index: 2;
-
+	display:none;
 }
 .button_more button{
 	background-color:rgba(120,50,0,0.7);
@@ -316,7 +316,7 @@ font-family: 'Lobster', cursive;
 	padding-left: 2vw;
     padding-right: 2vw;
 }
-.read_more{
+/*.read_more{
 	background-color: transparent;
     color: rgba(255,255,255,1);
     font-size: 1.3vw;
@@ -328,7 +328,7 @@ font-family: 'Lobster', cursive;
     border-radius: 0.3vw;
     text-transform: uppercase;
 	cursor: pointer;
-}
+}*/
 .caption_ieksa{
 	border: 6px double rgba(230, 230, 230, 0.5);
     background-color: rgba(255,255,255,0.05);
@@ -538,6 +538,8 @@ right:0;
 cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 1800px){
 #container {
     zoom: 1.5;
@@ -564,7 +566,7 @@ cursor: pointer;
 }	
 }
 @media screen and (max-width: 900px){
-#banner, #gallery{display:none;}
+#banner, #gallery, #big-book-button{display:none;}
 #banner_mobile {
 	display: block;
     height: 150vw;
@@ -695,6 +697,18 @@ h5 {
     margin-top: 0;
 }
 .read_more{
+	background-color: transparent;
+    color: rgba(255,255,255,1);
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
+    font-stretch: condensed;
+    border: 2px solid white;
+    width: 40%;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    text-transform: uppercase;
+	cursor: pointer;
+	
     font-size: 4vw;
     letter-spacing: 0.3vw;
     line-height: unset;
@@ -702,6 +716,7 @@ h5 {
     width: auto;
     padding: 2vw 9vw;
 	margin-top: 3vw;
+	
 }
 h3 {
     text-transform: uppercase;
@@ -767,5 +782,8 @@ h4 {
     padding: 2vw 9vw;
     border-radius: 0.3vw;
     text-transform: uppercase;
+}
+#banner .button_more {
+	display:block;
 }
 }

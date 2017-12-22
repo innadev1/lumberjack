@@ -1,7 +1,8 @@
 <?php
 
 	include 'assets/lang.php';
-
+?>
+<!--
 	$error_message_n = "";
 	$error_message_n2 = "";
 	$error_message_p1 = "";
@@ -122,7 +123,7 @@
 	}
 
 ?>
-
+-->
 
  <html>
 	<head>
@@ -274,7 +275,7 @@
 							</tr>
 							<tr>
 								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
-								<td><p>11.00-17.00</p></td>
+								<td><p>11.00-20.00</p></td>
 							</tr>
 						</table>
 					</div>
@@ -731,7 +732,7 @@
 							</tr>
 							<tr>
 								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
-								<td><p>11.00-17.00</p></td>
+								<td><p>11.00-20.00</p></td>
 							</tr>
 						</table>
 					</div>
@@ -918,12 +919,12 @@
 	
 	<div class="c" style="display:none">
 		<div class="country" id="russia_">
-			<div class="country_name" id="c3"><h1>29 lin. Vasilyevskogo ostrova, 2</h1></div>
+			<div class="country_name" id="c3"><h1>Bolshoy Kazachiy Pereulok, 11</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
 				<div id="map_russia">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9349913166286!2d30.248911716371083!3d59.933220881874256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630d1427f3f2b%3A0x7e406a0600f36d!2zMjkg0LvQuNC9LiDQktCw0YHQuNC70YzQtdCy0YHQutC-0LPQviDQvtGB0YLRgNC-0LLQsCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5OTEwNg!5e0!3m2!1sru!2sru!4v1503047337531" width="600" 
-					height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.5662205353092!2d30.324706116370717!3d59.92274618187042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631aab788a61b%3A0x858e0c5358a7e0fe!2sBol&#39;shoy+Kazachiy+Pereulok%2C+11%2C+Sankt-Peterburg%2C+Krievija%2C+197082!5e0!3m2!1slv!2slv!4v1513695467231" 
+					width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 			</div>	
 
@@ -936,7 +937,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>29 lin. Vasilyevskogo ostrova, 2,<br> Sankt-Peterburg</p></td>
+									<td><p>Bolshoy Kazachiy Pereulok, 11,<br> Sankt-Peterburg</p></td>
 								</tr>
 								<tr>
 									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
@@ -962,7 +963,7 @@
 							</tr>
 							<tr>
 								<td><h2><?php echo $language[$lang]['sun'] ?></h2></td>
-								<td><p>11.00-17.00</p></td>
+								<td><p>11.00-20.00</p></td>
 							</tr>
 						</table>
 					</div>
@@ -1156,109 +1157,7 @@
 	</div>	
 </div>
 			
-		<div class="remodal-overlay" style="display: none;">
-				<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
-
-					<img src="img/logo-half.png" id="bookin-workshop">
-					<?php if(!$mailSuccess){ ?>
-									
-			<form id="form" name="orderform" method="post" action="barbershop.php?openPopup">
-
-				<p><?php echo $language[$lang]['form_top'] ?></p>
-
-				<div class="appointment_place"><p>Adress: 29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</p></div>
-			
-				<div class="bookinput">
-					<label><?php echo $language[$lang]['form1'] ?></label>
-					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0 ){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form1_1'] ?>"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-					<?php echo ($error_message_n2); ?>
-				<!--END-->
-
-
-				<div class="bookinput">
-					<label><?php echo $language[$lang]['form2'] ?></label>
-					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form2_1'] ?>"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_p1); ?>
-					<?php echo ($error_message_p2); ?>
-				<!--END-->
-
-
-
-				<div class="bookinput">
-					<label><?php echo $language[$lang]['form3'] ?></label>
-					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="<?php echo $language[$lang]['form3_1'] ?>"></span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
-				<!--END-->
-
-
-
-				<div class="styled-select">
-					<span class="wpcf7-form-control-wrap menu-471">
-						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
-						</select>
-					</span>
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
-				<!--END-->
-
-
-
-				<div class="bookinputdate">
-					<!-- <label>Date</label>  <span class="wpcf7-form-control-wrap date-87"><input type="date" name="date" class="wpcf7-date" placeholder="dd/mm/yyyy"></span> -->
-
-					<label><?php echo $language[$lang]['form5'] ?></label>
-					<span class="wpcf7-form-control-wrap date-87"><input class="wpcf7-date" value = "<?php if(isset($_POST['date']) && $errors['date'] == 0){ echo $_POST['date']; } ?>" name="date" type = "text" readonly="readonly" id = "datepicker-13" placeholder="<?php echo $language[$lang]['form5_1'] ?>"></spam>
-					
-
-				</div>
-				<!--ERRROR  -->
-					<?php echo ($error_message_d); ?>
-				<!--END-->
-				
-				<div class="booktextarea">
-					<label><?php echo $language[$lang]['form6'] ?></label>
-					<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="<?php echo $language[$lang]['form6_1'] ?>"></textarea></span>
-				</div>
-				
-
-				<div class="col-sm-12">
-
-					<input type="hidden" id="hidden_input" name ='book_place' value="">
-
-					<input class="blackbutton" type="submit" name="emailsent" value="<?php echo $language[$lang]['form8']?>">
-				</div>					
-				
-			</form>
-
-			<?php
-			}else if($mailSuccess){
-				
-				$checkemail = "<p><?php echo $language[$lang]['check'] ?></p>";
-				
-				echo $checkemail;
-			} ?>
-					<a class="remodal-close_1"></a>
-
-				</div>
-		</div>
+		
 
 			<div class="round_buttons">
 				<button></button>
@@ -1279,38 +1178,5 @@
 	
 		<?php include 'assets/footer.php'; ?>
 	</body>
-	<script>
-		$(function(){
-			$('.book').click(function(){
-				val = $(this).attr('stuff')
-				ind = $(this).parent().parent().index()
-				p = $('.appointment_place p')			
-				hiddenInput =$('#hidden_input') 	
-				$(".remodal-overlay").css("display", "block")
 
-				stuff = $(this).attr('stuff')
-
-				if(stuff=='riga1'){
-					p.html('Riharda Vagnera iela 11, Rīga, Latvia')
-					hiddenInput.attr('value','riga1')
-					
-
-				}else if(stuff=='riga2'){
-					p.html('Jēkaba iela 24, Rīga, Latvia')
-
-				}else if(stuff=='estonia'){
-					p.html('Pronksi 3, Tallin, Estonia-10124')
-
-				}else if(stuff=='russia'){
-					p.html('29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg')
-				}
-
-				$('#hidden_input').attr('value', stuff)
-			})
-
-			$(".remodal-close_1").click(function(){
-				$(".remodal-overlay").css("display", "none")
-			})
-		})
-		</script>
 </html>

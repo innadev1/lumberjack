@@ -170,13 +170,20 @@ include 'assets/lang.php';
 <div  class="tbForm_CallMe read_more" style="position:fixed; right: 2vw; bottom: 1.5vw; zoom:2.5" >
    <div class="tbForm_shadow"></div>
    <div class="tbForm_fone"><?php echo $language[$lang]['click'] ?></div>
-</div>		
+</div>
 
+	<form action="index.php" method="POST">
+		<div class="pop-up"> 
+			<input type="checkbox" value="russia" name="loc"/>Russia
+			<input type="checkbox" value="baltic" name="loc"/>Baltic
+		</div>
 
+		<input type="submit" value="submit">
+	</form>
 
-
-
-
+	<?php
+		echo $location;
+	?>
 			<!-- te php  -->
 				<div class="remodal-overlay"
 					<?php if(isset($_POST['emailsent'])) { ?>
@@ -341,7 +348,21 @@ include 'assets/lang.php';
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 			<!--<li><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
-			<li><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+
+			<?php
+
+				if($location == 'russia'){
+					?>
+					<li style="display: none;"><a style="display: none;" href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+					<?php
+				}else{
+
+				?> <li class="wof"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+
+				<?php
+				}		
+			?>
+
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>

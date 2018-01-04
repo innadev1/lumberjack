@@ -251,7 +251,7 @@
     $language['lv']['adr'] = "Adrese:";
     $language['lv']['em'] = "Epasts:";
     $language['lv']['te'] = "Tel:";
-    $language['lv']['op'] = "Atvērts";
+    $language['lv']['op'] = "Darba laiks";
     $language['lv']['mon'] = "Pirm. - Sesd.:";
     $language['lv']['sun'] = "Svētdiena:";
 
@@ -259,7 +259,7 @@
     $language['en']['adr'] = "Adress:";
     $language['en']['em'] = "Email:";
     $language['en']['te'] = "Tel.:";
-    $language['en']['op'] = "Open";
+    $language['en']['op'] = "Working hours";
     $language['en']['mon'] = "Mon.- Sat.:";
     $language['en']['sun'] = "Sunday:";
 
@@ -267,7 +267,7 @@
     $language['ru']['adr'] = "Адрес:";
     $language['ru']['em'] = "Электронная почта:";
     $language['ru']['te'] = "Тел.:";
-    $language['ru']['op'] = "Открыт";
+    $language['ru']['op'] = "Время работы";
     $language['ru']['mon'] = "Пн.-Сб:";
     $language['ru']['sun'] = "Воскресенье:";
 

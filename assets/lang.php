@@ -1,7 +1,13 @@
 <?php
     if(!isset($_SESSION)) {
+        echo "1";
         session_start();
-   }
+        
+    }else{
+        echo "2";
+    }
+
+
 
     $language = [];    
 
@@ -21,7 +27,7 @@
 
     }else{
 
-        $location = $_SESSION['loc'];
+        //$location = $_SESSION['loc'];
     }
 
     if(isset($_POST['loc']) && !isset($_GET['lang'])){
@@ -41,20 +47,26 @@
 
         $_SESSION['loc'] = $sessLoc;
 
-    }else if(isset($_POST['loc']) && isset($_GET['lang'])){
+    }else if(isset($_GET['lang'])){
 
-        $_SESSION['lang'] = $lang;            
         $lang = $_GET['lang'];
+        $_SESSION['lang'] = $lang;            
+        
 
     }else{
+        if(!isset($_SESSION['lang'])){
+            $lang = 'en';
+            $_SESSION['lang'] = $lang;   
+        }else{
+            $lang = $_SESSION['lang'];
+        }
+        
+        
 
-        $lang = 'en';
-
-        $_POST['loc'] = 'baltic';
-
-        $_SESSION['lang'] = $lang;
+        
     }
-
+    print_r($_SESSION);
+    
 	// GIFT CARD
 	
 	$language['lv']['gift_card'] = 'Nopirkt karti';

@@ -1,8 +1,8 @@
 <?php
 
-	if(!isset($language)){
-		include 'assets/lang.php';
-	}
+	// if(!isset($language)){
+	// 	include 'assets/lang.php';
+	// }
 	
 ?>
 <?php
@@ -182,7 +182,7 @@ include 'assets/lang.php';
 	</form>
 
 	<?php
-		echo $location;
+		//echo $location;
 	?>
 			<!-- te php  -->
 				<div class="remodal-overlay"

@@ -11,8 +11,6 @@
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
-		<?php include 'assets/lang.php'; ?>
-
 		
 		<div id="map_latvia">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.7135164737665!2d24.132421451849957!3d56.9708396808029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb3d5d42e77%3A0xf59aeb68f1505ec7!2zS3JpxaFqxIHFhmEgVmFsZGVtxIFyYSBpZWxhIDEwMCwgVmlkemVtZXMgcHJpZWvFoXBpbHPEk3RhLCBSxKtnYSwgTFYtMTAxMw!5e0!3m2!1slv!2slv!4v1509022499820" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

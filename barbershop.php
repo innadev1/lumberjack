@@ -1,6 +1,6 @@
 <?php
-
-	include 'assets/lang.php';
+		session_start();
+	// include 'assets/lang.php';
 ?>
 <!--
 	$error_message_n = "";

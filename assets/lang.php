@@ -51,17 +51,15 @@
 
         $lang = $_GET['lang'];
         $_SESSION['lang'] = $lang;            
-        
 
     }else{
-        
+
         if(!isset($_SESSION['lang'])){
             $lang = 'en';
             $_SESSION['lang'] = $lang;   
         }else{
             $lang = $_SESSION['lang'];
         }
-        
     }
 
 

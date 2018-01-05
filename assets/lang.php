@@ -54,6 +54,7 @@
         
 
     }else{
+        
         if(!isset($_SESSION['lang'])){
             $lang = 'en';
             $_SESSION['lang'] = $lang;   
@@ -61,10 +62,9 @@
             $lang = $_SESSION['lang'];
         }
         
-        
-
-        
     }
+
+
     print_r($_SESSION);
     
 	// GIFT CARD

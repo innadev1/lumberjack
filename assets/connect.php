@@ -1,5 +1,5 @@
  <?php
-    
+
     // session_start();
     global $db;
     // print_r($_SESSION);
@@ -15,4 +15,4 @@
         echo "An error has occurred";
     }
 
-?> 
+?>

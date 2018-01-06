@@ -1,15 +1,6 @@
 <?php
 
-	// if(!isset($language)){
-	// 	include 'assets/lang.php';
-	// }
-	
-?>
-<?php
-
 include 'assets/lang.php';
-	
-// iandec.1222222
 		$mailSuccess = "";
 		$error_message_choose_m = "";
 		$error_message_n = "";
@@ -19,7 +10,7 @@ include 'assets/lang.php';
 		$error_message_m = "";
 		$error_message_t = "";
 		$error_message_d = "";
-		
+
 	if(isset($_POST['emailsent']))
 	{
 		echo ($error_message_choose_m);
@@ -30,7 +21,7 @@ include 'assets/lang.php';
 		echo ($error_message_m);
 		echo ($error_message_t);
 		echo ($error_message_d);
-		
+
 		$choosemail = $_POST['chooseMail'];
 		$name = $_POST['name'];
 		$phone = $_POST['phone'];
@@ -63,7 +54,7 @@ include 'assets/lang.php';
         	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
 			$errors['name'] = 1;
 		}
-		
+
 		if(preg_match($email_exp_a,$_POST['name'])) {
 			$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
 			$errors['name'] = 1;
@@ -73,7 +64,7 @@ include 'assets/lang.php';
 		// PHONE
 		$error_message = "";
     	$email_exp = "/[^0-9]/";
- 
+
     	if(preg_match($email_exp,$_POST['phone'])) {
         	$error_message_p1 .= '<p class="red">'.$language[$lang]['form2_e1'].'</p>';
 			$errors['phone'] = 1;
@@ -82,25 +73,25 @@ include 'assets/lang.php';
         	$error_message_p2 .= '<p class="red">'.$language[$lang]['form2_e2'].'</p>';
 			$errors['phone'] = 1;
 		}
-		
 
-		// EMAIL 
+
+		// EMAIL
 		$error_message = "";
     	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-	
+
     	if(!preg_match($email_exp,$email)) {
         	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
 			$errors['mail'] = 1;
 		}
-		
+
 
 		// Type Of Style
 		if($_POST['typeOfService'] == '-'){
 			$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
 			$errors['typeOfService'] = 1;
 		}
-		
-		// DATE 
+
+		// DATE
 		if(empty($date)){
 			$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 			$errors['date'] = 1;
@@ -140,10 +131,10 @@ include 'assets/lang.php';
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
-			
+
 			// echo "check Your Email";
 		}else{
-			
+
 			// $reply = "reply";
 		}
 	}
@@ -171,37 +162,24 @@ include 'assets/lang.php';
    <div class="tbForm_shadow"></div>
    <div class="tbForm_fone"><?php echo $language[$lang]['click'] ?></div>
 </div>
-
-	<form action="index.php" method="POST">
-		<div class="pop-up"> 
-			<input type="checkbox" value="russia" name="loc"/>Russia
-			<input type="checkbox" value="baltic" name="loc"/>Baltic
-		</div>
-
-		<input type="submit" value="submit">
-	</form>
-
-	<?php
-		//echo $location;
-	?>
 			<!-- te php  -->
 				<div class="remodal-overlay"
 					<?php if(isset($_POST['emailsent'])) { ?>
 
 							style="display: block;" <?php
-							
+
 					}else{
-						?>	
+						?>
 							style="display: none;" <?php
 					} ?>
 				>
-				
+
 					<div class="remodal" data-remodal-id="modal" style="visibility: visible;">
 
 						<img src="img/logo-half.png" id="bookin-workshop">
 						<?php if(!$mailSuccess){ ?>
 
-							
+
 							<form id="form" name="orderform" method="post" action="index.php">
 
 								<p><?php echo $language[$lang]['form_top'] ?></p>
@@ -210,13 +188,13 @@ include 'assets/lang.php';
 									<span class="wpcf7-form-control-wrap menu-471">
 										<select name="chooseMail" class="wpcf7-select" required="required">
 											<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
-											
+
 											<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Riga, Latvia</option>
 											<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Riga, Latvia</option>
 											<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
 											<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg</option>
 										</select>
-										
+
 									</span>
 								</div>
 								<!--ERRROR  -->
@@ -285,26 +263,26 @@ include 'assets/lang.php';
 								<!--ERRROR  -->
 									<?php echo ($error_message_d); ?>
 								<!--END-->
-								
+
 								<div class="booktextarea">
 									<label><?php echo $language[$lang]['form6'] ?></label>
 									<span class="your-message"><textarea text="type" name="text" form="form" cols="40" rows="5" class="wpcf7-textarea" placeholder="<?php echo $language[$lang]['form6_1'] ?>"></textarea></span>
 								</div>
-								
+
 
 								<div class="col-sm-12">
 									<input class="blackbutton" type="submit" name="emailsent" value="<?php echo $language[$lang]['form8'] ?>">
-								</div>					
-								
+								</div>
+
 							</form>
 
 							<?php
 							}else if($mailSuccess){
-								
+
 								$checkemail = "<p><?php echo $language[$lang]['check'] ?></p>";
-								
+
 								echo $checkemail;
-							} ?>					
+							} ?>
 
 						<a class="remodal-close"></a>
 
@@ -323,12 +301,29 @@ include 'assets/lang.php';
 			<li class="border"></li>
 			<li><a href="http://testlumberjack.tk/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
-			
 
-			<li><a href="?lang=lv">LV</a></li>
-			<li><a href="?lang=en">EN</a></li>
-			<li><a href="?lang=ru">RU</a></li>
-			
+            <?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru') { ?>
+        			<li><a href="?lang=en">EN</a></li>
+        			<li><a href="?lang=ru">RU</a></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'lv') { ?>
+                    <li><a href="?lang=lv">LV</a></li>
+        			<li><a href="?lang=en">EN</a></li>
+        			<li><a href="?lang=ru">RU</a></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="?lang=en">EE</a></li>
+        			<li><a href="?lang=en">EN</a></li>
+                <?php } ?>
+            <?php } else { ?>
+                <li><a href="?lang=lv">LV</a></li>
+    			<li><a href="?lang=en">EN</a></li>
+    			<li><a href="?lang=ru">RU</a></li>
+            <?php } ?>
+
 		</ul>
 	</div>
 </div>
@@ -347,21 +342,10 @@ include 'assets/lang.php';
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
-			<!--<li><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
 
-			<?php
-
-				if($location == 'russia'){
-					?>
-					<li style="display: none;"><a style="display: none;" href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
-					<?php
-				}else{
-
-				?> <li class="wof"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
-
-				<?php
-				}		
-			?>
+            <?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+			    <li><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+			<?php } ?>
 
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
@@ -395,16 +379,16 @@ include 'assets/lang.php';
 					$("#logo").css("position","relative");
 					$("#logo").css("z-index","inherit");
 					$("#logo").css("width","inherit");
-					
+
 			});
 			});
-		</script>		
+		</script>
 
 <div id="navigation">
 	<div class="navigation">
 			<ul>
 				<li><a><img src="img/radio.png" class="radio"></a></li>
-				
+
 				<li class="link"><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
@@ -418,10 +402,12 @@ include 'assets/lang.php';
 
 				<!--<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
-				
-				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
-				
+
+                <?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+    				<li><a><img src="img/vector.png"></a></li>
+    				<li class="link"><a href="wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+                <?php } ?>
+
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 

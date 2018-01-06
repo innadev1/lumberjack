@@ -1,9 +1,18 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/haircuts.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/form.css">
+<title>haircuts</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+</head>
+<body>
+<?php include 'assets/header.php'; ?>
 <?php
-	include "assets/lang.php";
-
-	// Šitas inclūds
-
-
 $error_message_choose_m = "";
 $error_message_n = "";
 $error_message_n2 = "";
@@ -81,7 +90,7 @@ if(strlen($_POST['phone']) < 7) {
 }
 
 
-// EMAIL 
+// EMAIL
 $error_message = "";
 $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
@@ -97,7 +106,7 @@ if(!preg_match($email_exp,$email)) {
 // 	$errors['typeOfService'] = 1;
 // }
 
-// DATE 
+// DATE
 if(empty($date)){
 	$error_message_d .= '<p class="red">'.$language[$lang]['form5_e1'].'</p>';
 	$errors['date'] = 1;
@@ -119,7 +128,7 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 	$subject = $language[$lang]['client'];
 	$message = $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $hair_syles[strval($typeOfService) ] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 	$headers = $language[$lang]['from'] . $email . "\r\n" .
-	
+
 	'Reply-To:' . $email . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 
@@ -135,21 +144,6 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 }
 
 ?>
-
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="style/haircuts.css">
-<link rel="stylesheet" type="text/css" href="style/style.css">
-<link rel="stylesheet" type="text/css" href="style/form.css">
-<title>haircuts</title>
-
-<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-</head>
-<body>
-<?php include 'assets/header.php'; ?>
 
 	<div id="content">
 
@@ -170,7 +164,7 @@ if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_me
 				<div class="p7"><button id="b7" class="button" value=6 haircutsn = "name7" >Hairstyle name</button></div>
 			</div>
 		</div>
-		
+
 	</div>
 
 <?php include 'assets/footer.php'; ?>

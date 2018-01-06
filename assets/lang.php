@@ -1,81 +1,51 @@
 <?php
-    if(!isset($_SESSION)) {
-        echo "1";
-        session_start();
-        
-    }else{
-        echo "2";
-    }
-
-
-
-    $language = [];    
-
+    session_start();
+    $language = [];
     $language['lv'] = [];
     $language['en'] = [];
     $language['ru'] = [];
 
 
-    $SiteUrl = 'http://localhost/www/testlumberjack.tk/';
-
-    // $location = isset($_POST['loc']) &&  $_POST['loc'] == 'russia' ? 'russia' : 'baltic';
-	 
-    if(isset($_POST['loc'])){
-
-        $_SESSION['loc'] = $_POST['loc'] ;
-        $location = $_SESSION['loc'];
-
-    }else{
-
-        //$location = $_SESSION['loc'];
-    }
-
-    if(isset($_POST['loc']) && !isset($_GET['lang'])){
-        
-        if($_POST['loc'] == 'russia'){
-
-            $sessLoc = $_POST['loc'] ;
-            $lang = 'ru';
-
-        }else{
-
-            $lang = 'en';
-            $sessLoc = 'baltic';
-        }
-
-        $_SESSION['lang'] = $lang;
-
-        $_SESSION['loc'] = $sessLoc;
-
-    }else if(isset($_GET['lang'])){
-
+    if(isset($_GET['lang'])){
         $lang = $_GET['lang'];
-        $_SESSION['lang'] = $lang;            
-
+        $_SESSION['lang'] = $lang;
     }else{
-
         if(!isset($_SESSION['lang'])){
             $lang = 'en';
-            $_SESSION['lang'] = $lang;   
+            $_SESSION['lang'] = $lang;
         }else{
             $lang = $_SESSION['lang'];
         }
     }
 
-    print_r($_SESSION);
-    
+    // check user first time visit
+    if(!isset($_SESSION['firstTime'])) {
+        $_SESSION['firstTime'] = 1;
+    } else {
+        $_SESSION['firstTime'] = 0;
+    }
+
+    // do some action, when submited country
+    if(isset($_POST['changeCountry'])) {
+        $_SESSION['country'] = $_POST['country'];
+        $lang = $_POST['country'] == 'ee' ? 'en' : $_POST['country'];
+        $_SESSION['lang'] = $lang;
+    }
+
+    $SiteUrl = 'http://localhost/www/testlumberjack.tk/';
+
 	// GIFT CARD
-	
+
 	$language['lv']['gift_card'] = 'Nopirkt karti';
 	$language['en']['gift_card'] = 'Buy card';
 	$language['ru']['gift_card'] = 'Купить карту';
-	
+
 	// FRANCHISE
-	
+
 	$language['lv']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';
 	$language['en']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';
 	$language['ru']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_ru.pdf';
-	
+
     // INDEX
 
     $language['lv']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";
@@ -84,14 +54,14 @@
 
     $language['lv']['madelv_text'] = 'Visi mūsu produkti ir rūpīgi izstrādāti Anglijā kopš 1805. gada, un tie vislabāk iemieso britu mantojuma būtību. Mūsu īpašā augsti kvalificētu speciālistu, ķīmiķu, dizaineru un amatnieku komanda nepārtraukti strādā, lai piegādātu mūsu šodien pazīstamos produktus par viņu atšķirīgām inovācijām un izcilām tradīcijām. Anglijā turpināsies mūsu ikonu klāsts, jo mēs pastāvīgi cenšamies radīt jaunus un aizraujošus produktus, iegaumējot uz mūsu klientu vēlmēm.';
     $language['lv']['readmore'] = 'lasīt tālāk';
-    
+
     $language['en']['madelv_text'] = 'All our products have been carefully crafted in England since 1805 and they embody the essence of the British heritage at its best. Our dedicated team of highly skilled professionals, chemists, designers and craftsmen work tirelessly to deliver our products known today for their distinctive tradition of innovation and excellence. Our iconic ranges will continue to be produced in England as we constantly endeavour to bring new and exciting products in response to our customer’s needs.';
     $language['en']['readmore'] = 'read more';
 
     $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
     $language['ru']['readmore'] = 'читать дальше';
 
-   
+
 // [[[[-----]]]]
 
 
@@ -109,9 +79,9 @@
     $language['ru']['map2'] = 'ПОКАЗАТЬ НА КАРТЕ';
     $language['ru']['shop3'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
     $language['ru']['marketing4'] = 'МАРКЕТИНГ';
-    
-    
-    // HEADER 
+
+
+    // HEADER
     $language['lv']['franch.'] = 'FRANŠĪZE';
     $language['en']['franch.'] = 'FRANCHISE';
     $language['ru']['franch.'] = 'ФРАНШИЗА';
@@ -120,8 +90,8 @@
     $language['lv']['click'] = '<img src="img/lv.svg">';
     $language['en']['click'] = '<img src="img/en.svg">';
     $language['ru']['click'] = '<img src="img/ru.svg">';
-	
-    // LV 
+
+    // LV
     $language['lv']['home'] = 'SĀKUMS';
     $language['lv']['our_story'] = 'MŪSU VĒSTURE';
     $language['lv']['our_barber'] = 'MŪSU BARBERŠOPI';
@@ -140,7 +110,7 @@
     $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
 
 
-    // EN 
+    // EN
     $language['en']['home'] = 'HOME';
     $language['en']['our_story'] = 'OUR STORY';
     $language['en']['our_barber'] = 'OUR BARBERSHOPS';
@@ -174,7 +144,7 @@
     $language['lv']['that4'] = 'Otrā barbershopa atvēršana Rīgā ';
     $language['lv']['that5'] = 'Arvien vairāk sportistu un slavenību izvēlas Lumberjack Barbershop ';
     $language['lv']['that6'] = 'Oficiāli kļuvām par Dinamo Rīga partneriem KHL ietvaros';
-    
+
     $language['lv']['that7'] = 'Grupa DE-PHAZZ – gatavojoties koncertam, izvēlas Lumberjack Barbershop ';
     $language['lv']['that8'] = 'Pāvels Voļa, Comedy Club rezidents, pirms gatavošanās koncertam izvēlas Lumberjack Barbershop ';
 
@@ -194,10 +164,10 @@
     $language['ru']['that4'] = 'Открытие второго барбершопа в Риге';
     $language['ru']['that5'] = 'Все больше и больше латвийских спортсменов и знаменитостей выбирают Lumberjack Barbershop';
     $language['ru']['that6'] = 'В рамках турнира КХЛ стали официальным партнером хоккейного клуба Dinamo Rīga';
-    
+
     $language['ru']['that7'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
     $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
-    
+
     $language['ru']['that9'] = 'Открытие барбершопа в Таллине';
     $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум класса Pullman';
     $language['ru']['that11'] = 'Совместно с гостиницей Pullman участие в мероприятии Gumball 3000, один из гостей - CeeLo Green (может написать как отдельный пункт «В рамках участия в мероприятии Gumball 3000 CeeLo Green выбирает Lumberjack Barbershop» ?)';
@@ -214,10 +184,10 @@
     $language['en']['that4'] = 'Opening of the second barbershop in Riga';
     $language['en']['that5'] = 'More and more Latvian sportsmen and celebrities choose Lumberjack Barbershop';
     $language['en']['that6'] = 'As part of the tournament, the KHL became the official partner of the hockey club Dinamo Riga';
-    
+
     $language['en']['that7'] = ' To prepare for the concert, De-Phazz chooses Lumberjack Barbershop';
-    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop 
-    
+    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop
+
     ';
     $language['en']['that9'] = 'Opening of a barbershop in Tallinn';
     $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
@@ -225,14 +195,14 @@
 
 
 
-    // BarBerShop 
+    // BarBerShop
     $language['en']['opmap'] = "Open map";
     $language['en']['closmap'] = "Close map";
-   
+
 
     $language['lv']['opmap'] = "Atvērt karti";
     $language['lv']['closmap'] = "Aizvērt karti";
-    
+
 
     $language['ru']['opmap'] = "Открыть карту";
     $language['ru']['closmap'] = "Закрыть карту";
@@ -240,11 +210,11 @@
 
     $language['en']['4barb'] = "4 barbershops";
     $language['en']['3country'] = "3 countries";
-   
+
 
     $language['lv']['4barb'] = "4 barberšopi";
     $language['lv']['3country'] = "3 valstis";
-    
+
 
     $language['ru']['4barb'] = "4 барбершопа";
     $language['ru']['3country'] = "3 страны";
@@ -321,13 +291,13 @@
 
     $language['lv']['barbtext'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
-    
+
     $language['en']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
 
     $language['ru']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
-    
+
     // LV
     $language['lv']['service'] = "Servisi";
     $language['lv']['book'] = "Pieteikties";
@@ -359,12 +329,12 @@
     $language['ru']['hair7.'] = "Мойка головы";
     $language['ru']['hair8.'] = "Покраска бороды";
     $language['ru']['hair9.'] = "Специальная цена для студентов воск.- чет.";
- 
+
     // EN
     $language['en']['service'] = "Services";
     $language['en']['book'] = "Book";
     $language['en']['rew'] = "Reviews";
-    
+
     $language['en']['hair1.'] = "Haircut Scissors";
     $language['en']['hair2.'] = "Grooming";
     $language['en']['hair3.'] = "Haircut + Beardtrim";
@@ -383,7 +353,7 @@
     //  Sūtīšanas Forma
     // LV
     $language['lv']['form_top'] = 'Lai pieteiktos uz kādu no mūsu pakalpojumu - vienkārši aizpildiet zemāk redzamo veidlapu, noklikšķiniet uz Sūtīt un drīz administrātors ar jums sazināsies, lai apstiprinātu rezervāciju.';
-    
+
     $language['lv']['form0'] = 'Izvēlieties adresi';
     // $language['lv']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
 
@@ -396,27 +366,27 @@
     $language['lv']['form1_1'] = 'Pilns vārds';
     $language['lv']['form1_e1'] = 'Vārds ir par īsu';
     $language['lv']['form1_e2'] = 'Tikai alfabēts.';
-    
+
     $language['lv']['form2'] = 'Telefona numurs';
     $language['lv']['form2_1'] = 'Kontakt numurs';
     $language['lv']['form2_e1'] = 'Tikai cipari!';
     $language['lv']['form2_e2'] = 'Pārāk īss telefons!';
-    
+
     $language['lv']['form3'] = 'e-pasts';
     $language['lv']['form3_1'] = 'Jūsu e-pasts';
     $language['lv']['form3_e1'] = 'Lūdzu, ievadiet e-pastu!';
-    
+
     $language['lv']['form4'] = 'Servisa nosaukums';
     // $language['lv']['form4_1'] = 'Datums';
     $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu!';
-    
+
     $language['lv']['form5'] = 'Datums';
     $language['lv']['form5_1'] = 'Izvēlaties datumu';
     $language['lv']['form5_e1'] = 'Lūdzu, ievadiet datumu!';
-    
+
     $language['lv']['form6'] = 'Detaļas';
     $language['lv']['form6_1'] = 'Lūdzu uzrakstiet pēc iespējas vairā informācijas';
-    
+
     $language['lv']['form8'] = 'Aizsūtīt pieteikumu';
 
     //RUS
@@ -425,73 +395,73 @@
     $language['ru']['client'] = 'Kлиент';
 
     $language['ru']['form_top'] = 'Чтобы записаться на встречу на один из наших сервисов, просто заполните форму ниже, нажмите «Отправить», и администратор свяжется с вами, чтобы подтвердить ваше бронирование.';
-    
+
     $language['ru']['form0'] = 'Выберите адрес';
     // $language['ru']['form0_1'] = 'Место пусто. Пожалуйста, введите место. ';
-    
+
     $language['ru']['form1'] = 'Имя';
     $language['ru']['form1_1'] = 'Полное имя';
     $language['ru']['form1_e1'] = 'Имя слишком короткое.';
     $language['ru']['form1_e2'] = 'Только алфавит.';
-    
+
     $language['ru']['form2'] = 'Номер телефона';
     $language['ru']['form2_1'] = 'контактный номер';
     $language['ru']['form2_e1'] = 'Только цифры! ';
     $language['ru']['form2_e2'] = 'Телефон слишком короткий!';
-    
+
     $language['ru']['form4_1'] = 'Дата';
     $language['ru']['form3'] = 'электронная почта';
     $language['ru']['form3_1'] = 'Ваша электронная почта';
     $language['ru']['form3_e1'] = 'Пожалуйста, введите адрес электронной почты!';
-    
+
     $language['ru']['form4'] = 'Тип стиля';
     $language['ru']['form4_e1'] = 'Тип стиля пуст. Введите тип стиля!';
-    
+
     $language['ru']['form5'] = 'Дата';
     $language['ru']['form5_1'] = 'Выберите дату';
     $language['ru']['form5_e1'] = 'Введите дату!';
-    
+
     $language['ru']['form6'] = 'Детали';
     $language['ru']['form6_1'] = 'Пожалуйста напишите по возможности больше информации';
-    
+
     $language['ru']['form8'] = 'Отправить заявку';
 
     // ENG
     $language['en']['check-e'] = 'Check your e-mail';
     $language['en']['from'] = 'From:';
     $language['en']['client'] = 'The Client';
-  
+
 
     $language['en']['form_top'] = 'To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.';
-    
+
     $language['en']['form0'] = 'Choose adress';
     // $language['en']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
-    
+
     $language['en']['form1'] = 'Name';
     $language['en']['form1_1'] = 'Your full name';
     $language['en']['form1_e1'] = 'Name too short.';
     $language['en']['form1_e2'] = 'Only alphabet.';
-    
+
     $language['en']['form2'] = 'Phone';
     $language['en']['form2_1'] = 'Contact number';
     $language['en']['form2_e1'] = 'Only numbers!';
     $language['en']['form2_e2'] = 'Phone too short!';
-    
+
     $language['en']['form3'] = 'E-mail';
     $language['en']['form3_1'] = 'Your email';
     $language['en']['form3_e1'] = 'Please enter email!';
     $language['en']['form4_1'] = 'Date';
-    
+
     $language['en']['form4'] = 'Type of service';
     $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style!';
-    
+
     $language['en']['form5'] = 'Date';
     $language['en']['form5_1'] = 'Pick your date';
     $language['en']['form5_e1'] = 'Please enter Date!';
-    
+
     $language['en']['form6'] = 'Details';
     $language['en']['form6_1'] = 'Please give us as much details as possible!';
-    
+
     $language['en']['form8'] = 'Send appointment';
 
 

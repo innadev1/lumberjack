@@ -62,7 +62,6 @@
         }
     }
 
-
     print_r($_SESSION);
     
 	// GIFT CARD

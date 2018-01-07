@@ -102,6 +102,10 @@
 			});
 		</script>
 
+
+
+
+
 <div id="countries_">
 	<div class="c">
 		<div class="country" id="latvia">

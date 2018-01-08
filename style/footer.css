@@ -37,7 +37,7 @@
 	letter-spacing: 0 !important;
 	color: #bd9456 !important;
 	margin-bottom: 2vw !important;
-	cursor: pointer;
+
 }
 .poup input{
 	background-color: #bd9456;
@@ -61,6 +61,7 @@
     color: #1f0c06;
     text-transform: uppercase;
 	font-weight: 800;
+	cursor: pointer;
 }
 /**/
 

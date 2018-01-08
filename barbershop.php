@@ -301,7 +301,7 @@
 
 				<div class="fb-comments" data-href="https://www.facebook.com/lumberjackbarbershopriga" data-width="100%" data-numposts="5"></div>
 			</div>
-
+			
 		</div>
 
 		<div class="country" id="latvia_2">

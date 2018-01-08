@@ -16,60 +16,6 @@
 			</div>
 		</div>
 		
-		<!--<div id="main_info">
-			<div class="blocks">
-				<div class="rectangle">
-				<div class="text">
-				<h1>LOREM IPSUM DOLOR SIT</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-				esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  
-				sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis 
-				iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque  
-				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-				</p>
-				</div>
-				</div>
-				<div class="image"><img src="img/gal/1.jpg"></div>
-			</div>
-			<div class="blocks">
-				<div class="rectangle_2">
-				<div class="text">
-				<h1>LOREM IPSUM DOLOR SIT</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-				esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  
-				sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis 
-				iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque  
-				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-				</p>
-				</div>
-				</div>
-				<div class="image_2"><img src="img/gal/2.jpg"></div>
-			</div>
-			<div class="blocks">
-				<div class="rectangle">
-				<div class="text">
-				<h1>LOREM IPSUM DOLOR SIT</h1>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
-				labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-				esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,  
-				sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis 
-				iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque  
-				ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-				</p>
-				</div>
-				</div>
-				<div class="image"><img src="img/gal/1.jpg"></div>
-			</div>
-		</div>
-		-->
 		
 		<div id="main_info">
 			<h1><?php echo $language[$lang]['Lumberjack_development'] ?></h1>

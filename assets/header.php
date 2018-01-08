@@ -163,6 +163,7 @@ include 'assets/lang.php';
    <div class="tbForm_fone"><?php echo $language[$lang]['click'] ?></div>
 </div>
 			<!-- te php  -->
+			<div id="body"></div>
 				<div class="remodal-overlay"
 					<?php if(isset($_POST['emailsent'])) { ?>
 

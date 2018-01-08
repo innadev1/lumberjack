@@ -54,9 +54,7 @@
 	<body>
 		<div>
 			<?php include 'assets/header.php'; ?>
-			
 
-			
 			<div id="banner">
 				<div id="slider-wrapper">
 						<div class="slide"></div>

@@ -17,57 +17,6 @@
       	 <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
       	 <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
-      	<!-- Javascript -->
-      	<script>
-         	$(function() {
-
-            	$( "#datepicker-10" ).datepicker({
-					minDate: 0,
-					changeMonth:true,
-					changeYear:true,
-					numberOfMonths:[1,1]
-            	});
-         	});
-      	</script>
-
-		<script>
-         	$(function() {
-
-            	$( "#datepicker-11" ).datepicker({
-					minDate: 0,
-					changeMonth:true,
-					changeYear:true,
-					numberOfMonths:[1,1]
-            	});
-         	});
-      	</script>
-
-		<script>
-         	$(function() {
-
-            	$( "#datepicker-12" ).datepicker({
-					minDate: 0,
-					changeMonth:true,
-					changeYear:true,
-					numberOfMonths:[1,1]
-            	});
-         	});
-      	</script>
-
-		<script>
-         	$(function() {
-
-            	$( "#datepicker-13" ).datepicker({
-					minDate: 0,
-					changeMonth:true,
-					changeYear:true,
-					numberOfMonths:[1,1]
-            	});
-         	});
-      	</script>
-
-
-
 	</head>
 	<body>
 		<?php include 'assets/header.php'; ?>
@@ -85,12 +34,36 @@
 			</p>
 		</div>
 
-		<div id="big_buttons">
-			<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-			<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
-			<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
-			<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
-		</div>
+			<div id="big_buttons">
+				<?php if(isset($_SESSION['country'])) { ?>
+					<?php if($_SESSION['country'] == 'ru') { ?>
+						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'lv') { ?>
+						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'ee') { ?>
+						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+					<?php } ?>
+				<?php } else { ?>
+						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+				<?php } ?>
+			</div>
+
 
 		<script>
 			$(document).ready(function(){
@@ -101,10 +74,6 @@
 				})
 			});
 		</script>
-
-
-
-
 
 <div id="countries_">
 	<div class="c">
@@ -876,7 +845,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>30.00-40.00 EUR</h1>
+						<h1>30.00-40.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -885,7 +854,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00-25.00 EUR</h1>
+						<h1>15.00-25.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -893,7 +862,7 @@
 						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
 					</th>
 					<td>
-						<h1>40.00 EUR</h1>
+						<h1>40.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -901,7 +870,7 @@
 						<h1><?php echo $language[$lang]['hair4.'] ?></h1>
 					</th>
 					<td>
-						<h1>25.00 EUR</h1>
+						<h1>25.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -910,7 +879,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>15.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -919,7 +888,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>15.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -927,7 +896,7 @@
 						<h1><?php echo $language[$lang]['hair7.'] ?></h1>
 					</th>
 					<td>
-						<h1>10.00-15.00 EUR</h1>
+						<h1>10.00-15.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -935,7 +904,7 @@
 						<h1><?php echo $language[$lang]['hair8.'] ?></h1>
 					</th>
 					<td>
-						<h1>10.00 EUR</h1>
+						<h1>10.00 RUB</h1>
 					</td>
 				</tr>
 				<tr>
@@ -943,7 +912,7 @@
 						<h1><?php echo $language[$lang]['hair9.'] ?></h1>
 					</th>
 					<td>
-						<h1>20.00 EUR</h1>
+						<h1>20.00 RUB</h1>
 					</td>
 				</tr>
 			</table>
@@ -1053,7 +1022,60 @@
 			});
 		</script>
 
+
+
 		<?php include 'assets/footer.php'; ?>
 	</body>
+
+	   	<!-- Javascript -->
+      	<script>
+         	$(function() {
+
+            	$( "#datepicker-10" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+
+            	$( "#datepicker-11" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+
+            	$( "#datepicker-12" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+		<script>
+         	$(function() {
+
+            	$( "#datepicker-13" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>
+
+
 
 </html>

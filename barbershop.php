@@ -37,30 +37,30 @@
 			<div id="big_buttons">
 				<?php if(isset($_SESSION['country'])) { ?>
 					<?php if($_SESSION['country'] == 'ru') { ?>
-						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
-						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
-						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button openContry="c_russia" id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+						<button openContry="c_latvia" id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button openContry="c_eesti" id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button openContry="c_lith" id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
 					<?php } ?>
 
 					<?php if($_SESSION['country'] == 'lv') { ?>
-						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
-						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
-						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+						<button openContry="c_latvia" id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button openContry="c_eesti" id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button openContry="c_lith" id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button openContry="c_russia" id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
 					<?php } ?>
 
 					<?php if($_SESSION['country'] == 'ee') { ?>
-						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
-						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
-						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+						<button openContry="c_eesti" id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button openContry="c_latvia" id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button openContry="c_lith" id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button openContry="c_russia" id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
 					<?php } ?>
 				<?php } else { ?>
-						<button id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
-						<button id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
-						<button id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
-						<button id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
+						<button openContry="c_latvia" id="first_latvia"><?php echo $language[$lang]['lv'] ?></button>
+						<button openContry="c_eesti" id="third_estonia"><?php echo $language[$lang]['est'] ?></button>
+						<button openContry="c_lith" id="second_lithuania"><?php echo $language[$lang]['lt'] ?></button>
+						<button openContry="c_russia" id="four_russia"><?php echo $language[$lang]['russ'] ?></button>
 				<?php } ?>
 			</div>
 
@@ -68,15 +68,38 @@
 		<script>
 			$(document).ready(function(){
 				$('#big_buttons button').click(function(){
-				id = $(this).index()
+				openContry = $(this).attr('openContry')
+				console.log(openContry, $('#'+openContry))
 				$('#countries_ .c').css('display','none')
-				$('#countries_ .c:eq('+id+')').fadeIn(300)
+				$('#'+openContry).fadeIn(300)
 				})
+
+				first_contry = '<?php echo $_SESSION['country']; ?>';
+				$('#countries_ .c').css('display','none')
+
+				switch (first_contry) {
+					case "lv":
+						$('#c_latvia').css('display', "block")
+						break;
+
+						case "ee":
+						$('#c_eesti').css('display', "block")
+						break;
+
+						case "ru":
+						$('#c_russia').css('display', "block")
+						break;
+
+					default:
+						break;
+				}
+
+
 			});
 		</script>
 
 <div id="countries_">
-	<div class="c">
+	<div class="c" id="c_latvia">
 		<div class="country" id="latvia">
 			<div class="country_name" id="c1"><h1>Riharda Vagnera iela 11</h1></div>
 			<div class="countries"><img src="img/countries/latvia.jpg" class="gal1">
@@ -533,7 +556,7 @@
 
 	</div>
 
-	<div class="c" style="display:none">
+	<div class="c" style="display:none" id="c_eesti">
 		<div class="country" id="eesti">
 			<div class="country_name" id="c2"><h1>Pronksi 3</h1></div>
 			<div class="countries"><img src="img/countries/estonia.jpg" class="gal2">
@@ -763,7 +786,7 @@
 		</div>
 	</div>
 
-	<div class="c" style="display:none">
+	<div class="c" style="display:none" id="c_russia">
 		<div class="country" id="russia_">
 			<div class="country_name" id="c3"><h1>Bolshoy Kazachiy Pereulok, 11</h1></div>
 
@@ -994,7 +1017,7 @@
 			</div>
 	</div>
 
-	<div class="c" style="display:none">
+	<div class="c" id="c_lith" style="display:none">
 
 		<div class="country_name" id="c5"><h1>COMING SOON</h1></div>
 		<div class="countries"><img src="img/countries/lietuva.jpg" class="gal5"></div>
@@ -1005,26 +1028,26 @@
 
 
 
-			<div class="round_buttons">
-				<button></button>
-				<button></button>
-				<button></button>
-				<button></button>
-			</div>
+	<div class="round_buttons">
+		<button></button>
+		<button></button>
+		<button></button>
+		<button></button>
+	</div>
 
-		<script>
-			$(document).ready(function(){
-				$('.round_buttons button').click(function(){
-				id = $(this).index()
-				$('#countries_ .c').css('display','none')
-				$('#countries_ .c:eq('+id+')').fadeIn(300)
-				})
-			});
-		</script>
+	<script>
+		$(document).ready(function(){
+			$('.round_buttons button').click(function(){
+			id = $(this).index()
+			$('#countries_ .c').css('display','none')
+			$('#countries_ .c:eq('+id+')').fadeIn(300)
+			})
+		});
+	</script>
 
 
 
-		<?php include 'assets/footer.php'; ?>
+	<?php include 'assets/footer.php'; ?>
 	</body>
 
 	   	<!-- Javascript -->

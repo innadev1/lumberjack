@@ -42,21 +42,20 @@ body{
     height: 9vw;
     width: auto;
     align-items: center;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .caption h1{
 	color: white;
-    font-size: 2vw;
+    font-size: 3.4vw;
     margin: 0;
     font-family: "OpenSans", sans-serif;
     font-weight: bold;
+    text-transform: uppercase;
     line-height: 0.8;
-    letter-spacing: 0.1vw;
+    letter-spacing: 0.6vw;
     text-align: center;
-    text-shadow: 3px 1px 5px black;
-    padding-left: 2.5vw;
+	text-shadow: 3px 1px 5px black;
+	padding-left: 2.5vw;
     padding-right: 2vw;
 }
 .caption h2{

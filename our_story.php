@@ -15,9 +15,7 @@
 		<div id="banner" class="flex">
 			<div id="banner-top"><img src="img/bc1.png"></div>
 			<div class="caption flex">
-				<h2>Market - Latvia, Estonia, Russia</h2>
-				<h1>Lumberjack's development</h1>
-				<h3>-bright moments, significant dates</h3>
+				<h1><?php echo $language[$lang]['our_story'] ?></h1>
 			</div>
 		</div>
 		

@@ -10,6 +10,7 @@
 		
 	</head>
 	<body>
+		<?php include 'assets/button.php'; ?>
 		<?php include 'assets/header.php'; ?>
 		
 		<div id="map_latvia">

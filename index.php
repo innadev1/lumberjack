@@ -53,6 +53,7 @@
 
 	<body>
 		<div>
+			<?php include 'assets/button.php'; ?>
 			<?php include 'assets/header.php'; ?>
 
 			<div id="banner">

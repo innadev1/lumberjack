@@ -8,39 +8,37 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	</head>
 	<body>
+		<?php include 'assets/button.php'; ?>
 		<?php include 'assets/header.php'; ?>
 		
 		<div id="banner" class="flex">
 			<div class="caption flex">
-				<h1><!--<img src="img/vector_white.png">--><?php echo $language[$lang]['our_story'] ?><!--<img src="img/vector_white.png">--></h1>
+				<h2>Market - Latvia, Estonia, Russia</h2>
+				<h1>Lumberjack's development</h1>
+				<h3>-bright moments, significant dates</h3>
 			</div>
 		</div>
 		
 		
 		<div id="main_info">
-			<h1><?php echo $language[$lang]['Lumberjack_development'] ?></h1>
-			<div><h2><?php echo $language[$lang]['our_barber2'] ?></h2></div>
+			<div class="line-orange"><img src="img/line-orange.png"></div>
 			
-			<div class="year"><img src="img/ikonas/2015.png"></div>
+			<div class="y2016y"><img src="img/ikonas/2016.png"></div>
+			<div class="y2017y"><img src="img/ikonas/2017.png"></div>
+			<div class="y2018y"><img src="img/ikonas/2018.png"></div>
 			
-			<div class="wrapping">
+				<div class="div" id="ph0">
+					<div></div>
+					<p>Open since<br> 01.06.2015</p>
+				</div>
 				<div class="div" id="ph1">
 					<div></div>
 					<p><?php echo $language[$lang]['that1'] ?></p>
-				</div>
-				<div class="div" id="ph2">
-					<div></div>
-					<p><?php echo $language[$lang]['that2'] ?></p>				
 				</div>
 				<div class="div" id="ph3">
 					<div></div>
 					<p><?php echo $language[$lang]['that3'] ?></p>				
 				</div>
-			</div>
-			
-			<div class="year"><img src="img/ikonas/2016.png"></div>
-			
-			<div class="wrapping">
 				<div class="div" id="ph4">
 					<div></div>
 					<p><?php echo $language[$lang]['that4'] ?></p>				
@@ -65,11 +63,6 @@
 					<div></div>
 					<p><?php echo $language[$lang]['that9'] ?></p>				
 				</div>
-			</div>
-			
-			<div class="year"><img src="img/ikonas/2017.png"></div>
-			
-			<div class="wrapping">
 				<div class="div" id="ph10">
 					<div></div>
 					<p><?php echo $language[$lang]['that10'] ?></p>				
@@ -78,7 +71,6 @@
 					<div></div>
 					<p><?php echo $language[$lang]['that11'] ?></p>				
 				</div>
-			</div>
 		
 		</div>
 		

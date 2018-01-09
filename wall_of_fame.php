@@ -10,11 +10,12 @@
 		
 	</head>
 	<body>
+		<?php include 'assets/button.php'; ?>
 		<?php include 'assets/header.php'; ?>
 		
 		<div id="banner">
 			<div class="caption">
-				<h1><!--<img src="img/vector.png">--><?php echo $language[$lang]['wof'] ?><!--<img src="img/vector.png">--></h1>
+				<h1><?php echo $language[$lang]['wof'] ?></h1>
 			</div>
 		</div>
 		

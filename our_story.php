@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/our_story.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>our story</title>
@@ -12,6 +13,7 @@
 		<?php include 'assets/header.php'; ?>
 		
 		<div id="banner" class="flex">
+			<div id="banner-top"><img src="img/bc1.png"></div>
 			<div class="caption flex">
 				<h2>Market - Latvia, Estonia, Russia</h2>
 				<h1>Lumberjack's development</h1>
@@ -71,6 +73,12 @@
 					<div></div>
 					<p><?php echo $language[$lang]['that11'] ?></p>				
 				</div>
+				<div class="div" id="ph12">
+					<div></div>
+					<p><?php echo $language[$lang]['that12'] ?>
+					</p>				
+				</div>
+				<div id="ph13"><h5>to be continued...</h5></div>
 		
 		</div>
 		

@@ -193,7 +193,9 @@
     $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
     $language['en']['that11'] = 'Together with the hotel Pullman participated in the event Gumball 3000, one of the guests - CeeLo Green';
 
-
+	$language['en']['that12'] = 'Lumberjack barbershop branch opening in St. Petersburg';
+	$language['lv']['that12'] = 'Barbershop atvēršana St. Peterburgā';
+	$language['ru']['that12'] = 'Открытие нового барбершопа в Санкт-Петербурге';
 
     // BarBerShop
     $language['en']['opmap'] = "Open map";

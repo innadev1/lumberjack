@@ -150,6 +150,7 @@
 
 <html>
 	<head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/price_list.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">

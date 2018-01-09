@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/one_story.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>one story</title>

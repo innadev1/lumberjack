@@ -1,12 +1,5 @@
 /*POPUP*/
-/*#body1 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-	z-index: 100;
-	background-color: rgba(0,0,0,0.5);
-}*/
-.poup{
+.poup1{
     position: fixed;
     width: 35vw;
     height: 12vw;
@@ -28,7 +21,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.poup h1{
+.poup1 h1{
 	margin: 0 !important;
 	text-align: center !important;
     font-size: 2vw !important;
@@ -39,7 +32,7 @@
 	margin-bottom: 2vw !important;
 
 }
-.poup input{
+.poup1 input{
 	background-color: #bd9456;
     color: #1f0c06;
     font-size: 1vw;
@@ -52,7 +45,7 @@
 	height: 2vw;
 	width: 10vw;
 }
-.poup select{
+.poup1 select{
 	border: 1px solid #bd9456;
     border-radius: 0.3vw;
     margin-right: 1vw;

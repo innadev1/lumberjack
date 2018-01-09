@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/wall_of_fame_2.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>wall of fame</title>

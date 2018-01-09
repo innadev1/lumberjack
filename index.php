@@ -1,6 +1,7 @@
 <!DOCTYPE html> 
 <html>
-    <head>     
+    <head>   
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">	
 		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
         <title>lumberjack</title>
@@ -53,6 +54,7 @@
 
 	<body>
 		<div>
+			
 			<?php include 'assets/button.php'; ?>
 			<?php include 'assets/header.php'; ?>
 

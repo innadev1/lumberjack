@@ -141,6 +141,7 @@ include 'assets/lang.php';
 ?>
  <html>
 	<head>
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
@@ -300,7 +301,7 @@ include 'assets/lang.php';
 		</script>
 
 	<!--FORMAS BEIGAS  -->
-
+		
 		<?php include 'assets/header.php'; ?>
 
 		<div id="banner">

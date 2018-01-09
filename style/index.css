@@ -560,7 +560,7 @@ cursor: pointer;
 }
 
 #banner_mobile, .swiping_buttons{display:none;}
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1400px){
 #banner {
     height: 30vw;
 }	

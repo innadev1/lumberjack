@@ -1,6 +1,5 @@
 <?php
 
-
     // GET ALL FROM DB
     function getAllDataFromDatabase($sql, $payload = [])
     {
@@ -50,17 +49,4 @@
         return $db->lastInsertId();
 
     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
 ?>

@@ -142,36 +142,39 @@ body{
 	height: 9vw;
 }
 #ph1{
-	background-image: url(../img/ikonas/1.png);
+	background-image: url(../img/ikonas/12.png);
 	top: 24vw;
     left: 43vw;
 }
 #ph2{background-image: url(../img/ikonas/2.png);}
 #ph3{
-	background-image: url(../img/ikonas/8.png);
+	background-image: url(../img/ikonas/13.png);
 	top: 30vw;
-    left: 58vw;
+    left: 60vw;
+	background-size: 40%;
 }
 #ph4{
-	background-image: url(../img/ikonas/3.png);
+	background-image: url(../img/ikonas/15.png);
 	top: 55vw;
     right: 21vw;
 }
 #ph5{
 	background-image: url(../img/ikonas/4.png);
-	top: 45vw;
-    right: 34vw;
+	top: 44vw;
+    right: 36vw;
 }
 #ph6{
-	background-image: url(../img/ikonas/8.png);
+	background-image: url(../img/ikonas/13.png);
     top: 58vw;
-    right: 44vw;
+    right: 46vw;
+	background-size: 40%;
 }
 #ph7{
 	background-image: url(../img/ikonas/7.png);
 	background-size: 40%;
 	top: 75vw;
     left: 36vw;
+	background-size: 50%;
 }
 #ph8{
 	background-image: url(../img/ikonas/5.png);
@@ -185,24 +188,24 @@ body{
 }
 #ph10{
 	background-image: url(../img/ikonas/6.png);
-	background-size: 40%;
+	background-size: 60%;
 	top: 105vw;
     left: 16vw;
 }
 #ph11{
 	background-image: url(../img/ikonas/9.png);
 	top: 111vw;
-    left: 36vw;
+    left: 37vw;
 }
 
 .y2016y{
-	
+	position: absolute;
 }
 .y2017y{
-	
+	position: absolute;	
 }
 .y2018y{
-	
+	position: absolute;	
 }
 
 .div div{

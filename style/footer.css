@@ -44,24 +44,27 @@
     color: #1f0c06;
     font-size: 1vw;
     border: 2px solid #bd9456;
-    padding: 0.3vw 2vw;
     border-radius: 0.3vw;
     text-transform: uppercase;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 	font-weight: 800;
+	height: 2vw;
+	width: 10vw;
 }
 .poup select{
 	border: 1px solid #bd9456;
-    padding: 0.3vw 1vw;
     border-radius: 0.3vw;
-    margin-right: 1.5vw;
+    margin-right: 1vw;
+	font-size: 1vw;
     font-family: "Roboto", sans-serif;
     background-color: #bd9456;
     color: #1f0c06;
     text-transform: uppercase;
 	font-weight: 800;
 	cursor: pointer;
+	height: 2vw;
+	width: 10vw;
 }
 /**/
 

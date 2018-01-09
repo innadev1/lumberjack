@@ -7,9 +7,28 @@
 
 <div class="links">
 	<ul>
-		<li><a href="https://www.facebook.com/lumberjackbarbershop.latvia/?ref=br_rs"><img src="img/facebook.png"></a></li>
+		<!-- <li><a href="https://www.facebook.com/lumberjackbarbershop.latvia/?ref=br_rs"><img src="img/facebook.png"></a></li>
 		<li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li>
-		<!--<li><a href="https://vimeo.com"><img src="img/vimeo.png"></a></li>-->
+		<li><a href="https://vimeo.com"><img src="img/vimeo.png"></a></li> -->
+
+		<?php if(isset($_SESSION['country'])) { ?>
+			<?php if($_SESSION['country'] == 'ru') { ?>
+				
+			<?php } ?>
+
+			<?php if($_SESSION['country'] == 'lv') { ?>
+				<li><a href="https://www.facebook.com/lumberjackbarbershop.latvia/?ref=br_tf"><img src="img/facebook.png"></a></li>
+				<li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li>
+			<?php } ?>
+
+			<?php if($_SESSION['country'] == 'ee') { ?>
+				<li><a href="https://www.facebook.com/lumberjackbarbershop.estonia/"><img src="img/facebook.png"></a></li>
+				<li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li>
+			<?php } ?>
+            <?php } else { ?>
+               
+            <?php } ?>
+
 	</ul>
 </div>
 

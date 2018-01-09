@@ -5,7 +5,6 @@
     $language['en'] = [];
     $language['ru'] = [];
 
-
     if(isset($_GET['lang'])){
         $lang = $_GET['lang'];
         $_SESSION['lang'] = $lang;
@@ -61,9 +60,7 @@
     $language['ru']['madelv_text'] = 'Все наши продукты были тщательно обработаны в Англии с 1805 года, и они воплощают в себе суть британского наследия. Наша целеустремленная команда высококвалифицированных специалистов, химиков, дизайнеров и мастеров неустанно работает над нашими продуктами, известными сегодня благодаря своей уникальной традиции инноваций и превосходства. Наши знаковые диапазоны будут по-прежнему выпускаться в Англии, поскольку мы постоянно стремимся принести новые и захватывающие продукты в ответ на потребности наших клиентов.';
     $language['ru']['readmore'] = 'читать дальше';
 
-
 // [[[[-----]]]]
-
 
     $language['lv']['ofiss1'] = 'GALVENAIS BIROJS';
     $language['lv']['map2'] = 'PARĀDĪT KARTĒ';
@@ -79,7 +76,6 @@
     $language['ru']['map2'] = 'ПОКАЗАТЬ НА КАРТЕ';
     $language['ru']['shop3'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
     $language['ru']['marketing4'] = 'МАРКЕТИНГ';
-
 
     // HEADER
     $language['lv']['franch.'] = 'FRANŠĪZE';
@@ -109,7 +105,6 @@
     $language['ru']['price_list'] = 'ЦЕНЫ';
     $language['ru']['contact_us'] = 'СВЯЖИТЕСЬ С НАМИ';
 
-
     // EN
     $language['en']['home'] = 'HOME';
     $language['en']['our_story'] = 'OUR STORY';
@@ -118,8 +113,6 @@
     $language['en']['haircuts'] = 'HAIRCUTS';
     $language['en']['price_list'] = 'PRICE LIST ';
     $language['en']['contact_us'] = 'CONTACT US ';
-
-
 
     // OURSTORY
     $language['lv']['great'] = 'PRICE LIST ';
@@ -131,11 +124,9 @@
     $language['ru']['great'] = 'ВЕЛИЧИЕ';
     $language['ru']['from'] = 'Kopš 1990';
 
-
     // LV
     $language['lv']['Lumberjack_development'] = 'Lumberjack attīstība  – spilgti momenti, nozīmīgi datumi';
     $language['lv']['our_barber2'] = 'Tirgū no: 01.06.2015 <br> Tirgus – Latvija, Igaunija, Krievija';
-
 
     $language['lv']['that1'] = 'Lielā sporta pārstāvji izvēlas Lumberjack Barbershop';
     $language['lv']['that2'] = 'Starp tiem Edgars Gauračs un Kaspars Kambala izvēlas Lumberjack Barbershop ';
@@ -186,9 +177,7 @@
     $language['en']['that6'] = 'As part of the tournament, the KHL became the official partner of the hockey club Dinamo Riga';
 
     $language['en']['that7'] = ' To prepare for the concert, De-Phazz chooses Lumberjack Barbershop';
-    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop
-
-    ';
+    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop';
     $language['en']['that9'] = 'Opening of a barbershop in Tallinn';
     $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
     $language['en']['that11'] = 'Together with the hotel Pullman participated in the event Gumball 3000, one of the guests - CeeLo Green';
@@ -201,10 +190,8 @@
     $language['en']['opmap'] = "Open map";
     $language['en']['closmap'] = "Close map";
 
-
     $language['lv']['opmap'] = "Atvērt karti";
     $language['lv']['closmap'] = "Aizvērt karti";
-
 
     $language['ru']['opmap'] = "Открыть карту";
     $language['ru']['closmap'] = "Закрыть карту";
@@ -213,10 +200,8 @@
     $language['en']['4barb'] = "4 barbershops";
     $language['en']['3country'] = "3 countries";
 
-
     $language['lv']['4barb'] = "4 barberšopi";
     $language['lv']['3country'] = "3 valstis";
-
 
     $language['ru']['4barb'] = "4 барбершопа";
     $language['ru']['3country'] = "3 страны";
@@ -237,7 +222,6 @@
     $language['en']['russ'] = "RUSSIA";
     $language['en']['lt'] = "LITHUANIA";
 
-
     // lv
     $language['lv']['all'] = "VISI PAKALPOJUMI";
     $language['lv']['hair'] = "MATI";
@@ -255,8 +239,6 @@
     $language['ru']['hair'] = "ВОЛОСЫ";
     $language['ru']['mass'] = "МАССАЖ";
     $language['ru']['skin'] = "БРИТЬЁ И КОЖА";
-
-
 
     // LV
     $language['lv']['adr'] = "Adrese:";
@@ -282,7 +264,6 @@
     $language['ru']['mon'] = "Пн.-Сб:";
     $language['ru']['sun'] = "Воскресенье:";
 
-
     // LV
     $language['lv']['check'] = "Pārbadiet savu e-pastu";
     // RU
@@ -290,21 +271,16 @@
     // EN
     $language['en']['check'] = "Check your email";
 
-
     $language['lv']['barbtext'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
-
 
     $language['en']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
-
     $language['ru']['barbtext.'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
-
 
     // LV
     $language['lv']['service'] = "Servisi";
     $language['lv']['book'] = "Pieteikties";
     $language['lv']['rew'] = "Atsauces";
-
 
     $language['lv']['hair1.'] = "Matu griezums";
     $language['lv']['hair2.'] = "Groomings";
@@ -320,7 +296,6 @@
     $language['ru']['service'] = "Услуги";
     $language['ru']['book'] = "Записаться";
     $language['ru']['rew'] = "Отзывы";
-
 
     $language['ru']['hair1.'] = "Стрижка ножницами";
     $language['ru']['hair2.'] = "Груминг";
@@ -347,7 +322,6 @@
     $language['en']['hair8.'] = "Beardcoloring";
     $language['en']['hair9.'] = "Students special price sun.-thu.";
 
-
     $language['lv']['product'] = "produkti";
     $language['en']['product'] = "products";
     $language['ru']['product'] = "продукты";
@@ -362,7 +336,6 @@
     $language['lv']['check-e'] = 'Pārbaudiet Jūsu e-pastu';
     $language['lv']['from'] = 'No:';
     $language['lv']['client'] = 'Klients';
-
 
     $language['lv']['form1'] = 'Vārds';
     $language['lv']['form1_1'] = 'Pilns vārds';
@@ -520,12 +493,10 @@
     $language['en']['article6'] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
     $language['ru']['article6'] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
 
-
 //  Wall Of FAme
     $language['lv']['copy_right'] = 'Autortiesības 2017. Visas tiesības aizsargātas';
     $language['en']['copy_right'] = 'Copyright 2017. All rights reserved';
     $language['ru']['copy_right'] = 'Авторские права 2017. Все права защищены';
-
 
     // FOOTER
     $language['lv']['wof'] = 'WALL OF FAME';

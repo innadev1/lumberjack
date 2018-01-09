@@ -1,15 +1,16 @@
 <?php
 
-include 'assets/lang.php';
-		$mailSuccess = "";
-		$error_message_choose_m = "";
-		$error_message_n = "";
-		$error_message_n2 = "";
-		$error_message_p1 = "";
-		$error_message_p2 = "";
-		$error_message_m = "";
-		$error_message_t = "";
-		$error_message_d = "";
+	include 'assets/lang.php';
+	
+	$mailSuccess = "";
+	$error_message_choose_m = "";
+	$error_message_n = "";
+	$error_message_n2 = "";
+	$error_message_p1 = "";
+	$error_message_p2 = "";
+	$error_message_m = "";
+	$error_message_t = "";
+	$error_message_d = "";
 
 	if(isset($_POST['emailsent']))
 	{

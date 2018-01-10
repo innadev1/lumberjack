@@ -38,11 +38,11 @@
 				<div class="y2016 year"><img src="img/ikonas/2016.svg"></div>
 				<div class="div" id="ph4">
 					<div></div>
-					<p><?php echo $language[$lang]['that4'] ?></p>				
+					<p><?php echo $language[$lang]['that5'] ?></p>				
 				</div>
 				<div class="div" id="ph5">
 					<div></div>
-					<p><?php echo $language[$lang]['that5'] ?></p>				
+					<p><?php echo $language[$lang]['that4'] ?></p>				
 				</div>
 				<div class="div" id="ph6">
 					<div></div>

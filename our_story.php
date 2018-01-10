@@ -21,11 +21,11 @@
 		
 		
 		<div id="main_info">
-			<div class="line-orange"><img src="img/line-orange.png"></div>
+			<div class="line-orange"><img src="img/ikonas/1.svg"></div>
 			
-			<div class="y2016y"><img src="img/ikonas/2016.png"></div>
-			<div class="y2017y"><img src="img/ikonas/2017.png"></div>
-			<div class="y2018y"><img src="img/ikonas/2018.png"></div>
+			<div class="y2016 year"><img src="img/ikonas/6.svg"></div>
+			<div class="y2017 year"><img src="img/ikonas/7.svg"></div>
+			<div class="y2018 year"><img src="img/ikonas/2018.svg"></div>
 			
 				<div class="div" id="ph0">
 					<div></div>

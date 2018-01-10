@@ -22,7 +22,6 @@ body{
     background-position-y: 50%;
 	background-color: #1f0c06;
 	z-index: 2;
-	padding-bottom: 12vw;
 }
 #banner-top{
     position: absolute;
@@ -143,20 +142,20 @@ body{
 	position: absolute
 }
 #ph0{
-	background-image: url(../img/ikonas/11.png);
+	background-image: url(../img/ikonas/2.svg);
 	background-size: 50%;
 	top: 16vw;
     left: 27vw;
 	height: 9vw;
 }
 #ph1{
-	background-image: url(../img/ikonas/12.png);
+	background-image: url(../img/ikonas/4.svg);
 	top: 24vw;
     left: 43vw;
 }
 #ph2{background-image: url(../img/ikonas/2.png);}
 #ph3{
-	background-image: url(../img/ikonas/13.png);
+	background-image: url(../img/ikonas/dinamo.svg);
 	top: 30vw;
     left: 60vw;
 	background-size: 40%;
@@ -172,7 +171,7 @@ body{
     right: 36vw;
 }
 #ph6{
-	background-image: url(../img/ikonas/13.png);
+	background-image: url(../img/ikonas/dinamo.svg);
     top: 58vw;
     right: 46vw;
 	background-size: 40%;
@@ -222,20 +221,23 @@ body{
     font-weight: 700;
 }
 
-.y2016y{
+.y2016{
 	position: absolute;
 	top: 50vw;
-    right: 18vw;
+    right: 16vw;
 }
-.y2017y{
+.y2017{
 	position: absolute;
     top: 87vw;
-    left: 22vw;
+    left: 21vw;
 }
-.y2018y{
+.y2018{
 	position: absolute;
     top: 132vw;
     left: 42vw;
+}
+.year img{
+	width: 10vw;
 }
 
 .div div{
@@ -245,11 +247,7 @@ body{
 	margin:0;
 	font-size: 1vw;
 }
-
-
-
-/*NEW DESIGN*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1400px){
 #banner {
     height: 30vw;
 }	

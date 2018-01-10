@@ -205,7 +205,7 @@
 			<div class="wrap">
 				<div class="photo photo_1">
 							
-					<a href="http://testlumberjack.ml/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_franc'] ?></button></a>
+					<a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><button class="read_more_card"><?php echo $language[$lang]['gift_franc'] ?></button></a>
 
 				</div>
 

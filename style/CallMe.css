@@ -3,6 +3,8 @@
 	position: relative;
     left: -1px;
     top: -1px;
+	width: 60px;
+    height: 60px;
 }
 
 .tbForm_CallMe {z-index: 99998; width:60px; height:60px;}

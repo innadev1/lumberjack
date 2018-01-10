@@ -31,7 +31,7 @@
         $_SESSION['lang'] = $lang;
     }
 
-    $SiteUrl = 'http://localhost/www/testlumberjack.tk/';
+    $SiteUrl = 'http://localhost/www/testlumberjack.ml/';
 
 	// GIFT CARD
 
@@ -83,9 +83,9 @@
     $language['ru']['franch.'] = 'ФРАНШИЗА';
 
 	// BUTTON
-    $language['lv']['click'] = '<img src="img/lv.svg">';
-    $language['en']['click'] = '<img src="img/en.svg">';
-    $language['ru']['click'] = '<img src="img/ru.svg">';
+    $language['lv']['click'] = '<img src="img/lv.png">';
+    $language['en']['click'] = '<img src="img/en.png">';
+    $language['ru']['click'] = '<img src="img/ru.png">';
 
     // LV
     $language['lv']['home'] = 'SĀKUMS';

@@ -37,7 +37,11 @@
 
 	$language['lv']['gift_card'] = 'Nopirkt karti';
 	$language['en']['gift_card'] = 'Buy card';
-	$language['ru']['gift_card'] = 'Купить карту';
+	$language['ru']['gift_card'] = 'Купить карту';	
+	
+	$language['lv']['gift_franc'] = 'Nopirkt francizi';
+	$language['en']['gift_franc'] = 'Buy franchise';
+	$language['ru']['gift_franc'] = 'Купить франшизу';
 
 	// FRANCHISE
 

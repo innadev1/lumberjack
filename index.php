@@ -204,20 +204,14 @@
 				
 			<div class="wrap">
 				<div class="photo photo_1">
-
-						<div class="text_on_photo">
-							<img src="img/logo.png" width="30%">
-							<h6></h6>
-							<p></p>
 							
-							<a href="our_story.php"><button class="read_more_1"><?php echo $language[$lang]['readmore'] ?></button></a>
-						</div>
+					<a href="http://testlumberjack.ml/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_franc'] ?></button></a>
 
 				</div>
 
 				<div class="photo photo_2">
 				
-					<a href="http://testlumberjack.tk/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_card'] ?></button></a>
+					<a href="http://testlumberjack.ml/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_card'] ?></button></a>
 				
 				</div>
 				

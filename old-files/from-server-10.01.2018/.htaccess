@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "lumberjack"
+AuthUserFile /var/www/ttatem/data/www/testlumberjack.tk/.htpasswd
+Require valid-user

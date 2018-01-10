@@ -136,8 +136,7 @@
 	}
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="CallMe.css" media="screen" />
-<script type="text/javascript" src="CallMe.js"></script>
+<link rel="stylesheet" type="text/css" href="style/CallMe.css" media="screen" />
 
 <script type="text/javascript" src="https://w10436.yclients.com/widgetJS"></script>
 

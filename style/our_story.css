@@ -142,18 +142,18 @@ body{
 	position: absolute
 }
 #ph0{
-	background-image: url(../img/ikonas/2.svg);
-	background-size: 50%;
+	background-image: url(../img/ikonas/2015.svg);
+	background-size: 60%;
 	top: 16vw;
     left: 27vw;
 	height: 9vw;
 }
 #ph1{
-	background-image: url(../img/ikonas/4.svg);
+	background-image: url(../img/ikonas/football.svg);
 	top: 24vw;
     left: 43vw;
+	background-size: 45%;
 }
-#ph2{background-image: url(../img/ikonas/2.png);}
 #ph3{
 	background-image: url(../img/ikonas/dinamo.svg);
 	top: 30vw;
@@ -161,14 +161,16 @@ body{
 	background-size: 40%;
 }
 #ph4{
-	background-image: url(../img/ikonas/15.png);
+	background-image: url(../img/ikonas/lvflag.svg);
 	top: 55vw;
     right: 21vw;
+	background-size: 40%;
 }
 #ph5{
-	background-image: url(../img/ikonas/4.png);
+	background-image: url(../img/ikonas/newbarbersjop.svg);
 	top: 44vw;
     right: 36vw;
+	background-size: 50%;
 }
 #ph6{
 	background-image: url(../img/ikonas/dinamo.svg);
@@ -177,37 +179,40 @@ body{
 	background-size: 40%;
 }
 #ph7{
-	background-image: url(../img/ikonas/7.png);
-	background-size: 40%;
+	background-image: url(../img/ikonas/de-phazz.svg);
 	top: 75vw;
     left: 36vw;
 	background-size: 50%;
 }
 #ph8{
-	background-image: url(../img/ikonas/5.png);
+	background-image: url(../img/ikonas/comedyclub.svg);
 	top: 68vw;
     right: 27vw;
+	background-size: 40%;
 }
 #ph9{
-	background-image: url(../img/ikonas/4.png);
+	background-image: url(../img/ikonas/newbarbersjop.svg);
 	top: 92vw;
     right: 43vw;
+	background-size: 50%;
 }
 #ph10{
-	background-image: url(../img/ikonas/6.png);
+	background-image: url(../img/ikonas/pullman.svg);
 	background-size: 60%;
 	top: 105vw;
     left: 16vw;
 }
 #ph11{
-	background-image: url(../img/ikonas/9.png);
+	background-image: url(../img/ikonas/gumball.svg);
 	top: 108vw;
     left: 37vw;
+	background-size: 45%;
 }
 #ph12{
-	background-image: url(../img/ikonas/4.png);
+	background-image: url(../img/ikonas/newbarbersjop.svg);
 	top: 135vw;
     right: 43vw;
+	background-size: 50%;
 }
 #ph13{
 	position: absolute;
@@ -233,7 +238,7 @@ body{
 }
 .y2018{
 	position: absolute;
-    top: 132vw;
+    top: 128vw;
     left: 42vw;
 }
 .year img{

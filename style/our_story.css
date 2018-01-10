@@ -260,11 +260,11 @@ body{
 @media screen and (max-width: 900px){
 #banner {
     height: 140vw;
-    background-image: url(../img/background_2_mobile.png);
-    background-position: 70%;
+    background-image: url(../img/story-mobile.png);
+	z-index: 0;
 }
 .caption {
-    top: 45vw;
+    top: -5vw;
     position: relative;
     padding-top: 7vw;
     padding-bottom: 6vw;
@@ -281,5 +281,64 @@ body{
     letter-spacing: 2vw;
 }
 .caption img{display: none;}
-
+.line-orange, #banner-top{
+	display:none;
+}
+#main_info {
+    height: 580vw;
+    background-image: url(../img/bildes.png);
+}
+.div {
+    width: 80%;
+    margin: auto;
+    padding: 1vw;
+    text-align: center;
+    color: rgb(176, 145, 93);
+    background-size: 28% !important;
+    background-repeat: no-repeat;
+    position: relative !important;
+    background-position-x: 50%;
+    background-position-y: 0;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: auto !important;
+}
+.div p {
+    margin: 0;
+    font-size: 4vw;
+}
+#ph0{
+	background-size: 40% !important;
+}
+#ph10{
+	background-size: 52% !important;
+}
+.div div {
+    height: 26vw;
+}
+.year{
+	position: relative;
+    top: unset !important;
+    right: unset !important;
+	left: unset !important;
+	height: 25vw
+}
+.year img {
+    width: 35vw;
+}
+#ph13 {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    text-align: center;
+}
+#ph13 h5 {
+    margin: 0;
+    color: rgb(176, 145, 93);
+    font-size: 6vw;
+    font-weight: 700;
+    margin-top: 15vw;
+}
 }

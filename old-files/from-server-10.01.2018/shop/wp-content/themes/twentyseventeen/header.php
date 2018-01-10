@@ -11,7 +11,7 @@
     $language['ru'] = [];
 
 
-    $SiteUrl = 'http://testlumberjack.tk/';
+    $SiteUrl = 'http://testlumberjack.ml/';
     $language;
 
     if (isset($_GET['lang'])&&!empty($_GET['lang'])) {
@@ -46,9 +46,9 @@
     
 	// FRANCHISE
 	
-	$language['lv']['franchise_'] = 'http://testlumberjack.tk/downloads/lumberjack_barbershop_franchise_en.pdf';
-	$language['en']['franchise_'] = 'http://testlumberjack.tk/downloads/lumberjack_barbershop_franchise_en.pdf';
-	$language['ru']['franchise_'] = 'http://testlumberjack.tk/downloads/lumberjack_barbershop_franchise_ru.pdf';
+	$language['lv']['franchise_'] = 'http://testlumberjack.ml/downloads/lumberjack_barbershop_franchise_en.pdf';
+	$language['en']['franchise_'] = 'http://testlumberjack.ml/downloads/lumberjack_barbershop_franchise_en.pdf';
+	$language['ru']['franchise_'] = 'http://testlumberjack.ml/downloads/lumberjack_barbershop_franchise_ru.pdf';
     
     // HEADER 
     $language['lv']['franch.'] = 'FRANŠĪZE';
@@ -572,9 +572,9 @@
 		<ul>
 			<li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/contacts.php"><img src="<?php echo home_url(); ?>/img/call.png" width="1%"></a></li>
+			<li><a href="http://testlumberjack.ml/contacts.php"><img src="<?php echo home_url(); ?>/img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/lv/cart/"><img src="<?php echo home_url(); ?>/img/bag.png" width="0.8%"></a></li>
+			<li><a href="http://testlumberjack.ml/shop/lv/cart/"><img src="<?php echo home_url(); ?>/img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 			<li><a href="?lang=lv">LV</a></li>
 			<li><a href="?lang=en">EN</a></li>
@@ -586,7 +586,7 @@
 			
 
 <div id="logo">
-	<a href="http://testlumberjack.tk/index.php"><img src="<?php echo home_url(); ?>/img/logo.png"></a>
+	<a href="http://testlumberjack.ml/index.php"><img src="<?php echo home_url(); ?>/img/logo.png"></a>
 </div>
 
 <div class="menu2"><a id="toggler" href="#"><img src="<?php echo home_url(); ?>/img/menu.png"></a></div>
@@ -594,15 +594,15 @@
 	<a id="toggler_close" style="display:none" href="#"><div class="close"><img src="<?php echo home_url(); ?>/img/close.png"></div></a>
     <div>
         <ul class="box_li">
-			<li><a href="http://testlumberjack.tk/index.php">HOME</a></li>
-			<li><a href="http://testlumberjack.tk/our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
-			<!--<li><a href="http://testlumberjack.tk/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
-			<li><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
-			<li><a href="http://testlumberjack.tk/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/index.php">HOME</a></li>
+			<li><a href="http://testlumberjack.ml/our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
+			<!--<li><a href="http://testlumberjack.ml/lumberjack/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
+			<li><a href="http://testlumberjack.ml/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
+			<li><a href="http://testlumberjack.ml/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
         </ul>
     </div>
 	<div class="information">
@@ -640,28 +640,28 @@
 			<ul>
 				<li><a><img src="<?php echo home_url(); ?>/img/radio.png" class="radio"></a></li>
 				
-				<li class="link"><a href="http://testlumberjack.tk/our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
 				<!--<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
+				<li class="link"><a href="http://testlumberjack.ml/lifestyle.php"><?php echo $language[$lang]['lfs'] ?></a></li>-->
 				
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/wall_of_fame.php"><?php echo $language[$lang]['wof'] ?></a></li>
 								
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 
 				<li><a><img src="<?php echo home_url(); ?>/img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.tk/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.ml/contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
 			</ul>
 	</div>
 </div>

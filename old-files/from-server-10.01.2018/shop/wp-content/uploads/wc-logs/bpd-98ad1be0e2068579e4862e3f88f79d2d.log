@@ -1,4 +1,0 @@
-11-21-2017 @ 09:21:55 - []
-11-21-2017 @ 09:22:02 - []
-11-21-2017 @ 10:33:49 - []
-11-21-2017 @ 11:50:04 - {"status":"FAILED","invoice_ref":"bj6TxIgA6IEQcQ20Yikuys7jD","amount":"70.00","currency":"EUR","order_id":"Order-205","error_code":"CANCELLED_BY_USER","error_message":"Invoice is cancelled by user request","template_order_id":"","X-Shop-Name":"lumberjack","X-Nonce":"B7rkrSehAnSOu8qAiTp4epKGs","X-Request-Signature":"9edd23b1ed172d2fa1fad745ed472e039f23dde00725a5568e466eb49dfc36daa1c0ec37594477f5ff4c22d8fed3620d850cd158b947ee4006a47b832ca8e5bd"}

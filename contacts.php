@@ -19,7 +19,7 @@
 		</div>
 		
 		<div id="map_latvia_2">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.014299338182!2d24.109162451849254!3d56.948556280796254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1slv!2slv!4v1509022568281" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.630375136958!2d24.07059325184951!3d56.95513378079825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfe3a3385cb9%3A0xea12a58c86969715!2s%C5%AAdens+iela+12%2C+Kurzemes+rajons%2C+R%C4%ABga%2C+LV-1007!5e0!3m2!1slv!2slv!4v1516012665040" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_estonia">
@@ -54,15 +54,15 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Riharda Vagnera iela 11,<br> Riga, Latvia</p></td>
+						<td><p>Ūdens iela 12-26<br> Rīga, Latvija, LV-1007</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>info@vinille.com</p></td>
+						<td><p>k.gusarov@vinille.com</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+371 67 854 755</p></td>
+						<td><p>+371 264 70 249</p></td>
 					</tr>
 				</table>
 				<button id="trigger2" class="second"><?php echo $language[$lang]['map2'] ?></button>

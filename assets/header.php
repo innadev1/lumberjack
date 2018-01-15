@@ -12,7 +12,7 @@
 			<li class="border"></li>
 			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.ml/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
+			<li><a href="http://testlumberjack.tk/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 
             <?php if(isset($_SESSION['country'])) { ?>
@@ -53,7 +53,7 @@
 			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
 			<li><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
-			<li><a href="http://testlumberjack.ml/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+			<li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
             <?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
@@ -108,7 +108,7 @@
 				<li class="link"><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="http://testlumberjack.ml/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+				<li class="link"><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>

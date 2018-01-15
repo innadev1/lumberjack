@@ -284,7 +284,7 @@
     // LV
     $language['lv']['service'] = "Servisi";
     $language['lv']['book'] = "Pieteikties";
-    $language['lv']['rew'] = "Atsauces";
+    $language['lv']['rew'] = "Atsauksmes";
 
     $language['lv']['hair1.'] = "Matu griezums";
     $language['lv']['hair2.'] = "Groomings";

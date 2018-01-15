@@ -62,6 +62,7 @@
 
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+			<li><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
         </ul>
     </div>
 	<div class="information">
@@ -126,6 +127,9 @@
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+				
+				<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
 			</ul>
 	</div>
 </div>

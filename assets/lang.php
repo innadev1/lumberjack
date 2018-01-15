@@ -507,4 +507,8 @@
     $language['en']['wof'] = 'WALL OF FAME';
     $language['ru']['wof'] = 'WALL OF FAME';
 
+    // PARTNERS
+    $language['lv']['partners'] = 'PARTNERI';
+    $language['en']['partners'] = 'PARTNERS';
+    $language['ru']['partners'] = 'ПАРТНЕРЫ';
 ?>

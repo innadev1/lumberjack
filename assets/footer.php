@@ -13,6 +13,9 @@
 
 				<?php if(isset($_SESSION['country'])) { ?>
 					<?php if($_SESSION['country'] == 'ru') { ?>
+
+						<li><a href="https://www.facebook.com/pages/Lumberjack-Barbershop-SPb/2054786051423595"><img src="img/facebook.png"></a></li>
+						<!-- <li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li> -->
 						
 					<?php } ?>
 

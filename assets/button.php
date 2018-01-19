@@ -98,25 +98,25 @@
 		if($_POST['chooseMail'] == "vagnera")
 		{
 			$to = 'my.worktest94@gmail.com';
-			$place = 'Riharda Vagnera iela 11, Riga, Latvia';
+			$place = 'Riharda Vagnera iela 11, Rīga, Latvija';
 		}
 
 		if($_POST['chooseMail'] == "jekaba")
 		{
 			$to = 'my.worktest94@gmail.com';
-			$place = 'Jēkaba iela 24, Centra rajons, Riga, Latvia';
+			$place = 'Jēkaba iela 24, Centra rajons, Rīga, Latvija';
 		}
 
 		if($_POST['chooseMail'] == "pronski")
 		{
-			$to = 'my.worktest94@gmail.com';
+			$to = 'igaunijasjacks@gmail.com';
 			$place = 'Pronksi 3, Tallin, Estonia-10124';
 		}
 
 		if($_POST['chooseMail'] == "ostrova")
 		{
-			$to = 'my.worktest94@gmail.com';
-			$place = '29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg';
+			$to = 'krievijasjacks@gmail.com';
+			$place = 'Большой Казачий Переулок, 11, Санкт-Петербург';
 		}
 
 		$mailSuccess = false;
@@ -135,8 +135,15 @@
 		}
 	}
 ?>
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style/CallMe.css" media="screen" />
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 <script type="text/javascript" src="https://w10436.yclients.com/widgetJS"></script>
 
@@ -194,7 +201,7 @@
 
 				<div class="bookinput">
 					<label><?php echo $language[$lang]['form2'] ?></label>
-					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form2_1'] ?>"></span>
+					<span class="your-name"><input type="tel" value = "<?php if(isset($_POST['phone']) && $errors['phone'] == 0){ echo $_POST['phone']; } ?>" name="phone" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form2'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
 					<?php echo ($error_message_p1); ?>
@@ -213,15 +220,15 @@
 					<span class="wpcf7-form-control-wrap menu-471">
 						<select name="typeOfService" class="wpcf7-select" required="required">
 							<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair1.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair1.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair2.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair2.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair3.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair3.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair4.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair4.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair5.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair5.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair6.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair6.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair7.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair7.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair8.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair8.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
+						<option value="<?php echo $language[$lang]['hair9.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair9.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
 						</select>
 					</span>
 				</div>
@@ -264,3 +271,13 @@
 	</div>
 </div>
 
+<script>
+         	$(function() {
+            	$( "#datepicker-10" ).datepicker({
+					minDate: 0,
+					changeMonth:true,
+					changeYear:true,
+					numberOfMonths:[1,1]
+            	});
+         	});
+      	</script>

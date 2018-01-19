@@ -406,11 +406,14 @@
 				$(function(){
 					$("#container").clickCarousel({margin: 5});	
 				});
-				</script>
-				<div id="wrapper"> 
+</script>
+
+				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+					<div id="wrapper"> 
 					<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1643d0d20257552c9f1cd97ef73be4ef.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
-				</div>
+					</div>
+                <?php } ?>
 			</div>
 			
 			<?php include 'assets/footer.php'; ?>

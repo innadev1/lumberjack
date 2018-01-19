@@ -19,9 +19,9 @@
 			<div class="bckg bg2"><img src="img/image-1.png"></div>
 			
 			<div class="partneri">
-				<div><a href="index.php"><img src="img/pabst-blue-ribbon.png"></a></div>
-				<div><a href="index.php"><img style="height:10vw" src="img/jameson-logo.png"></a></div>
-				<div><a href="http://www.spots.lv"><img src="img/spots.png"></a></div>
+				<div class="hover"><a><img src="img/pabst-blue-ribbon.png"></a></div>
+				<div class="hover"><a><img style="height:10vw" src="img/jameson-logo.png"></a></div>
+				<div class="hover"><a href="http://www.spots.lv"><img src="img/spots.png"></a></div>
 			</div>
 		</div>
 		

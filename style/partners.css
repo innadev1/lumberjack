@@ -36,6 +36,9 @@
 	cursor: pointer;
 	width: 33.333%
 }
+.hover:hover{
+	zoom: 1.2;
+}
 @media screen and (max-width: 900px){
 .bckg{display:none;}	
 #main {

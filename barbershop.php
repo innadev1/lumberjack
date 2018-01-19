@@ -61,7 +61,6 @@
 			$errors['name'] = 1;
 		}
 
-
 		// PHONE
 		$error_message = "";
     	$email_exp = "/[^0-9]/";
@@ -98,28 +97,28 @@
 			$errors['date'] = 1;
 		}
 
-		if($_POST['chooseMail'] == "vagnera")
+		if($_POST['book_place'] == "vagnera")
 		{
 			$to = 'my.worktest94@gmail.com';
-			$place = 'Riharda Vagnera iela 11, Riga, Latvia';
+			$place = 'Riharda Vagnera iela 11, Rīga, Latvija';
 		}
 
-		if($_POST['chooseMail'] == "jekaba")
+		if($_POST['book_place'] == "jekaba")
 		{
 			$to = 'my.worktest94@gmail.com';
-			$place = 'Jēkaba iela 24, Centra rajons, Riga, Latvia';
+			$place = 'Jēkaba iela 24, Centra rajons, Rīga, Latvija';
 		}
 
-		if($_POST['chooseMail'] == "pronski")
+		if($_POST['book_place'] == "pronski")
 		{
-			$to = 'my.worktest94@gmail.com';
+			$to = 'igaunijasjacks@gmail.com';
 			$place = 'Pronksi 3, Tallin, Estonia-10124';
 		}
 
-		if($_POST['chooseMail'] == "ostrova")
+		if($_POST['book_place'] == "ostrova")
 		{
-			$to = 'my.worktest94@gmail.com';
-			$place = '29 lin. Vasilyevskogo ostrova, 2, Sankt-Peterburg';
+			$to = 'krievijasjacks@gmail.com';
+			$place = 'Большой Казачий Переулок, 11, Санкт-Петербург';
 		}
 
 		$mailSuccess = false;
@@ -132,13 +131,13 @@
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
-
 			// echo "check Your Email";
+			
 		}else{
-
 			// $reply = "reply";
 		}
 	}
+
 ?>
  <html>
 	<head>
@@ -173,8 +172,8 @@
 			<form id="form" name="orderform" method="post" action="barbershop.php?openPopup">
 
 				<p><?php echo $language[$lang]['form_top'] ?></p>
-
-				<div class="appointment_place"><p>Adress: Bolshoy Kazachiy Pereulok, 11, Sankt-Peterburg</p></div>
+				
+				<div class="appointment_place"><p>Adress: Большой Казачий Переулок, 11, Санкт-Петербург</p></div>
 			
 				<div class="bookinput">
 					<label><?php echo $language[$lang]['form1'] ?></label>
@@ -204,8 +203,6 @@
 				<!--ERRROR  -->
 					<?php echo ($error_message_m); ?>
 				<!--END-->
-
-
 
 				<div class="styled-select">
 					<span class="wpcf7-form-control-wrap menu-471">
@@ -279,20 +276,26 @@
 
 				if(stuff=='riga1'){
 					p.html('Riharda Vagnera iela 11, Rīga, Latvia')
-					hiddenInput.attr('value','riga1')
+					hiddenInput.attr('value','vagnera')
 					
 
 				}else if(stuff=='riga2'){
 					p.html('Jēkaba iela 24, Rīga, Latvia')
+					hiddenInput.attr('value','jekaba')
+					
 
 				}else if(stuff=='estonia'){
 					p.html('Pronksi 3, Tallin, Estonia-10124')
+					hiddenInput.attr('value','pronski')
+					
 
 				}else if(stuff=='russia'){
-					p.html('Bolshoy Kazachiy Pereulok, 11, Sankt-Peterburg')
+					p.html('Большой Казачий Переулок, 11, Санкт-Петербург')
+					hiddenInput.attr('value','ostrova')
+					
 				}
 
-				$('#hidden_input').attr('value', stuff)
+				// $('#hidden_input').attr('value', stuff)
 			})
 
 			$(".remodal-close_1").click(function(){
@@ -1072,7 +1075,7 @@
 
 	<div class="c" style="display:none" id="c_russia">
 		<div class="country" id="russia_">
-			<div class="country_name" id="c3"><h1>Bolshoy Kazachiy Pereulok, 11</h1></div>
+			<div class="country_name" id="c3"><h1>Большой Казачий Переулок, 11, Санкт-Петербург</h1></div>
 
 			<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
 				<div id="map_russia">
@@ -1090,7 +1093,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>Bolshoy Kazachiy Pereulok, 11,<br> Sankt-Peterburg</p></td>
+									<td><p>Большой Казачий Переулок,<br> 11, Санкт-Петербург</p></td>
 								</tr>
 								<tr>
 									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>

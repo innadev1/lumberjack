@@ -20,7 +20,7 @@
 		</div>
 		
 		
-		<div id="main_info">
+		<div id="main_info" style="background-image: url(img/bc2.png)">
 			<div class="line-orange"><img src="img/ikonas/1.svg"></div>
 			
 				<div class="div" id="ph0">

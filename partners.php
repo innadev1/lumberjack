@@ -17,12 +17,29 @@
 		<div id="main">
 			<div class="bckg bg1"><img src="img/image-2.png"></div>
 			<div class="bckg bg2"><img src="img/image-1.png"></div>
-			
-			<div class="partneri">
-				<div class="hover"><a><img src="img/pabst-blue-ribbon.png"></a></div>
-				<div class="hover"><a><img style="height:10vw" src="img/jameson-logo.png"></a></div>
-				<div class="hover"><a href="http://www.spots.lv"><img src="img/spots.png"></a></div>
-			</div>
+
+				<?php if(isset($_SESSION['country'])) { ?>
+					<?php if($_SESSION['country'] == 'ru') { ?>
+							<!--tukšums-->
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'lv') { ?>
+						<div class="partneri">
+							<div class="hover"><a href="http://www.stanbev.lv/"><img src="img/pabst-blue-ribbon.png"></a></div>
+							<div class="hover"><a href="http://www.stanbev.lv/"><img style="height:10vw" src="img/jameson-logo.png"></a></div>
+							<div class="hover"><a href="https://www.facebook.com/dinamorigaofficial/?hc_ref=ARTXQNzfJJtfnr8ZdSehG3KZhk6vXuYKw_IzGRp16M12A_pCMEF1Jg3BSkYn2AlO8-Y"><img src="img/dinamo.png"></a></div>
+						</div>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'ee') { ?>
+						<div class="partneri">
+							<div class="hover"><a href="http://www.stanbev.lv/"><img src="img/pabst-blue-ribbon.png"></a></div>
+							<div class="hover"><a href="https://www.facebook.com/BeardWoodOffical/"><img style="height:10vw" src="img/beardwood2.png"></a></div>
+						</div>
+					<?php } ?>
+				<?php } else { ?>
+				
+				<?php } ?>
 		</div>
 		
 		<?php include 'assets/footer.php'; ?>

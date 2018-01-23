@@ -12,7 +12,7 @@
 			<li class="border"></li>
 			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
 			<li class="border"></li>
-			<li><a href="http://testlumberjack.tk/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
+			<!-- <li><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><img src="img/bag.png" width="0.8%"></a></li> -->
 			<li class="border"></li>
 
             <?php if(isset($_SESSION['country'])) { ?>
@@ -55,7 +55,7 @@
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
 			<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-			    <li><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+			    <!-- <li><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><?php echo $language[$lang]['online_store'] ?></a></li> -->
 			<?php } ?>
 
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
@@ -66,7 +66,11 @@
 
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
-			<li><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+
+			<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+			    <li><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+			<?php } ?>
+
         </ul>
     </div>
 	<div class="information">
@@ -113,8 +117,8 @@
 				<li class="link"><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
 				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-    				<li><a><img src="img/vector.png"></a></li>
-					<li class="link"><a href="http://testlumberjack.tk/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>
+    				<!-- <li><a><img src="img/vector.png"></a></li> -->
+					<!-- <li class="link"><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><?php echo $language[$lang]['online_store'] ?></a></li> -->
                 <?php } ?>
 
 				<li><a><img src="img/vector.png"></a></li>
@@ -134,8 +138,10 @@
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
 				
-				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+			    	<li><a><img src="img/vector.png"></a></li>
+					<li class="link"><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+				<?php } ?>
 			</ul>
 	</div>
 </div>

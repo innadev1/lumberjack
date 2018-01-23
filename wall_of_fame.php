@@ -21,16 +21,7 @@
 		</div>
 		
 		<div id="main">
-			<div class="main">
-				<div class="photo"><img src="img/wall_of_fame/1.jpg"></div>
-				<div class="text_about_fame">
-					<h1>Armands Simsons</h1>
-					<h2>tv producer | event manager</h2>
-					<p>  
-					</p>
-				</div>
-				<div class="photo_background"><img src="img/wall_of_fame/2.png"></div>
-			</div>
+			
 			<div class="main">
 				<div class="photo2"><img src="img/wall_of_fame/3.jpg"></div>
 				<div class="text_about_fame2">
@@ -91,6 +82,18 @@
 				</div>
 				<div class="photo_background2"><img src="img/wall_of_fame/19.png"></div>
 			</div>
+
+			<div class="main">
+				<div class="photo"><img src="img/wall_of_fame/1.jpg"></div>
+				<div class="text_about_fame">
+					<h1>Armands Simsons</h1>
+					<h2>tv producer | event manager</h2>
+					<p>  
+					</p>
+				</div>
+				<div class="photo_background"><img src="img/wall_of_fame/2.png"></div>
+			</div>
+
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/13.jpg"></div>
 				<div class="text_about_fame">
@@ -131,16 +134,7 @@
 				</div>
 				<div class="photo_background2"><img src="img/wall_of_fame/36.png"></div>
 			</div>
-			<!--<div class="main">
-				<div class="photo"><img src="img/wall_of_fame/21.jpg"></div>
-				<div class="text_about_fame">
-					<h1>Pjotr Riba</h1>
-					<h2>Biker</h2>
-					<p>  
-					</p>
-				</div>
-				<div class="photo_background"><img src="img/wall_of_fame/22.png"></div>
-			</div>-->
+			
 			<div class="main">
 				<div class="photo"><img src="img/wall_of_fame/37.jpg"></div>
 				<div class="text_about_fame">
@@ -191,26 +185,6 @@
 				</div>
 				<div class="photo_background"><img src="img/wall_of_fame/30.png"></div>
 			</div>
-			<div class="main">
-				<div class="photo2"><img src="img/wall_of_fame/31.jpg"></div>
-				<div class="text_about_fame2">
-					<h1>Pjotr Riba</h1>
-					<h2>Biker</h2>
-					<p>  
-					</p>
-				</div>
-				<div class="photo_background2"><img src="img/wall_of_fame/32.png"></div>
-			</div>
-			<!--<div class="main">
-				<div class="photo2"><img src="img/wall_of_fame/33.jpg"></div>
-				<div class="text_about_fame2">
-					<h1>CeeLo Green</h1>
-					<h2>American singer, songwriter, rapper, record producer and actor.</h2>
-					<p>  
-					</p>
-				</div>
-				<div class="photo_background2"><img src="img/wall_of_fame/34.png"></div>
-			</div>-->
 		</div>
 		
 		<?php include 'assets/footer.php'; ?>

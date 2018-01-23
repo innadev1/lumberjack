@@ -412,6 +412,21 @@ font-family: 'Lobster', cursive;
 .product_5{
 	background-image:url(../img/products/5_product.jpg);
 }
+.product_6{
+	background-image:url(../img/products/6_product.jpg);
+}
+.product_7{
+	background-image:url(../img/products/7_product.jpg);
+}
+.product_8{
+	background-image:url(../img/products/8_product.jpg);
+}
+.product_9{
+	background-image:url(../img/products/9_product.jpg);
+}
+.product_10{
+	background-image:url(../img/products/10_product.jpg);
+}
 /*from internet*/
 /*#slider-wrapper {
   width: auto;

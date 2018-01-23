@@ -14,8 +14,8 @@
 				<?php if(isset($_SESSION['country'])) { ?>
 					<?php if($_SESSION['country'] == 'ru') { ?>
 
-						<li><a href="https://www.facebook.com/pages/Lumberjack-Barbershop-SPb/2054786051423595"><img src="img/facebook.png"></a></li>
-						<!-- <li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li> -->
+						<li><a href="https://www.facebook.com/LumberjackBarbershopSPb/"><img src="img/facebook.png"></a></li>
+						 <li><a href="https://www.instagram.com/lumberjack_barbershop_spb/"><img src="img/instagram.png"></a></li> 
 						
 					<?php } ?>
 
@@ -26,7 +26,7 @@
 
 					<?php if($_SESSION['country'] == 'ee') { ?>
 						<li><a href="https://www.facebook.com/lumberjackbarbershop.estonia/"><img src="img/facebook.png"></a></li>
-						<li><a href="https://www.instagram.com/lumberjack_barbershop_/"><img src="img/instagram.png"></a></li>
+						<li><a href="https://www.facebook.com/lumberjackbarbershop.estonia/"><img src="img/instagram.png"></a></li>
 					<?php } ?>
 					<?php } else { ?>
 					

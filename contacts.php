@@ -58,7 +58,7 @@
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>k.gusarov@vinille.com</p></td>
+						<td><p>k.gusarovs@vinille.com</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
@@ -76,7 +76,7 @@
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>info@lumberjack.lv</p></td>
+						<td><p>info@lumberjack.ee</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>

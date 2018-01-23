@@ -101,25 +101,25 @@
 
 		if($_POST['chooseMail'] == "vagnera")
 		{
-			$to = 'my.worktest94@gmail.com';
+			$to = 'info@lumberjack.lv';
 			$place = 'Riharda Vagnera iela 11, Rīga, Latvija';
 		}
 
 		if($_POST['chooseMail'] == "jekaba")
 		{
-			$to = 'my.worktest94@gmail.com';
+			$to = 'info@lumberjack.lv';
 			$place = 'Jēkaba iela 24, Centra rajons, Rīga, Latvija';
 		}
 
 		if($_POST['chooseMail'] == "pronski")
 		{
-			$to = 'igaunijasjacks@gmail.com';
+			$to = 'info@lumberjack.ee';
 			$place = 'Pronksi 3, Tallin, Estonia-10124';
 		}
 
 		if($_POST['chooseMail'] == "ostrova")
 		{
-			$to = 'krievijasjacks@gmail.com';
+			$to = 'lumberbarberspb@gmail.com';
 			$place = 'Большой Казачий Переулок, 11, Санкт-Петербург';
 		}
 
@@ -359,10 +359,10 @@
 					<select name="chooseMail" class="wpcf7-select" required="required">
 						<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
 						
-						<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Rīga, Latvija</option>
-						<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'my.worktest94@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Rīga, Latvija</option>
-						<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'igaunijasjacks@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
-						<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'krievijasjacks@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'Большой Казачий Переулок, 11, Санкт-Петербург'</option>
+						<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Rīga, Latvija</option>
+						<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Rīga, Latvija</option>
+						<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
+						<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'Большой Казачий Переулок, 11, Санкт-Петербург'</option>
 					</select>
 				</span>
 			</div>

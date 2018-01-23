@@ -132,6 +132,7 @@
     $language['lv']['Lumberjack_development'] = 'Lumberjack attīstība  – spilgti momenti, nozīmīgi datumi';
     $language['lv']['our_barber2'] = 'Tirgū no: 01.06.2015 <br> Tirgus – Latvija, Igaunija, Krievija';
 
+    $language['lv']['that00'] = 'Atvērts kopš';
     $language['lv']['that1'] = 'Lielā sporta pārstāvji izvēlas Lumberjack Barbershop';
     $language['lv']['that2'] = 'Starp tiem Edgars Gauračs un Kaspars Kambala izvēlas Lumberjack Barbershop ';
     $language['lv']['that3'] = 'Pirmā piedalīšanās MOVEMBER pasākumā kopā ar hokeja klubu Dinamo Rīga ';
@@ -151,7 +152,7 @@
     $language['ru']['Lumberjack_development'] = 'Хронология развития Lumberjack Barbershop - яркие моменты по датам и годам ';
     $language['ru']['our_barber2'] = 'На рынке с: 01.06.2015 <br> Рынок – Латвия, Эстония, Россия';
 
-
+    $language['ru']['that00'] = 'Открыты с';
     $language['ru']['that1'] = 'Представители большого спорта выбирают Lumberjack Barbershop';
     $language['ru']['that2'] = 'Среди них Эдгарс Гаурачс и Каспарс Камбала тоже выбирают Lumberjack Barbershop (вот над этим предложением нужно подумать, звучит как-то коряво)';
     $language['ru']['that3'] = 'Первое участие в движении MOVEMBER совместно с хоккейным клубом Dinamo Rīga';
@@ -161,30 +162,30 @@
     $language['ru']['that6'] = 'В рамках турнира КХЛ стали официальным партнером хоккейного клуба Dinamo Rīga';
 
     $language['ru']['that7'] = 'Для подготовки к концерту группа De-Phazz выбирает Lumberjack Barbershop';
-    $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, перед концертом тоже выбирает Lumberjack Barbershop (Меня этот «тоже» напрягает, посмотрите одного ли меня, уберите если я не один так считаю)';
+    $language['ru']['that8'] = 'Павел Воля, резидент Comedy Club, выбирает Lumberjack Barbershop';
 
     $language['ru']['that9'] = 'Открытие барбершопа в Таллине';
-    $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум класса Pullman';
-    $language['ru']['that11'] = 'Совместно с гостиницей Pullman участие в мероприятии Gumball 3000, один из гостей - CeeLo Green (может написать как отдельный пункт «В рамках участия в мероприятии Gumball 3000 CeeLo Green выбирает Lumberjack Barbershop» ?)';
+    $language['ru']['that10'] = 'Открытие нового барбершопа в гостинице премиум-класса Pullman';
+    $language['ru']['that11'] = 'В сотрудничестве с гостиницей Pullman, участие в мероприятии Gumball 3000, специальный гость - CeeLo Green';
 
     // en
     $language['en']['Lumberjack_development'] = 'Chronology of the development of Lumberjack Barbershop - bright moments by dates and years ';
     $language['en']['our_barber2'] = 'Date of foundation -  01.06.2015 <br> The market - Latvia, Estonia, Russia';
 
-
-    $language['en']['that1'] = 'Representatives of a large sport choose Lumberjack Barbershop';
+    $language['en']['that00'] = 'Since';
+    $language['en']['that1'] = 'Professional sports representatives choose';
     $language['en']['that2'] = 'Among them Edgars Gaurachs and Kaspars Kambala also choose Lumberjack Barbershop';
-    $language['en']['that3'] = 'The first participation in the movement MOVEMBER together with the hockey club Dinamo Riga ';
+    $language['en']['that3'] = 'The first participation in the movement MOVEMENT together with the hockey club Dinamo Riga ';
 
     $language['en']['that4'] = 'Opening of the second barbershop in Riga';
-    $language['en']['that5'] = 'More and more Latvian sportsmen and celebrities choose Lumberjack Barbershop';
-    $language['en']['that6'] = 'As part of the tournament, the KHL became the official partner of the hockey club Dinamo Riga';
+    $language['en']['that5'] = 'More and more Latvian athletes and celebrities choose Lumberjack Barbershop';
+    $language['en']['that6'] = 'As a part of KHL tournament, Lumberjack barbershop became the official parter of the Dinamo Riga hockey club';
 
-    $language['en']['that7'] = ' To prepare for the concert, De-Phazz chooses Lumberjack Barbershop';
-    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club, before the concert, too, chooses Lumberjack Barbershop';
+    $language['en']['that7'] = 'De-Phazz chooses Lumberjack Barbershop to prepare for the concert';
+    $language['en']['that8'] = 'Pavel Volya, the resident of the Comedy Club Russia, chooses Lumberjack Barbershop too';
     $language['en']['that9'] = 'Opening of a barbershop in Tallinn';
-    $language['en']['that10'] = 'Opening of a new barbershop in a premium hotel Pullman';
-    $language['en']['that11'] = 'Together with the hotel Pullman participated in the event Gumball 3000, one of the guests - CeeLo Green';
+    $language['en']['that10'] = 'Opening of a new barbershop in a premium Pullman hotel';
+    $language['en']['that11'] = 'In cooperation with the Pullman hotel participated in the Gumball 3000 event. Special guest - CeeLo Green';
 
 	$language['en']['that12'] = 'Lumberjack barbershop branch opening in St. Petersburg';
 	$language['lv']['that12'] = 'Barbershop atvēršana St. Peterburgā';
@@ -246,17 +247,17 @@
 
     // LV
     $language['lv']['adr'] = "Adrese:";
-    $language['lv']['em'] = "Epasts:";
+    $language['lv']['em'] = "E-pasts:";
     $language['lv']['te'] = "Tel:";
-    $language['lv']['op'] = "Atvērts";
+    $language['lv']['op'] = "Darba laiks";
     $language['lv']['mon'] = "Pirm. - Sesd.:";
     $language['lv']['sun'] = "Svētdiena:";
 
     // EN
     $language['en']['adr'] = "Adress:";
-    $language['en']['em'] = "Email:";
+    $language['en']['em'] = "E-mail:";
     $language['en']['te'] = "Tel.:";
-    $language['en']['op'] = "Open";
+    $language['en']['op'] = "Working time";
     $language['en']['mon'] = "Mon.- Sat.:";
     $language['en']['sun'] = "Sunday:";
 
@@ -264,7 +265,7 @@
     $language['ru']['adr'] = "Адрес:";
     $language['ru']['em'] = "Электронная почта:";
     $language['ru']['te'] = "Тел.:";
-    $language['ru']['op'] = "Открыт";
+    $language['ru']['op'] = "Время работы";
     $language['ru']['mon'] = "Пн.-Сб:";
     $language['ru']['sun'] = "Воскресенье:";
 

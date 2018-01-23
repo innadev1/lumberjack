@@ -15,6 +15,7 @@
 	right:0;
 }
 .partneri{
+	flex-wrap: wrap;
     display: -webkit-flex;
     display: flex;
     width: 60%;

@@ -255,28 +255,28 @@
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+								<div class="product product_6">
+									<h4>Matu veidošanas pomāde <br> “Reuzel Red”, 113gr</h4>
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+								<div class="product product_7">
+									<h4>Pomāde matu veidošanai “Corleone Sticky Stuff”, 100g</h4>
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+								<div class="product product_8">
+									<h4>Matu veidošanas ziede “Reuzel Green”, 113gr</h4>
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+								<div class="product product_9">
+									<h4>Matu veidošanas pomāde “Reuzel Blue”, 113gr</h4>
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+								<div class="product product_10">
+									<h4>MÜHLE skūšanās komplekts</h4>
 									<p>20,00 €</p>
 								</div>
 
@@ -408,12 +408,38 @@
 				});
 </script>
 
-				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-					<div id="wrapper"> 
-					<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1643d0d20257552c9f1cd97ef73be4ef.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+				<?php if(isset($_SESSION['country'])) { ?>
+					<?php if($_SESSION['country'] == 'ru') { ?>
+					
+						<div id="wrapper"> 
+							<!-- LightWidget WIDGET -->
+							<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9207b04cd27d5d1e95073f2e1199bf81.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						</div>
 
-					</div>
-                <?php } ?>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'lv') { ?>
+						<div id="wrapper"> 
+							<!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/1643d0d20257552c9f1cd97ef73be4ef.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						</div>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'ee') { ?>
+					
+						<div id="wrapper"> 
+							<!-- LightWidget WIDGET igaunijas -->
+							<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/2470e3c8ecb75db4a6fccc07b42b99d7.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						</div>
+
+					<?php } ?>
+					
+					<?php } else { ?>
+						<div id="wrapper"> 
+							<!-- LightWidget WIDGET -->
+							<script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9207b04cd27d5d1e95073f2e1199bf81.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+						</div>
+						}
+				<?php } ?>
 			</div>
 			
 			<?php include 'assets/footer.php'; ?>

@@ -18,14 +18,17 @@
 				<h1><?php echo $language[$lang]['our_story'] ?></h1>
 			</div>
 		</div>
-		
-		
-		<div id="main_info" style="background-image: url(img/bc2.png)">
+
+		<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
+    				<div id="main_info" style="background-image: url(img/bc2.png)">
+        <?php }else{ ?>
+					<div id="main_info" style="background-image: url(img/for-russia.png)">
+		<?php } ?>
 			<div class="line-orange"><img src="img/ikonas/1.svg"></div>
 			
 				<div class="div" id="ph0">
 					<div></div>
-					<p>Open since<br> 01.06.2015</p>
+					<p><?php echo $language[$lang]['that00'] ?><br> 01.06.2015</p>
 				</div>
 				<div class="div" id="ph1">
 					<div></div>

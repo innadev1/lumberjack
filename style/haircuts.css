@@ -37,7 +37,7 @@ button{
 	justify-content: space-evenly;
 }
 #content{
-    background-image: url(../img/background_haircuts.jpg);
+    background-image: url(../img/haircut-1002.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -125,6 +125,7 @@ button{
 	height: auto;
 	padding-top: 10vw;
 	padding-bottom: 10vw;
+	height: 620vw;
 }
 .flex, .wrap, .wrap1, .wrap2, .wrap3{
 	flex-direction: column;

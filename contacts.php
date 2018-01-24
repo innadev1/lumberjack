@@ -3,7 +3,7 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/contacts.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>contacts</title>
+		<title>Lumberjack Barbershop</title>
 		
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
@@ -15,7 +15,7 @@
 		<?php include 'assets/header.php'; ?>
 		
 		<div id="map_latvia">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2174.7135164737665!2d24.132421451849957!3d56.9708396808029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfb3d5d42e77%3A0xf59aeb68f1505ec7!2zS3JpxaFqxIHFhmEgVmFsZGVtxIFyYSBpZWxhIDEwMCwgVmlkemVtZXMgcHJpZWvFoXBpbHPEk3RhLCBSxKtnYSwgTFYtMTAxMw!5e0!3m2!1slv!2slv!4v1509022499820" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.014299338182!2d24.109162451849254!3d56.948556280796254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecfd6ae6a8ee7%3A0x5201dc34e6cc9b53!2sRiharda+V%C4%81gnera+iela+11%2C+Centra+rajons%2C+R%C4%ABga%2C+LV-1050!5e0!3m2!1slv!2slv!4v1509022568281" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="map_latvia_2">
@@ -36,7 +36,7 @@
 				<table align="center">
 					<tr>
 						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Krišjāņa Valdemāra iela 100,<br>Rīga, Latvija, LV-1013</p></td>
+						<td><p>Riharda Vāgnera iela 11,<br> Rīga, Latvija, LV-1050</p></td>
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>

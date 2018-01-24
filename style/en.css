@@ -1,0 +1,9 @@
+@media screen and (max-width: 900px){
+.main-wall{
+	height: 1150vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #1f0c06;
+	background-image: url(../img/wall_of_fame-en-mobile.jpg) !important;
+}	
+}

@@ -48,6 +48,12 @@
 	padding: 1.2vw;
     width: 1.5%;
 }
+.main-wall{
+	height: 480vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #1f0c06;
+}
 #main{
 	background-color: #1f0c06;
 }

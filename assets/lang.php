@@ -31,7 +31,7 @@
         $_SESSION['lang'] = $lang;
     }
 
-    $SiteUrl = 'http://localhost/www/testlumberjack.ml/';
+    $SiteUrl = 'http://lumberjackbarbershop.com';
 
 	// GIFT CARD
 
@@ -39,7 +39,7 @@
 	$language['en']['gift_card'] = 'Buy card';
 	$language['ru']['gift_card'] = 'Купить карту';	
 	
-	$language['lv']['gift_franc'] = 'Nopirkt francizi';
+	$language['lv']['gift_franc'] = 'Nopirkt franšīzi';
 	$language['en']['gift_franc'] = 'Buy franchise';
 	$language['ru']['gift_franc'] = 'Купить франшизу';
 
@@ -512,4 +512,100 @@
     $language['lv']['partners'] = 'PARTNERI';
     $language['en']['partners'] = 'PARTNERS';
     $language['ru']['partners'] = 'ПАРТНЕРЫ';
+	
+	// WALL OF FAME
+	$language['lv']['wall0'] = 'Zaurs Džavadovs';
+    $language['en']['wall0'] = 'Zaur Dzhavadov';
+    $language['ru']['wall0'] = 'Заур Джавадов';
+	$language['lv']['wall0-1'] = 'Profesionālais cīnītājs';
+    $language['en']['wall0-1'] = 'Professional fighter';
+    $language['ru']['wall0-1'] = 'Профессиональный боец';
+	
+	$language['lv']['wall1'] = 'Miks Indrašis';
+    $language['en']['wall1'] = 'Miks Indrašis';
+    $language['ru']['wall1'] = 'Микс Индрашис';
+	$language['lv']['wall1-1'] = 'Latvijas hokeists';
+    $language['en']['wall1-1'] = 'Latvian hockey player';
+    $language['ru']['wall1-1'] = 'Латвийский хоккеист';
+	
+	$language['lv']['wall2'] = 'Kaspars Gorkšs';
+    $language['en']['wall2'] = 'Kaspars Gorkšs';
+    $language['ru']['wall2'] = 'Каспарс Горкшс';
+	$language['lv']['wall2-1'] = 'Latvija profesionālais futbolists';
+    $language['en']['wall2-1'] = 'Latvian professional footballer';
+    $language['ru']['wall2-1'] = 'Латвийский профессиональный футболист';
+	
+	$language['lv']['wall3'] = 'Aivars Šmaukstelis';
+    $language['en']['wall3'] = 'Aivars Šmaukstelis';
+    $language['ru']['wall3'] = 'Аиварс Шмаукстелис';
+	$language['lv']['wall3-1'] = 'Spēkavīrs';
+    $language['en']['wall3-1'] = 'Strongman';
+    $language['ru']['wall3-1'] = 'Тяжелоатлет';
+	
+	$language['lv']['wall4'] = 'Pāvels Voļa';
+    $language['en']['wall4'] = 'Pavel Volya';
+    $language['ru']['wall4'] = 'Павел Воля';
+	$language['lv']['wall4-1'] = 'Krievijas aktieris, komiķis un kinoproducents';
+    $language['en']['wall4-1'] = 'Russian actor, comedian and movie producer';
+    $language['ru']['wall4-1'] = 'Русский актер, комик и кинопродюссер';
+	
+	$language['lv']['wall5'] = 'Cee Lo Green/Gnarls Barkley';
+    $language['en']['wall5'] = 'Cee Lo Green/Gnarls Barkley';
+    $language['ru']['wall5'] = 'Cee Lo Green/Gnarls Barkley';
+	$language['lv']['wall5-1'] = 'Amerikāņu dziedātājs, komponists un producents';
+    $language['en']['wall5-1'] = 'American singer, songwriter and producer';
+    $language['ru']['wall5-1'] = 'американский певец, автор песен и продюсер';
+	
+	$language['lv']['wall6'] = 'Karls Frīrsons';
+    $language['en']['wall6'] = 'Karl Frierson';
+    $language['ru']['wall6'] = 'Карл Фриерсон';
+	$language['lv']['wall6-1'] = 'Grupas "De-Phazz" vokalists';
+    $language['en']['wall6-1'] = '"De-Phazz" vocalist';
+    $language['ru']['wall6-1'] = 'вокалист группы "De-Phazz"';
+	
+	$language['lv']['wall7'] = 'Piters Freudenthalers';
+    $language['en']['wall7'] = 'Peter Freudenthaler';
+    $language['ru']['wall7'] = 'Петер Фройденталер';
+	$language['lv']['wall7-1'] = '“Fools Garden” vokalists';
+    $language['en']['wall7-1'] = '“Fools Garden” vocalist';
+    $language['ru']['wall7-1'] = 'вокалист группы "Fools Garden"';
+	
+	$language['lv']['wall8'] = 'Edgars Masaļskis';
+    $language['en']['wall8'] = 'Edgars Masaļskis';
+    $language['ru']['wall8'] = 'Эдгарс Масальскис';
+	$language['lv']['wall8-1'] = 'Latviešu hokeists, vārtsargs';
+    $language['en']['wall8-1'] = 'Latvian hockey player, goalkeeper';
+    $language['ru']['wall8-1'] = 'Латвийский хоккеист, вратарь';
+	
+	$language['lv']['wall9'] = 'Roberto Meloni';
+    $language['en']['wall9'] = 'Roberto Meloni';
+    $language['ru']['wall9'] = 'Роберто Мелони';
+	$language['lv']['wall9-1'] = 'dziedatājs';
+    $language['en']['wall9-1'] = 'singer';
+    $language['ru']['wall9-1'] = 'певец';
+	
+	$language['lv']['wall10'] = 'Armands Simsons';
+    $language['en']['wall10'] = 'Armands Simsons';
+    $language['ru']['wall10'] = 'Армандс Симсонс';
+	$language['lv']['wall10-1'] = 'TV producents, pasākumu un raidījumu vadītājs';
+    $language['en']['wall10-1'] = 'tv producer, event manager';
+    $language['ru']['wall10-1'] = 'ТВ продюсер, ведущий';
+	
+	$language['lv']['wall11'] = 'Afrojack';
+    $language['en']['wall11'] = 'Afrojack';
+    $language['ru']['wall11'] = 'Afrojack';
+	$language['lv']['wall11-1'] = 'DJ un ierakstu producents';
+    $language['en']['wall11-1'] = 'DJ and record producer';
+    $language['ru']['wall11-1'] = 'DJ и музыкальный продюссер';
+	
+	//WALL OF FAME NEW
+	$language['lv']['wall-of-fame'] = 'url(img/wall-of-fame-lv.jpg)';
+    $language['en']['wall-of-fame'] = 'url(img/wall-of-fame-en.jpg)';
+    $language['ru']['wall-of-fame'] = 'url(img/wall-of-fame-ru.jpg)';
+	
+	//GIFT CARD
+	$language['lv']['card'] = 'url(img/gift_card.jpg);';
+    $language['en']['card'] = 'url(img/gift_card-en.jpg);';
+    $language['ru']['card'] = 'url(img/gift_card-ru.jpg);';
+	
 ?>

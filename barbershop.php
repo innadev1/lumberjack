@@ -145,7 +145,7 @@
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
-		<!-- <title>our barbershops</title> -->
+		<title>Lumberjack Barbershop</title>
 
 		<script src="js/jquery-3.2.1.js"></script>
 		<script src="js/jquery-3.2.1.min.js"></script>
@@ -860,7 +860,7 @@
 
 				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
 
-					<div class="countries"><img src="img/countries/estonia.jpg" class="gal1">
+					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal1">
 				<?php } else{ ?>
 
 					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal1">

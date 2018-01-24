@@ -4,7 +4,7 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">	
 		<link rel="stylesheet" type="text/css" href="style/index.css">
 		<link rel="stylesheet" type="text/css" href="style/form.css">
-        <title>lumberjack</title>
+        <title>Lumberjack Barbershop</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.CarouselLifeExample.js"></script>
@@ -209,10 +209,10 @@
 
 				</div>
 
-				<div class="photo photo_2">
+				<div class="photo photo_2" style="background-image:<?php echo $language[$lang]['card'] ?>">
 				
-					<a href="http://testlumberjack.ml/shop/lv/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_card'] ?></button></a>
-				
+					<!--<a href="http://lumberjackbarbershop.com/shop/en_US/product-category/gift-cards/"><button class="read_more_card"><?php echo $language[$lang]['gift_card'] ?></button></a>
+					-->
 				</div>
 				
 
@@ -406,7 +406,7 @@
 				$(function(){
 					$("#container").clickCarousel({margin: 5});	
 				});
-</script>
+				</script>
 
 				<?php if(isset($_SESSION['country'])) { ?>
 					<?php if($_SESSION['country'] == 'ru') { ?>

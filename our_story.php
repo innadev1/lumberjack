@@ -3,7 +3,7 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/our_story.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>our story</title>
+		<title>Lumberjack Barbershop</title>
 		
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -20,7 +20,7 @@
 		</div>
 
 		<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-    				<div id="main_info" style="background-image: url(img/bc2.png)">
+    				<div id="main_info" style="background-image: url(img/our-story.jpg)">
         <?php }else{ ?>
 					<div id="main_info" style="background-image: url(img/for-russia.png)">
 		<?php } ?>

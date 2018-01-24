@@ -3,7 +3,7 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/one_story.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
-		<title>one story</title>
+		<title>Lumberjack Barbershop</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	</head>

@@ -285,7 +285,7 @@ body{
 }
 #main_info {
     height: 580vw;
-    background-image: url(../img/bildes.png);
+    background-image: url(../img/our-story_mob.jpg) !important;
 }
 .div {
     width: 80%;
@@ -310,9 +310,6 @@ body{
 }
 #ph0{
 	background-size: 40% !important;
-}
-#ph10{
-	background-size: 52% !important;
 }
 .div div {
     height: 26vw;

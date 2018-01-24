@@ -236,7 +236,7 @@ font-family: 'Lobster', cursive;
 }
 .photo {
 	width: 50%;
-    height: 22vw;
+    height: 21.5vw;
     background-size: 100%;
     background-repeat: no-repeat;
     transition: all ease 0.3s;
@@ -255,9 +255,9 @@ font-family: 'Lobster', cursive;
 .photo_1{
 	background-image:url(../img/photo_1.jpg);
 }
-.photo_2{
+/*.photo_2{
 	background-image:url(../img/gift_card.jpg);
-}
+}*/
 .photo_3{
 	background-image:url(../img/1.jpg);
 }
@@ -756,7 +756,7 @@ h4 {
     font-weight: 600;
     padding-top: 22vw;
 }
-.product_2, .product_3, .product_4, .product_5{display:none;}
+.product_2, .product_3, .product_4, .product_5, .product_6, .product_7, .product_8, .product_9, .product_10, .product_11{display:none;}
 .product{margin-bottom: 10vw;}
 .swiping_buttons {
     display: block;

@@ -74,7 +74,7 @@
         </ul>
     </div>
 	<div class="information">
-			<p><?php echo $language['ru']['franch.'] ?></p>
+			<p><?php echo $language[$lang]['franch.'] ?></p>
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
@@ -109,7 +109,7 @@
 <div id="navigation">
 	<div class="navigation">
 			<ul>
-				<li><a><img src="img/radio.png" class="radio"></a></li>
+				<li><a href="https://open.spotify.com/user/aleksejkozlov/playlist/3p4Ww5eWafB4hEaligbA0X"><img src="img/radio.png" class="radio"></a></li>
 
 				<li class="link"><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 

@@ -146,7 +146,7 @@
 
 <script type="text/javascript" src="https://w10436.yclients.com/widgetJS"></script>
 
-<div  class="tbForm_CallMe read_more" style="position:fixed; right: 2vw; bottom: 1.5vw; zoom:2.5" >
+<div  class="tbForm_CallMe read_more" style="position:fixed; right: 5%; bottom: 8%; zoom:2.5; -moz-transform: scale(2.5);" >
    <div class="tbForm_shadow"></div>
    <div class="tbForm_fone"><?php echo $language[$lang]['click'] ?></div>
 </div>

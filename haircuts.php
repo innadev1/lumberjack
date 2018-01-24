@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style/haircuts.css">
 <link rel="stylesheet" type="text/css" href="style/style.css">
 <link rel="stylesheet" type="text/css" href="style/form.css">
-<title>haircuts</title>
+<title>Lumberjack Barbershop</title>
 
 <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
 
@@ -16,7 +16,7 @@
 <?php include 'assets/header.php'; ?>
 
 	<div id="content">
-
+<!--
 		<div id="main">
 			<div class="wrap flex">
 				<div class="p1"><button id="b1" class="button" value=0 haircutsn = "name1" >Hairstyle name</button></div>
@@ -34,7 +34,7 @@
 				<div class="p7"><button id="b7" class="button" value=6 haircutsn = "name7" >Hairstyle name</button></div>
 			</div>
 		</div>
-
+-->
 	</div>
 
 <?php include 'assets/footer.php'; ?>

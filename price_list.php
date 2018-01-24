@@ -154,7 +154,7 @@
 		<link rel="stylesheet" type="text/css" href="style/form.css">
 
 		<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
-		<title>price list</title>
+		<title>Lumberjack Barbershop</title>
 		
 		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 

@@ -1,6 +1,66 @@
+#banner{
+    height: 35vw;
+	background-image:  url("../img/partners.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	background-position-y: 82%;
+	background-color: #1f0c06;
+}
+.caption{
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/frame2.png);
+    height: 8vw;
+    width: auto;
+    align-items: center;
+}
+.caption h1{
+	color: white;
+    font-size: 3.4vw;
+    margin: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.8;
+    letter-spacing: 0.6vw;
+    text-align: center;
+    padding-bottom: 1vw;
+	text-shadow: 3px 1px 5px black;
+	padding-left: 2.5vw;
+    padding-right: 2vw;
+	padding-top: 3vw;
+}
+
+@media screen and (max-width: 1400px){
+#banner {
+    height: 30vw;
+}	
+}
+@media screen and (max-width: 900px){
+#banner {
+    height: 140vw;
+    background-image: url(../img/partners.jpg);
+    background-position: 70%;
+	display: none;
+}
+}
+
+
 #main{
 	background-color: #1f0c06;
-    height: 40vw;
+    height: 30vw;
 }
 .bckg{
 	position: absolute;
@@ -10,16 +70,17 @@
 }
 .bg1{
 	left:0;
+	top: 35vw
 }
 .bg2{
 	right:0;
+	top: 35vw
 }
 .partneri{
-	flex-wrap: wrap;
     display: -webkit-flex;
     display: flex;
     width: 60%;
-	height: 35vw;
+	height: 25vw;
     margin: auto;
 	text-align: center;
     justify-content: center;
@@ -48,10 +109,12 @@
 	padding-bottom: 10vw;
 }
 .partneri {
+	flex-wrap: wrap;
     width: 80%;
     margin: auto;
     flex-direction: column;
 	height: 200vw;
+	z-index: 1;
 }
 .partneri img {
     height: unset !important;
@@ -64,5 +127,8 @@
 .partneri a{
 	cursor: pointer;
 	width: 100%
+}
+.hover:hover{
+	zoom: 1;
 }
 }

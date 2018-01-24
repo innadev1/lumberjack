@@ -32,7 +32,7 @@
 					<?php if($_SESSION['country'] == 'lv') { ?>
 						<div class="partneri" style="width:88%">
 							<div class="hover"><a href="http://www.stanbev.lv/"><img src="img/pabst-blue-ribbon.png"></a></div>
-							<div class="hover"><a href="http://www.stanbev.lv/"><img style="height:10vw" src="img/jameson-logo.png"></a></div>
+							<div class="hover"><a href="https://www.facebook.com/JamesonLatvija/"><img style="height:10vw" src="img/jameson-logo.png"></a></div>
 							<div class="hover"><a href="https://www.facebook.com/dinamorigaofficial/?hc_ref=ARTXQNzfJJtfnr8ZdSehG3KZhk6vXuYKw_IzGRp16M12A_pCMEF1Jg3BSkYn2AlO8-Y"><img src="img/dinamo.png"></a></div>
 							<div class="hover"><a href="http://pullmanriga.lv/lv/"><img style="height:3vw" src="img/pullman.png"></a></div>
 						</div>

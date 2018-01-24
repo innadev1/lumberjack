@@ -106,10 +106,28 @@
 			});
 		</script>
 
+		<script>
+				$(document).ready(function () {
+				$(".popup").hide();
+				$(".openpop").click(function (e) {
+					e.preventDefault();
+					$("iframe").attr("src", $(this).attr('href'));
+					$(".links").fadeOut('slow');
+					$(".popup").fadeIn('slow');
+				});
+
+				$(".close").click(function () {
+					$(this).parent().fadeOut("slow");
+					$(".links").fadeIn("slow");
+				});
+			});
+
+		</script>
+
 <div id="navigation">
 	<div class="navigation">
 			<ul>
-				<li><a href="https://open.spotify.com/user/aleksejkozlov/playlist/3p4Ww5eWafB4hEaligbA0X"><img src="img/radio.png" class="radio"></a></li>
+				<li><a href="https://open.spotify.com/user/aleksejkozlov/playlist/3p4Ww5eWafB4hEaligbA0X" target="_blank"><img src="img/radio.png" class="radio"></a></li>  
 
 				<li class="link"><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 

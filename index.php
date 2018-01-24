@@ -230,53 +230,53 @@
 							<div class="product_slider">
 
 								<div class="product product_1" >
-									<h4>Uppercut Deluxe Pomade</h4>
+									<h4>Eļļa bārdai “Suavecito” Saffron, 30ml</h4>
 									<p>20,00 €</p>
 								</div>
 
 								<div class="product product_2">
-									<h4>Mr. Bear Beard Balm</h4>
+									<h4>Matu veidošanas pomāde “Reuzel Red”, 113gr</h4>
 
 									<p>20,00 €</p>
 								</div>
 
 								<div class="product product_3">
-									<h4>Corleone</h4>
+									<h4>Matu Veidošanas Pomāde “Suavecito Original”, 113g</h4>
 									<p>20,00 €</p>
 								</div>
 
 								<div class="product product_4">
-									<h4>Reuzel Blue W/B<br> Strong Hold Pig</h4>
-									<p>20,00 €</p>
+									<h4>Mr Bear Lip Balm Mint 15ml</h4>
+									<p>8,00 €</p>
 								</div>
 
 								<div class="product product_5">
-									<h4>Uppercut Featherweight</h4>
+									<h4>HJM shaving brush</h4>
 									<p>20,00 €</p>
 								</div>
 
 								<div class="product product_6">
-									<h4>Matu veidošanas pomāde <br> “Reuzel Red”, 113gr</h4>
+									<h4>Mr.Bear Beard Brew Citrus, 30ml</h4>
 									<p>20,00 €</p>
 								</div>
 
 								<div class="product product_7">
+									<h4>Muhle shaving set chrome metal S 091 M89 SR</h4>
+									<p>145.00 €</p>
+								</div>
+
+								<div class="product product_8">
 									<h4>Pomāde matu veidošanai “Corleone Sticky Stuff”, 100g</h4>
 									<p>20,00 €</p>
 								</div>
 
-								<div class="product product_8">
-									<h4>Matu veidošanas ziede “Reuzel Green”, 113gr</h4>
-									<p>20,00 €</p>
-								</div>
-
 								<div class="product product_9">
-									<h4>Matu veidošanas pomāde “Reuzel Blue”, 113gr</h4>
-									<p>20,00 €</p>
+									<h4>Vīriešu kabatas ķemme, “KENT A OT”, 113mm</h4>
+									<p>6,00 €</p>
 								</div>
 
 								<div class="product product_10">
-									<h4>MÜHLE skūšanās komplekts</h4>
+									<h4>“Uppercut” Matt Clay, 60g</h4>
 									<p>20,00 €</p>
 								</div>
 

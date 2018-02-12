@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bpd\n"
+"POT-Creation-Date: 2017-05-16 11:53+0530\n"
+"PO-Revision-Date: 2017-05-16 12:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: hem\n"
+"Language: lv_LV\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: classes/includes\n"
+"X-Poedit-SearchPath-2: classes\n"
+
+#: classes/class-wc-gateway-BPD.php:28 classes/includes/settings-bpd.php:18
+msgid "Pay with VISA/MasterCard card"
+msgstr "Maksāt ar VISA/MasterCard karti"
+
+#: classes/class-wc-gateway-BPD.php:29
+#, php-format
+msgid ""
+"Bilderlings Pay (Direct Post) plugin does not have additional dependencies. "
+"Check the %ssystem status%s page to check basic requirements and system "
+"health."
+msgstr ""
+"Bilderlings Pay (tiešo pastu) spraudnis nav papildu atkarības. Pārbaudīt %s "
+"lapu %ssystem statuss pārbaudīt pamata prasībām un veselības sistēmu."
+
+#: classes/class-wc-gateway-BPD.php:36
+msgid "Pay with card"
+msgstr "Maksāt ar karti"
+
+#: classes/class-wc-gateway-BPD.php:233
+msgid ""
+"An error occured while processing the order, if the problem persist please "
+"contact us."
+msgstr ""
+"Radās kļūda, apstrādājot pasūtījumu, ja problēma saglabājas, lūdzu, "
+"sazinieties ar mums."
+
+#: classes/class-wc-gateway-BPD.php:339
+msgid "You will be redirected to bilderlingspay shortly."
+msgstr "Tiksit novirzīts uz bilderlingspay tuvākajā laikā."
+
+#: classes/class-wc-gateway-BPD.php:341
+msgid "Pay with Bilderlings Pay (Direct Post)"
+msgstr "Maksāt ar Bilderlings atalgojumu (tiešo pastu)"
+
+#: classes/class-wc-gateway-BPD.php:342
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: classes/class-wc-gateway-BPD.php:401 classes/class-wc-gateway-BPD.php:530
+msgid "User has correctly returned from bilderlingspay website"
+msgstr "Lietotājs ir pareizi atgriezies no bilderlingspay mājas lapa"
+
+#: classes/class-wc-gateway-BPD.php:403 classes/class-wc-gateway-BPD.php:533
+#, php-format
+msgid "Order has successfully been paid. Transaction id: %s"
+msgstr "Pasūtījums veiksmīgi apmaksāts. Darbības id: %s"
+
+#: classes/class-wc-gateway-BPD.php:418 classes/class-wc-gateway-BPD.php:538
+#, php-format
+msgid "Order Failed for order number %s, order id: %s"
+msgstr "Neizdevās rīkojuma kārtas numurs %s, pasūtījuma id: %s"
+
+#: classes/class-wc-gateway-BPD.php:431
+#, php-format
+msgid "Order has failed due to bad signature. Transaction id: %s"
+msgstr "Pasūtījums nav saistīts ar sliktu parakstu. Darījuma ID:% s"
+
+#: classes/class-wc-gateway-BPD.php:442
+#, php-format
+msgid "Order cancelled for order id: %s"
+msgstr "Pasūtījums atcelts pasūtījuma id:% s"
+
+#: classes/class-wc-gateway-BPD.php:469
+msgid "Order failed due to bad signature!."
+msgstr "Pasūtījums nav saistīts ar sliktu parakstu. Darījuma ID:% s"
+
+#: classes/class-wc-gateway-BPD.php:481
+msgid "Order failed!."
+msgstr "Pasūtījums neizdevās !."
+
+#: classes/class-wc-gateway-BPD.php:545
+#, php-format
+msgid "Bad Signature for order number %s, order id: %s"
+msgstr "Bad Paraksts kārtas numuru% s, pasūtījuma id:% s"
+
+#: classes/class-wc-gateway-BPD.php:552
+#, php-format
+msgid "Order cancelled for order number %s, order id: %s"
+msgstr "Pasūtījums atcelts pasūtījuma numuru% s, pasūtījuma id:% s"
+
+#: classes/includes/settings-bpd.php:9
+msgid "Enable/Disable"
+msgstr "lespējot atspējot"
+
+#: classes/includes/settings-bpd.php:11
+msgid "Enable Bilderlings Pay (Direct Post)"
+msgstr "Iespējot Bilderlings Pay (tiešā Post)"
+
+#: classes/includes/settings-bpd.php:15
+msgid "Title"
+msgstr "virsraksts"
+
+#: classes/includes/settings-bpd.php:17
+msgid "This controls the title which the user sees during checkout."
+msgstr "Tas kontrolē titulu kuru lietotājs redz norēķināšanās laikā."
+
+#: classes/includes/settings-bpd.php:22
+msgid "Description"
+msgstr "apraksts"
+
+#: classes/includes/settings-bpd.php:25
+msgid "This controls the description which the user sees during checkout."
+msgstr "Tas kontrolē aprakstu, ko lietotājs redz norēķināšanās laikā."
+
+#: classes/includes/settings-bpd.php:26
+msgid "Bilderlings Pay"
+msgstr "Bilderlings Pay"
+
+#: classes/includes/settings-bpd.php:29
+msgid "Merchant contact e-mail"
+msgstr "Merchant kontaktpersonas e-pasts"
+
+#: classes/includes/settings-bpd.php:31
+msgid "Please enter your customer support email address"
+msgstr "Ievadiet savu klientu atbalsta e-pasta adresi"
+
+#: classes/includes/settings-bpd.php:38
+msgid "Debug Log"
+msgstr "Atkļūdošanas Log"
+
+#: classes/includes/settings-bpd.php:40
+msgid "Enable logging"
+msgstr "Iespējot reģistrēšanu"
+
+#: classes/includes/settings-bpd.php:42
+#, php-format
+msgid "Log Bilderlings Pay (Direct Post) events inside <code>%s</code>"
+msgstr "Log Bilderlings Pay (tiešā Post) notikumi iekšā <code>% s </ code>"
+
+#: classes/includes/settings-bpd.php:45
+msgid "Test mode"
+msgstr "Testa režīms"
+
+#: classes/includes/settings-bpd.php:47
+msgid "Test mode for Bilderlings Pay (Direct Post)"
+msgstr "Testa režīms Bilderlings Pay (Direct Post)"
+
+#: classes/includes/settings-bpd.php:52
+msgid "Advanced options"
+msgstr "Pielāgota opcija"
+
+#: classes/includes/settings-bpd.php:58
+msgid "Merchant ID"
+msgstr "Tirgotāja ID"
+
+#: classes/includes/settings-bpd.php:60
+msgid "Merchant ID for Bilderlings Pay (Direct Post)"
+msgstr "Tirgotāja ID Bilderlings Pay (tiešā Post)"
+
+#: classes/includes/settings-bpd.php:66
+msgid "Merchant Signature"
+msgstr "Tirgotāja paraksts par Bilderlings Pay (Direct Post)"
+
+#: classes/includes/settings-bpd.php:68
+msgid "Merchant Signature for Bilderlings Pay (Direct Post)"
+msgstr "Tirgotāja paraksts par Bilderlings Pay (Direct Post)"

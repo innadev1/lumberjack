@@ -10,8 +10,53 @@
 		<ul>
 			<li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
-			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
-			<li class="border"></li>
+
+			<?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru' && $lang == 'ru') { ?>
+        			<li><a href="<?php echo $language[$lang]['franchise_ru_rub'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
+					<li class="border"></li>
+                <?php }elseif($_SESSION['country'] == 'ru' && $lang == 'en'){ ?>
+					<li><a href="<?php echo $language[$lang]['franchise_en'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
+					<li class="border"></li>
+				<?php }else{
+
+				} ?>
+
+                <?php if($_SESSION['country'] == 'lv') { ?>
+					<li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
+					<li class="border"></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
+					<li class="border"></li>
+                <?php } ?>
+            <?php } else { ?>
+                	<li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
+					<li class="border"></li>
+            <?php } ?>
+
+
+			<?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru') { ?>
+        			<li><a href="contacts-ru.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'lv') { ?>
+					<li><a href="contacts-lv.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="contacts-ee.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+            <?php } else { ?>
+                	<li><a href="contacts-lv.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+            <?php } ?>
+			
 			<li><a href="lumberjackbarbershop.com/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>
 			<li class="border"></li>
 
@@ -61,16 +106,32 @@
 			<?php } ?>
 
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
-			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+			<?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru') { ?>
+        			<li><a href="contacts-ru.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'lv') { ?>
+                    <li><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="contacts-ee.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
+            <?php } else { ?>
+                <li><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+            <?php } ?>
         </ul>
     </div>
 	<div class="information">
-			<p><?php echo $language['ru']['franch.'] ?></p>
+			<p><?php echo $language[$lang]['franch.'] ?></p>
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
 			<li><a href="#"><img src="img/bag_brown.png" width="20px" style="padding-right:5px; padding-left:5px"></a></li>
 			<li class="border"></li>
+
 			<li style="padding-left:5px"><a href="?lang=lv">LV</a></li>
 			<li><a href="?lang=en">EN</a></li>
 			<li><a href="?lang=ru">RU</a></li>
@@ -124,8 +185,31 @@
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 
-				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+				
+
+				<?php if(isset($_SESSION['country'])) { ?>
+						<?php if($_SESSION['country'] == 'ru') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-ru.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+						<?php } ?>
+
+						<?php if($_SESSION['country'] == 'lv') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+						<?php } ?>
+
+						<?php if($_SESSION['country'] == 'ee') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-ee.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+						<?php } ?>
+
+					<?php } else { ?>
+						<li><a><img src="img/vector.png"></a></li>
+						<li class="link"><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+				<?php } ?>
 			</ul>
 	</div>
 </div>

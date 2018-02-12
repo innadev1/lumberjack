@@ -60,7 +60,7 @@
 
 #main{
 	background-color: #1f0c06;
-    height: 30vw;
+    height: fit-content;
 }
 .bckg{
 	position: absolute;
@@ -80,23 +80,28 @@
     display: -webkit-flex;
     display: flex;
     width: 60%;
-	height: 25vw;
+    height: fit-content;
     margin: auto;
-	text-align: center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-	position: relative;
+    position: relative;
     z-index: 100;
+    padding: 5vw 0vw 10vw 0vw;
+	flex-wrap: wrap;
 }
 .partneri img{
 	height: 15vw;
 }
 .partneri div{
-	width:33.333%;
+    width: 25%;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .partneri a{
 	cursor: pointer;
-	width: 33.333%
 }
 .hover:hover{
 	zoom: 1.2;
@@ -104,7 +109,7 @@
 @media screen and (max-width: 900px){
 .bckg{display:none;}	
 #main {
-    height: 200vw;
+    height: fit-content;
 	padding-top: 10vw;
 	padding-bottom: 10vw;
 }
@@ -113,7 +118,7 @@
     width: 80%;
     margin: auto;
     flex-direction: column;
-	height: 200vw;
+	height: fit-content;
 	z-index: 1;
 }
 .partneri img {
@@ -123,6 +128,7 @@
 }
 .partneri div{
 	width:100%;
+	height: unset;
 }
 .partneri a{
 	cursor: pointer;

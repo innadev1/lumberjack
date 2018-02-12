@@ -1,5 +1,22 @@
 <html>
 <head>
+	<!-- Open Graph data -->
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
+	http://ogp.me/ns/article#">
+	<meta property="og:title" content="Lumberjack Barbershop" /> 
+	<meta property="og:type" content="article" /> 
+	<meta property="og:url" content="http://lumberjackbarbershop.com/" /> 
+	<meta property="og:description" content="It is not simply a haircut – it is the philosophy of masculinity. We will emphasize the male character and the mood of a growing and an already held gentleman with irreproachable professionalism. We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care. Lumberjack Barber- shop – remind yourself how cool it is to be a man!" />    
+	<meta property="og:site_name" content="lumberjackbarbershop" />
+	<!-- <meta property="fb:app_id" content="Your FB_APP_ID" /> / -->
+	
+	<meta property="og:image" content="http://lumberjackbarbershop.com/img/special.jpg" />
+	<meta property="og:image:type" content="image/jpg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="300" />
+	<meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+
+
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	<link rel="stylesheet" type="text/css" href="style/lifestyle.css">
 	<link rel="stylesheet" type="text/css" href="style/style.css">

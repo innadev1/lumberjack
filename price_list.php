@@ -33,12 +33,12 @@
 		$text = $_POST['text'];
 
 		$error_message_choose_m = "";
-		$error_message_n = "";
-		$error_message_n2 = "";
+		// $error_message_n = "";
+		// $error_message_n2 = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
-		$error_message_m = "";
-		$error_message_t = "";
+		// $error_message_m = "";
+		// $error_message_t = "";
 		$error_message_d = "";
 
 		$errors = ['chooseMail'=>0,'name'=>0,'phone'=>0,'mail'=>0, 'date'=>0, 'text'=>0];
@@ -52,15 +52,15 @@
 		}
 
 		// Name
-		if(strlen($name) < 2) {
-        	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
-			$errors['name'] = 1;
-		}
+		// if(strlen($name) < 2) {
+        // 	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
+		// 	$errors['name'] = 1;
+		// }
 		
-		if(preg_match($email_exp_a,$_POST['name'])) {
-			$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
-			$errors['name'] = 1;
-		}
+		// if(preg_match($email_exp_a,$_POST['name'])) {
+		// 	$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
+		// 	$errors['name'] = 1;
+		// }
 
 
 		// PHONE
@@ -78,20 +78,20 @@
 		
 
 		// EMAIL 
-		$error_message = "";
-    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+		// $error_message = "";
+    	// $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 	
-    	if(!preg_match($email_exp,$email)) {
-        	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
-			$errors['mail'] = 1;
-		}
+    	// if(!preg_match($email_exp,$email)) {
+        // 	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
+		// 	$errors['mail'] = 1;
+		// }
 		
 
 		// Type Of Style
-		if($_POST['typeOfService'] == '-'){
-			$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
-			$errors['typeOfService'] = 1;
-		}
+		// if($_POST['typeOfService'] == '-'){
+		// 	$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
+		// 	$errors['typeOfService'] = 1;
+		// }
 		
 		// DATE 
 		if(empty($date)){
@@ -120,17 +120,26 @@
 		if($_POST['chooseMail'] == "ostrova")
 		{
 			$to = 'lumberbarberspb@gmail.com';
-			$place = 'Большой Казачий Переулок, 11, Санкт-Петербург';
+			$place = 'Большой Казачий Переулок 11, Санкт-Петербург';
 		}
 
 		$mailSuccess = false;
 
 		// $hair_syles[strval($typeOfService) ] - šis ir priekš haircut tipiem.
 
-		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_d) ) {
+		if(empty($error_message_d)) {
 			$subject = $language[$lang]['client'];
 			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $_POST["typeOfService"] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
-			$headers = "";
+			
+			$headers .= "Reply-To: Lumberjack Booking < info@info.lj >\r\n"; 
+			$headers .= "Return-Path: Lumberjack Booking < info@info.lj >\r\n"; 
+			$headers .= "From: Lumberjack Booking < info@info.lj >\r\n";  
+			$headers .= "Organization: Sender Organization\r\n";
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+			$headers .= "X-Priority: 3\r\n";
+			$headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
+			
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
 			}
@@ -148,6 +157,24 @@
 
 <html>
 	<head>
+
+		<!-- Open Graph data -->
+		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
+		http://ogp.me/ns/article#">
+		<meta property="og:title" content="Lumberjack Barbershop" /> 
+		<meta property="og:type" content="article" /> 
+		<meta property="og:url" content="http://lumberjackbarbershop.com/" /> 
+		<meta property="og:description" content="It is not simply a haircut – it is the philosophy of masculinity. We will emphasize the male character and the mood of a growing and an already held gentleman with irreproachable professionalism. We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care. Lumberjack Barber- shop – remind yourself how cool it is to be a man!" />   
+		<meta property="og:site_name" content="lumberjackbarbershop" />
+		<!-- <meta property="fb:app_id" content="Your FB_APP_ID" /> / -->
+		
+		<meta property="og:image" content="http://lumberjackbarbershop.com/img/special.jpg" />
+		<meta property="og:image:type" content="image/jpg" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+
+
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/price_list.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -226,48 +253,149 @@
 			<div class="top_border_3"></div>
 
 		<?php if(isset($_SESSION['country'])) { ?>
-			<?php if($_SESSION['country'] == 'lv' || $_SESSION['country'] == 'ee') { ?>
+			<?php if($_SESSION['country'] == 'lv') { ?>
 		
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
 					<td><p>30.00-40.00 EUR</p></td>
 					<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair13.'] ?></h1></td>
+					<td><p>30.00 EUR</p></td>
+					<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>
-					<td><p>15.00-25.00 EUR</p></td>
+					<td><p>20.00 EUR</p></td>
 					<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair12.'] ?></h1></td>
+					<td><p>15.00 EUR</p></td>
+					<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair11.'] ?></h1></td>
+					<td><p>20.00 EUR</p></td>
+					<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair3.'] ?></h1></td>
 					<td><p>40.00 EUR</p></td>
 					<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair4.'] ?></h1></td>
 					<td><p>25.00 EUR</p></td>
 					<th><button class="button" value=3 haircutsn = "name4" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair5.'] ?></h1></td>
-					<td><p>15.00 EUR</p></td>
+					<td><p>20.00 EUR</p></td>
 					<th><button class="button" value=4 haircutsn = "name5" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair6.'] ?></h1></td>
-					<td><p> 15.00 EUR</p></td>
+					<td><p> 40.00 EUR</p></td>
 					<th><button class="button" value=5 haircutsn = "name6" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair7.'] ?></h1></td>
 					<td><p>10.00-15.00 EUR</p></td>
 					<th><button class="button" value=6 haircutsn = "name7" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair8.'] ?></h1></td>
 					<td><p>10.00 EUR</p></td>
 					<th><button class="button" value=7 haircutsn = "name8" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
+				
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair9.'] ?></h1></td>
+					<td><p>20.00 EUR</p></td>
+					<th><button class="button" value=8 haircutsn = "name9" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+			<?php } ?>
+
+			<?php if($_SESSION['country'] == 'ee') { ?>
+		
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
+					<td><p>25.00 EUR</p></td>
+					<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair13.'] ?></h1></td>
+					<td><p>30.00 EUR</p></td>
+					<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>
+					<td><p>20.00 EUR</p></td>
+					<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair12.'] ?></h1></td>
+					<td><p>15.00 EUR</p></td>
+					<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair11.'] ?></h1></td>
+					<td><p>20.00 EUR</p></td>
+					<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair3.'] ?></h1></td>
+					<td><p>45.00 EUR</p></td>
+					<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair4.'] ?></h1></td>
+					<td><p>25.00 EUR</p></td>
+					<th><button class="button" value=3 haircutsn = "name4" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair5.'] ?></h1></td>
+					<td><p>20.00 EUR</p></td>
+					<th><button class="button" value=4 haircutsn = "name5" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair6.'] ?></h1></td>
+					<td><p> 40.00 EUR</p></td>
+					<th><button class="button" value=5 haircutsn = "name6" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair7.'] ?></h1></td>
+					<td><p>10.00-15.00 EUR</p></td>
+					<th><button class="button" value=6 haircutsn = "name7" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+
+				<tr>
+					<td><h1><?php echo $language[$lang]['hair8.'] ?></h1></td>
+					<td><p>10.00 EUR</p></td>
+					<th><button class="button" value=7 haircutsn = "name8" ><?php echo $language[$lang]['book'] ?></button></th>
+				</tr>
+				
 				<tr>
 					<td><h1><?php echo $language[$lang]['hair9.'] ?></h1></td>
 					<td><p>20.00 EUR</p></td>
@@ -277,50 +405,50 @@
 
 			<?php if($_SESSION['country'] == 'ru') { ?>
 					<tr>
-					<td><h1><?php echo $language[$lang]['hair1.'] ?></h1></td>
-					<td><p>30.00-40.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair10.'] ?></h1></td>
+					<td><p>1600 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=0 haircutsn = "name1" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair2.'] ?></h1></td>
-					<td><p>15.00-25.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair20.'] ?></h1></td>
+					<td><p>1000 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=1 haircutsn = "name2" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair3.'] ?></h1></td>
-					<td><p>40.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair30.'] ?></h1></td>
+					<td><p>1000 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=2 haircutsn = "name3" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair4.'] ?></h1></td>
-					<td><p>25.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair40.'] ?></h1></td>
+					<td><p>800 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=3 haircutsn = "name4" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair5.'] ?></h1></td>
-					<td><p>15.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair50.'] ?></h1></td>
+					<td><p>2200 - 2400 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=4 haircutsn = "name5" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair6.'] ?></h1></td>
-					<td><p> 15.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair60.'] ?></h1></td>
+					<td><p>1600 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=5 haircutsn = "name6" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair7.'] ?></h1></td>
-					<td><p>10.00-15.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair70.'] ?></h1></td>
+					<td><p>3200 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=6 haircutsn = "name7" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
 				<tr>
-					<td><h1><?php echo $language[$lang]['hair8.'] ?></h1></td>
-					<td><p>10.00 RUB</p></td>
+					<td><h1><?php echo $language[$lang]['hair80.'] ?></h1></td>
+					<td><p>1400 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=7 haircutsn = "name8" ><?php echo $language[$lang]['book'] ?></button></th>
 				</tr>
-				<tr>
-					<td><h1><?php echo $language[$lang]['hair9.'] ?></h1></td>
-					<td><p>20.00 RUB</p></td>
+				 <tr>
+					<td><h1><?php echo $language[$lang]['hair90.'] ?></h1></td>
+					<td><p>600 <?php echo $language[$lang]['rub'] ?></p></td>
 					<th><button class="button" value=8 haircutsn = "name9" ><?php echo $language[$lang]['book'] ?></button></th>
-				</tr>
+				</tr> 
 			<?php } ?>
 		<?php } ?>
 
@@ -359,10 +487,36 @@
 					<select name="chooseMail" class="wpcf7-select" required="required">
 						<option value="-" ><?php echo $language[$lang]['form0'] ?></option>
 						
-						<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Riharda Vagnera iela 11, Rīga, Latvija</option>
-						<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Jēkaba iela 24, Centra rajons, Rīga, Latvija</option>
-						<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Pronksi 3, Tallin, Estonia-10124</option>
-						<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >'Большой Казачий Переулок, 11, Санкт-Петербург'</option>
+						<?php if(isset($_SESSION['country'])) { ?>
+							<?php if($_SESSION['country'] == 'ru') { ?>
+								<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Россия, Санкт-Петербург, Большой Казачий Переулок 11,</option>
+								<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Riharda Vagnera iela 1</option>
+								<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Centra rajons, Jēkaba iela 24</option> 
+								<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Estonia-10124, Tallin, Pronksi 3</option> 
+								
+							<?php } ?>
+
+							<?php if($_SESSION['country'] == 'lv') { ?>
+								<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Riharda Vagnera iela 1</option>
+								<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Centra rajons, Jēkaba iela 24</option> 
+								<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Estonia-10124, Tallin, Pronksi 3</option> 
+								<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Россия, Санкт-Петербург, Большой Казачий Переулок 11,</option>	
+							<?php } ?>
+
+							<?php if($_SESSION['country'] == 'ee') { ?>
+								<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Estonia-10124, Tallin, Pronksi 3</option> 
+								<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Riharda Vagnera iela 1</option>
+								<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Centra rajons, Jēkaba iela 24</option> 
+								<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Россия, Санкт-Петербург, Большой Казачий Переулок 11,</option>	
+							<?php } ?>
+
+							<?php } else { ?>
+								<option value="vagnera" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Riharda Vagnera iela 1</option>
+								<option value="jekaba" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.lv' && $errors['chooseMail'] == 0) echo "selected"; ?> >Latvija, Rīga, Centra rajons, Jēkaba iela 24</option> 
+								<option value="pronski" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'info@lumberjack.ee' && $errors['chooseMail'] == 0) echo "selected"; ?> >Estonia-10124, Tallin, Pronksi 3</option> 
+								<option value="ostrova" <?php if(isset($_POST["chooseMail"]) && $_POST['chooseMail'] == 'lumberbarberspb@gmail.com' && $errors['chooseMail'] == 0) echo "selected"; ?> >Россия, Санкт-Петербург, Большой Казачий Переулок 11,</option>	
+						<?php } ?>
+
 					</select>
 				</span>
 			</div>

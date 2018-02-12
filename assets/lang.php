@@ -49,6 +49,13 @@
 	$language['en']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_en.pdf';
 	$language['ru']['franchise_'] = 'downloads/lumberjack_barbershop_franchise_ru.pdf';
 
+	$language['en']['franchise2_'] = 'downloads/lumberjack_en.pdf';
+	$language['ru']['franchise2_'] = 'downloads/lumberjack_ru_rub.pdf';
+
+
+
+
+
     // INDEX
 
     $language['lv']['longtext'] = "'It is not simply a haircut<br> – it is the philosophy of masculinity.','We will emphasize the male character<br> and the mood of a growing and an already held gentleman with irreproachable professionalism.','We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care.','Lumberjack Barber- shop – remind yourself how cool it is to be a man!'";
@@ -66,17 +73,17 @@
 
 // [[[[-----]]]]
 
-    $language['lv']['ofiss1'] = 'GALVENAIS BIROJS';
+    $language['lv']['ofiss1'] = 'ADMINISTRĀCIJA';
     $language['lv']['map2'] = 'PARĀDĪT KARTĒ';
     $language['lv']['shop3'] = 'INTERNETVEIKALS/RETAIL';
     $language['lv']['marketing4'] = 'MĀRKETINGS';
 
-    $language['en']['ofiss1'] = 'MAIN OFFICE';
+    $language['en']['ofiss1'] = 'ADMINISTRATION';
     $language['en']['map2'] = 'SHOW IN MAP';
     $language['en']['shop3'] = 'INTERNET SHOP/RETAIL';
     $language['en']['marketing4'] = 'MARKETING';
 
-    $language['ru']['ofiss1'] = 'ГЛАВНЫЙ ОФИС';
+    $language['ru']['ofiss1'] = 'АДМИНИСТРАЦИЯ';
     $language['ru']['map2'] = 'ПОКАЗАТЬ НА КАРТЕ';
     $language['ru']['shop3'] = 'ИНТЕРНЕТ МАГАЗИН/РИТЕЙЛ';
     $language['ru']['marketing4'] = 'МАРКЕТИНГ';
@@ -270,11 +277,14 @@
     $language['ru']['sun'] = "Воскресенье:";
 
     // LV
-    $language['lv']['check'] = "Pārbadiet savu e-pastu";
+    $language['lv']['check'] = "Paldies par pieteikumu. Mēs drīz ar Jums sazināsimies.";
     // RU
-    $language['ru']['check'] = "Проверьте свою почту";
+    $language['ru']['check'] = " Спасибо за заявку. Мы свяжемся с Вами в ближайшее время.";
     // EN
-    $language['en']['check'] = "Check your email";
+    $language['en']['check'] = "Thank you for your application. We will contact you soon.";
+
+
+
 
     $language['lv']['barbtext'] = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 
@@ -289,13 +299,17 @@
 
     $language['lv']['hair1.'] = "Matu griezums";
     $language['lv']['hair2.'] = "Groomings";
-    $language['lv']['hair3.'] = "Bārdas+ matu griezums";
+    $language['lv']['hair3.'] = "Bārdas korekcija + matu griezums";
     $language['lv']['hair4.'] = "Karstā skūšanās";
     $language['lv']['hair5.'] = "Bērnu griezums ( no 5 līdz 10 gadiem)";
-    $language['lv']['hair6.'] = "Matu griezums Dēls+ Tēvs";
+    $language['lv']['hair6.'] = "Matu griezums Dēls + Tēvs";
     $language['lv']['hair7.'] = "Matu mazgāšana";
     $language['lv']['hair8.'] = "Bārdas krāsošana";
-    $language['lv']['hair9.'] = "Studentu īpaša cena no sv.-cet. ";
+    $language['lv']['hair9.'] = "Studentu īpašā cena no sv.-cet. matu griezumiem";
+	
+    $language['lv']['hair11.'] = "Bārdas korekcija ar skuvekli";
+	$language['lv']['hair12.'] = "Bārdas korekcija ar trimeri";
+    $language['lv']['hair13.'] = "Galvas skūšana";
 
     // RUS
     $language['ru']['service'] = "Услуги";
@@ -304,13 +318,31 @@
 
     $language['ru']['hair1.'] = "Стрижка ножницами";
     $language['ru']['hair2.'] = "Груминг";
-    $language['ru']['hair3.'] = "Стрижка+коррекция бороды";
+    $language['ru']['hair3.'] = "Стрижка + коррекция бороды";
     $language['ru']['hair4.'] = "Горячее бритьё";
     $language['ru']['hair5.'] = "Детская стрижка ( от 5 до 10 лет )";
     $language['ru']['hair6.'] = "Стрижка отец + сын";
     $language['ru']['hair7.'] = "Мойка головы";
     $language['ru']['hair8.'] = "Покраска бороды";
-    $language['ru']['hair9.'] = "Специальная цена для студентов воск.- чет.";
+    $language['ru']['hair9.'] = "Специальная цена для студентов на стрижке воск.- чет.";
+	
+	$language['ru']['hair12.'] = "Коррекция бороды триммером";
+	$language['ru']['hair11.'] = "Коррекция бороды опасной бритвой";
+    $language['ru']['hair13.'] = "Бритьё головы";
+
+    $language['ru']['hair10.'] = "Стрижка ножницами";
+    $language['ru']['hair20.'] = "Груминг";
+    $language['ru']['hair30.'] = "Коррекция бороды опасной бритвой";
+    $language['ru']['hair40.'] = "Тримминг бороды";
+    $language['ru']['hair50.'] = "Стрижка + коррекция бороды";
+    $language['ru']['hair60.'] = "Горячее бритьё";
+    $language['ru']['hair70.'] = "Горячее бритьё + стрижка";
+    $language['ru']['hair80.'] = "Детская стрижка";
+    $language['ru']['hair90.'] = "Покраска бороды";
+
+    $language['en']['rub'] = "RUB" ;
+    $language['ru']['rub'] = "РУБ" ;
+    $language['lv']['rub'] = "RUB" ;
 
     // EN
     $language['en']['service'] = "Services";
@@ -319,13 +351,27 @@
 
     $language['en']['hair1.'] = "Haircut Scissors";
     $language['en']['hair2.'] = "Grooming";
-    $language['en']['hair3.'] = "Haircut + Beardtrim";
+    $language['en']['hair3.'] = "Straight razor beard correction + Haircut";
     $language['en']['hair4.'] = "Hot Shave";
     $language['en']['hair5.'] = "Kids haircut ( 5-10 years old )";
     $language['en']['hair6.'] = "DAD & SON";
     $language['en']['hair7.'] = "Headwash";
     $language['en']['hair8.'] = "Beardcoloring";
-    $language['en']['hair9.'] = "Students special price sun.-thu.";
+    $language['en']['hair9.'] = "Students special price sun.-thu. for hair cut";
+	
+    $language['en']['hair11.'] = "Straight razor beard correction";
+	$language['en']['hair12.'] = "Beardtrim";
+    $language['en']['hair13.'] = "Head Shave";
+
+    $language['en']['hair10.'] = "Haircut Scissors";
+    $language['en']['hair20.'] = "Grooming";
+    $language['en']['hair30.'] = "Haircut + Beardtrim";
+    $language['en']['hair40.'] = "Straight razor beard correction";
+    $language['en']['hair50.'] = "Beardtrim";
+    $language['en']['hair60.'] = "Haircut + Beardtrim";
+    $language['en']['hair70.'] = "Hot Shave";
+    $language['en']['hair80.'] = "Hot shave + Haircut";
+    $language['en']['hair90.'] = "Kids Haircut";
 
     $language['lv']['product'] = "produkti";
     $language['en']['product'] = "products";
@@ -356,16 +402,16 @@
     $language['lv']['form3_1'] = 'Jūsu e-pasts';
     $language['lv']['form3_e1'] = 'Lūdzu, ievadiet e-pastu!';
 
-    $language['lv']['form4'] = 'Servisa nosaukums';
+    $language['lv']['form4'] = 'Izvēlēties pakalpojumu';
     // $language['lv']['form4_1'] = 'Datums';
-    $language['lv']['form4_e1'] = 'Stila veids ir tukšs. Lūdzu, ievadiet stila veidu!';
+    $language['lv']['form4_e1'] = 'Pakalpojuma veids ir tukšs. Lūdzu, ievadiet stila veidu!';
 
     $language['lv']['form5'] = 'Datums';
     $language['lv']['form5_1'] = 'Izvēlaties datumu';
     $language['lv']['form5_e1'] = 'Lūdzu, ievadiet datumu!';
 
     $language['lv']['form6'] = 'Detaļas';
-    $language['lv']['form6_1'] = 'Lūdzu uzrakstiet pēc iespējas vairā informācijas';
+    $language['lv']['form6_1'] = 'Lūdzu uzrakstiet pēc iespējas vairāk informācijas';
 
     $language['lv']['form8'] = 'Aizsūtīt pieteikumu';
 
@@ -376,7 +422,7 @@
 
     $language['ru']['form_top'] = 'Чтобы записаться на встречу на один из наших сервисов, просто заполните форму ниже, нажмите «Отправить», и администратор свяжется с вами, чтобы подтвердить ваше бронирование.';
 
-    $language['ru']['form0'] = 'Выберите адрес';
+    $language['ru']['form0'] = 'Выбрать адрес';
     // $language['ru']['form0_1'] = 'Место пусто. Пожалуйста, введите место. ';
 
     $language['ru']['form1'] = 'Имя';
@@ -394,7 +440,7 @@
     $language['ru']['form3_1'] = 'Ваша электронная почта';
     $language['ru']['form3_e1'] = 'Пожалуйста, введите адрес электронной почты!';
 
-    $language['ru']['form4'] = 'Тип стиля';
+    $language['ru']['form4'] = 'Выбрать услугу';
     $language['ru']['form4_e1'] = 'Тип стиля пуст. Введите тип стиля!';
 
     $language['ru']['form5'] = 'Дата';
@@ -414,7 +460,7 @@
 
     $language['en']['form_top'] = 'To request an appointment for a one of our service - simply fill in the form below, click send and administrator will be in touch shortly to confirm your booking.';
 
-    $language['en']['form0'] = 'Choose adress';
+    $language['en']['form0'] = 'Select an Adress';
     // $language['en']['form0_1'] = 'Atzīmējiet pieteikšanās adresi andresi';
 
     $language['en']['form1'] = 'Name';
@@ -432,7 +478,7 @@
     $language['en']['form3_e1'] = 'Please enter email!';
     $language['en']['form4_1'] = 'Date';
 
-    $language['en']['form4'] = 'Type of service';
+    $language['en']['form4'] = 'Select a service';
     $language['en']['form4_e1'] = 'Type of style is empty. Please enter type of style!';
 
     $language['en']['form5'] = 'Date';
@@ -607,5 +653,22 @@
 	$language['lv']['card'] = 'url(img/gift_card.jpg);';
     $language['en']['card'] = 'url(img/gift_card-en.jpg);';
     $language['ru']['card'] = 'url(img/gift_card-ru.jpg);';
+	
+	
+	$language['lv']['adreselatv'] = 'Riharda Vāgnera iela 11, Rīga, Latvija';
+    $language['en']['adreselatv'] = 'Riharda Vagnera iela 11, Riga, Latvia';
+    $language['ru']['adreselatv'] = 'Riharda Vagnera iela 11, Riga, Latvia';
+	
+	$language['lv']['adreselatv2'] = 'Jēkaba iela 24, Rīga, Latvija';
+    $language['en']['adreselatv2'] = 'Jekaba iela 24, Riga, Latvia';
+    $language['ru']['adreselatv2'] = 'Jekaba iela 24, Riga, Latvia';
+	
+	$language['lv']['adreselatv3'] = 'Большой Казачий Переулок 11, Санкт-Петербург';
+    $language['en']['adreselatv3'] = 'Большой Казачий Переулок 11, Санкт-Петербург';
+    $language['ru']['adreselatv3'] = 'Большой Казачий Переулок 11, Санкт-Петербург';
+	
+	$language['lv']['adreselatv4'] = '	Большой Казачий Переулок <br> 11, Санкт-Петербург';
+    $language['en']['adreselatv4'] = '	Большой Казачий Переулок <br> 11, Санкт-Петербург';
+    $language['ru']['adreselatv4'] = '	Большой Казачий Переулок <br> 11, Санкт-Петербург';	
 	
 ?>

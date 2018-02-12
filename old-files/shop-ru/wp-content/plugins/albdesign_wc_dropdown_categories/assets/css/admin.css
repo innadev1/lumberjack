@@ -1,0 +1,71 @@
+.select_albdesign_wc_dropdown_cats_form_container label{
+	vertical-align:top;
+	font-weight:bold;
+}
+
+
+.albdesign_wc_dropdown_cats_options_single_row_container {
+	margin-bottom:10px;
+}
+.albdesign_wc_dropdown_cats_options_single_row_container .float_left{
+	float:left;
+	width:30%;
+}
+
+.albdesign_wc_dropdown_cats_options_single_row_container .rightside{
+	float:left;
+	width:70%;	
+}
+
+.albdesign_wc_dropdown_cats_options_single_row_container .clear_both{
+	width:100%;
+	float:none;
+	clear:both;
+}
+
+
+.albdesign_wc_dropdown_cats_options_single_row_container select{
+	width:100%;
+}
+
+
+.albdesign_wc_dropdown_cats_options_single_row_container select.icon_list_options,
+.albdesign_wc_dropdown_icon_list_options,
+.wpb_vc_param_value.wpb-input.wpb-select.expanded_icon{
+	font-family: FontAwesome, sans-serif;
+}
+
+#albdesign_wc_dropdown_categories_extra_css_class{
+	width:100%;
+}
+
+/*Hide tinymce button on Visual composer*/
+.vc_ui-panel-content-container #albdesign_wc_dropdown_add_button_on_tinymce{
+	display:none;
+}
+
+div[data-vc-shortcode="albdesign_wc_dropdown_categories_vc"] label{
+	display:block;
+}
+
+div.albdesign_wc_dropdown_show_all_icons{
+	display:none;
+}
+
+.albdesign_wc_dropdown_show_all_icons div.one_third{
+	width:33%;
+	float:left;
+}
+
+.albdesign_wc_dropdown_show_all_icons div.one_third i{
+    text-align: right;
+    float: right;
+    margin-right: 20%;
+ 
+    font-size: 18px;
+}
+
+
+div[id*='_albdesign_wc_dropdown_categories_widget'] .widget-content .wp-picker-container > a.wp-color-result {
+	
+}

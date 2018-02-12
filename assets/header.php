@@ -10,9 +10,28 @@
 		<ul>
 			<li><a href="<?php echo $language[$lang]['franchise_'] ?>" open="<?php echo $language[$lang]['franchise_'] ?>" target="_blank"><?php echo $language[$lang]['franch.'] ?></a></li>
 			<li class="border"></li>
-			<li><a href="contacts.php"><img src="img/call.png" width="1%"></a></li>
-			<li class="border"></li>
-			<!-- <li><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><img src="img/bag.png" width="0.8%"></a></li> -->
+
+			<?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru') { ?>
+        			<li><a href="contacts-ru.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'lv') { ?>
+					<li><a href="contacts-lv.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="contacts-ee.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+                <?php } ?>
+            <?php } else { ?>
+                	<li><a href="contacts-lv.php"><img src="img/call.png" width="1%"></a></li>
+					<li class="border"></li>
+            <?php } ?>
+			
+			<!--<li><a href="lumberjackbarbershop.com/shop/lv/shop/"><img src="img/bag.png" width="0.8%"></a></li>-->
 			<li class="border"></li>
 
             <?php if(isset($_SESSION['country'])) { ?>
@@ -53,11 +72,7 @@
 			<li><a href="index.php"><?php echo $language[$lang]['home'] ?></a></li>
 			<li><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 			<li><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
-
-			<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-			    <!-- <li><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><?php echo $language[$lang]['online_store'] ?></a></li> -->
-			<?php } ?>
-
+			<!--<li><a href="lumberjackbarbershop.com/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>-->
 			<li><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
 
             <?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
@@ -65,16 +80,28 @@
 			<?php } ?>
 
 			<li><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
-			<li><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
 
-			<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-			    <li><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
-			<?php } ?>
+			<?php if(isset($_SESSION['country'])) { ?>
+                <?php if($_SESSION['country'] == 'ru') { ?>
+        			<li><a href="contacts-ru.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
 
+                <?php if($_SESSION['country'] == 'lv') { ?>
+                    <li><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
+
+                <?php if($_SESSION['country'] == 'ee') { ?>
+                    <li><a href="contacts-ee.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+                <?php } ?>
+            <?php } else { ?>
+                <li><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+            <?php } ?>
+			
+			<li><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
         </ul>
     </div>
 	<div class="information">
-			<p><?php echo $language[$lang]['franch.'] ?></p>
+			<p><?php echo $language['ru']['franch.'] ?></p>
 		<ul>
 			<li><a href="#"><img src="img/call_brown.png" width="23px" style="padding-right:5px"></a></li>
 			<li class="border"></li>
@@ -106,38 +133,18 @@
 			});
 		</script>
 
-		<script>
-				$(document).ready(function () {
-				$(".popup").hide();
-				$(".openpop").click(function (e) {
-					e.preventDefault();
-					$("iframe").attr("src", $(this).attr('href'));
-					$(".links").fadeOut('slow');
-					$(".popup").fadeIn('slow');
-				});
-
-				$(".close").click(function () {
-					$(this).parent().fadeOut("slow");
-					$(".links").fadeIn("slow");
-				});
-			});
-
-		</script>
-
 <div id="navigation">
 	<div class="navigation">
 			<ul>
-				<li><a href="https://open.spotify.com/user/aleksejkozlov/playlist/3p4Ww5eWafB4hEaligbA0X" target="_blank"><img src="img/radio.png" class="radio"></a></li>  
+				<li><a><img src="img/radio.png" class="radio"></a></li>
 
 				<li class="link"><a href="our_story.php"><?php echo $language[$lang]['our_story'] ?></a></li>
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="barbershop.php"><?php echo $language[$lang]['our_barber'] ?></a></li>
 
-				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-    				<!-- <li><a><img src="img/vector.png"></a></li> -->
-					<!-- <li class="link"><a href="http://lumberjackbarbershop.com/shop/en_US/shop/"><?php echo $language[$lang]['online_store'] ?></a></li> -->
-                <?php } ?>
+				<!--<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="lumberjackbarbershop.com/shop/shop"><?php echo $language[$lang]['online_store'] ?></a></li>-->
 
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="haircuts.php"><?php echo $language[$lang]['haircuts'] ?></a></li>
@@ -153,13 +160,35 @@
 				<li><a><img src="img/vector.png"></a></li>
 				<li class="link"><a href="price_list.php"><?php echo $language[$lang]['price_list'] ?></a></li>
 
-				<li><a><img src="img/vector.png"></a></li>
-				<li class="link"><a href="contacts.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
 				
-				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
-			    	<li><a><img src="img/vector.png"></a></li>
-					<li class="link"><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+
+				<?php if(isset($_SESSION['country'])) { ?>
+						<?php if($_SESSION['country'] == 'ru') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-ru.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+						<?php } ?>
+
+						<?php if($_SESSION['country'] == 'lv') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+						<?php } ?>
+
+						<?php if($_SESSION['country'] == 'ee') { ?>
+							<li><a><img src="img/vector.png"></a></li>
+							<li class="link"><a href="contacts-ee.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
+						<?php } ?>
+
+					<?php } else { ?>
+						<li><a><img src="img/vector.png"></a></li>
+						<li class="link"><a href="contacts-lv.php"><?php echo $language[$lang]['contact_us'] ?></a></li>
+
 				<?php } ?>
+				<li><a><img src="img/vector.png"></a></li>
+				<li class="link"><a href="partners.php"><?php echo $language[$lang]['partners'] ?></a></li>
+
+	
 			</ul>
 	</div>
 </div>

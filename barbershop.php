@@ -32,12 +32,12 @@
 		$text = $_POST['text'];
 
 		$error_message_choose_m = "";
-		$error_message_n = "";
-		$error_message_n2 = "";
+		// $error_message_n = "";
+		// $error_message_n2 = "";
 		$error_message_p1 = "";
 		$error_message_p2 = "";
-		$error_message_m = "";
-		$error_message_t = "";
+		// $error_message_m = "";
+		// $error_message_t = "";
 		$error_message_d = "";
 
 		$errors = ['chooseMail'=>0,'name'=>0,'phone'=>0,'mail'=>0, 'typeOfService'=>0, 'date'=>0, 'text'=>0];
@@ -51,15 +51,15 @@
 		}
 
 		// Name
-		if(strlen($name) < 2) {
-        	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
-			$errors['name'] = 1;
-		}
+		// if(strlen($name) < 2) {
+        // 	$error_message_n .= '<p class="red">'.$language[$lang]['form1_e1'].'</p>';
+		// 	$errors['name'] = 1;
+		// }
 
-		if(preg_match($email_exp_a,$_POST['name'])) {
-			$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
-			$errors['name'] = 1;
-		}
+		// if(preg_match($email_exp_a,$_POST['name'])) {
+		// 	$error_message_n2 .= '<p class="red">'.$language[$lang]['form1_e2'].'</p>';
+		// 	$errors['name'] = 1;
+		// }
 
 		// PHONE
 		$error_message = "";
@@ -76,20 +76,20 @@
 
 
 		// EMAIL
-		$error_message = "";
-    	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+		// $error_message = "";
+    	// $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-    	if(!preg_match($email_exp,$email)) {
-        	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
-			$errors['mail'] = 1;
-		}
+    	// if(!preg_match($email_exp,$email)) {
+        // 	$error_message_m .= '<p class="red">'.$language[$lang]['form3_e1'].'</p>';
+		// 	$errors['mail'] = 1;
+		// }
 
 
 		// Type Of Style
-		if($_POST['typeOfService'] == '-'){
-			$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
-			$errors['typeOfService'] = 1;
-		}
+		// if($_POST['typeOfService'] == '-'){
+		// 	$error_message_t .= '<p class="red">'.$language[$lang]['form4_e1'].'</p>';
+		// 	$errors['typeOfService'] = 1;
+		// }
 
 		// DATE
 		if(empty($date)){
@@ -118,15 +118,23 @@
 		if($_POST['book_place'] == "ostrova")
 		{
 			$to = 'lumberbarberspb@gmail.com';
-			$place = 'Большой Казачий Переулок, 11, Санкт-Петербург';
+			$place = 'Большой Казачий Переулок 11, Санкт-Петербург';
 		}
 
 		$mailSuccess = false;
-		if( empty($error_message_choose_m) && empty($error_message_n) && empty($error_message_p) && empty($error_message_m) && empty($error_message_t) && empty($error_message_d) ) {
+		if(empty($error_message_p) && empty($error_message_d)) {
 			// $to      = 'my.worktest94@gmail.com';
 			$subject = $language[$lang]['client'];
 			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
-			$headers = "";
+			
+			$headers .= "Reply-To: Lumberjack Booking < info@info.lj >\r\n"; 
+			$headers .= "Return-Path: Lumberjack Booking < info@info.lj >\r\n"; 
+			$headers .= "From: Lumberjack Booking < info@info.lj >\r\n";  
+			$headers .= "Organization: Sender Organization\r\n";
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
+			$headers .= "X-Priority: 3\r\n";
+			$headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
 
 			if(mail($to, $subject, $message, $headers)){
 				$mailSuccess = true;
@@ -141,6 +149,23 @@
 ?>
  <html>
 	<head>
+		<!-- Open Graph data -->
+		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
+		http://ogp.me/ns/article#">
+		<meta property="og:title" content="Lumberjack Barbershop" /> 
+		<meta property="og:type" content="article" /> 
+		<meta property="og:url" content="http://lumberjackbarbershop.com/" /> 
+		<meta property="og:description" content="It is not simply a haircut – it is the philosophy of masculinity. We will emphasize the male character and the mood of a growing and an already held gentleman with irreproachable professionalism. We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care. Lumberjack Barber- shop – remind yourself how cool it is to be a man!" />    
+		<meta property="og:site_name" content="lumberjackbarbershop" />
+		<!-- <meta property="fb:app_id" content="Your FB_APP_ID" /> / -->
+		
+		<meta property="og:image" content="http://lumberjackbarbershop.com/img/special.jpg" />
+		<meta property="og:image:type" content="image/jpg" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+
+
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/barbershop.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
@@ -180,8 +205,8 @@
 					<span class=" your-name"><input type="text" value = "<?php if(isset($_POST['name']) && $errors['name'] == 0 ){ echo $_POST['name']; } ?>" name="name" size="40" class="wpcf7-text" required="required" placeholder="<?php echo $language[$lang]['form1_1'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
-					<?php echo ($error_message_n); ?>
-					<?php echo ($error_message_n2); ?>
+					<!-- <?php echo ($error_message_n); ?>
+					<?php echo ($error_message_n2); ?> -->
 				<!--END-->
 
 
@@ -201,27 +226,44 @@
 					<span class="your-name"><input type="text" value = "<?php if(isset($_POST['mail']) && $errors['mail'] == 0){ echo $_POST['mail']; } ?>" name="mail" size="40" class="wpcf7-text" placeholder="<?php echo $language[$lang]['form3_1'] ?>"></span>
 				</div>
 				<!--ERRROR  -->
-					<?php echo ($error_message_m); ?>
+					<!-- <?php echo ($error_message_m); ?> -->
 				<!--END-->
 
 				<div class="styled-select">
 					<span class="wpcf7-form-control-wrap menu-471">
 						<select name="typeOfService" class="wpcf7-select" required="required">
-							<option value="-" ><?php echo $language[$lang]['form4'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
-							<option value="Haircut+Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut+Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
-							<option value="Haircut" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Haircut' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
-							<option value="Beard Trim" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Beard Trim' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
-							<option value="Hot Shave" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == 'Hot Shave' && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair9.'] ?></option>
+
+							<option class="lvee_option" value="-" ><?php echo $language[$lang]['form4'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair1.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair1.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair1.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair13.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair13.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair13.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair2.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair2.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair2.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair12.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair12.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair12.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair11.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair11.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair11.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair3.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair3.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair3.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair4.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair4.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair4.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair5.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair5.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair5.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair6.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair6.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair6.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair7.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair7.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair7.'] ?></option>
+							<option class="lvee_option" value="<?php echo $language[$lang]['hair8.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair8.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair8.'] ?></option>
+							
+							<!--RUSSIAN MENU  -->
+							
+							<option class="ru_option" value="-" ><?php echo $language[$lang]['form4'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair10.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair10.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair10.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair20.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair20.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair20.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair30.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair30.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair30.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair40.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair40.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair40.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair50.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair50.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair50.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair60.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair60.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair60.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair70.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair70.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair70.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair80.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair80.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair80.'] ?></option>
+							<option class="ru_option" value="<?php echo $language[$lang]['hair90.'] ?>" <?php if(isset($_POST["typeOfService"]) && $_POST['typeOfService'] == $language[$lang]['hair90.'] && $errors['typeOfService'] == 0) echo "selected"; ?> ><?php echo $language[$lang]['hair90.'] ?></option>
+
 						</select>
 					</span>
 				</div>
 				<!--ERRROR  -->
-					<?php echo ($error_message_t); ?>
+					<!-- <?php echo ($error_message_t); ?> -->
 				<!--END-->
 
 				<div class="bookinputdate">
@@ -290,7 +332,7 @@
 					
 
 				}else if(stuff=='russia'){
-					p.html('Большой Казачий Переулок, 11, Санкт-Петербург')
+					p.html('Большой Казачий Переулок 11, Санкт-Петербург')
 					hiddenInput.attr('value','ostrova')
 					
 				}
@@ -413,7 +455,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>Riharda Vagnera iela 11, Riga, Latvia</p></td>
+									<td><p><?php echo $language[$lang]['adreselatv'] ?></p></td>
 								</tr>
 
 								<tr>
@@ -462,12 +504,12 @@
 
 			<div id="services_1">
 
-				<div class="flex">
+				<!--<div class="flex">
 					<div class="buttons_2"><button><?php echo $language[$lang]['all'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['hair'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['mass'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['skin'] ?></button></div>
-				</div>
+				</div>-->
 
 				<div id="table_about">
 					<table width="100%">
@@ -482,11 +524,36 @@
 						</tr>
 						<tr>
 							<th>
+								<h1><?php echo $language[$lang]['hair13.'] ?></h1>
+								<p></p>
+							</th>
+							<td>
+								<h1>30.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
 								<h1><?php echo $language[$lang]['hair2.'] ?></h1>
 								<p></p>
 							</th>
 							<td>
-								<h1>15.00-25.00 EUR</h1>
+								<h1>20.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1><?php echo $language[$lang]['hair12.'] ?></h1>
+							</th>
+							<td>
+								<h1>15.00 EUR</h1>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<h1><?php echo $language[$lang]['hair11.'] ?></h1>
+							</th>
+							<td>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
@@ -511,7 +578,7 @@
 								<p></p>
 							</th>
 							<td>
-								<h1>15.00 EUR</h1>
+								<h1>20.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
@@ -520,7 +587,7 @@
 								<p></p>
 							</th>
 							<td>
-								<h1>15.00 EUR</h1>
+								<h1>40.00 EUR</h1>
 							</td>
 						</tr>
 						<tr>
@@ -640,7 +707,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>Jēkaba iela 24, Riga, Latvia</p></td>
+									<td><p><?php echo $language[$lang]['adreselatv2'] ?></p></td>
 								</tr>
 
 								<tr>
@@ -689,12 +756,12 @@
 
 			<div id="services_4">
 
-			<div class="flex">
+			<!--<div class="flex">
 				<div class="buttons_2"><button><?php echo $language[$lang]['all'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['hair'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['mass'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['skin'] ?></button></div>
-			</div>
+			</div>-->
 
 				<div id="table_about">
 				<table width="100%">
@@ -709,13 +776,38 @@
 				</tr>
 				<tr>
 					<th>
+						<h1><?php echo $language[$lang]['hair13.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>30.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
 						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00-25.00 EUR</h1>
+						<h1>20.00 EUR</h1>
 					</td>
 				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair12.'] ?></h1>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair11.'] ?></h1>
+					</th>
+					<td>
+						<h1>20.00 EUR</h1>
+					</td>
+				</tr>				
 				<tr>
 					<th>
 						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
@@ -738,7 +830,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>20.00 EUR</h1>
 					</td>
 				</tr>
 				<tr>
@@ -747,7 +839,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>40.00 EUR</h1>
 					</td>
 				</tr>
 				<tr>
@@ -860,10 +952,10 @@
 
 				<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
 
-					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal1">
+					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal2">
 				<?php } else{ ?>
 
-					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal1">
+					<div class="countries"><img src="img/countries/tallinnRus.jpg" class="gal2">
 
 				<?php } ?>
 
@@ -931,12 +1023,12 @@
 
 			<div id="services_2">
 
-			<div class="flex">
+			<!--<div class="flex">
 				<div class="buttons_2"><button><?php echo $language[$lang]['all'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['hair'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['mass'] ?></button></div>
 				<div class="buttons_2"><button><?php echo $language[$lang]['skin'] ?></button></div>
-			</div>
+			</div>-->
 
 				<div id="table_about">
 				<table width="100%">
@@ -951,11 +1043,36 @@
 				</tr>
 				<tr>
 					<th>
+						<h1><?php echo $language[$lang]['hair13.'] ?></h1>
+						<p></p>
+					</th>
+					<td>
+						<h1>30.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
 						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00-25.00 EUR</h1>
+						<h1>20.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair12.'] ?></h1>
+					</th>
+					<td>
+						<h1>15.00 EUR</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair11.'] ?></h1>
+					</th>
+					<td>
+						<h1>20.00 EUR</h1>
 					</td>
 				</tr>
 				<tr>
@@ -980,7 +1097,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>20.00 EUR</h1>
 					</td>
 				</tr>
 				<tr>
@@ -989,7 +1106,7 @@
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 EUR</h1>
+						<h1>40.00 EUR</h1>
 					</td>
 				</tr>
 				<tr>
@@ -1097,15 +1214,15 @@
 
 	<div class="c" style="display:none" id="c_russia">
 		<div class="country" id="russia_">
-			<div class="country_name" id="c3"><h1>Большой Казачий Переулок, 11, Санкт-Петербург</h1></div>
+			<div class="country_name" id="c3"><h1><?php echo $language[$lang]['adreselatv3'] ?></h1></div>
 
 			<?php if(!isset($_SESSION['country']) || $_SESSION['country'] != 'ru') { ?>
 
-				<div class="countries"><img src="img/countries/russia.jpg" class="gal1">
+				<div class="countries"><img src="img/countries/russia.jpg" class="gal3">
 				
 			<?php } else{ ?>
 
-			    <div class="countries"><img src="img/countries/onlyrussainvers.jpg" class="gal1">
+			    <div class="countries"><img src="img/countries/onlyrussainvers.jpg" class="gal3">
 
 			<?php } ?>
 
@@ -1124,7 +1241,7 @@
 							<table>
 								<tr>
 									<td><h2><?php echo $language[$lang]['adr'] ?></h2></td>
-									<td><p>Большой Казачий Переулок,<br> 11, Санкт-Петербург</p></td>
+									<td><p><?php echo $language[$lang]['adreselatv4'] ?></p></td>
 								</tr>
 								<tr>
 									<td><h2><?php echo $language[$lang]['em'] ?></h2></td>
@@ -1171,91 +1288,93 @@
 
 			<div id="services_3">
 
-				<div class="flex">
+				<!--<div class="flex">
 					<div class="buttons_2"><button><?php echo $language[$lang]['all'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['hair'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['mass'] ?></button></div>
 					<div class="buttons_2"><button><?php echo $language[$lang]['skin'] ?></button></div>
-				</div>
+				</div>-->
 
 				<div id="table_about">
 				<table width="100%">
-				<tr>
+
+				 <tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair1.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair10.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>30.00-40.00 RUB</h1>
+						<h1>1600 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair2.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair20.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00-25.00 RUB</h1>
+						<h1>1000 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair3.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair30.'] ?></h1>
 					</th>
 					<td>
-						<h1>40.00 RUB</h1>
+						<h1>1000 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair4.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair40.'] ?></h1>
 					</th>
 					<td>
-						<h1>25.00 RUB</h1>
+						<h1>800 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair5.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair50.'] ?></h1>
+					</th>
+					<td>
+						<h1>2200 - 2400 RUB</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair60.'] ?></h1>
+					</th>
+					<td>
+						<h1>1600 RUB</h1>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<h1><?php echo $language[$lang]['hair70.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 RUB</h1>
+						<h1>3200 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair6.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair80.'] ?></h1>
 						<p></p>
 					</th>
 					<td>
-						<h1>15.00 RUB</h1>
+						<h1>1400 RUB</h1>
 					</td>
 				</tr>
 				<tr>
 					<th>
-						<h1><?php echo $language[$lang]['hair7.'] ?></h1>
+						<h1><?php echo $language[$lang]['hair90.'] ?></h1>
 					</th>
 					<td>
-						<h1>10.00-15.00 RUB</h1>
+						<h1>600 RUB</h1>
 					</td>
 				</tr>
-				<tr>
-					<th>
-						<h1><?php echo $language[$lang]['hair8.'] ?></h1>
-					</th>
-					<td>
-						<h1>10.00 RUB</h1>
-					</td>
-				</tr>
-				<tr>
-					<th>
-						<h1><?php echo $language[$lang]['hair9.'] ?></h1>
-					</th>
-					<td>
-						<h1>20.00 RUB</h1>
-					</td>
-				</tr>
+			
 			</table>
 				</div>
 
@@ -1412,6 +1531,22 @@
             	});
          	});
       	</script>
+
+		<script>
+			$(".book").click(function(){
+				var stuff = $(this).attr('stuff')
+				// alert(stuff)
+
+				if(stuff == "riga1" || stuff == "riga2" || stuff == "estonia"){
+					$(".lvee_option").css('display', "block")
+					$(".ru_option").css('display', "none")
+				}else if(stuff == "russia"){
+					$(".ru_option").css('display', "block")
+					$(".lvee_option").css('display', "none")
+
+				}
+			});
+		</script>
 
 	<?php include 'assets/footer.php'; ?>
 	</body>

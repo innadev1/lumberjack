@@ -1,6 +1,22 @@
 <html>
 	<head>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+		<!-- Open Graph data -->
+		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
+		http://ogp.me/ns/article#">
+		<meta property="og:title" content="Lumberjack Barbershop" /> 
+		<meta property="og:type" content="article" /> 
+		<meta property="og:url" content="http://lumberjackbarbershop.com/" /> 
+		<meta property="og:description" content="It is not simply a haircut – it is the philosophy of masculinity. We will emphasize the male character and the mood of a growing and an already held gentleman with irreproachable professionalism. We believe that representatives of the stronger sex have rights to rely on a verified and top-quality personal care. Lumberjack Barber- shop – remind yourself how cool it is to be a man!" />    
+		<meta property="og:site_name" content="lumberjackbarbershop" />
+		 <meta property="fb:app_id" content="" />
+		
+		<meta property="og:image" content="http://lumberjackbarbershop.com/img/special.jpg" />
+		<meta property="og:image:type" content="image/jpg" />
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 		<link rel="stylesheet" type="text/css" href="style/contacts.css">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<title>Lumberjack Barbershop</title>
@@ -33,20 +49,60 @@
 		<div id="info">
 			<div id="first_flex">
 				<button class="first"><?php echo $language[$lang]['ofiss1'] ?></button>
-				<table align="center">
-					<tr>
-						<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
-						<td><p>Riharda Vāgnera iela 11,<br> Rīga, Latvija, LV-1050</p></td>
-					</tr>
-					<tr>
-						<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
-						<td><p>info@lumberjack.lv</p></td>
-					</tr>
-					<tr>
-						<th><h2><!--<?php echo $language[$lang]['te'] ?>--></h2></th>
-						<td><p><!--+371 67 854 755--></p></td>
-					</tr>
-				</table>
+				
+				<?php if(isset($_SESSION['country'])) { ?>
+					<?php if($_SESSION['country'] == 'ru') { ?>
+						<table align="center">
+							<tr>
+								<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
+								<td><p>Большой Казачий Переулок 11, Санкт-Петербург</p></td>
+							</tr>
+							<tr>
+								<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
+								<!-- <td><p>info@lumberjack.lv</p></td> -->
+							</tr>
+							<tr>
+								<th><h2><!--<?php echo $language[$lang]['te'] ?>--></h2></th>
+								<td><p>+79818601122</p></td>
+							</tr>
+						</table>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'lv') { ?>
+						<table align="center">
+							<tr>
+								<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
+								<td><p>Riharda Vāgnera iela 11,<br> Rīga, Latvija, LV-1050</p></td>
+							</tr>
+							<tr>
+								<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
+								<td><p>info@lumberjack.lv</p></td> 
+							</tr>
+							<tr>
+								<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
+								<td><p>+371 67 854 755</p></td>
+							</tr>
+						</table>
+					<?php } ?>
+
+					<?php if($_SESSION['country'] == 'ee') { ?>
+						<table align="center">
+							<tr>
+								<th><h2><?php echo $language[$lang]['adr'] ?></h2></th>
+								<td><p>Pronksi 3, Tallin,<br> Estonia-10124</p></td>
+							</tr>
+							<tr>
+								<th><h2><?php echo $language[$lang]['em'] ?></h2></th>
+								<td><p>info@lumberjack.ee</p></td>
+							</tr>
+							<tr>
+								<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
+								<td><p>+372 56 969 119</p></td>
+							</tr>
+						</table>
+					<?php } ?>
+				<?php } ?>
+					
 				<button id="trigger1" class="second"><?php echo $language[$lang]['map2'] ?></button>
 			</div>
 			<div id="second_flex">
@@ -98,7 +154,7 @@
 					</tr>
 					<tr>
 						<th><h2><?php echo $language[$lang]['te'] ?></h2></th>
-						<td><p>+371 56 02 612</p></td>
+						<td><p>+371 260 032 09</p></td>
 					</tr>
 				</table>
 				<button id="trigger4" class="second"><?php echo $language[$lang]['map2'] ?></button>

@@ -123,7 +123,7 @@ button{
 }
 .caption img, .top_border, .top_border_2, .top_border_3{display: none;}
 #main {
-    height: 174vw;
+    height: 210vw;
 	background-image: url(../img/background_7_mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;

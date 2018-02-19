@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html>
-
+		<title>Lumberjack Barbershop</title>
 		<!-- Open Graph data -->
 		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
 		http://ogp.me/ns/article#">

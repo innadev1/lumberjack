@@ -127,24 +127,23 @@
 
 		// $hair_syles[strval($typeOfService) ] - šis ir priekš haircut tipiem.
 
-		if(empty($error_message_d)) {
-			$subject = $language[$lang]['client'];
-			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $_POST["typeOfService"] . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
+		if(empty($error_message_p2) && empty($error_message_d)) {
+			$subject = $phone." / ".$date;
+			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 			
-			$headers .= "Reply-To: Lumberjack Booking < info@info.lj >\r\n"; 
-			$headers .= "Return-Path: Lumberjack Booking < info@info.lj >\r\n"; 
-			$headers .= "From: Lumberjack Booking < info@info.lj >\r\n";  
+			$headers .= "Reply-To: Lumberjack Booking <info@lumberjack.lv> \r\n"; 
+			$headers .= "Return-Path: Lumberjack Booking <info@lumberjack.lv> \r\n"; 
+			$headers .= "From: Lumberjack Booking <info@lumberjack.lv> \r\n";  
 			$headers .= "Organization: Sender Organization\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
 			$headers .= "X-Priority: 3\r\n";
 			$headers .= "X-Mailer: PHP". phpversion() ."\r\n" ;
-			
+
 			if(mail($to, $subject, $message, $headers)){
-				$mailSuccess = true;
+				$mailSuccess = false; 
+				// bija true
 			}
-			
-			// echo "check Your Email";
 
 		}else{
 			

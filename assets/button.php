@@ -121,12 +121,12 @@
 
 		$mailSuccess = false;
 		if(empty($error_message_p2) && empty($error_message_d)) {
-			$subject = $language[$lang]['client'];
+			$subject = $phone." / ".$date;
 			$message = $place . "\r\n" . "\r\n" . $language[$lang]['form1'] . " : " . " " . $name . "\r\n" . $language[$lang]['form2'] . " : " . " " . $phone . "\r\n" . $language[$lang]['form3'] . " : " . " " . $email . "\r\n" . $language[$lang]['form4'] . " : " . " " . $typeOfService . "\r\n" . $language[$lang]['form5'] . " : " . " " . $date . "\r\n" . $language[$lang]['form6'] . " : " . " " . $text;
 			
-			$headers .= "Reply-To: Lumberjack Booking < info@info.lj >\r\n"; 
-			$headers .= "Return-Path: Lumberjack Booking < info@info.lj >\r\n"; 
-			$headers .= "From: Lumberjack Booking < info@info.lj >\r\n";  
+			$headers .= "Reply-To: Lumberjack Booking <info@lumberjack.lv> \r\n"; 
+			$headers .= "Return-Path: Lumberjack Booking <info@lumberjack.lv> \r\n"; 
+			$headers .= "From: Lumberjack Booking <info@lumberjack.lv> \r\n";  
 			$headers .= "Organization: Sender Organization\r\n";
 			$headers .= "MIME-Version: 1.0\r\n";
 			$headers .= "Content-type: text/plain; charset=iso-8859-1\r\n";
@@ -313,16 +313,16 @@
 					<input class="blackbutton" type="submit" name="emailsent" value="<?php echo $language[$lang]['form8'] ?>">
 				</div>
 
+				<a class="remodal-close"></a>
 			</form>
-
+			
 			<?php
 			}else if($mailSuccess){?>
+				<a class="remodal-close" href="index.php"></a>
 				<div class="checkk">
 				<?php echo $language[$lang]['check']; ?>
 				</div>
 			<?php } ?>
-
-		<a class="remodal-close"></a>
 
 	</div>
 </div>

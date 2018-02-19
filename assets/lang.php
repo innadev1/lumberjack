@@ -257,7 +257,7 @@
     $language['lv']['em'] = "E-pasts:";
     $language['lv']['te'] = "Tel:";
     $language['lv']['op'] = "Darba laiks";
-    $language['lv']['mon'] = "Pirm. - Sesd.:";
+    $language['lv']['mon'] = "Pirm. - Sest.:";
     $language['lv']['sun'] = "Svētdiena:";
 
     // EN
@@ -300,7 +300,7 @@
     $language['lv']['hair1.'] = "Matu griezums";
     $language['lv']['hair2.'] = "Groomings";
     $language['lv']['hair3.'] = "Bārdas korekcija + matu griezums";
-    $language['lv']['hair4.'] = "Karstā skūšanās";
+    $language['lv']['hair4.'] = "Skūšana ar karstiem dvieļiem";
     $language['lv']['hair5.'] = "Bērnu griezums ( no 5 līdz 10 gadiem)";
     $language['lv']['hair6.'] = "Matu griezums Dēls + Tēvs";
     $language['lv']['hair7.'] = "Matu mazgāšana";
